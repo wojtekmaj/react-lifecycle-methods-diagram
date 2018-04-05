@@ -64,8 +64,7 @@ export default class ReactLifecycleMethods extends Component {
           row={3}
           colspan={2}
         />
-        <Arrow col={2} from={3} to={4} />
-        <Arrow col={3} from={3} to={4} />
+        <Arrow withAlt col={2} colspan={2} from={3} to={4} />
         <Method
           main
           name="render"

@@ -33,7 +33,7 @@ export default class ReactLifecycleMethods extends Component {
         <Initiator name="forceUpdate()" col={4} row={1} />
         <Arrow col={4} from={1} to={4} />
 
-        <Section name="Unmounting" col={5} />
+        <Section name={'Un\u00admounting'} col={5} />
         <Arrow col={5} from={0} to={7} />
 
         {/* Methods and other arrows */}

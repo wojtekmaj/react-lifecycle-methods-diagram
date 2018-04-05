@@ -8,12 +8,20 @@ import Section from './Section';
 import Method from './Method';
 import Initiator from './Initiator';
 
+const isUppercase = letter => letter.toUpperCase() === letter;
+
+// Splits camelCase with ZWJ characters to help with line breaking
+const splitUpperCase = str => str
+  .split('')
+  .reduce((res, letter) => res + (isUppercase(letter) ? `\u00ad${letter}` : letter), '');
+
 export default class ReactLifecycleMethods extends Component {
   render() {
     return (
       <div className="RLM">
         <Legend />
 
+        {/* Sections and initiating arrows */}
         <Section name="Mounting" col={1} />
         <Arrow col={1} from={0} to={1} />
 
@@ -28,6 +36,7 @@ export default class ReactLifecycleMethods extends Component {
         <Section name="Unmounting" col={5} />
         <Arrow col={5} from={0} to={7} />
 
+        {/* Methods and other arrows */}
         <Method
           main
           name="constructor"
@@ -38,7 +47,7 @@ export default class ReactLifecycleMethods extends Component {
         />
         <Arrow col={1} from={1} to={2} />
         <Method
-          name={'get\u200dDerived\u200dState\u200dFrom\u200dProps'}
+          name={splitUpperCase('getDerivedStateFromProps')}
           docname="static-getderivedstatefromprops"
           type="render"
           col={1}
@@ -48,7 +57,7 @@ export default class ReactLifecycleMethods extends Component {
         <Arrow col={1} from={2} to={4} />
         <Arrow col={2} from={2} to={3} />
         <Method
-          name={'should\u200dComponent\u200dUpdate'}
+          name={splitUpperCase('shouldComponentUpdate')}
           docname="shouldcomponentupdate"
           type="render"
           col={2}
@@ -69,7 +78,7 @@ export default class ReactLifecycleMethods extends Component {
         <Arrow col={1} from={4} to={6} />
         <Arrow col={3} from={4} to={5} />
         <Method
-          name={'get\u200dSnapshot\u200dBefore\u200dUpdate'}
+          name={splitUpperCase('getSnapshotBeforeUpdate')}
           docname="getsnapshotbeforeupdate"
           type="pre-commit"
           col={2}
@@ -88,7 +97,7 @@ export default class ReactLifecycleMethods extends Component {
         <Arrow solid col={3} from={6} to={7} />
         <Method
           main
-          name={'component\u200dDid\u200dMount'}
+          name={splitUpperCase('componentDidMount')}
           docname="componentdidmount"
           type="commit"
           col={1}
@@ -96,7 +105,7 @@ export default class ReactLifecycleMethods extends Component {
         />
         <Method
           main
-          name={'component\u200dDid\u200dUpdate'}
+          name={splitUpperCase('componentDidUpdate')}
           docname="componentdidupdate"
           type="commit"
           col={2}
@@ -105,7 +114,7 @@ export default class ReactLifecycleMethods extends Component {
         />
         <Method
           main
-          name={'component\u200dWill\u200dUnmount'}
+          name={splitUpperCase('componentWillUnmount')}
           docname="componentwillunmount"
           type="commit"
           col={5}

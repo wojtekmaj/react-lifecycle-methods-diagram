@@ -2,17 +2,22 @@
   position: relative;
   width: 0px;
   border-left: 1px dashed black;
-  margin: 4px auto 4px 50%;
+  margin: 0 auto 5px 50%;
 
   &--solid {
     border-left-style: solid;
   }
 
   &:after {
-    content: '▶';
+    content: '';
+    width: 7px;
+    height: 10px;
+    display: block;
     position: absolute;
     bottom: 0;
-    line-height: 0;
-    transform:  translate(-.35em, -.1em) rotate(90deg);
+    left: -4px;
+    bottom: -5px;
+    background: black;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
   }
 }

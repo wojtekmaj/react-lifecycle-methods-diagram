@@ -1,12 +1,19 @@
 .Section {
   border: 1px solid rgb(106, 106, 106);
   background-color: rgb(245, 245, 245);
-
-  padding: 20px;
+  display: grid;
+  grid-template-rows: 24fr 11fr;
   z-index: -1;
 
-  &--secondary {
+  h2 {
+    margin-top: 20px;
+  }
+
+  &__highlight {
+    grid-row: 2;
     background-color: white;
+    border-top: 1px solid darkgray;
+    margin-top: 2px;
 
     h2 {
       display: none;

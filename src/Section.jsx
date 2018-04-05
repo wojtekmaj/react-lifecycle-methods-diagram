@@ -19,7 +19,7 @@ export default class Section extends Component {
       col, colspan, name,
     } = this.props;
 
-    const gridColumn = `${col * 3} / span ${colspan * 3}`;
+    const gridColumn = `${col + 1} / span ${colspan}`;
 
     return (
       <Fragment>
@@ -31,8 +31,14 @@ export default class Section extends Component {
           }}
         >
           <h2>{name}</h2>
-          <div className="Section__highlight" />
         </section>
+        <div
+          className="Section__highlight"
+          style={{
+            gridColumn,
+            gridRow: '23 / span 11',
+          }}
+        />
       </Fragment>
     );
   }

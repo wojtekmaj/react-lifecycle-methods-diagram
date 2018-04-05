@@ -22,7 +22,7 @@ export default class Phase extends Component {
       <div
         className={mergeClassNames('Phase', last && 'Phase--last')}
         style={{
-          gridColumn: '1 / span 2',
+          gridColumn: 1,
           gridRow: `${(row * 4) + 2} / ${rowspan ? `span ${rowspan * 4}` : 'auto'}`,
         }}
       >

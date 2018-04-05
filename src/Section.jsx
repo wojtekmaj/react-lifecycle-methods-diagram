@@ -1,10 +1,12 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
+import mergeClassNames from 'merge-class-names';
 
 import './Section.less';
 
 export default class Section extends Component {
   static propTypes = {
+    advanced: PropTypes.bool,
     children: PropTypes.node,
     col: PropTypes.number.isRequired,
     colspan: PropTypes.number,
@@ -17,7 +19,7 @@ export default class Section extends Component {
 
   render() {
     const {
-      children, col, colspan, name,
+      advanced, children, col, colspan, name,
     } = this.props;
 
     const gridColumn = `${col + 1} / span ${colspan}`;
@@ -25,19 +27,19 @@ export default class Section extends Component {
     return (
       <Fragment>
         <section
-          className="Section"
+          className={mergeClassNames('Section', advanced && 'Section--advanced')}
           style={{
             gridColumn,
-            gridRow: '1 / span 26',
+            gridRow: advanced ? '1 / span 26' : '1 / span 17',
           }}
         >
           <h2>{name}</h2>
         </section>
         <div
-          className="Section__highlight"
+          className={mergeClassNames('Section__highlight', advanced && 'Section__highlight--advanced')}
           style={{
             gridColumn,
-            gridRow: '19 / span 8',
+            gridRow: advanced ? '19 / span 8' : '11 / span 7',
           }}
         />
         {

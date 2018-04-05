@@ -1,0 +1,27 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+import Legend from './Legend';
+
+import Mounting from './Mounting';
+import Updating from './Updating';
+import Unmounting from './Unmounting';
+
+export default class DiagramWithLegend extends Component {
+  static propTypes = {
+    advanced: PropTypes.bool,
+  };
+
+  render() {
+    const { advanced } = this.props;
+
+    return (
+      <div className="DiagramWithLegend">
+        <Legend advanced={advanced} />
+        <Mounting advanced={advanced} />
+        <Updating advanced={advanced} />
+        <Unmounting advanced={advanced} />
+      </div>
+    );
+  }
+}

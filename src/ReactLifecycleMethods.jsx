@@ -2,20 +2,24 @@ import React, { Component } from 'react';
 
 import './ReactLifecycleMethods.less';
 
-import Legend from './Legend';
-
-import Mounting from './Mounting';
-import Updating from './Updating';
-import Unmounting from './Unmounting';
+import Options from './Options';
+import DiagramWithLegend from './DiagramWithLegend';
 
 export default class ReactLifecycleMethods extends Component {
+  state = {
+    advanced: true,
+  }
+
+  toggleAdvanced = () =>
+    this.setState(prevState => ({ advanced: !prevState.advanced }));
+
   render() {
+    const { advanced } = this.state;
+
     return (
       <div className="ReactLifecycleMethods">
-        <Legend />
-        <Mounting />
-        <Updating />
-        <Unmounting />
+        <Options advanced={advanced} toggleAdvanced={this.toggleAdvanced} />
+        <DiagramWithLegend advanced={advanced} />
       </div>
     );
   }

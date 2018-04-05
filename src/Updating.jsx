@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Section from './Section';
 import Initiator from './Initiator';
 import Method from './Method';
 import Arrow from './Arrow';
 
-const Updating = () => (
-  <Section name="Updating" col={2} colspan={3}>
+const Updating = ({ advanced }) => (advanced ? (
+  <Section advanced name="Updating" col={2} colspan={3}>
     <Initiator name="New props" row={1} />
     <Arrow from={1} to={2} />
     <Initiator name={'set\u00adState()'} col={3} row={1} />
@@ -45,6 +46,32 @@ const Updating = () => (
       row={7}
     />
   </Section>
-);
+) : (
+  <Section name="Updating" col={2} colspan={3}>
+    <Initiator name="New props" row={1} />
+    <Arrow from={1} to={2} />
+    <Initiator name={'set\u00adState()'} col={3} row={1} />
+    <Arrow col={3} from={1} to={2} />
+    <Initiator name={'force\u00adUpdate()'} col={4} row={1} />
+    <Arrow col={4} from={1} to={2} />
+    {/* render */}
+    <Arrow solid col={3} from={2} to={3} />
+    {/* React updates DOM and refs */}
+    <Arrow solid col={3} from={3} to={4} />
+    <Method
+      main
+      name="componentDidUpdate"
+      docname="componentdidupdate"
+      type="commit"
+      col={2}
+      colspan={3}
+      row={4}
+    />
+  </Section>
+));
+
+Updating.propTypes = {
+  advanced: PropTypes.bool,
+};
 
 export default Updating;

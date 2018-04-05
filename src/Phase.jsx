@@ -23,7 +23,7 @@ export default class Phase extends Component {
         className={mergeClassNames('Phase', last && 'Phase--last')}
         style={{
           gridColumn: 1,
-          gridRow: `${(row * 4) + 2} / ${rowspan ? `span ${rowspan * 4}` : 'auto'}`,
+          gridRow: `${(row * 3) + 3} / ${rowspan ? `span ${rowspan * 3}` : 'auto'}`,
         }}
       >
         <h3>“{name} phase”</h3>

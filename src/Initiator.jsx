@@ -20,7 +20,7 @@ export default class Initiator extends Component {
         className="Initiator"
         style={{
           gridColumn: col + 1,
-          gridRow: `${(row * 4) + 2} / span 3`,
+          gridRow: `${(row * 3) + 3} / span 2`,
         }}
       >
         <p>{name}</p>

@@ -28,9 +28,9 @@ export default class ReactLifecycleMethods extends Component {
         <Section name="Updating" col={2} colspan={3} />
         <Initiator name="New props" col={2} row={1} />
         <Arrow col={2} from={1} to={2} />
-        <Initiator name="setState()" col={3} row={1} />
+        <Initiator name={'set\u00adState()'} col={3} row={1} />
         <Arrow col={3} from={1} to={3} />
-        <Initiator name="forceUpdate()" col={4} row={1} />
+        <Initiator name={'force\u00adUpdate()'} col={4} row={1} />
         <Arrow col={4} from={1} to={4} />
 
         <Section name={'Un\u00admounting'} col={5} />

@@ -23,7 +23,7 @@ export default class Arrow extends Component {
         className={mergeClassNames('Arrow', solid && 'Arrow--solid', withAlt && 'Arrow--withAlt')}
         style={{
           gridColumn: col + 1,
-          gridRow: `${((from * 4) + 2 + 2)} / ${((to * 4) + 2 + 1)}`,
+          gridRow: `${((from * 3) + 2 + 3)} / ${((to * 3) + 2 + 1)}`,
         }}
       />
     );

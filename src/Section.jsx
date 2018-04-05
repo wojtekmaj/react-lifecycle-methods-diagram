@@ -27,7 +27,7 @@ export default class Section extends Component {
           className="Section"
           style={{
             gridColumn,
-            gridRow: '1 / span 33',
+            gridRow: '1 / span 26',
           }}
         >
           <h2>{name}</h2>
@@ -36,7 +36,7 @@ export default class Section extends Component {
           className="Section__highlight"
           style={{
             gridColumn,
-            gridRow: '23 / span 11',
+            gridRow: '19 / span 8',
           }}
         />
       </Fragment>

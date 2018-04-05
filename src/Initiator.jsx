@@ -5,7 +5,7 @@ import './Initiator.less';
 
 export default class Initiator extends Component {
   static propTypes = {
-    col: PropTypes.number.isRequired,
+    col: PropTypes.number,
     name: PropTypes.string.isRequired,
     row: PropTypes.number.isRequired,
   };

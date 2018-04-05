@@ -5,6 +5,7 @@ import './Section.less';
 
 export default class Section extends Component {
   static propTypes = {
+    children: PropTypes.node,
     col: PropTypes.number.isRequired,
     colspan: PropTypes.number,
     name: PropTypes.string.isRequired,
@@ -16,7 +17,7 @@ export default class Section extends Component {
 
   render() {
     const {
-      col, colspan, name,
+      children, col, colspan, name,
     } = this.props;
 
     const gridColumn = `${col + 1} / span ${colspan}`;
@@ -39,6 +40,12 @@ export default class Section extends Component {
             gridRow: '19 / span 8',
           }}
         />
+        {
+          React.Children.map(
+            children,
+            child => React.cloneElement(child, Object.assign({ col }, child.props)),
+          )
+        }
       </Fragment>
     );
   }

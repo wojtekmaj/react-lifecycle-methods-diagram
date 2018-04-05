@@ -14,6 +14,7 @@
   "rules": {
     "function-paren-newline": "off",
     "global-require": "off",
+    "import/prefer-default-export": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/label-has-for": ["error", { "required": { "some": ["id", "nesting"] }}],
     "no-plusplus": "off",

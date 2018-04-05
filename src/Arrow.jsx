@@ -6,7 +6,7 @@ import './Arrow.less';
 
 export default class Arrow extends Component {
   static propTypes = {
-    col: PropTypes.number.isRequired,
+    col: PropTypes.number,
     colspan: PropTypes.number,
     from: PropTypes.number.isRequired,
     solid: PropTypes.bool,

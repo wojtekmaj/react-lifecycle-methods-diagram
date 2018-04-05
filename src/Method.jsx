@@ -4,9 +4,11 @@ import mergeClassNames from 'merge-class-names';
 
 import './Method.less';
 
+import { splitUpperCase } from './utils';
+
 export default class Method extends Component {
   static propTypes = {
-    col: PropTypes.number.isRequired,
+    col: PropTypes.number,
     colspan: PropTypes.number,
     docname: PropTypes.string,
     main: PropTypes.bool,
@@ -39,9 +41,9 @@ export default class Method extends Component {
       >
         {docname ?
           <button onClick={this.onClick}>
-            <h3>{name}</h3>
+            <h3>{splitUpperCase(name)}</h3>
           </button> :
-          <h3>{name}</h3>
+          <h3>{splitUpperCase(name)}</h3>
         }
       </div>
     );

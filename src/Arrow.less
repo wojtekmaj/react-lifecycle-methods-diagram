@@ -1,0 +1,18 @@
+.Arrow {
+  position: relative;
+  width: 0px;
+  border-left: 1px dashed black;
+  margin: 4px auto 4px 50%;
+
+  &--solid {
+    border-left-style: solid;
+  }
+
+  &:after {
+    content: '▶';
+    position: absolute;
+    bottom: 0;
+    line-height: 0;
+    transform:  translate(-.35em, -.1em) rotate(90deg);
+  }
+}

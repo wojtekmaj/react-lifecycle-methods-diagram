@@ -1,0 +1,36 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.RLM {
+  width: 1100px;
+
+  display: grid;
+  grid-gap: 20px;
+  // Without this hack Google Chrome goes crazy. Firefox works fine. Congrats Mozilla! 👏
+  grid-auto-columns: minmax(0, auto);
+
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}

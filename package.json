@@ -1,0 +1,31 @@
+{
+  "name": "react-lifecycle-methods-diagram",
+  "version": "1.0.0",
+  "description": "Interactive React lifecycle methods diagram.",
+  "scripts": {
+    "build": "parcel build src/index.html --public-url ./",
+    "start": "parcel src/index.html"
+  },
+  "author": {
+    "name": "Wojciech Maj",
+    "email": "kontakt@wojtekmaj.pl"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "merge-class-names": "^1.1.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "less": "^3.0.1",
+    "parcel-bundler": "^1.7.0"
+  }
+}

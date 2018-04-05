@@ -1,0 +1,25 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "function-paren-newline": "off",
+    "global-require": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/label-has-for": ["error", { "required": { "some": ["id", "nesting"] }}],
+    "no-plusplus": "off",
+    "prefer-destructuring": "warn",
+    "prefer-spread": "warn",
+    "react/prefer-stateless-function": "off",
+    "react/require-default-props": "off"
+  }
+}

@@ -1,0 +1,60 @@
+.Method {
+  @vertical-padding: 8px;
+  @horizontal-padding: 10px;
+
+  margin: 0 20px;
+  padding: @vertical-padding @horizontal-padding;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  text-align: center;
+
+     -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  word-wrap: break-word;
+
+  &--main {
+    h3 {
+      font-weight: 600;
+    }
+  }
+
+  &.render {
+    background-color: rgb(217, 232, 253);
+    --border-color: rgb(109, 138, 196);
+  }
+
+  &.pre-commit {
+    background-color: rgb(255, 242, 205);
+    --border-color: rgb(206, 174, 91);
+  }
+
+  &.commit {
+    background-color: rgb(214, 231, 213);
+    --border-color: rgb(146, 185, 124);
+  }
+
+  button {
+    width: calc(100% + 2 * (@horizontal-padding + 1px));
+    height: calc(100% + 2 * (@vertical-padding + 1px));
+    margin: -(@vertical-padding + 1px) -(@horizontal-padding + 1px);
+    padding: @vertical-padding @horizontal-padding;
+
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    outline: none;
+
+    font: inherit;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      width: calc(100% + 2 * (@horizontal-padding + 2px));
+      height: calc(100% + 2 * (@vertical-padding + 2px));
+      margin: -(@vertical-padding + 2px) -(@horizontal-padding + 2px);
+
+      background-color: rgba(255, 255, 255, .5);
+      border-width: 2px;
+    }
+  }
+}

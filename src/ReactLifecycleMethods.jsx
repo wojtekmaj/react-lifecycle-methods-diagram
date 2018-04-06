@@ -7,7 +7,7 @@ import DiagramWithLegend from './DiagramWithLegend';
 
 export default class ReactLifecycleMethods extends Component {
   state = {
-    advanced: true,
+    advanced: false,
   }
 
   toggleAdvanced = () =>

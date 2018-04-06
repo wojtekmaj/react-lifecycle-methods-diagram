@@ -11,7 +11,6 @@ export default class Method extends Component {
     col: PropTypes.number,
     colspan: PropTypes.number,
     docname: PropTypes.string,
-    invisible: PropTypes.bool,
     main: PropTypes.bool,
     name: PropTypes.string.isRequired,
     row: PropTypes.number.isRequired,
@@ -24,14 +23,14 @@ export default class Method extends Component {
 
   render() {
     const {
-      col, colspan, docname, invisible, main, name, row, type,
+      col, colspan, docname, main, name, row, type,
     } = this.props;
 
     const title = splitUpperCase(name);
 
     return (
       <li
-        className={mergeClassNames('Method', invisible && 'Method--invisible', docname && 'Method--hasLink', main && 'Method--main', type)}
+        className={mergeClassNames('Method', docname && 'Method--hasLink', main && 'Method--main', type)}
         style={{
           gridColumn: `${col + 1} / span ${colspan}`,
           gridRow: `${(row * 3) + 3} / span 2`,

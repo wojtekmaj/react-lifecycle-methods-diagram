@@ -16,7 +16,6 @@ const Updating = ({ advanced }) => (advanced ? (
       />
       <Arrow />
       <Method
-        invisible
         name="getDerivedStateFromProps"
         docname="static-getderivedstatefromprops"
         type="render"
@@ -35,7 +34,6 @@ const Updating = ({ advanced }) => (advanced ? (
       <Arrow withAlt colspan={2} />
       <Method
         main
-        invisible
         name="render"
         docname="render"
         type="render"
@@ -53,10 +51,11 @@ const Updating = ({ advanced }) => (advanced ? (
       />
       <Arrow solid col={3} />
       <Method
-        invisible
         name="React updates DOM and refs"
         type="pre-commit"
+        col={1}
         row={6}
+        colspan={4}
       />
       <Arrow solid col={3} />
       <Method
@@ -77,7 +76,6 @@ const Updating = ({ advanced }) => (advanced ? (
       />
       <Arrow />
       <Method
-        invisible
         name="shouldComponentUpdate"
         docname="shouldcomponentupdate"
         type="render"
@@ -87,7 +85,6 @@ const Updating = ({ advanced }) => (advanced ? (
       />
       <Method
         main
-        invisible
         name="render"
         docname="render"
         type="render"
@@ -96,7 +93,6 @@ const Updating = ({ advanced }) => (advanced ? (
         colspan={4}
       />
       <Method
-        invisible
         name="getSnapshotBeforeUpdate"
         docname="getsnapshotbeforeupdate"
         type="pre-commit"
@@ -105,14 +101,14 @@ const Updating = ({ advanced }) => (advanced ? (
         colspan={3}
       />
       <Method
-        invisible
         name="React updates DOM and refs"
         type="pre-commit"
+        col={1}
         row={6}
+        colspan={4}
       />
       <Method
         main
-        invisible
         name="componentDidUpdate"
         docname="componentdidupdate"
         type="commit"
@@ -131,7 +127,6 @@ const Updating = ({ advanced }) => (advanced ? (
       <Arrow />
       <Method
         main
-        invisible
         name="render"
         docname="render"
         type="render"
@@ -140,7 +135,6 @@ const Updating = ({ advanced }) => (advanced ? (
         colspan={4}
       />
       <Method
-        invisible
         name="getSnapshotBeforeUpdate"
         docname="getsnapshotbeforeupdate"
         type="pre-commit"
@@ -149,14 +143,14 @@ const Updating = ({ advanced }) => (advanced ? (
         colspan={3}
       />
       <Method
-        invisible
         name="React updates DOM and refs"
         type="pre-commit"
+        col={1}
         row={6}
+        colspan={4}
       />
       <Method
         main
-        invisible
         name="componentDidUpdate"
         docname="componentdidupdate"
         type="commit"
@@ -176,7 +170,6 @@ const Updating = ({ advanced }) => (advanced ? (
       <Arrow />
       <Method
         main
-        invisible
         name="render"
         docname="render"
         type="render"
@@ -186,10 +179,11 @@ const Updating = ({ advanced }) => (advanced ? (
       />
       <Arrow col={3} />
       <Method
-        invisible
         name="React updates DOM and refs"
         type="pre-commit"
+        col={1}
         row={3}
+        colspan={4}
       />
       <Arrow solid col={3} />
       <Method
@@ -211,7 +205,6 @@ const Updating = ({ advanced }) => (advanced ? (
       <Arrow />
       <Method
         main
-        invisible
         name="render"
         docname="render"
         type="render"
@@ -220,14 +213,14 @@ const Updating = ({ advanced }) => (advanced ? (
         colspan={4}
       />
       <Method
-        invisible
         name="React updates DOM and refs"
         type="pre-commit"
+        col={1}
         row={3}
+        colspan={4}
       />
       <Method
         main
-        invisible
         name="componentDidUpdate"
         docname="componentdidupdate"
         type="commit"
@@ -246,7 +239,6 @@ const Updating = ({ advanced }) => (advanced ? (
       <Arrow />
       <Method
         main
-        invisible
         name="render"
         docname="render"
         type="render"
@@ -255,14 +247,14 @@ const Updating = ({ advanced }) => (advanced ? (
         colspan={4}
       />
       <Method
-        invisible
         name="React updates DOM and refs"
         type="pre-commit"
+        col={1}
         row={3}
+        colspan={4}
       />
       <Method
         main
-        invisible
         name="componentDidUpdate"
         docname="componentdidupdate"
         type="commit"

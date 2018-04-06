@@ -4,40 +4,10 @@ import mergeClassNames from 'merge-class-names';
 
 import './Section.less';
 
-import Arrow from './Arrow';
+import Subsection from './Subsection';
 
-/**
- * Fills props automatically for certain children types. For example, if <Arrow />
- * is put between two other <Method />s, then the arrow will automatically stretch
- * between these two.
- * @param {*} child
- * @param {*} children
- */
-const autoFillProps = (child, children) => {
-  if (!child) {
-    return null;
-  }
-
-  const props = {};
-  const index = children.indexOf(child);
-
-  switch (child.type) {
-    case Arrow: {
-      if (typeof child.props.from === 'undefined') {
-        const previousChild = children[index - 1];
-        props.from = previousChild ? previousChild.props.row : 0;
-      }
-      if (typeof child.props.to === 'undefined') {
-        const nextChild = children[index + 1];
-        props.to = nextChild ? nextChild.props.row : 1;
-      }
-      break;
-    }
-    default:
-      break;
-  }
-  return props;
-};
+import Method from './Method';
+import Initiator from './Initiator';
 
 export default class Section extends Component {
   static propTypes = {
@@ -53,18 +23,15 @@ export default class Section extends Component {
   }
 
   renderChildren() {
-    const { children, col } = this.props;
+    const { children } = this.props;
 
-    return React.Children.map(
-      children,
-      child => React.cloneElement(
-        child,
-        Object.assign(
-          { col },
-          autoFillProps(child, children),
-          child.props,
-        ),
-      ),
+    // If we're creating a section containing subsections, we don't need to create one.
+    if (!children.find(el => el.type === Method || el.type === Initiator)) {
+      return children;
+    }
+
+    return (
+      <Subsection {...this.props} />
     );
   }
 

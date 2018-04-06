@@ -1,4 +1,3 @@
-
 const isUppercase = letter => /[A-Z]/.test(letter);
 
 // Splits camelCase with ZWJ characters to help with line breaking

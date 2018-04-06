@@ -175,7 +175,7 @@ const Updating = ({ advanced }) => (advanced ? (
       row={2}
       colspan={4}
     />
-    <Arrow solid col={3} />
+    <Arrow col={3} />
     <Method
       invisible
       name="React updates DOM and refs"

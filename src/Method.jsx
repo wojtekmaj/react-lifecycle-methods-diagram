@@ -11,6 +11,7 @@ export default class Method extends Component {
     col: PropTypes.number,
     colspan: PropTypes.number,
     docname: PropTypes.string,
+    invisible: PropTypes.bool,
     main: PropTypes.bool,
     name: PropTypes.string.isRequired,
     row: PropTypes.number.isRequired,
@@ -28,8 +29,14 @@ export default class Method extends Component {
 
   render() {
     const {
-      col, colspan, docname, main, name, row, type,
+      col, colspan, docname, invisible, main, name, row, type,
     } = this.props;
+
+    if (invisible) {
+      return null;
+    }
+
+    const title = (<h3>{splitUpperCase(name)}</h3>);
 
     return (
       <div
@@ -41,9 +48,9 @@ export default class Method extends Component {
       >
         {docname ?
           <button onClick={this.onClick}>
-            <h3>{splitUpperCase(name)}</h3>
+            {title}
           </button> :
-          <h3>{splitUpperCase(name)}</h3>
+          title
         }
       </div>
     );

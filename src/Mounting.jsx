@@ -7,7 +7,7 @@ import Arrow from './Arrow';
 
 const Mounting = ({ advanced }) => (advanced ? (
   <Section advanced name="Mounting" col={1}>
-    <Arrow from={0} to={1} />
+    <Arrow />
     <Method
       main
       name="constructor"
@@ -15,7 +15,7 @@ const Mounting = ({ advanced }) => (advanced ? (
       type="render"
       row={1}
     />
-    <Arrow from={1} to={2} />
+    <Arrow />
     <Method
       name="getDerivedStateFromProps"
       docname="static-getderivedstatefromprops"
@@ -23,7 +23,7 @@ const Mounting = ({ advanced }) => (advanced ? (
       row={2}
       colspan={2}
     />
-    <Arrow from={2} to={4} />
+    <Arrow />
     <Method
       main
       name="render"
@@ -32,14 +32,14 @@ const Mounting = ({ advanced }) => (advanced ? (
       row={4}
       colspan={4}
     />
-    <Arrow from={4} to={6} />
+    <Arrow />
     <Method
       name="React updates DOM and refs"
       type="pre-commit"
       row={6}
       colspan={4}
     />
-    <Arrow solid from={6} to={7} />
+    <Arrow solid />
     <Method
       main
       name="componentDidMount"
@@ -50,7 +50,7 @@ const Mounting = ({ advanced }) => (advanced ? (
   </Section>
 ) : (
   <Section name="Mounting" col={1}>
-    <Arrow from={0} to={1} />
+    <Arrow />
     <Method
       main
       name="constructor"
@@ -58,7 +58,7 @@ const Mounting = ({ advanced }) => (advanced ? (
       type="render"
       row={1}
     />
-    <Arrow from={1} to={2} />
+    <Arrow />
     <Method
       main
       name="render"
@@ -67,14 +67,14 @@ const Mounting = ({ advanced }) => (advanced ? (
       row={2}
       colspan={4}
     />
-    <Arrow from={2} to={3} />
+    <Arrow />
     <Method
       name="React updates DOM and refs"
       type="pre-commit"
       row={3}
       colspan={4}
     />
-    <Arrow solid from={3} to={4} />
+    <Arrow solid />
     <Method
       main
       name="componentDidMount"

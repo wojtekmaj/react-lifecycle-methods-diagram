@@ -8,9 +8,9 @@ export default class Arrow extends Component {
   static propTypes = {
     col: PropTypes.number,
     colspan: PropTypes.number,
-    from: PropTypes.number.isRequired,
+    from: PropTypes.number,
     solid: PropTypes.bool,
-    to: PropTypes.number.isRequired,
+    to: PropTypes.number,
     withAlt: PropTypes.bool,
   };
 

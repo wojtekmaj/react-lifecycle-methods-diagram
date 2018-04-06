@@ -11,13 +11,12 @@ const Unmounting = ({ advanced }) => (
     name={'Un\u00admounting'}
     col={5}
   >
-    <Arrow col={5} from={0} to={advanced ? 7 : 4} />
+    <Arrow />
     <Method
       main
       name="componentWillUnmount"
       docname="componentwillunmount"
       type="commit"
-      col={5}
       row={advanced ? 7 : 4}
     />
   </Section>

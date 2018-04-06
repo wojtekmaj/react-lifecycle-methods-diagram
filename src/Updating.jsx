@@ -9,13 +9,19 @@ import Arrow from './Arrow';
 const Updating = ({ advanced }) => (advanced ? (
   <Section advanced name="Updating" col={2} colspan={3}>
     <Initiator name="New props" row={1} />
-    <Arrow from={1} to={2} />
+    <Arrow to={2} />
     <Initiator name={'set\u00adState()'} col={3} row={1} />
-    <Arrow col={3} from={1} to={3} />
+    <Arrow col={3} to={3} />
     <Initiator name={'force\u00adUpdate()'} col={4} row={1} />
-    <Arrow col={4} from={1} to={4} />
-    {/* getDerivedStateFromProps */}
-    <Arrow from={2} to={3} />
+    <Arrow col={4} to={4} />
+    <Method
+      invisible
+      name="getDerivedStateFromProps"
+      docname="static-getderivedstatefromprops"
+      type="render"
+      row={2}
+    />
+    <Arrow />
     <Method
       name="shouldComponentUpdate"
       docname="shouldcomponentupdate"
@@ -23,11 +29,15 @@ const Updating = ({ advanced }) => (advanced ? (
       row={3}
       colspan={2}
     />
-    <Arrow withAlt colspan={2} from={3} to={4} />
-    {/* render */}
-    <Arrow solid col={3} from={5} to={6} />
-    {/* React updates DOM and refs */}
-    <Arrow col={3} from={4} to={5} />
+    <Arrow withAlt colspan={2} />
+    <Method
+      invisible
+      name="render"
+      docname="render"
+      type="render"
+      row={4}
+    />
+    <Arrow col={3} />
     <Method
       name="getSnapshotBeforeUpdate"
       docname="getsnapshotbeforeupdate"
@@ -35,7 +45,14 @@ const Updating = ({ advanced }) => (advanced ? (
       row={5}
       colspan={3}
     />
-    <Arrow solid col={3} from={6} to={7} />
+    <Arrow solid col={3} />
+    <Method
+      invisible
+      name="React updates DOM and refs"
+      type="pre-commit"
+      row={6}
+    />
+    <Arrow solid col={3} />
     <Method
       main
       name="componentDidUpdate"
@@ -49,15 +66,26 @@ const Updating = ({ advanced }) => (advanced ? (
 ) : (
   <Section name="Updating" col={2} colspan={3}>
     <Initiator name="New props" row={1} />
-    <Arrow from={1} to={2} />
+    <Arrow to={2} />
     <Initiator name={'set\u00adState()'} col={3} row={1} />
-    <Arrow col={3} from={1} to={2} />
+    <Arrow col={3} to={2} />
     <Initiator name={'force\u00adUpdate()'} col={4} row={1} />
-    <Arrow col={4} from={1} to={2} />
-    {/* render */}
-    <Arrow solid col={3} from={2} to={3} />
-    {/* React updates DOM and refs */}
-    <Arrow solid col={3} from={3} to={4} />
+    <Arrow col={4} to={2} />
+    <Method
+      invisible
+      name="render"
+      docname="render"
+      type="render"
+      row={2}
+    />
+    <Arrow solid col={3} />
+    <Method
+      invisible
+      name="React updates DOM and refs"
+      type="pre-commit"
+      row={3}
+    />
+    <Arrow solid col={3} />
     <Method
       main
       name="componentDidUpdate"

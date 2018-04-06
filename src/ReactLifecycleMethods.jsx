@@ -32,6 +32,7 @@ export default class ReactLifecycleMethods extends Component {
       try {
         localStorage.showAdvanced = !prevState.advanced;
       } catch (err) {
+        // eslint-disable-next-line no-console
         console.error('Failed to safe setting.');
       }
       return { advanced: !prevState.advanced };

@@ -3,17 +3,22 @@ import PropTypes from 'prop-types';
 
 import './Initiator.less';
 
+import { splitUpperCase } from './utils';
+
 export default class Initiator extends Component {
   static propTypes = {
     col: PropTypes.number,
+    docname: PropTypes.string,
     name: PropTypes.string.isRequired,
     row: PropTypes.number.isRequired,
   };
 
   render() {
     const {
-      col, name, row,
+      col, docname, name, row,
     } = this.props;
+
+    const title = splitUpperCase(name);
 
     return (
       <div
@@ -23,7 +28,18 @@ export default class Initiator extends Component {
           gridRow: `${(row * 3) + 3} / span 2`,
         }}
       >
-        <p>{name}</p>
+        <h3>
+          {docname ?
+            <a
+              href={`https://reactjs.org/docs/react-component.html#${docname}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {title}
+            </a> :
+            <span>{title}</span>
+          }
+        </h3>
       </div>
     );
   }

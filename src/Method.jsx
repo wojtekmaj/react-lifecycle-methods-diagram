@@ -22,37 +22,32 @@ export default class Method extends Component {
     colspan: 1,
   }
 
-  onClick = () => {
-    const { docname } = this.props;
-    window.open(`https://reactjs.org/docs/react-component.html#${docname}`, '_blank');
-  }
-
   render() {
     const {
       col, colspan, docname, invisible, main, name, row, type,
     } = this.props;
 
-    if (invisible) {
-      return null;
-    }
-
-    const title = (<h3>{splitUpperCase(name)}</h3>);
+    const title = splitUpperCase(name);
 
     return (
-      <div
-        className={mergeClassNames('Method', main && 'Method--main', type)}
+      <li
+        className={mergeClassNames('Method', invisible && 'Method--invisible', docname && 'Method--hasLink', main && 'Method--main', type)}
         style={{
           gridColumn: `${col + 1} / span ${colspan}`,
           gridRow: `${(row * 3) + 3} / span 2`,
         }}
       >
         {docname ?
-          <button onClick={this.onClick}>
+          <a
+            href={`https://reactjs.org/docs/react-component.html#${docname}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {title}
-          </button> :
-          title
+          </a> :
+          <span>{title}</span>
         }
-      </div>
+      </li>
     );
   }
 }

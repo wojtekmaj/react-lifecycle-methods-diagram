@@ -8,11 +8,18 @@ import ForkMe from './ForkMe';
 
 export default class ReactLifecycleMethods extends Component {
   state = {
-    advanced: false,
+    advanced: localStorage.showAdvanced ? localStorage.showAdvanced === 'true' : false,
   };
 
   toggleAdvanced = () =>
-    this.setState(prevState => ({ advanced: !prevState.advanced }));
+    this.setState((prevState) => {
+      try {
+        localStorage.showAdvanced = !prevState.advanced;
+      } catch (err) {
+        console.error('Failed to safe setting.');
+      }
+      return { advanced: !prevState.advanced };
+    });
 
   render() {
     const { advanced } = this.state;

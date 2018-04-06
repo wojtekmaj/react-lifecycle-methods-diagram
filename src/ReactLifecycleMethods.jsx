@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Options from './Options';
 import DiagramWithLegend from './DiagramWithLegend';
-import ForkMe from './ForkMe';
+import GitHub from './GitHub';
 
 /**
  * Workaround for Google Chrome bug that causes grid to jump when hovered
@@ -46,7 +46,7 @@ export default class ReactLifecycleMethods extends Component {
       >
         <Options advanced={advanced} toggleAdvanced={this.toggleAdvanced} />
         <DiagramWithLegend advanced={advanced} />
-        <ForkMe />
+        <GitHub />
       </div>
     );
   }

@@ -1,11 +1,24 @@
 .Options {
-  max-width: 220px;
+  margin: 30px auto 30px;
   border: 0;
-  margin: 0 auto 20px;
-  padding: 0;
+  padding: 0 0 0 calc(90px + 5vw);
   font-size: 24px;
+  text-align: center;
 
   legend {
     display: none;
+  }
+
+  label {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  @media screen and (max-width: 780px) {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 80px 0 0;
+    text-align: left;
   }
 }

@@ -218,6 +218,7 @@ const Updating = ({ advanced }) => (advanced ? (
       row={3}
     />
     <Method
+      main
       invisible
       name="componentDidUpdate"
       docname="componentdidupdate"
@@ -252,6 +253,7 @@ const Updating = ({ advanced }) => (advanced ? (
       row={3}
     />
     <Method
+      main
       invisible
       name="componentDidUpdate"
       docname="componentdidupdate"

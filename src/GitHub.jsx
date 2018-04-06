@@ -1,15 +1,13 @@
 import React from 'react';
 
+import './GitHub.less';
+
 const GitHub = () => (
   <a
+    className="GitHub"
     href="https://github.com/wojtekmaj/react-lifecycle-methods-diagram"
     target="_blank"
     rel="noopener noreferrer"
-    style={{
-      position: 'absolute',
-      top: '26px',
-      right: '20px',
-    }}
   >
     GitHub
     <svg

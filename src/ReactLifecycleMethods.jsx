@@ -4,11 +4,12 @@ import './ReactLifecycleMethods.less';
 
 import Options from './Options';
 import DiagramWithLegend from './DiagramWithLegend';
+import ForkMe from './ForkMe';
 
 export default class ReactLifecycleMethods extends Component {
   state = {
     advanced: false,
-  }
+  };
 
   toggleAdvanced = () =>
     this.setState(prevState => ({ advanced: !prevState.advanced }));
@@ -37,6 +38,7 @@ export default class ReactLifecycleMethods extends Component {
       >
         <Options advanced={advanced} toggleAdvanced={this.toggleAdvanced} />
         <DiagramWithLegend advanced={advanced} />
+        <ForkMe />
       </div>
     );
   }

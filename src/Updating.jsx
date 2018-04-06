@@ -51,6 +51,7 @@ const Updating = ({ advanced }) => (advanced ? (
       />
       <Arrow solid col={3} />
       <Method
+        secondary
         name="React updates DOM and refs"
         type="pre-commit"
         col={1}
@@ -101,6 +102,7 @@ const Updating = ({ advanced }) => (advanced ? (
         colspan={3}
       />
       <Method
+        secondary
         name="React updates DOM and refs"
         type="pre-commit"
         col={1}
@@ -143,6 +145,7 @@ const Updating = ({ advanced }) => (advanced ? (
         colspan={3}
       />
       <Method
+        secondary
         name="React updates DOM and refs"
         type="pre-commit"
         col={1}
@@ -179,6 +182,7 @@ const Updating = ({ advanced }) => (advanced ? (
       />
       <Arrow col={3} />
       <Method
+        secondary
         name="React updates DOM and refs"
         type="pre-commit"
         col={1}
@@ -213,6 +217,7 @@ const Updating = ({ advanced }) => (advanced ? (
         colspan={4}
       />
       <Method
+        secondary
         name="React updates DOM and refs"
         type="pre-commit"
         col={1}
@@ -247,6 +252,7 @@ const Updating = ({ advanced }) => (advanced ? (
         colspan={4}
       />
       <Method
+        secondary
         name="React updates DOM and refs"
         type="pre-commit"
         col={1}

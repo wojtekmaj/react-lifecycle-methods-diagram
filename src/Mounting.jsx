@@ -34,6 +34,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     />
     <Arrow />
     <Method
+      secondary
       name="React updates DOM and refs"
       type="pre-commit"
       row={6}
@@ -69,6 +70,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     />
     <Arrow />
     <Method
+      secondary
       name="React updates DOM and refs"
       type="pre-commit"
       row={3}

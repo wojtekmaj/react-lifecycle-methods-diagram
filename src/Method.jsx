@@ -14,6 +14,7 @@ export default class Method extends Component {
     main: PropTypes.bool,
     name: PropTypes.string.isRequired,
     row: PropTypes.number.isRequired,
+    secondary: PropTypes.bool,
     type: PropTypes.oneOf(['render', 'pre-commit', 'commit']),
   };
 
@@ -23,14 +24,14 @@ export default class Method extends Component {
 
   render() {
     const {
-      col, colspan, docname, main, name, row, type,
+      col, colspan, docname, main, name, row, secondary, type,
     } = this.props;
 
     const title = splitUpperCase(name);
 
     return (
       <li
-        className={mergeClassNames('Method', docname && 'Method--hasLink', main && 'Method--main', type)}
+        className={mergeClassNames('Method', docname && 'Method--hasLink', main && 'Method--main', secondary && 'Method--secondary', type)}
         style={{
           gridColumn: `${col + 1} / span ${colspan}`,
           gridRow: `${(row * 3) + 3} / span 2`,

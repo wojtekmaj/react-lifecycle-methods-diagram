@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import './DiagramWithLegend.less';
+
 import Legend from './Legend';
 
 import Mounting from './Mounting';

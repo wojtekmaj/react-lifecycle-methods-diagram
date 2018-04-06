@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import './ReactLifecycleMethods.less';
-
 import Options from './Options';
 import DiagramWithLegend from './DiagramWithLegend';
 import ForkMe from './ForkMe';

@@ -41,6 +41,7 @@ export default class Method extends Component {
             href={`https://reactjs.org/docs/react-component.html#${docname}`}
             target="_blank"
             rel="noopener noreferrer"
+            title={`Read docs for ${name} (opens in a new tab)`}
           >
             {title}
           </a> :

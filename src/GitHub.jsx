@@ -8,6 +8,7 @@ const GitHub = () => (
     href="https://github.com/wojtekmaj/react-lifecycle-methods-diagram"
     target="_blank"
     rel="noopener noreferrer"
+    title="See project's page on GitHub (opens in a new tab)"
   >
     GitHub
     <svg

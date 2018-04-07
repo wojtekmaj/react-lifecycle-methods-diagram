@@ -38,6 +38,8 @@ export const autoFillProps = (child, children) => {
   return props;
 };
 
+const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
 export default class Subsection extends Component {
   static propTypes = {
     children: PropTypes.node,
@@ -59,7 +61,8 @@ export default class Subsection extends Component {
       ),
     );
 
-    if (!CSS.supports('display: contents')) {
+    // iOS fails to render display: contents properly despite reporting so
+    if (iOS || !CSS.supports('display: contents')) {
       return mappedChildren;
     }
 

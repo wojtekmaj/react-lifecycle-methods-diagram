@@ -10,21 +10,23 @@ body {
   hyphens: auto;
 }
 
+.hidden {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+}
+
 p {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
   font-weight: 300;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-}
-
-h3 {
-  font-size: 16px;
+h1 {
+  .hidden;
 }

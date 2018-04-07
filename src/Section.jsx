@@ -51,7 +51,7 @@ export default class Section extends Component {
             gridRow: advanced ? '1 / span 26' : '1 / span 17',
           }}
         >
-          <h2>{name}</h2>
+          <h3>{name}</h3>
         </section>
         <div
           className={mergeClassNames('Section__highlight', advanced && 'Section__highlight--advanced')}

@@ -44,6 +44,7 @@ export default class ReactLifecycleMethods extends Component {
         className="ReactLifecycleMethods"
         ref={ref => fixChromeGridSizingBug(ref)}
       >
+        <h1>React lifecycle methods diagram</h1>
         <Options advanced={advanced} toggleAdvanced={this.toggleAdvanced} />
         <DiagramWithLegend advanced={advanced} />
         <GitHub />

@@ -28,7 +28,7 @@ export default class Initiator extends Component {
           gridRow: `${(row * 3) + 3} / span 2`,
         }}
       >
-        <h3>
+        <h4>
           {docname ?
             <a
               href={`https://reactjs.org/docs/react-component.html#${docname}`}
@@ -40,7 +40,7 @@ export default class Initiator extends Component {
             </a> :
             <span>{title}</span>
           }
-        </h3>
+        </h4>
       </div>
     );
   }

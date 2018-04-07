@@ -5,6 +5,7 @@ import Phase from './Phase';
 
 const Legend = ({ advanced }) => (advanced ? (
   <Fragment>
+    <h2 className="hidden">Phases</h2>
     <Phase name="Render" row={1} rowspan={4}>
       Pure and has no side effects. May be paused, aborted or restarted by React.
     </Phase>
@@ -17,6 +18,7 @@ const Legend = ({ advanced }) => (advanced ? (
   </Fragment>
 ) : (
   <Fragment>
+    <h2 className="hidden">Phases</h2>
     <Phase name="Render" row={1} rowspan={2}>
       Pure and has no side effects. May be paused, aborted or restarted by React.
     </Phase>

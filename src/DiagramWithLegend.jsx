@@ -20,6 +20,7 @@ export default class DiagramWithLegend extends Component {
     return (
       <div className="DiagramWithLegend">
         <Legend advanced={advanced} />
+        <h2 className="hidden">Component lifecycle</h2>
         <Mounting advanced={advanced} />
         <Updating advanced={advanced} />
         <Unmounting advanced={advanced} />

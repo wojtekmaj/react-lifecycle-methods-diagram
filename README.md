@@ -6,6 +6,12 @@ I did my best to make the diagram fully accessibile, both for keyboard navigatio
 
 [Online version](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) is also available!
 
+## How to use the diagram
+
+* Click any method name to read its official documentation (opens in a new tab).
+* Methods in **bold** are the most common ones.
+* Actions that are not methods, but otherwise help reading the diagram, are in *italics*.
+
 ## Collaboration
 
 You are welcome to raise issues and create pull requests.

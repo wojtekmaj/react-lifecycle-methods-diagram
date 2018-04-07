@@ -5,8 +5,12 @@ import Section from './diagramElements/Section';
 import Method from './diagramElements/Method';
 import Arrow from './diagramElements/Arrow';
 
-const Mounting = ({ advanced }) => (advanced ? (
-  <Section advanced name="Mounting" col={1}>
+const Mounting = props => (props.advanced ? (
+  <Section
+    {...props}
+    name="Mounting"
+    col={1}
+  >
     <Arrow />
     <Method
       main
@@ -50,7 +54,11 @@ const Mounting = ({ advanced }) => (advanced ? (
     />
   </Section>
 ) : (
-  <Section name="Mounting" col={1}>
+  <Section
+    {...props}
+    name="Mounting"
+    col={1}
+  >
     <Arrow />
     <Method
       main

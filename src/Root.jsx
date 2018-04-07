@@ -9,15 +9,24 @@ import GitHub from './GitHub';
  * after each rerender. Seems like Chrome can't figure out proper sizes until
  * we give it width explicitly.
  */
-const fixChromeGridSizingBug = (ref) => {
-  if (!ref) { return; }
+export const fixChromeGridSizingBug = (ref) => {
+  if (!ref || !window.chrome) { return; }
+
+  /* eslint-disable no-param-reassign */
   requestAnimationFrame(() => {
-    /* eslint-disable no-param-reassign */
     ref.style.width = `${ref.clientWidth}px`;
     requestAnimationFrame(() => {
-      ref.style.width = null;
+      ref.style.width = `${ref.clientWidth - 1}px`;
+      requestAnimationFrame(() => {
+        ref.style.width = null;
+      });
     });
   });
+
+  if (!ref.listenerAdded) {
+    ref.addEventListener('DOMNodeInserted', () => fixChromeGridSizingBug(ref));
+    ref.listenerAdded = true;
+  }
 };
 
 export default class Root extends Component {

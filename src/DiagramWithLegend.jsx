@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import './DiagramWithLegend.less';
 
 import Legend from './Legend';
-
 import Diagram from './Diagram';
 
 export default class DiagramWithLegend extends Component {

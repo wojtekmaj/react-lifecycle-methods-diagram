@@ -12,13 +12,17 @@ import Arrow from './Arrow';
  * @param {*} child
  * @param {*} children
  */
-export const autoFillProps = (child, children) => {
+export const autoFillProps = (child, children, parentProps) => {
   if (!child) {
     return null;
   }
 
   const props = {};
   const index = children.indexOf(child);
+
+  if (typeof child.props.col === 'undefined') {
+    props.col = parentProps.col;
+  }
 
   switch (child.type) {
     case Arrow: {
@@ -29,6 +33,31 @@ export const autoFillProps = (child, children) => {
       if (typeof child.props.to === 'undefined') {
         const nextChild = children[index + 1];
         props.to = nextChild ? nextChild.props.row : 1;
+      }
+      break;
+    }
+    case Method: {
+      // On mobile devices, only one column is shown, so we have to remove the overlaps
+      if (parentProps.layout === 'mobile') {
+        const col = props.col || child.props.col;
+        if (col < parentProps.sectionCol) {
+          props.col = parentProps.sectionCol;
+          props.colspan -= parentProps.sectionCol - col;
+        }
+        if (
+          (props.col || col) + (props.colspan || child.props.colspan) >
+          parentProps.sectionCol + parentProps.colspan
+        ) {
+          props.colspan = (parentProps.sectionCol + parentProps.colspan) - (props.col || col);
+        }
+      }
+
+      // Helps with grid alignment
+      if (
+        (props.col || child.props.col) + (props.colspan || child.props.colspan) <
+        parentProps.sectionCol + parentProps.colspan
+      ) {
+        props.endsInMiddle = true;
       }
       break;
     }
@@ -44,19 +73,26 @@ export default class Subsection extends Component {
   static propTypes = {
     children: PropTypes.node,
     col: PropTypes.number.isRequired,
+    colspan: PropTypes.number,
+    layout: PropTypes.oneOf(['desktop', 'mobile']),
+    sectionCol: PropTypes.number,
   };
 
   render() {
-    const { children, col } = this.props;
+    const {
+      children, col, colspan, layout, sectionCol,
+    } = this.props;
 
     const mappedChildren = React.Children.map(
       children,
       child => React.cloneElement(
         child,
         Object.assign(
-          { col },
-          autoFillProps(child, children),
+          {},
           child.props,
+          autoFillProps(child, children, {
+            col, colspan, layout, sectionCol,
+          }),
         ),
       ),
     );

@@ -4,10 +4,13 @@ import mergeClassNames from 'merge-class-names';
 
 import './Phase.less';
 
-export default class Phase extends Component {
+import { Consumer } from '../LayoutWatcher';
+
+export class PhaseInternal extends Component {
   static propTypes = {
     children: PropTypes.string.isRequired,
     last: PropTypes.bool,
+    layout: PropTypes.oneOf(['desktop', 'mobile']),
     name: PropTypes.string.isRequired,
     row: PropTypes.number.isRequired,
     rowspan: PropTypes.number,
@@ -15,12 +18,16 @@ export default class Phase extends Component {
 
   render() {
     const {
-      children, last, name, row, rowspan,
+      children, last, layout, name, row, rowspan,
     } = this.props;
 
     return (
       <div
-        className={mergeClassNames('Phase', last && 'Phase--last')}
+        className={mergeClassNames(
+          'Phase',
+          last && 'Phase--last',
+          `Phase--${layout}`,
+        )}
         style={{
           gridColumn: 1,
           gridRow: `${row * 3} / ${rowspan ? `span ${rowspan * 3}` : 'auto'}`,
@@ -32,3 +39,9 @@ export default class Phase extends Component {
     );
   }
 }
+
+export default props => (
+  <Consumer>
+    {layout => <PhaseInternal layout={layout} {...props} />}
+  </Consumer>
+);

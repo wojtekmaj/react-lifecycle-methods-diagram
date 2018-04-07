@@ -7,8 +7,13 @@ import Initiator from './diagramElements/Initiator';
 import Method from './diagramElements/Method';
 import Arrow from './diagramElements/Arrow';
 
-const Updating = ({ advanced }) => (advanced ? (
-  <Section advanced name="Updating" col={2} colspan={3}>
+const Updating = props => (props.advanced ? (
+  <Section
+    {...props}
+    name="Updating"
+    col={2}
+    colspan={3}
+  >
     <Subsection col={2}>
       <Initiator
         secondary
@@ -165,7 +170,12 @@ const Updating = ({ advanced }) => (advanced ? (
     </Subsection>
   </Section>
 ) : (
-  <Section name="Updating" col={2} colspan={3}>
+  <Section
+    {...props}
+    name="Updating"
+    col={2}
+    colspan={3}
+  >
     <Subsection col={2}>
       <Initiator
         secondary

@@ -15,7 +15,10 @@ export default class Section extends Component {
     children: PropTypes.node,
     col: PropTypes.number.isRequired,
     colspan: PropTypes.number,
+    isOpened: PropTypes.bool,
+    layout: PropTypes.oneOf(['desktop', 'mobile']),
     name: PropTypes.string.isRequired,
+    open: PropTypes.func,
   };
 
   static defaultProps = {
@@ -23,49 +26,84 @@ export default class Section extends Component {
   }
 
   renderChildren() {
-    const { children } = this.props;
+    const { children, isOpened } = this.props;
+
+    if (!isOpened) {
+      return null;
+    }
 
     // If we're creating a section containing subsections, we don't need to create one.
     if (!children.find(el => el.type === Method || el.type === Initiator)) {
-      return children;
+      return React.Children.map(
+        children,
+        child =>
+          React.cloneElement(
+            child,
+            Object.assign(
+              { sectionCol: this.props.col },
+              this.props,
+              child.props,
+            ),
+          ),
+      );
     }
 
     return (
-      <Subsection {...this.props} />
+      <Subsection sectionCol={this.props.col} {...this.props} />
     );
   }
 
   render() {
     const {
-      advanced, col, colspan, name,
+      advanced, col, colspan, isOpened, layout, name,
     } = this.props;
 
-    const gridColumn = `${col + 1} / span ${colspan}`;
+    const gridColumn = `${col + 1} / span ${isOpened ? colspan : 1}`;
 
     return (
       <Fragment>
         <section
-          className={mergeClassNames('Section', advanced && 'Section--advanced')}
+          className={mergeClassNames(
+            'Section',
+            isOpened ? 'Section--open' : 'Section--closed',
+            advanced && 'Section--advanced',
+            `Section--${layout}`,
+          )}
           style={{
             gridColumn,
             gridRow: advanced ? '1 / span 23' : '1 / span 14',
           }}
         />
-        <div
-          className={mergeClassNames('Section__highlight', advanced && 'Section__highlight--advanced')}
-          style={{
-            gridColumn,
-            gridRow: advanced ? '16 / span 8' : '8 / span 7',
-          }}
-        />
+        {
+          isOpened && (
+            <div
+              className={mergeClassNames(
+                'Section__highlight',
+                advanced && 'Section__highlight--advanced',
+              )}
+              style={{
+                gridColumn,
+                gridRow: advanced ? '16 / span 8' : '8 / span 7',
+              }}
+            />
+        )}
         <h3
-          className="Section__title"
+          className={mergeClassNames(
+            'Section__title',
+            isOpened ? 'Section__title--open' : 'Section__title--closed',
+          )}
           style={{
             gridColumn,
             gridRow: 1,
           }}
         >
-          {name}
+          {
+            isOpened ?
+              name :
+              <a href="#" onClick={this.props.open}>
+                {name}
+              </a>
+          }
         </h3>
         {this.renderChildren()}
       </Fragment>

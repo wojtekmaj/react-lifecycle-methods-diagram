@@ -1,9 +1,14 @@
 .Phase {
+  max-width: 130px;
   margin-top: -10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+  &--mobile {
+    width: 125px;
+  }
 
   &:not(&--last) {
     border-bottom: 2px dotted black;

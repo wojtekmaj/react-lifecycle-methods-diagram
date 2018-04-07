@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Section from './Section';
-import Subsection from './Subsection';
-import Initiator from './Initiator';
-import Method from './Method';
-import Arrow from './Arrow';
+import Section from './diagramElements/Section';
+import Subsection from './diagramElements/Subsection';
+import Initiator from './diagramElements/Initiator';
+import Method from './diagramElements/Method';
+import Arrow from './diagramElements/Arrow';
 
 const Updating = ({ advanced }) => (advanced ? (
   <Section advanced name="Updating" col={2} colspan={3}>

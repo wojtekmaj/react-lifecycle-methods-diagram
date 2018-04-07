@@ -4,7 +4,7 @@ import mergeClassNames from 'merge-class-names';
 
 import './Method.less';
 
-import { splitUpperCase } from './utils';
+import { splitUpperCase } from '../utils';
 
 export default class Method extends Component {
   static propTypes = {

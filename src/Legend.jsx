@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import Phase from './Phase';
+import Phase from './legendElements/Phase';
 
 const Legend = ({ advanced }) => (advanced ? (
   <Fragment>

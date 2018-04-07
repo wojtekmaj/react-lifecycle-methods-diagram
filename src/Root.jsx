@@ -20,32 +20,33 @@ const fixChromeGridSizingBug = (ref) => {
   });
 };
 
-export default class ReactLifecycleMethods extends Component {
+export default class Root extends Component {
   state = {
     advanced: localStorage.showAdvanced ? localStorage.showAdvanced === 'true' : false,
   };
 
   toggleAdvanced = () =>
-    this.setState((prevState) => {
-      try {
-        localStorage.showAdvanced = !prevState.advanced;
-      } catch (err) {
-        // eslint-disable-next-line no-console
-        console.error('Failed to safe setting.');
-      }
-      return { advanced: !prevState.advanced };
-    });
+    this.setState(prevState => ({ advanced: !prevState.advanced }), this.saveSettings);
+
+  saveSettings = () => {
+    try {
+      localStorage.showAdvanced = this.state.advanced;
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error('Failed to safe setting.');
+    }
+  }
 
   render() {
     const { advanced } = this.state;
 
     return (
-      <div
-        className="ReactLifecycleMethods"
-        ref={ref => fixChromeGridSizingBug(ref)}
-      >
+      <div ref={ref => fixChromeGridSizingBug(ref)}>
         <h1>React lifecycle methods diagram</h1>
-        <Options advanced={advanced} toggleAdvanced={this.toggleAdvanced} />
+        <Options
+          advanced={advanced}
+          toggleAdvanced={this.toggleAdvanced}
+        />
         <DiagramWithLegend advanced={advanced} />
         <GitHub />
       </div>

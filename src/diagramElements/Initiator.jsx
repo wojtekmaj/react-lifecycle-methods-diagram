@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './Initiator.less';
 
-import { splitUpperCase } from './utils';
+import { splitUpperCase } from '../utils';
 
 export default class Initiator extends Component {
   static propTypes = {

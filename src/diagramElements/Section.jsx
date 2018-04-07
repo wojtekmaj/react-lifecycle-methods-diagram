@@ -27,7 +27,18 @@ export default class Section extends Component {
 
     // If we're creating a section containing subsections, we don't need to create one.
     if (!children.find(el => el.type === Method || el.type === Initiator)) {
-      return children;
+      return React.Children.map(
+        children,
+        child =>
+          React.cloneElement(
+            child,
+            Object.assign(
+              { sectionCol: this.props.col },
+              this.props,
+              child.props,
+            ),
+          ),
+      );
     }
 
     return (

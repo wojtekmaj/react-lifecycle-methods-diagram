@@ -12,7 +12,7 @@ import Arrow from './Arrow';
  * @param {*} child
  * @param {*} children
  */
-export const autoFillProps = (child, children) => {
+export const autoFillProps = (child, children, parentProps) => {
   if (!child) {
     return null;
   }
@@ -32,6 +32,16 @@ export const autoFillProps = (child, children) => {
       }
       break;
     }
+    case Method: {
+      // Helps with grid alignment
+      if (
+        (props.col || child.props.col) + (props.colspan || child.props.colspan) <
+        parentProps.sectionCol + parentProps.colspan
+      ) {
+        props.endsInMiddle = true;
+      }
+      break;
+    }
     default:
       break;
   }
@@ -44,10 +54,14 @@ export default class Subsection extends Component {
   static propTypes = {
     children: PropTypes.node,
     col: PropTypes.number.isRequired,
+    colspan: PropTypes.number,
+    sectionCol: PropTypes.number,
   };
 
   render() {
-    const { children, col } = this.props;
+    const {
+      children, col, colspan, sectionCol,
+    } = this.props;
 
     const mappedChildren = React.Children.map(
       children,
@@ -55,7 +69,7 @@ export default class Subsection extends Component {
         child,
         Object.assign(
           { col },
-          autoFillProps(child, children),
+          autoFillProps(child, children, { colspan, sectionCol }),
           child.props,
         ),
       ),

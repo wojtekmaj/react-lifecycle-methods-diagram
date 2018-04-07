@@ -28,7 +28,7 @@ export default class Arrow extends Component {
         className={mergeClassNames('Arrow', solid && 'Arrow--solid', withAlt && 'Arrow--withAlt')}
         style={{
           gridColumn: `${col + 1} / span ${colspan}`,
-          gridRow: `${((from * 3) + 2 + 3)} / ${((to * 3) + 2 + 1)}`,
+          gridRow: `${(from * 3) + 2} / ${to * 3}`,
         }}
       >
         {withAlt && <Arrow col={col} from={from} to={to} />}

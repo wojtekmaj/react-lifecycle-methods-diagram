@@ -1,10 +1,11 @@
 .Initiator {
-  text-align: center;
-  font-weight: 1.5em;
-  font-style: italic;
-
   margin: 0;
   padding: 10px 20px;
+  text-align: center;
+
+  &--secondary {
+    font-style: italic;
+  }
 
   h4 {
     font: inherit;
@@ -18,5 +19,18 @@
     &:hover, &:focus {
       text-decoration: underline;
     }
+  }
+
+  &[data-column="3"] {
+    padding-right: 0;
+  }
+
+  &[data-column="4"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &[data-column="5"] {
+    padding-left: 0;
   }
 }

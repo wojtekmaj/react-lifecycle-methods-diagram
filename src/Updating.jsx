@@ -11,6 +11,7 @@ const Updating = ({ advanced }) => (advanced ? (
   <Section advanced name="Updating" col={2} colspan={3}>
     <Subsection col={2}>
       <Initiator
+        secondary
         name="New props"
         row={1}
       />
@@ -41,7 +42,6 @@ const Updating = ({ advanced }) => (advanced ? (
         row={4}
         colspan={4}
       />
-      <Arrow col={3} />
       <Method
         name="getSnapshotBeforeUpdate"
         docname="getsnapshotbeforeupdate"
@@ -93,6 +93,7 @@ const Updating = ({ advanced }) => (advanced ? (
         row={4}
         colspan={4}
       />
+      <Arrow />
       <Method
         name="getSnapshotBeforeUpdate"
         docname="getsnapshotbeforeupdate"
@@ -167,6 +168,7 @@ const Updating = ({ advanced }) => (advanced ? (
   <Section name="Updating" col={2} colspan={3}>
     <Subsection col={2}>
       <Initiator
+        secondary
         name="New props"
         row={1}
       />
@@ -180,7 +182,6 @@ const Updating = ({ advanced }) => (advanced ? (
         row={2}
         colspan={4}
       />
-      <Arrow col={3} />
       <Method
         secondary
         name="React updates DOM and refs"
@@ -216,6 +217,7 @@ const Updating = ({ advanced }) => (advanced ? (
         row={2}
         colspan={4}
       />
+      <Arrow />
       <Method
         secondary
         name="React updates DOM and refs"

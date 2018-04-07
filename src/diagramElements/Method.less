@@ -48,12 +48,13 @@
     font: inherit;
     color: inherit;
     text-decoration: none;
+    position: relative;
 
     &:hover, &:focus {
       margin: -(@vertical-padding + 2px) -(@horizontal-padding + 2px);
-
       background-color: rgb(255, 255, 255);
       border-width: 2px;
+      z-index: 1;
     }
   }
 }

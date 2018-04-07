@@ -34,7 +34,7 @@ export default class Method extends Component {
         className={mergeClassNames('Method', docname && 'Method--hasLink', main && 'Method--main', secondary && 'Method--secondary', type)}
         style={{
           gridColumn: `${col + 1} / span ${colspan}`,
-          gridRow: `${(row * 3) + 3} / span 2`,
+          gridRow: `${row * 3} / span 2`,
         }}
       >
         {docname ?

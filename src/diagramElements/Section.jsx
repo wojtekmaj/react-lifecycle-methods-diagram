@@ -48,18 +48,25 @@ export default class Section extends Component {
           className={mergeClassNames('Section', advanced && 'Section--advanced')}
           style={{
             gridColumn,
-            gridRow: advanced ? '1 / span 26' : '1 / span 17',
+            gridRow: advanced ? '1 / span 23' : '1 / span 14',
           }}
-        >
-          <h3>{name}</h3>
-        </section>
+        />
         <div
           className={mergeClassNames('Section__highlight', advanced && 'Section__highlight--advanced')}
           style={{
             gridColumn,
-            gridRow: advanced ? '19 / span 8' : '11 / span 7',
+            gridRow: advanced ? '16 / span 8' : '8 / span 7',
           }}
         />
+        <h3
+          className="Section__title"
+          style={{
+            gridColumn,
+            gridRow: 1,
+          }}
+        >
+          {name}
+        </h3>
         {this.renderChildren()}
       </Fragment>
     );

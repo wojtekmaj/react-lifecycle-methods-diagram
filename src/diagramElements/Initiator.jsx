@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import mergeClassNames from 'merge-class-names';
 
 import './Initiator.less';
 
@@ -11,21 +12,23 @@ export default class Initiator extends Component {
     docname: PropTypes.string,
     name: PropTypes.string.isRequired,
     row: PropTypes.number.isRequired,
+    secondary: PropTypes.bool,
   };
 
   render() {
     const {
-      col, docname, name, row,
+      col, docname, name, row, secondary,
     } = this.props;
 
     const title = splitUpperCase(name);
 
     return (
       <div
-        className="Initiator"
+        className={mergeClassNames('Initiator', docname && 'Initiator--hasLink', secondary && 'Initiator--secondary')}
+        data-column={col + 1}
         style={{
           gridColumn: col + 1,
-          gridRow: `${(row * 3) + 3} / span 2`,
+          gridRow: `${row * 3} / span 2`,
         }}
       >
         <h4>

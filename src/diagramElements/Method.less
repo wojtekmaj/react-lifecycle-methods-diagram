@@ -51,10 +51,18 @@
     position: relative;
 
     &:hover, &:focus {
-      margin: -(@vertical-padding + 2px) -(@horizontal-padding + 2px);
-      background-color: rgb(255, 255, 255);
-      border-width: 2px;
-      z-index: 1;
+      @supports (-moz-outline-radius: 5px) {
+        outline: 2px solid var(--border-color);
+        outline-offset: -1px;
+        -moz-outline-radius: 5px;
+      }
+
+      @supports (not (-moz-outline-radius: 5px)) {
+        margin: -(@vertical-padding + 2px) -(@horizontal-padding + 2px);
+        background-color: rgb(255, 255, 255);
+        border-width: 2px;
+        z-index: 1;
+      }
     }
   }
 }

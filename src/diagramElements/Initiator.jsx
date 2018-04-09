@@ -4,7 +4,7 @@ import mergeClassNames from 'merge-class-names';
 
 import './Initiator.less';
 
-import { splitUpperCase } from '../utils';
+import DocLink from './DocLink';
 
 export default class Initiator extends Component {
   static propTypes = {
@@ -20,8 +20,6 @@ export default class Initiator extends Component {
       col, docname, name, row, secondary,
     } = this.props;
 
-    const title = splitUpperCase(name);
-
     return (
       <div
         className={mergeClassNames('Initiator', docname && 'Initiator--hasLink', secondary && 'Initiator--secondary')}
@@ -32,17 +30,7 @@ export default class Initiator extends Component {
         }}
       >
         <h4>
-          {docname ?
-            <a
-              href={`https://reactjs.org/docs/react-component.html#${docname}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              title={`Read docs for ${name} (opens in a new tab)`}
-            >
-              {title}
-            </a> :
-            <span>{title}</span>
-          }
+          <DocLink docname={docname} name={name} />
         </h4>
       </div>
     );

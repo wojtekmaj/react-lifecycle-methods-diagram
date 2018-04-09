@@ -4,7 +4,7 @@ import mergeClassNames from 'merge-class-names';
 
 import './Method.less';
 
-import { splitUpperCase } from '../utils';
+import DocLink from './DocLink';
 
 export default class Method extends Component {
   static propTypes = {
@@ -28,8 +28,6 @@ export default class Method extends Component {
       col, colspan, docname, endsInMiddle, main, name, row, secondary, type,
     } = this.props;
 
-    const title = splitUpperCase(name);
-
     return (
       <li
         className={mergeClassNames(
@@ -45,17 +43,7 @@ export default class Method extends Component {
           gridRow: `${row * 3} / span 2`,
         }}
       >
-        {docname ?
-          <a
-            href={`https://reactjs.org/docs/react-component.html#${docname}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            title={`Read docs for ${name} (opens in a new tab)`}
-          >
-            {title}
-          </a> :
-          <span>{title}</span>
-        }
+        <DocLink docname={docname} name={name} />
       </li>
     );
   }

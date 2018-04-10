@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 
 import './Options.less';
 
+import T from './i18n/T';
+
 const Options = ({ advanced, toggleAdvanced }) => (
   <fieldset className="Options">
-    <legend>Options</legend>
+    <legend><T>Options</T></legend>
     <input type="checkbox" id="showAdvanced" checked={advanced} onChange={toggleAdvanced} />
-    <label htmlFor="showAdvanced">Show less common lifecycles</label>
+    <label htmlFor="showAdvanced"><T>Show less common lifecycles</T></label>
   </fieldset>
 );
 

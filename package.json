@@ -12,6 +12,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "lodash.once": "^4.1.1",
     "merge-class-names": "^1.1.1",
     "prop-types": "^15.6.1",
     "react": "^16.3.1",
@@ -20,6 +22,7 @@
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.10.0",

@@ -8,7 +8,7 @@ import Arrow from './diagramElements/Arrow';
 const Unmounting = ({ advanced }) => (
   <Section
     advanced={advanced}
-    name={'Un\u00admounting'}
+    name="Unmounting"
     col={5}
   >
     <Arrow />

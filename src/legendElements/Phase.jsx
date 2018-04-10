@@ -4,6 +4,8 @@ import mergeClassNames from 'merge-class-names';
 
 import './Phase.less';
 
+import T from '../i18n/T';
+
 export default class Phase extends Component {
   static propTypes = {
     children: PropTypes.string.isRequired,
@@ -26,8 +28,8 @@ export default class Phase extends Component {
           gridRow: `${row * 3} / ${rowspan ? `span ${rowspan * 3}` : 'auto'}`,
         }}
       >
-        <h3>“{name} phase”</h3>
-        <p>{children}</p>
+        <h3><T name={name}>{'“{name} phase”'}</T></h3>
+        <p><T>{children}</T></p>
       </div>
     );
   }

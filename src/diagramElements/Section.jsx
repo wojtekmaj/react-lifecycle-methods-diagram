@@ -4,6 +4,8 @@ import mergeClassNames from 'merge-class-names';
 
 import './Section.less';
 
+import T from '../i18n/T';
+
 import Subsection from './Subsection';
 
 import Method from './Method';
@@ -76,7 +78,7 @@ export default class Section extends Component {
             gridRow: 1,
           }}
         >
-          {name}
+          <T>{name}</T>
         </h3>
         {this.renderChildren()}
       </Fragment>

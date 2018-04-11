@@ -12,11 +12,13 @@ const languageFiles = {
 
 export const t = async (string, args = {}) => {
   const getTranslatedString = async () => {
-    if (locale === defaultLocale) {
-      return string;
+    if (locale !== defaultLocale) {
+      const languageFile = await languageFiles[locale];
+      if (typeof languageFile[string] === 'string') {
+        return languageFile[string];
+      }
     }
-    const languageFile = await languageFiles[locale];
-    return languageFile[string] || string;
+    return string;
   };
 
   const rawString = await getTranslatedString();

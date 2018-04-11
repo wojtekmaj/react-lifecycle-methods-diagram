@@ -12,6 +12,7 @@ export default class DocLink extends Component {
   };
 
   state = {
+    translatedName: null,
     translatedTitle: null,
   }
 
@@ -21,13 +22,14 @@ export default class DocLink extends Component {
 
   async getTranslation() {
     const { name } = this.props;
+    const translatedName = await t(name);
     const translatedTitle = await t('Read docs for {name} (opens in a new tab)', { name });
-    this.setState({ translatedTitle });
+    this.setState({ translatedName, translatedTitle });
   }
 
   render() {
-    const { name, docname } = this.props;
-    const { translatedTitle: title } = this.state;
+    const { docname } = this.props;
+    const { translatedTitle: title, translatedName: name } = this.state;
 
     const children = splitUpperCase(name);
 

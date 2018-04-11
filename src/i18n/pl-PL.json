@@ -9,6 +9,7 @@
   "Pure and has no side effects. May be paused, aborted or restarted by React.": "Czysta i bez efektów ubocznych. Może zostać wstrzymana, anulowana lub zrestartowana przez React.",
   "Can read the DOM.": "Może czytać DOM.",
   "Can work with DOM, run side effects, schedule updates.": "Może operować na DOM, tworzyć efekty uboczne i kolejkować aktualizacje.",
+  "React updates DOM and refs": "React aktualizuje DOM i referencje",
   "Read docs for {name} (opens in a new tab)": "Przeczytaj dokumentację do metody {name} (link otwiera się w nowej karcie)",
   "See project's page on GitHub (opens in a new tab)": "Otwórz stronę projektu na GitHub (link otwiera się w nowej karcie)"
 }

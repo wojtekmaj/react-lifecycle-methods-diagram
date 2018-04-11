@@ -2,13 +2,9 @@ import 'babel-polyfill';
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { defaultLocale, getMatchingLocale } from './i18n';
+import { defaultLocale, getMatchingLocale, languageFiles } from './i18n';
 
 const locale = getMatchingLocale();
-
-const languageFiles = {
-  'pl-PL': import('./pl-PL.json'),
-};
 
 export const t = async (string, args = {}) => {
   const getTranslatedString = async () => {

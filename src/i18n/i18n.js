@@ -5,6 +5,7 @@ export const defaultLocale = 'en-US';
 export const languageFiles = {
   'pl-PL': import('./pl-PL.json'),
   'pt-BR': import('./pt-BR.json'),
+  'es-ES': import('./es-ES.json'),
 };
 
 const supportedLocales = [

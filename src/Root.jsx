@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import T from './i18n/T';
+
 import Options from './Options';
 import DiagramWithLegend from './DiagramWithLegend';
 import GitHub from './GitHub';
@@ -42,7 +44,7 @@ export default class Root extends Component {
 
     return (
       <div ref={ref => fixChromeGridSizingBug(ref)}>
-        <h1>React lifecycle methods diagram</h1>
+        <h1><T>React lifecycle methods diagram</T></h1>
         <Options
           advanced={advanced}
           toggleAdvanced={this.toggleAdvanced}

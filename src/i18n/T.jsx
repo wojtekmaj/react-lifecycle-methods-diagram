@@ -44,6 +44,12 @@ export default class T extends Component {
     this.getTranslation();
   }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.children !== prevProps.children) {
+      this.getTranslation();
+    }
+  }
+
   async getTranslation() {
     const { children, ...args } = this.props;
     const translatedChildren = await t(children, args);

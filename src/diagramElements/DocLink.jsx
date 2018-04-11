@@ -20,6 +20,12 @@ export default class DocLink extends Component {
     this.getTranslation();
   }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.name !== prevProps.name) {
+      this.getTranslation();
+    }
+  }
+
   async getTranslation() {
     const { name } = this.props;
     const translatedName = await t(name);

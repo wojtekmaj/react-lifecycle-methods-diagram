@@ -48,5 +48,5 @@ export const getMatchingLocale = once(
     const matchingLocale = getPreferredLocales().find(locale => supportedLocales.includes(locale));
     document.documentElement.setAttribute('lang', matchingLocale);
     return matchingLocale;
-  }
+  },
 );

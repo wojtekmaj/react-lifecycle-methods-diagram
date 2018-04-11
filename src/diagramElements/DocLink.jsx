@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 import { splitUpperCase } from '../shared/utils';
 
-// eslint-disable-next-line import/extensions
-import t from '../i18n/t.js';
+import { t } from '../i18n/T';
 
 export default class DocLink extends Component {
   static propTypes = {
@@ -13,6 +12,7 @@ export default class DocLink extends Component {
   };
 
   state = {
+    translatedName: null,
     translatedTitle: null,
   }
 
@@ -20,15 +20,22 @@ export default class DocLink extends Component {
     this.getTranslation();
   }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.name !== prevProps.name) {
+      this.getTranslation();
+    }
+  }
+
   async getTranslation() {
     const { name } = this.props;
+    const translatedName = await t(name);
     const translatedTitle = await t('Read docs for {name} (opens in a new tab)', { name });
-    this.setState({ translatedTitle });
+    this.setState({ translatedName, translatedTitle });
   }
 
   render() {
-    const { name, docname } = this.props;
-    const { translatedTitle: title } = this.state;
+    const { docname } = this.props;
+    const { translatedTitle: title, translatedName: name } = this.state;
 
     const children = splitUpperCase(name);
 

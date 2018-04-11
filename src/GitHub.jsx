@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-// eslint-disable-next-line import/extensions
-import t from './i18n/t.js';
+import { t } from './i18n/T';
 
 import './GitHub.less';
 
@@ -15,8 +14,7 @@ export default class GitHub extends Component {
   }
 
   async getTranslation() {
-    const { name } = this.props;
-    const translatedTitle = await t('See project\'s page on GitHub (opens in a new tab)', { name });
+    const translatedTitle = await t('See project\'s page on GitHub (opens in a new tab)');
     this.setState({ translatedTitle });
   }
 

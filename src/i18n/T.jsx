@@ -8,7 +8,28 @@ const locale = getMatchingLocale();
 
 const languageFiles = {
   'pl-PL': import('./pl-PL.json'),
-  'pt-BR': import('./pt-BR.json')
+  'pt-BR': import('./pt-BR.json'),
+};
+
+export const t = async (string, args = {}) => {
+  const getTranslatedString = async () => {
+    if (locale !== defaultLocale) {
+      const languageFile = await languageFiles[locale];
+      if (typeof languageFile[string] === 'string') {
+        return languageFile[string];
+      }
+    }
+    return string;
+  };
+
+  const rawString = await getTranslatedString();
+
+  let finalString = rawString;
+  Object.entries(args).forEach(([key, value]) => {
+    finalString = finalString.replace(`{${key}}`, value);
+  });
+
+  return finalString;
 };
 
 export default class T extends Component {
@@ -21,27 +42,22 @@ export default class T extends Component {
   }
 
   componentDidMount() {
-    if (locale !== defaultLocale) {
+    this.getTranslation();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.children !== prevProps.children) {
       this.getTranslation();
     }
   }
 
   async getTranslation() {
-    const languageFile = await languageFiles[locale];
-    this.setState({ translatedChildren: languageFile[this.props.children] });
+    const { children, ...args } = this.props;
+    const translatedChildren = await t(children, args);
+    this.setState({ translatedChildren });
   }
 
   render() {
-    const { children, ...args } = this.props;
-    const { translatedChildren } = this.state;
-
-    const rawString = translatedChildren || children;
-
-    let finalString = rawString;
-    Object.entries(args).forEach(([key, value]) => {
-      finalString = finalString.replace(`{${key}}`, value);
-    });
-
-    return finalString;
+    return this.state.translatedChildren;
   }
 }

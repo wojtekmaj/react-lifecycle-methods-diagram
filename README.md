@@ -16,6 +16,25 @@ I did my best to make the diagram fully accessibile, both for keyboard navigatio
 
 You are welcome to raise issues and create pull requests.
 
+Particularly valueable contributions are those regarding [i18n](https://en.wikipedia.org/wiki/i18n) as I only know so many languages. Adding new locale is pretty easy, but there's a [separate i18n guide](/src/i18n/README.md) in case you get lost.
+
+### Prerequisites
+
+To contribute, you need to have the following prerequisites installed:
+
+* Node.js
+* Yarn
+* IDE of your choice
+
+### Starting the project
+
+* `yarn install` (first time only)
+* `yarn start`
+
+### Building the project
+
+* `yarn build`
+
 ## License
 
 The MIT License.

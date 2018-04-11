@@ -8,6 +8,7 @@ const locale = getMatchingLocale();
 
 const languageFiles = {
   'pl-PL': import('./pl-PL.json'),
+  'pt-BR': import('./pt-BR.json')
 };
 
 export default class T extends Component {

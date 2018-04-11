@@ -10,6 +10,15 @@
     "name": "Wojciech Maj",
     "email": "kontakt@wojtekmaj.pl"
   },
+  "contributors": [
+    {
+      "name": "Kenneth Luján Rosas",
+      "email": "elgenio.03@gmail.com"
+    },
+    {
+      "name": "Lara de Oliveira"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.26.0",

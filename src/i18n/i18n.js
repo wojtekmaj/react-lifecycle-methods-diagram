@@ -6,6 +6,7 @@ export const languageFiles = {
   'es-ES': import('./es-ES.json'),
   'pl-PL': import('./pl-PL.json'),
   'pt-BR': import('./pt-BR.json'),
+  'zh-CN': import('./zh-CN.json'),
 };
 
 const supportedLocales = [

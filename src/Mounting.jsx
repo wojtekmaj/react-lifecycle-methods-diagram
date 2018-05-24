@@ -21,7 +21,7 @@ const Mounting = ({ advanced }) => (advanced ? (
       docname="static-getderivedstatefromprops"
       type="render"
       row={2}
-      colspan={2}
+      colspan={3}
     />
     <Arrow />
     <Method

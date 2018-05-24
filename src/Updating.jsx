@@ -22,7 +22,7 @@ const Updating = ({ advanced }) => (advanced ? (
         type="render"
         col={1}
         row={2}
-        colspan={2}
+        colspan={3}
       />
       <Arrow />
       <Method
@@ -74,6 +74,15 @@ const Updating = ({ advanced }) => (advanced ? (
         name="setState()"
         docname="setstate"
         row={1}
+      />
+      <Arrow />
+      <Method
+        name="getDerivedStateFromProps"
+        docname="static-getderivedstatefromprops"
+        type="render"
+        col={1}
+        row={2}
+        colspan={3}
       />
       <Arrow />
       <Method

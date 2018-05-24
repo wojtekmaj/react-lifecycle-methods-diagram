@@ -41,7 +41,8 @@ export default class T extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.children !== prevProps.children) {
+    // Update only if props changed, ignore updates from state change
+    if (Object.keys(this.props).some(key => this.props[key] !== prevProps[key])) {
       this.getTranslation();
     }
   }

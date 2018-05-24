@@ -35,7 +35,7 @@ export const autoFillProps = (child, children, parentProps) => {
     case Method: {
       // Helps with grid alignment
       if (
-        (props.col || child.props.col) + (props.colspan || child.props.colspan) <
+        (props.col || child.props.col || parentProps.col) + (props.colspan || child.props.colspan) <
         parentProps.sectionCol + parentProps.colspan
       ) {
         props.endsInMiddle = true;
@@ -69,7 +69,7 @@ export default class Subsection extends Component {
         child,
         Object.assign(
           { col },
-          autoFillProps(child, children, { colspan, sectionCol }),
+          autoFillProps(child, children, { col, colspan, sectionCol }),
           child.props,
         ),
       ),

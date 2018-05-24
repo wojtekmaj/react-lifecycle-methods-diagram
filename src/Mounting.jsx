@@ -22,6 +22,7 @@ const Mounting = ({ advanced }) => (advanced ? (
       type="render"
       row={2}
       colspan={3}
+      endsInMiddle
     />
     <Arrow />
     <Method

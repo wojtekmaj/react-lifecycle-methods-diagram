@@ -9,7 +9,7 @@ const Options = ({ advanced, toggleAdvanced }) => (
   <fieldset className="Options">
     <legend><T>Options</T></legend>
     <input type="checkbox" id="showAdvanced" checked={advanced} onChange={toggleAdvanced} />
-    <label htmlFor="showAdvanced"><T>Show less common lifecycles</T></label>
+    <label htmlFor="showAdvanced"><T>Show also less common lifecycles</T></label>
   </fieldset>
 );
 

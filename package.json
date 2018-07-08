@@ -32,20 +32,20 @@
     "babel-polyfill": "^6.26.0",
     "lodash.once": "^4.1.1",
     "merge-class-names": "^1.1.1",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^8.2.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.10.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
-    "less": "^3.0.1",
-    "parcel-bundler": "^1.7.0"
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "less": "^3.5.3",
+    "parcel-bundler": "^1.9.4"
   }
 }

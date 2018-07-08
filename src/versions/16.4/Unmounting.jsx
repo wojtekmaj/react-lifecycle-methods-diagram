@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Section from './diagramElements/Section';
-import Method from './diagramElements/Method';
-import Arrow from './diagramElements/Arrow';
+import Section from '../../diagramElements/Section';
+import Method from '../../diagramElements/Method';
+import Arrow from '../../diagramElements/Arrow';
 
 const Unmounting = ({ advanced }) => (
   <Section

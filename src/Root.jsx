@@ -35,7 +35,7 @@ const latestReactVersion = [...supportedReactVersions].pop();
 
 export default class Root extends Component {
   state = {
-    advanced: getLocalStorageFlag('showAdvanced', 'true'),
+    advanced: getLocalStorageFlag('showAdvanced', 'false'),
     reactVersion: getLocalStorage('reactVersion', latestReactVersion),
   };
 

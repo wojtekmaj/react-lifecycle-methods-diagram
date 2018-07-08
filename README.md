@@ -18,6 +18,8 @@ You are welcome to raise issues and create pull requests.
 
 Particularly valueable contributions are those regarding [i18n](https://en.wikipedia.org/wiki/i18n) as I only know so many languages. Adding new locale is pretty easy, but there's a [separate i18n guide](/src/i18n/README.md) in case you get lost.
 
+You can also add a new version of the diagram in case React lifecycle methods are changed. There is a [separate versions guide](/src/versions/README.md) in case you get lost.
+
 ### Prerequisites
 
 To contribute, you need to have the following prerequisites installed:

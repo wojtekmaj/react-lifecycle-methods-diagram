@@ -19,7 +19,10 @@ export default class DiagramWithLegend extends Component {
 
     return (
       <div className="DiagramWithLegend">
-        <Legend advanced={advanced} />
+        <Legend
+          advanced={advanced}
+          reactVersion={reactVersion}
+        />
         <Diagram
           advanced={advanced}
           reactVersion={reactVersion}

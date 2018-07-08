@@ -1,35 +1,53 @@
-import React, { Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Phase from './legendElements/Phase';
+import { isReactVersion } from './propTypes';
 
-const Legend = ({ advanced }) => (advanced ? (
-  <Fragment>
-    <h2 className="hidden">Phases</h2>
-    <Phase name="Render" row={1} rowspan={4}>
-      Pure and has no side effects. May be paused, aborted or restarted by React.
-    </Phase>
-    <Phase name="Pre-commit" row={5} rowspan={1}>
-      Can read the DOM.
-    </Phase>
-    <Phase last name="Commit" row={6} rowspan={2}>
-      Can work with DOM, run side effects, schedule updates.
-    </Phase>
-  </Fragment>
-) : (
-  <Fragment>
-    <h2 className="hidden">Phases</h2>
-    <Phase name="Render" row={1} rowspan={2}>
-      Pure and has no side effects. May be paused, aborted or restarted by React.
-    </Phase>
-    <Phase last name="Commit" row={3} rowspan={2}>
-      Can work with DOM, run side effects, schedule updates.
-    </Phase>
-  </Fragment>
-));
-
-Legend.propTypes = {
-  advanced: PropTypes.bool,
+const diagramVersions = {
+  legacy: import('./versions/legacy'),
+  16.3: import('./versions/16.3'),
+  16.4: import('./versions/16.4'),
 };
 
-export default Legend;
+export default class Legend extends Component {
+  static propTypes = {
+    advanced: PropTypes.bool,
+    reactVersion: isReactVersion.isRequired,
+  };
+
+  state = {
+    legendElements: null,
+  };
+
+  componentDidMount() {
+    this.loadlegendElements();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.reactVersion !== prevProps.reactVersion) {
+      this.loadlegendElements();
+    }
+  }
+
+  async loadlegendElements() {
+    const legendElements = (await diagramVersions[this.props.reactVersion]).default;
+
+    this.setState({ legendElements });
+  }
+
+  render() {
+    const { advanced } = this.props;
+    const { legendElements } = this.state;
+
+    if (!legendElements) {
+      return null;
+    }
+
+    const { Legend: LegendElement } = legendElements;
+
+    return (
+      <LegendElement advanced={advanced} />
+    );
+  }
+}
+

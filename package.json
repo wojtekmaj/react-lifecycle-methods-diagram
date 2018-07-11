@@ -4,7 +4,9 @@
   "description": "Interactive React lifecycle methods diagram.",
   "scripts": {
     "build": "parcel build src/index.html --public-url ./",
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "test": "yarn run test-eslint",
+    "test-eslint": "eslint ./src"
   },
   "author": {
     "name": "Wojciech Maj",

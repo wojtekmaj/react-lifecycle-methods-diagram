@@ -35,8 +35,8 @@ export const autoFillProps = (child, children, parentProps) => {
     case Method: {
       // Helps with grid alignment
       if (
-        (props.col || child.props.col || parentProps.col) + (props.colspan || child.props.colspan) <
-        parentProps.sectionCol + parentProps.colspan
+        (props.col || child.props.col || parentProps.col) + (props.colspan || child.props.colspan)
+        < (parentProps.sectionCol + parentProps.colspan)
       ) {
         props.endsInMiddle = true;
       }
@@ -83,14 +83,16 @@ export default class Subsection extends Component {
     // If display: contents is supported, we can create a proper list wrapper for list elements
     const initiatorChildren = mappedChildren.filter(el => el.type === Initiator);
     const methodChildren = mappedChildren.filter(el => el.type === Method);
-    const otherChildren = mappedChildren.filter(el =>
-      !methodChildren.includes(el) && !initiatorChildren.includes(el),
+    const otherChildren = mappedChildren.filter(
+      el => !methodChildren.includes(el) && !initiatorChildren.includes(el),
     );
 
     return (
       <Fragment>
         {initiatorChildren}
-        <ul>{methodChildren}</ul>
+        <ul>
+          {methodChildren}
+        </ul>
         {otherChildren}
       </Fragment>
     );

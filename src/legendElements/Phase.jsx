@@ -28,8 +28,16 @@ export default class Phase extends Component {
           gridRow: `${row * 3} / ${rowspan ? `span ${rowspan * 3}` : 'auto'}`,
         }}
       >
-        <h3><T name={name}>{'“{name} phase”'}</T></h3>
-        <p><T>{children}</T></p>
+        <h3>
+          <T name={name}>
+            {'“{name} phase”'}
+          </T>
+        </h3>
+        <p>
+          <T>
+            {children}
+          </T>
+        </p>
       </div>
     );
   }

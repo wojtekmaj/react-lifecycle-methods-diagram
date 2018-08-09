@@ -42,6 +42,7 @@ export default class T extends Component {
 
   componentDidUpdate(prevProps) {
     // Update only if props changed, ignore updates from state change
+    // eslint-disable-next-line react/destructuring-assignment
     if (Object.keys(this.props).some(key => this.props[key] !== prevProps[key])) {
       this.getTranslation();
     }
@@ -54,6 +55,8 @@ export default class T extends Component {
   }
 
   render() {
-    return this.state.translatedChildren;
+    const { translatedChildren } = this.state;
+
+    return translatedChildren;
   }
 }

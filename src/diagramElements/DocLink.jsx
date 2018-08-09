@@ -21,7 +21,9 @@ export default class DocLink extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.name !== prevProps.name) {
+    const { name } = this.props;
+
+    if (name !== prevProps.name) {
       this.getTranslation();
     }
   }
@@ -40,16 +42,22 @@ export default class DocLink extends Component {
     const children = splitUpperCase(name);
 
     return (
-      docname ?
-        <a
-          href={`https://reactjs.org/docs/react-component.html#${docname}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          title={title}
-        >
-          {children}
-        </a> :
-        <span>{children}</span>
+      docname
+        ? (
+          <a
+            href={`https://reactjs.org/docs/react-component.html#${docname}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={title}
+          >
+            {children}
+          </a>
+        )
+        : (
+          <span>
+            {children}
+          </span>
+        )
     );
   }
 }

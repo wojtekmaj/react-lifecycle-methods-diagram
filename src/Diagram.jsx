@@ -23,13 +23,16 @@ export default class Diagram extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.reactVersion !== prevProps.reactVersion) {
+    const { reactVersion } = this.props;
+
+    if (reactVersion !== prevProps.reactVersion) {
       this.loadDiagramElements();
     }
   }
 
   async loadDiagramElements() {
-    const diagramElements = (await diagramVersions[this.props.reactVersion]).default;
+    const { reactVersion } = this.props;
+    const diagramElements = (await diagramVersions[reactVersion]).default;
 
     this.setState({ diagramElements });
   }
@@ -46,7 +49,9 @@ export default class Diagram extends Component {
 
     return (
       <Fragment>
-        <h2 className="hidden">Component lifecycle</h2>
+        <h2 className="hidden">
+          Component lifecycle
+        </h2>
         <Mounting advanced={advanced} />
         <Updating advanced={advanced} />
         <Unmounting advanced={advanced} />

@@ -25,21 +25,20 @@ export default class Section extends Component {
   }
 
   renderChildren() {
-    const { children } = this.props;
+    const { children, col: sectionCol } = this.props;
 
     // If we're creating a section containing subsections, we don't need to create one.
     if (!children.find(el => el.type === Method || el.type === Initiator)) {
       return React.Children.map(
         children,
-        child =>
-          React.cloneElement(
-            child,
-            Object.assign(
-              { sectionCol: this.props.col },
-              this.props,
-              child.props,
-            ),
+        child => React.cloneElement(
+          child,
+          Object.assign(
+            { sectionCol },
+            this.props,
+            child.props,
           ),
+        ),
       );
     }
 
@@ -78,7 +77,9 @@ export default class Section extends Component {
             gridRow: 1,
           }}
         >
-          <T>{name}</T>
+          <T>
+            {name}
+          </T>
         </h3>
         {this.renderChildren()}
       </Fragment>

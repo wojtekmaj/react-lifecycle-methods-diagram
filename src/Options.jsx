@@ -13,16 +13,30 @@ const Options = ({
   toggleReactVersion,
 }) => (
   <fieldset className="Options">
-    <legend><T>Options</T></legend>
+    <legend>
+      <T>
+        Options
+      </T>
+    </legend>
     <div>
       <input type="checkbox" id="showAdvanced" checked={advanced} onChange={toggleAdvanced} />
-      <label htmlFor="showAdvanced"><T>Show less common lifecycles</T></label>
+      <label htmlFor="showAdvanced">
+        <T>
+          Show less common lifecycles
+        </T>
+      </label>
     </div>
     <div>
-      <label htmlFor="reactVersion"><T>React version</T></label>
+      <label htmlFor="reactVersion">
+        <T>
+          React version
+        </T>
+      </label>
       <select onChange={toggleReactVersion} value={reactVersion}>
         {supportedReactVersions.map(supportedReactVersion => (
-          <option key={supportedReactVersion}>{supportedReactVersion}</option>
+          <option key={supportedReactVersion}>
+            {supportedReactVersion}
+          </option>
         ))}
       </select>
     </div>

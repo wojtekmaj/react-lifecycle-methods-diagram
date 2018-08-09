@@ -39,8 +39,9 @@ export default class Root extends Component {
     reactVersion: getLocalStorage('reactVersion', latestReactVersion),
   };
 
-  toggleAdvanced = () =>
-    this.setState(prevState => ({ advanced: !prevState.advanced }), this.saveSettings);
+  toggleAdvanced = () => this.setState(prevState => ({
+    advanced: !prevState.advanced,
+  }), this.saveSettings);
 
   toggleReactVersion = (event) => {
     const { value } = event.target;
@@ -48,9 +49,10 @@ export default class Root extends Component {
   }
 
   saveSettings = () => {
+    const { advanced, reactVersion } = this.state;
     try {
-      localStorage.showAdvanced = this.state.advanced;
-      localStorage.reactVersion = this.state.reactVersion;
+      localStorage.showAdvanced = advanced;
+      localStorage.reactVersion = reactVersion;
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error('Failed to safe settings.');
@@ -62,7 +64,11 @@ export default class Root extends Component {
 
     return (
       <div ref={ref => fixChromeGridSizingBug(ref)}>
-        <h1><T>React lifecycle methods diagram</T></h1>
+        <h1>
+          <T>
+            React lifecycle methods diagram
+          </T>
+        </h1>
         <Options
           advanced={advanced}
           reactVersion={reactVersion}

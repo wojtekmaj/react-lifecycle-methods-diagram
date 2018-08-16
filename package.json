@@ -6,7 +6,7 @@
     "build": "parcel build src/index.html --public-url ./",
     "start": "parcel src/index.html",
     "test": "yarn run test-eslint",
-    "test-eslint": "eslint --ext .jsx,.js src/"
+    "test-eslint": "eslint src/ --ext .jsx,.js"
   },
   "author": {
     "name": "Wojciech Maj",

@@ -76,7 +76,7 @@ export default class Subsection extends Component {
     );
 
     // iOS fails to render display: contents properly despite reporting so
-    if (iOS || !CSS.supports('display: contents')) {
+    if (iOS || ('CSS' in window && !CSS.supports('display: contents'))) {
       return mappedChildren;
     }
 

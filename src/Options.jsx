@@ -32,7 +32,7 @@ const Options = ({
           React version
         </T>
       </label>
-      <select onChange={toggleReactVersion} value={reactVersion}>
+      <select id="reactVersion" onChange={toggleReactVersion} value={reactVersion}>
         {supportedReactVersions.map(supportedReactVersion => (
           <option key={supportedReactVersion}>
             {supportedReactVersion}

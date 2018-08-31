@@ -1,4 +1,6 @@
-import t from './t.js'; // eslint-disable-line import/extensions
+/* eslint-disable import/extensions */
+
+import t from './t.js';
 import T from './T.jsx';
 
 export { t };

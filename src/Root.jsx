@@ -4,7 +4,7 @@ import T from './i18n';
 
 import Options from './Options';
 import DiagramWithLegend from './DiagramWithLegend';
-import GitHub from './GitHub';
+import Footer from './Footer';
 
 import { supportedReactVersions } from './propTypes';
 import { getMatchingLocale } from './i18n/i18n';
@@ -91,7 +91,7 @@ export default class Root extends Component {
           toggleReactVersion={this.toggleReactVersion}
         />
         <DiagramWithLegend advanced={advanced} reactVersion={reactVersion} />
-        <GitHub />
+        <Footer />
       </div>
     );
   }

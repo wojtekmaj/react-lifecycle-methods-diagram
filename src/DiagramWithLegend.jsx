@@ -18,13 +18,13 @@ export default class DiagramWithLegend extends Component {
     const { advanced, reactVersion } = this.props;
 
     return (
-      <div className="DiagramWithLegend">
+      <main className="DiagramWithLegend">
         <Legend advanced={advanced} />
         <Diagram
           advanced={advanced}
           reactVersion={reactVersion}
         />
-      </div>
+      </main>
     );
   }
 }

@@ -4,7 +4,7 @@ import mergeClassNames from 'merge-class-names';
 
 import './Section.less';
 
-import T from '../i18n/T';
+import T from '../i18n';
 
 import Subsection from './Subsection';
 

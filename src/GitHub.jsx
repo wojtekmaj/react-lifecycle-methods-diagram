@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { t } from './i18n/T';
+import { t } from './i18n';
 
 import './GitHub.less';
 

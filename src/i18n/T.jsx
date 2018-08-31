@@ -1,33 +1,11 @@
 import 'babel-polyfill';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { defaultLocale, getMatchingLocale, languageFiles } from './i18n';
+import { t } from '.';
+import { Consumer } from './LangObserver';
 
-const locale = getMatchingLocale();
-
-export const t = async (string, args = {}) => {
-  const getTranslatedString = async () => {
-    if (locale !== defaultLocale) {
-      const languageFile = await languageFiles[locale];
-      if (typeof languageFile[string] === 'string') {
-        return languageFile[string];
-      }
-    }
-    return string;
-  };
-
-  const rawString = await getTranslatedString();
-
-  let finalString = rawString;
-  Object.entries(args).forEach(([key, value]) => {
-    finalString = finalString.replace(`{${key}}`, value);
-  });
-
-  return finalString;
-};
-
-export default class T extends Component {
+class TInternal extends Component {
   static propTypes = {
     children: PropTypes.string,
   }
@@ -37,6 +15,7 @@ export default class T extends Component {
   }
 
   componentDidMount() {
+    this.isComponentMounted = true;
     this.getTranslation();
   }
 
@@ -48,9 +27,19 @@ export default class T extends Component {
     }
   }
 
+  componentWillUnmount() {
+    this.isComponentMounted = false;
+  }
+
   async getTranslation() {
-    const { children, ...args } = this.props;
-    const translatedChildren = await t(children, args);
+    const { children, locale, ...args } = this.props;
+
+    const translatedChildren = await t(children, args, locale);
+
+    if (!this.isComponentMounted) {
+      return;
+    }
+
     this.setState({ translatedChildren });
   }
 
@@ -60,3 +49,11 @@ export default class T extends Component {
     return translatedChildren;
   }
 }
+
+const T = props => (
+  <Consumer>
+    {locale => <TInternal locale={locale} {...props} />}
+  </Consumer>
+);
+
+export default T;

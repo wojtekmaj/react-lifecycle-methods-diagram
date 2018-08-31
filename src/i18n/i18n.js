@@ -1,15 +1,16 @@
 import once from 'lodash.once';
+import { getUserLocales } from 'get-user-locale';
 
 export const defaultLocale = 'en-US';
 
 export const languageFiles = {
-  'es-ES': import('./es-ES.json'),
-  'pl-PL': import('./pl-PL.json'),
-  'pt-BR': import('./pt-BR.json'),
-  'zh-CN': import('./zh-CN.json'),
+  'es-ES': import('./json/es-ES.json'),
+  'pl-PL': import('./json/pl-PL.json'),
+  'pt-BR': import('./json/pt-BR.json'),
+  'zh-CN': import('./json/zh-CN.json'),
 };
 
-const supportedLocales = [
+export const supportedLocales = [
   defaultLocale,
   ...Object.keys(languageFiles),
 ];
@@ -26,29 +27,17 @@ const extendLanguageCodes = arr => arr.map(el => (
   el.includes('-') ? el : `${el}-${el.toUpperCase()}`
 ));
 
-export const getPreferredLocales = once(() => {
-  const languageList = [];
-
-  if (typeof window !== 'undefined') {
-    if (window.navigator.languages) {
-      languageList.push(...window.navigator.languages);
-    } else if (window.navigator.userLanguage) {
-      languageList.push(window.navigator.userLanguage);
-    }
-  }
-
-  languageList.push('en-US'); // Fallback
-
-  return extendLanguageCodes(languageList);
+const getExtendedUserLocales = once(() => {
+  const userLocales = getUserLocales();
+  return extendLanguageCodes(userLocales);
 });
 
 /**
  * Finds a locale which both we support and user prefers.
  */
-export const getMatchingLocale = once(
-  () => {
-    const matchingLocale = getPreferredLocales().find(locale => supportedLocales.includes(locale));
-    document.documentElement.setAttribute('lang', matchingLocale);
-    return matchingLocale;
-  },
-);
+export const getMatchingLocale = once(() => {
+  const extendedUserLocales = getExtendedUserLocales();
+  const matchingLocale = extendedUserLocales.find(locale => supportedLocales.includes(locale));
+  document.documentElement.setAttribute('lang', matchingLocale);
+  return matchingLocale;
+});

@@ -4,7 +4,7 @@ import mergeClassNames from 'merge-class-names';
 
 import './Phase.less';
 
-import T from '../i18n/T';
+import T from '../i18n';
 
 export default class Phase extends Component {
   static propTypes = {

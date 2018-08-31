@@ -3,13 +3,31 @@ import PropTypes from 'prop-types';
 
 import './Options.less';
 
-import T from './i18n/T';
+import T from './i18n';
 import { supportedReactVersions, isReactVersion } from './propTypes';
+import { supportedLocales } from './i18n/i18n';
+
+const SelectOption = ({
+  options,
+  onChange,
+  value,
+  ...otherProps
+}) => (
+  <select id="language" onChange={onChange} value={value} {...otherProps}>
+    {options.map(option => (
+      <option key={option}>
+        {option}
+      </option>
+    ))}
+  </select>
+);
 
 const Options = ({
   advanced,
+  locale,
   reactVersion,
   toggleAdvanced,
+  toggleLocale,
   toggleReactVersion,
 }) => (
   <fieldset className="Options">
@@ -32,21 +50,25 @@ const Options = ({
           React version
         </T>
       </label>
-      <select id="reactVersion" onChange={toggleReactVersion} value={reactVersion}>
-        {supportedReactVersions.map(supportedReactVersion => (
-          <option key={supportedReactVersion}>
-            {supportedReactVersion}
-          </option>
-        ))}
-      </select>
+      <SelectOption id="reactVersion" options={supportedReactVersions} onChange={toggleReactVersion} value={reactVersion} />
+    </div>
+    <div>
+      <label htmlFor="language">
+        <T>
+          Language
+        </T>
+      </label>
+      <SelectOption id="language" options={supportedLocales} onChange={toggleLocale} value={locale} />
     </div>
   </fieldset>
 );
 
 Options.propTypes = {
   advanced: PropTypes.bool,
+  locale: PropTypes.string,
   reactVersion: isReactVersion.isRequired,
   toggleAdvanced: PropTypes.func.isRequired,
+  toggleLocale: PropTypes.func.isRequired,
   toggleReactVersion: PropTypes.func.isRequired,
 };
 

@@ -4,8 +4,21 @@
   margin: 30px auto 30px;
   border: 0;
   padding: 0 0 0 calc(90px + 5vw);
-  font-size: 24px;
   text-align: center;
+
+  > div {
+    display: inline-block;
+
+    &:first-of-type {
+      display: block;
+      font-size: 24px;
+      margin-bottom: .5em;
+    }
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
 
   legend {
     .hidden;

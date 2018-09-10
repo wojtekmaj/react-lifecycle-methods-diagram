@@ -4,6 +4,7 @@ import { getUserLocales } from 'get-user-locale';
 export const defaultLocale = 'en-US';
 
 export const languageFiles = {
+  'de-DE': import('./json/de-DE.json'),
   'es-ES': import('./json/es-ES.json'),
   'pl-PL': import('./json/pl-PL.json'),
   'pt-BR': import('./json/pt-BR.json'),

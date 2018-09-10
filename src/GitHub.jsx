@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-import { t } from './i18n';
+import T, { t } from './i18n';
 
 export default class GitHub extends Component {
   state = {
@@ -21,7 +21,8 @@ export default class GitHub extends Component {
 
     return (
       <Fragment>
-        See project on&nbsp;
+        <T>See project on</T>
+        &nbsp;
         <a
           className="GitHub"
           href="https://github.com/wojtekmaj/react-lifecycle-methods-diagram"

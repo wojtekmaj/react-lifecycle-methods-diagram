@@ -35,23 +35,23 @@
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "get-user-locale": "^1.1.0",
+    "get-user-locale": "^1.1.1",
     "lodash.once": "^4.1.1",
     "merge-class-names": "^1.1.1",
     "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.5",
+    "babel-eslint": "^9.0.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.24.1",
-    "eslint": "^4.19.1",
+    "eslint": "^5.5.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "less": "~3.7.1",
-    "parcel-bundler": "^1.9.4"
+    "less": "^3.8.1",
+    "parcel-bundler": "^1.9.7"
   }
 }

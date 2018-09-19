@@ -9,6 +9,7 @@ export const languageFiles = {
   'pl-PL': import('./json/pl-PL.json'),
   'pt-BR': import('./json/pt-BR.json'),
   'zh-CN': import('./json/zh-CN.json'),
+  'ru-RU': import('./json/ru-RU.json'),
 };
 
 export const supportedLocales = [

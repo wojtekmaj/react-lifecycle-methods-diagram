@@ -8,8 +8,8 @@ export const languageFiles = {
   'es-ES': import('./json/es-ES.json'),
   'pl-PL': import('./json/pl-PL.json'),
   'pt-BR': import('./json/pt-BR.json'),
-  'zh-CN': import('./json/zh-CN.json'),
   'ru-RU': import('./json/ru-RU.json'),
+  'zh-CN': import('./json/zh-CN.json'),
 };
 
 export const supportedLocales = [

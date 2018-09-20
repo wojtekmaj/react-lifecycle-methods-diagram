@@ -1,16 +1,15 @@
 {
-    "React lifecycle methods diagram": "React生命周期方法图",
-    "Options": "选项",
-    "Show less common lifecycles": "显示不常用的生命周期",
-    "Mounting": "创建时",
-    "Updating": "更新时",
-    "Unmounting": "卸载时",
-    "“{name} phase”": "“{name} 阶段”",
-    "Pure and has no side effects. May be paused, aborted or restarted by React.": "纯净且没有副作用。 可能会被 React 暂停，中止或重新启动。",
-    "Can read the DOM.": "可以读取 DOM。",
-    "Can work with DOM, run side effects, schedule updates.": "可以使用DOM，运行副作用，安排更新。",
-    "React updates DOM and refs": "React 更新 DOM 和 refs",
-    "Read docs for {name} (opens in a new tab)": "阅读 {name} 的文档（在新标签中打开）",
-    "See project's page on GitHub (opens in a new tab)": "查看 GitHub 上的项目页面（在新标签页中打开）"
-  }
-
+  "React lifecycle methods diagram": "React生命周期方法图",
+  "Options": "选项",
+  "Show less common lifecycles": "显示不常用的生命周期",
+  "Mounting": "创建时",
+  "Updating": "更新时",
+  "Unmounting": "卸载时",
+  "“{name} phase”": "“{name} 阶段”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "纯净且没有副作用。 可能会被 React 暂停，中止或重新启动。",
+  "Can read the DOM.": "可以读取 DOM。",
+  "Can work with DOM, run side effects, schedule updates.": "可以使用DOM，运行副作用，安排更新。",
+  "React updates DOM and refs": "React 更新 DOM 和 refs",
+  "Read docs for {name} (opens in a new tab)": "阅读 {name} 的文档（在新标签中打开）",
+  "See project's page on GitHub (opens in a new tab)": "查看 GitHub 上的项目页面（在新标签页中打开）"
+}

@@ -1,0 +1,19 @@
+{
+    "React lifecycle methods diagram": "Mô hình vòng đời của React",
+    "Options": "Lựa chọn",
+    "Show less common lifecycles": "Hiển thị những vòng đời ít được sử dụng của React",
+    "React version": "Phiên bản của React",
+    "Language": "Ngôn ngữ",
+    "Mounting": "Quá trình gắn kết",
+    "Updating": "Quá trình cập nhật",
+    "Unmounting": "Quá trình tách trời",
+    "“{name} phase”": "Giai đoạn {name}”",
+    "Pure and has no side effects. May be paused, aborted or restarted by React.": "Không có tác dụng phụ, Có thể tạm dừng, hủy hoặc khởi động lại bởi React",
+    "Can read the DOM.": "Có thể đọc đối tượng DOM.",
+    "Can work with DOM, run side effects, schedule updates.": "Có thể làm việc với đối tượng DOM, chạy các tác vụ phụ, cập nhật theo lịch",
+    "React updates DOM and refs": "React cập nhật đối tượng DOM và ref",
+    "Read docs for {name} (opens in a new tab)": "Đọc tài liệu cho {name} (mở trong tab mới)",
+    "See project's page on GitHub (opens in a new tab)": "Xem dự án tại Github (mở trong tab mới)",
+    "See project on": "Xem dự án tại"
+  }
+  

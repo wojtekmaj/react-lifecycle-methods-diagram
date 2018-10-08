@@ -16,7 +16,13 @@ export default class LangObserver extends Component {
 
   componentDidMount() {
     this.observer = new MutationObserver(this.onLangAttributeChange);
-    this.observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+    this.observer.observe(
+      document.documentElement,
+      {
+        attributeFilter: ['lang'],
+        attributes: true,
+      },
+    );
   }
 
   componentWillUnmount() {

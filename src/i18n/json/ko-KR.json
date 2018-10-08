@@ -1,0 +1,18 @@
+{
+  "React lifecycle methods diagram": "래액트 생명주기 다이아그램",
+  "Options": "옵션",
+  "Show less common lifecycles": "덜 일반적인 라이프 사이클 표시",
+  "React version": "React 버전",
+  "Language": "언어",
+  "Mounting": "생성 될 때",
+  "Updating": "업데이트 할 때",
+  "Unmounting": "제거 할 때",
+  "“{name} phase”": "“{name} 단계”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "순수하고 부작용이 없습니다. React에 의해 일시 중지, 중단 또는 재시작 될 수 있습니다",
+  "Can read the DOM.": "DOM을 읽을 수 있습니다.",
+  "Can work with DOM, run side effects, schedule updates.": "DOM을 사용하여 부작용을 실행하고 업데이트를 예약 할 수 있습니다.",
+  "React updates DOM and refs": "React DOM 및 refs 업데이트",
+  "Read docs for {name} (opens in a new tab)": "{name}에 대한 설명서를 읽습니다 (새 탭에서 열림).",
+  "See project's page on GitHub (opens in a new tab)": "GitHub에서 프로젝트 페이지를 봅니다 (새 탭에서 열림).",
+  "See project on": "프로젝트 페이지 열기"
+}

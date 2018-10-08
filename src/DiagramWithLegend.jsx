@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import './DiagramWithLegend.less';
@@ -8,23 +8,19 @@ import Diagram from './Diagram';
 
 import { isReactVersion } from './propTypes';
 
-export default class DiagramWithLegend extends Component {
-  static propTypes = {
-    advanced: PropTypes.bool.isRequired,
-    reactVersion: isReactVersion.isRequired,
-  };
+const DiagramWithLegend = ({ advanced, reactVersion }) => (
+  <main className="DiagramWithLegend">
+    <Legend advanced={advanced} />
+    <Diagram
+      advanced={advanced}
+      reactVersion={reactVersion}
+    />
+  </main>
+);
 
-  render() {
-    const { advanced, reactVersion } = this.props;
+DiagramWithLegend.propTypes = {
+  advanced: PropTypes.bool.isRequired,
+  reactVersion: isReactVersion.isRequired,
+};
 
-    return (
-      <main className="DiagramWithLegend">
-        <Legend advanced={advanced} />
-        <Diagram
-          advanced={advanced}
-          reactVersion={reactVersion}
-        />
-      </main>
-    );
-  }
-}
+export default DiagramWithLegend;

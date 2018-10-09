@@ -1,3 +1,5 @@
+[![Build status](https://dev.azure.com/wojtekmaj/GitHub%20projects/_apis/build/status/React%20Lifecycle%20Methods%20diagram%20-%20CI)](https://dev.azure.com/wojtekmaj/GitHub%20projects/_build/latest?definitionId=3)
+
 # React Lifecycle Methods diagram
 
 An interactive version of [React Lifecycle Methods diagram tweeted by Dan Abramov](https://twitter.com/dan_abramov/status/981712092611989509). Built in React, obviously.

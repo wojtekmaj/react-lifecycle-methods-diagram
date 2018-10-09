@@ -10,8 +10,14 @@ steps:
 - script: yarn
   displayName: 'Install dependencies'
 
-- script: yarn build
-  displayName: 'Build project'
-
-- script: yarn run test
+- script: yarn test
   displayName: 'Test'
+  
+- script: yarn build
+  displayName: 'Build'
+
+- task: PublishBuildArtifacts@1
+  displayName: Publish artifact
+  inputs:
+    pathtoPublish: '$(Build.SourcesDirectory)/dist'
+    artifactName: 'dist'

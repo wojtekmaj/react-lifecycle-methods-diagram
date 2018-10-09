@@ -10,11 +10,11 @@ steps:
 - script: yarn
   displayName: 'Install dependencies'
 
-- script: yarn test
-  displayName: 'Test'
-  
 - script: yarn build
   displayName: 'Build'
+  
+- script: yarn test
+  displayName: 'Test'
 
 - task: PublishBuildArtifacts@1
   displayName: Publish Artifacts

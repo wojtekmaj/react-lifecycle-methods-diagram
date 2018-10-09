@@ -17,7 +17,7 @@ steps:
   displayName: 'Build'
 
 - task: PublishBuildArtifacts@1
-  displayName: Publish artifact
+  displayName: Publish Artifacts
   inputs:
     pathtoPublish: '$(Build.SourcesDirectory)/dist'
     artifactName: 'dist'

@@ -18,6 +18,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   displayName: Publish Artifacts
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
   inputs:
     pathtoPublish: '$(Build.SourcesDirectory)/dist'
     artifactName: 'dist'

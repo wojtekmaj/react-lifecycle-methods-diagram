@@ -1,5 +1,6 @@
 .cache
 .vscode
+.DS_STORE
 dist
 coverage
 node_modules

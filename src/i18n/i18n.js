@@ -15,6 +15,7 @@ export const languageFiles = {
   'uk-UA': import('./json/uk-UA.json'),
   'vn-VN': import('./json/vn-VN.json'),
   'zh-CN': import('./json/zh-CN.json'),
+  'zh-TW': import('./json/zh-TW.json'),
 };
 
 export const supportedLocales = [

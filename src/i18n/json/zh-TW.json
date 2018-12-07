@@ -1,0 +1,18 @@
+{
+  "React lifecycle methods diagram": "React生命周期方法圖",
+  "Options": "選項",
+  "Show less common lifecycles": "顯示不常用的生命周期",
+  "React version": "React版本",
+  "Language": "語言",
+  "Mounting": "掛載時",
+  "Updating": "更新時",
+  "Unmounting": "卸載時",
+  "“{name} phase”": "“{name} 階段”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "純粹且沒有副作用。 可能會被 React 暫停，中止或重新啟動。",
+  "Can read the DOM.": "可以讀取 DOM。",
+  "Can work with DOM, run side effects, schedule updates.": "可以使用DOM，執行副作用，排程進行更新。",
+  "React updates DOM and refs": "React 更新 DOM 和 refs",
+  "Read docs for {name} (opens in a new tab)": "閱讀 {name} 的文章（在新標簽中開啟）",
+  "See project's page on GitHub (opens in a new tab)": "查看 GitHub 上的專案頁面（在新標簽頁中開啟）",
+  "See project on": "查看專案於"
+}

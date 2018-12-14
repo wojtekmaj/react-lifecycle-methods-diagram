@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+import '@babel/polyfill';
 import { defaultLocale, getMatchingLocale, languageFiles } from './i18n';
 
 export default async (string, args, locale) => {

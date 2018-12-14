@@ -50,7 +50,12 @@ const Options = ({
           React version
         </T>
       </label>
-      <SelectOption id="reactVersion" options={supportedReactVersions} onChange={toggleReactVersion} value={reactVersion} />
+      <SelectOption
+        id="reactVersion"
+        options={supportedReactVersions}
+        onChange={toggleReactVersion}
+        value={reactVersion}
+      />
     </div>
     <div>
       <label htmlFor="language">
@@ -58,7 +63,12 @@ const Options = ({
           Language
         </T>
       </label>
-      <SelectOption id="language" options={supportedLocales} onChange={toggleLocale} value={locale} />
+      <SelectOption
+        id="language"
+        options={supportedLocales}
+        onChange={toggleLocale}
+        value={locale}
+      />
     </div>
   </fieldset>
 );

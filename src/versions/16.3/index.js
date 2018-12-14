@@ -1,10 +1,3 @@
-import Mounting from './Mounting';
-import Updating from './Updating';
-import Unmounting from './Unmounting';
-
-/* eslint-disable sort-keys */
-export default {
-  Mounting,
-  Updating,
-  Unmounting,
-};
+export Mounting from './Mounting';
+export Updating from './Updating';
+export Unmounting from './Unmounting';

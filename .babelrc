@@ -4,6 +4,7 @@
   ],
   "plugins": [
     "@babel/proposal-class-properties",
+    "@babel/proposal-export-default-from",
     ["@babel/transform-react-jsx", {
       "pragmaFrag": "React.Fragment"
     }]

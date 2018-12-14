@@ -32,7 +32,7 @@ export default class Diagram extends Component {
 
   async loadDiagramElements() {
     const { reactVersion } = this.props;
-    const diagramElements = (await diagramVersions[reactVersion]).default;
+    const diagramElements = (await diagramVersions[reactVersion]);
 
     this.setState({ diagramElements });
   }

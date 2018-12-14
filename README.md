@@ -55,3 +55,24 @@ The MIT License.
     </td>
   </tr>
 </table>
+
+## Thank you
+
+### Sponsors
+
+Thank you to all our sponsors! [Become a sponsor](https://opencollective.com/react-lifecycle-methods-diagram#sponsor) and get your image on our README on GitHub.
+
+<a href="https://opencollective.com/react-lifecycle-methods-diagram#sponsors" target="_blank"><img src="https://opencollective.com/react-calendar/sponsors.svg?width=890"></a>
+
+### Backers
+
+Thank you to all our backers! [Become a backer](https://opencollective.com/react-lifecycle-methods-diagram#backer) and get your image on our README on GitHub.
+
+<a href="https://opencollective.com/react-calendar#backers" target="_blank"><img src="https://opencollective.com/react-lifecycle-methods-diagram/backers.svg?width=890"></a>
+
+### Top Contributors
+
+Thank you to all our contributors that helped on this project!
+
+![Top Contributors](https://opencollective.com/react-lifecycle-methods-diagram/contributors.svg?width=890&button=false)
+

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Initiator from './Initiator';
@@ -88,13 +88,13 @@ export default class Subsection extends Component {
     );
 
     return (
-      <Fragment>
+      <>
         {initiatorChildren}
         <ul>
           {methodChildren}
         </ul>
         {otherChildren}
-      </Fragment>
+      </>
     );
   }
 }

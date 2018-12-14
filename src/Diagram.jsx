@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { isReactVersion } from './propTypes';
@@ -48,14 +48,14 @@ export default class Diagram extends Component {
     const { Mounting, Updating, Unmounting } = diagramElements;
 
     return (
-      <Fragment>
+      <>
         <h2 className="hidden">
           Component lifecycle
         </h2>
         <Mounting advanced={advanced} />
         <Updating advanced={advanced} />
         <Unmounting advanced={advanced} />
-      </Fragment>
+      </>
     );
   }
 }

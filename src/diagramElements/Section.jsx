@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import mergeClassNames from 'merge-class-names';
 
@@ -55,7 +55,7 @@ export default class Section extends Component {
     const gridColumn = `${col + 1} / span ${colspan}`;
 
     return (
-      <Fragment>
+      <>
         <section
           className={mergeClassNames('Section', advanced && 'Section--advanced')}
           style={{
@@ -82,7 +82,7 @@ export default class Section extends Component {
           </T>
         </h3>
         {this.renderChildren()}
-      </Fragment>
+      </>
     );
   }
 }

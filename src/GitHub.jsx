@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import T, { t } from './i18n';
 
@@ -20,7 +20,7 @@ export default class GitHub extends Component {
     const { translatedTitle: title } = this.state;
 
     return (
-      <Fragment>
+      <>
         <T>See project on</T>
         &nbsp;
         <a
@@ -48,7 +48,7 @@ export default class GitHub extends Component {
             />
           </svg>
         </a>
-      </Fragment>
+      </>
     );
   }
 }

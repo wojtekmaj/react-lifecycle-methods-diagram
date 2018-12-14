@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import Phase from './legendElements/Phase';
 
 const Legend = ({ advanced }) => (advanced ? (
-  <Fragment>
+  <>
     <h2 className="hidden">
       Phases
     </h2>
@@ -17,9 +17,9 @@ const Legend = ({ advanced }) => (advanced ? (
     <Phase last name="Commit" row={6} rowspan={2}>
       Can work with DOM, run side effects, schedule updates.
     </Phase>
-  </Fragment>
+  </>
 ) : (
-  <Fragment>
+  <>
     <h2 className="hidden">
       Phases
     </h2>
@@ -29,7 +29,7 @@ const Legend = ({ advanced }) => (advanced ? (
     <Phase last name="Commit" row={3} rowspan={2}>
       Can work with DOM, run side effects, schedule updates.
     </Phase>
-  </Fragment>
+  </>
 ));
 
 Legend.propTypes = {

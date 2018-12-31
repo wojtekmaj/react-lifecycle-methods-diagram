@@ -7,6 +7,7 @@ export const languageFiles = {
   'de-DE': import('./json/de-DE.json'),
   'es-ES': import('./json/es-ES.json'),
   'fr-FR': import('./json/fr-FR.json'),
+  'ja-JP': import('./json/ja-JP.json'),
   'ko-KR': import('./json/ko-KR.json'),
   'pl-PL': import('./json/pl-PL.json'),
   'pt-BR': import('./json/pt-BR.json'),
@@ -16,7 +17,6 @@ export const languageFiles = {
   'vn-VN': import('./json/vn-VN.json'),
   'zh-CN': import('./json/zh-CN.json'),
   'zh-TW': import('./json/zh-TW.json'),
-  'ja-JP': import('./json/ja-JP.json'),
 };
 
 export const supportedLocales = [

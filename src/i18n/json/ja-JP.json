@@ -1,0 +1,18 @@
+{
+    "React lifecycle methods diagram": "Reactライフサイクルメソッドダイアグラム",
+    "Options": "オプション",
+    "Show less common lifecycles": "一般的でないライフライクルも表示",
+    "React version": "React バージョン",
+    "Language": "言語",
+    "Mounting": "マウント時",
+    "Updating": "更新時",
+    "Unmounting": "マウント解除時",
+    "“{name} phase”": "“{name} ステージ”",
+    "Pure and has no side effects. May be paused, aborted or restarted by React.": "純粋で副作用を持たない。Reactによって一時停止、中断、再スタートされることがある",
+    "Can read the DOM.": "DOMを読み取り可能",
+    "Can work with DOM, run side effects, schedule updates.": "DOMに働きかけることができる。副作用があり、更新タイミングを決める",
+    "React updates DOM and refs": "Reactが DOM と refs を更新する",
+    "Read docs for {name} (opens in a new tab)": "ドキュメント {name} を読む（新しいタブで開きます）",
+    "See project's page on GitHub (opens in a new tab)": "Github上のプロジェクトページを見る(新しいタブで開きます)",
+    "See project on": "プロジェクトを見る@"
+  }

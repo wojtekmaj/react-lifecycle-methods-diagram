@@ -6,6 +6,7 @@ import './Options.less';
 import T from './i18n';
 import { supportedReactVersions, isReactVersion } from './propTypes';
 import { supportedLocales } from './i18n/i18n';
+import { countryCodeToFlagEmoji } from './shared/utils';
 
 const SelectOption = ({
   onChange,
@@ -80,7 +81,10 @@ const Options = ({
       </label>
       <SelectOption
         id="language"
-        options={supportedLocales}
+        options={supportedLocales.map(value => ({
+          label: `${countryCodeToFlagEmoji(value)} ${value}`,
+          value,
+        }))}
         onChange={toggleLocale}
         value={locale}
       />

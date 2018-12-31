@@ -64,7 +64,10 @@ const Options = ({
       </label>
       <SelectOption
         id="reactVersion"
-        options={supportedReactVersions}
+        options={supportedReactVersions.map(value => ({
+          label: value === '16.4' ? '^16.4' : value,
+          value,
+        }))}
         onChange={toggleReactVersion}
         value={reactVersion}
       />

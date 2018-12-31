@@ -8,6 +8,7 @@ import { Consumer } from './LangObserver';
 class TInternal extends Component {
   static propTypes = {
     children: PropTypes.string,
+    locale: PropTypes.string,
   }
 
   state = {

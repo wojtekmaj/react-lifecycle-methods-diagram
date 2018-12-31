@@ -8,8 +8,8 @@ import { supportedReactVersions, isReactVersion } from './propTypes';
 import { supportedLocales } from './i18n/i18n';
 
 const SelectOption = ({
-  options,
   onChange,
+  options,
   value,
   ...otherProps
 }) => (

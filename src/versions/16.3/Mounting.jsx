@@ -39,7 +39,7 @@ const Mounting = ({ advanced }) => (advanced ? (
       name="React updates DOM and refs"
       type="pre-commit"
       row={6}
-      colspan={4}
+      colspan={5}
     />
     <Arrow solid />
     <Method
@@ -75,7 +75,7 @@ const Mounting = ({ advanced }) => (advanced ? (
       name="React updates DOM and refs"
       type="pre-commit"
       row={3}
-      colspan={4}
+      colspan={5}
     />
     <Arrow solid />
     <Method

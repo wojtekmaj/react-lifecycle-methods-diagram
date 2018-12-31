@@ -56,7 +56,7 @@ const Updating = ({ advanced }) => (advanced ? (
         type="pre-commit"
         col={1}
         row={6}
-        colspan={4}
+        colspan={5}
       />
       <Arrow solid col={3} />
       <Method
@@ -108,7 +108,7 @@ const Updating = ({ advanced }) => (advanced ? (
         type="pre-commit"
         col={1}
         row={6}
-        colspan={4}
+        colspan={5}
       />
       <Method
         main
@@ -151,7 +151,7 @@ const Updating = ({ advanced }) => (advanced ? (
         type="pre-commit"
         col={1}
         row={6}
-        colspan={4}
+        colspan={5}
       />
       <Method
         main
@@ -188,7 +188,7 @@ const Updating = ({ advanced }) => (advanced ? (
         type="pre-commit"
         col={1}
         row={3}
-        colspan={4}
+        colspan={5}
       />
       <Arrow solid col={3} />
       <Method
@@ -224,7 +224,7 @@ const Updating = ({ advanced }) => (advanced ? (
         type="pre-commit"
         col={1}
         row={3}
-        colspan={4}
+        colspan={5}
       />
       <Method
         main
@@ -259,7 +259,7 @@ const Updating = ({ advanced }) => (advanced ? (
         type="pre-commit"
         col={1}
         row={3}
-        colspan={4}
+        colspan={5}
       />
       <Method
         main

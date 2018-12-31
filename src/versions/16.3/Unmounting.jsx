@@ -17,7 +17,16 @@ const Unmounting = ({ advanced }) => (
       name="componentWillUnmount"
       docname="componentwillunmount"
       type="commit"
-      row={advanced ? 7 : 4}
+      row={advanced ? 3 : 1}
+    />
+    <Arrow />
+    <Method
+      secondary
+      name="React updates DOM and refs"
+      type="pre-commit"
+      col={1}
+      row={advanced ? 6 : 3}
+      colspan={5}
     />
   </Section>
 );

@@ -15,12 +15,24 @@ const SelectOption = ({
 }) => (
   <select id="language" onChange={onChange} value={value} {...otherProps}>
     {options.map(option => (
-      <option key={option}>
-        {option}
+      <option key={option.value || option} value={option.value || option}>
+        {option.label || option}
       </option>
     ))}
   </select>
 );
+
+SelectOption.propTypes = {
+  onChange: PropTypes.func,
+  options: PropTypes.arrayOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape({
+      label: PropTypes.string,
+      value: PropTypes.string,
+    }),
+  ])).isRequired,
+  value: PropTypes.string,
+};
 
 const Options = ({
   advanced,

@@ -1,0 +1,18 @@
+{
+  "React lifecycle methods diagram": "Diagramma dei cicli di vita di React",
+  "Options": "Opzioni",
+  "Show less common lifecycles": "Mostra cicli di vita meno comuni",
+  "Mounting": "Montaggio",
+  "Updating": "Aggiornamento",
+  "Unmounting": "Smontaggio",
+  "“{name} phase”": "“Fase {nome}”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Pura e senza side-effects, può essere messa in pausa, abortita o re-iniziata da React",
+  "Can read the DOM.": "Può leggere il DOM.",
+  "Can work with DOM, run side effects, schedule updates.": "Può agire sul DOM, eseguire side-effects, pianificare aggiornamenti.",
+  "React updates DOM and refs": "React aggiorna il DOM ed i riferimenti",
+  "Read docs for {name} (opens in a new tab)": "Leggi la documentazione per {nome} (si apre in una nuova tab)",
+  "See project's page on GitHub (opens in a new tab)": "Visualizza la pagina del progetto su GitHub (si apre in una nuova tab)",
+  "React version": "Versione React",
+  "Language": "Lingua",
+  "See project on": "Guarda il progetto su"
+}

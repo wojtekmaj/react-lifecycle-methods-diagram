@@ -2,7 +2,7 @@
 
 An interactive version of [React Lifecycle Methods diagram tweeted by Dan Abramov](https://twitter.com/dan_abramov/status/981712092611989509). Built in React, obviously.
 
-I did my best to make the diagram fully accessibile, both for keyboard navigation and screen readers for visually impaired people.
+I did my best to make the diagram fully accessible, both for keyboard navigation and screen readers for visually impaired people.
 
 [Online version](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) is also available!
 
@@ -16,7 +16,7 @@ I did my best to make the diagram fully accessibile, both for keyboard navigatio
 
 You are welcome to raise issues and create pull requests.
 
-Particularly valueable contributions are those regarding [i18n](https://en.wikipedia.org/wiki/i18n) as I only know so many languages. Adding new locale is pretty easy, but there's a [separate i18n guide](/src/i18n/README.md) in case you get lost.
+Particularly valuable contributions are those regarding [i18n](https://en.wikipedia.org/wiki/i18n) as I only know so many languages. Adding new locale is pretty easy, but there's a [separate i18n guide](/src/i18n/README.md) in case you get lost.
 
 You can also add a new version of the diagram in case React lifecycle methods are changed. There is a [separate versions guide](/src/versions/README.md) in case you get lost.
 

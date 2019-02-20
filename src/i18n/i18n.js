@@ -19,6 +19,7 @@ export const languageFiles = {
   'vn-VN': import('./json/vn-VN.json'),
   'zh-CN': import('./json/zh-CN.json'),
   'zh-TW': import('./json/zh-TW.json'),
+  'id-ID': import('./json/id-ID.json'),
 };
 
 export const supportedLocales = [

@@ -1,0 +1,18 @@
+{
+  "React lifecycle methods diagram": "Diagram lifecycle method React",
+  "Options": "Opsi",
+  "Show less common lifecycles": "Tunjukkan lifecycles yang kurang umum",
+  "React version": "Versi React",
+  "Language": "Bahasa",
+  "Mounting": "Menempel",
+  "Updating": "Memperbarui",
+  "Unmounting": "Mencopot",
+  "“{name} phase”": "“Tahap {name}”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Murni dan tidak memiliki efek samping. Dapat dijeda, dibatalkan atau dimulai kembali oleh React.",
+  "Can read the DOM.": "Dapat membaca DOM",
+  "Can work with DOM, run side effects, schedule updates.": "Dapat bekerja dengan DOM, menjalankan efek samping, merencanakan pembaruan",
+  "React updates DOM and refs": "React memperbarui DOM dan refs",
+  "Read docs for {name} (opens in a new tab)": "Baca dokumentasi untuk {name} (buka halaman baru)",
+  "See project's page on GitHub (opens in a new tab)": "Lihat proyek ini di Github (buka halaman baru)",
+  "See project on": "Lihat proyek ini di"
+}

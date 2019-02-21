@@ -7,6 +7,7 @@ export const languageFiles = {
   'de-DE': import('./json/de-DE.json'),
   'es-ES': import('./json/es-ES.json'),
   'fr-FR': import('./json/fr-FR.json'),
+  'id-ID': import('./json/id-ID.json'),
   'it-IT': import('./json/it-IT.json'),
   'ja-JP': import('./json/ja-JP.json'),
   'ko-KR': import('./json/ko-KR.json'),

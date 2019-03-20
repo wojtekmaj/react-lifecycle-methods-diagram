@@ -1,0 +1,18 @@
+{
+  "React lifecycle methods diagram": "React komponentіnіń ómіrlіk tsıklі ádіsterіnіń dıagrammasy",
+  "Options": "Optsıialar",
+  "Show less common lifecycles": "Ómіrlіk tsıkldyń az qoldanylatyn ádіsterіn kórsetý",
+  "React version": "React nusqasy",
+  "Language": "Til",
+  "Mounting": "Montajdaý",
+  "Updating": "Jańarý",
+  "Unmounting": "Keri montajdaý",
+  "“{name} phase”": "“{name} kezeńi”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Taza jáne janama áserlerі joq. React ózі toqtata, óshіre nemese qaıta bastaı alady.",
+  "Can read the DOM.": "DOM-dy oqýǵa bolady.",
+  "Can work with DOM, run side effects, schedule updates.": "Janama áserlerdі jasap, jańartýlardy taǵaıyndap, DOM-men jumys іsteýge bolady.",
+  "React updates DOM and refs": "React - DOM men refterdі jańartady",
+  "Read docs for {name} (opens in a new tab)": "{name} úshіn qujatty qaraý (jańa qoıyndyda ashylady)",
+  "See project's page on GitHub (opens in a new tab)": "GitHub jobasynyń paraqshasyna kіrіńіz (jańa qoıyndyda ashylady)",
+  "See project on": "Jobany qarańyz"
+}

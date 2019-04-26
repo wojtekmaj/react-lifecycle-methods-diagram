@@ -1,0 +1,18 @@
+{
+  "React lifecycle methods diagram": "نمودار متد های چرخه زندگی React",
+  "Options": "تنظیمات",
+  "Show less common lifecycles": "نمایش چرخه زندگی های کم اهمیت تر",
+  "React version": "نسخه React",
+  "Language": "زبان",
+  "Mounting": "نصب",
+  "Updating": "به روز رسانی",
+  "Unmounting": "عدم نصب",
+  "“{name} phase”": "“مرحله {name}”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "خالص و بدون اثرات جانبی. ممکن است متوقف، انصراف یا درخواست شده با React.",
+  "Can read the DOM.": "امکان خواندن DOM.",
+  "Can work with DOM, run side effects, schedule updates.": "امکان خواندن DOM، اجرای موارد جانبی، زمان بندی آپدیت ها.",
+  "React updates DOM and refs": "React آپدیت می کند DOM و ref ها را",
+  "Read docs for {name} (opens in a new tab)": "برای مطالعه بیشتر درباره{name} (تب جدید باز می کند)",
+  "See project's page on GitHub (opens in a new tab)": "صفحه Github پروژه را ببیند (تب جدید باز می کند)",
+  "See project on": "پروژه ما را ببینید"
+}

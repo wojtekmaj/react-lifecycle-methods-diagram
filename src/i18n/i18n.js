@@ -6,6 +6,7 @@ export const defaultLocale = 'en-US';
 export const languageFiles = {
   'de-DE': import('./json/de-DE.json'),
   'es-ES': import('./json/es-ES.json'),
+  'fa-IR': import('./json/fa-IR.json'),
   'fr-FR': import('./json/fr-FR.json'),
   'id-ID': import('./json/id-ID.json'),
   'it-IT': import('./json/it-IT.json'),

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import Initiator from './Initiator';
@@ -50,51 +50,47 @@ export const autoFillProps = (child, children, parentProps) => {
 
 const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-export default class Subsection extends Component {
-  static propTypes = {
-    children: PropTypes.node,
-    col: PropTypes.number.isRequired,
-    colspan: PropTypes.number,
-    sectionCol: PropTypes.number,
-  };
-
-  render() {
-    const {
-      children, col, colspan, sectionCol,
-    } = this.props;
-
-    const mappedChildren = React.Children.map(
-      children,
-      child => React.cloneElement(
-        child,
-        Object.assign(
-          { col },
-          autoFillProps(child, children, { col, colspan, sectionCol }),
-          child.props,
-        ),
+export default function Subsection({
+  children, col, colspan, sectionCol,
+}) {
+  const mappedChildren = React.Children.map(
+    children,
+    child => React.cloneElement(
+      child,
+      Object.assign(
+        { col },
+        autoFillProps(child, children, { col, colspan, sectionCol }),
+        child.props,
       ),
-    );
+    ),
+  );
 
-    // iOS fails to render display: contents properly despite reporting so
-    if (iOS || ('CSS' in window && !CSS.supports('display: contents'))) {
-      return mappedChildren;
-    }
-
-    // If display: contents is supported, we can create a proper list wrapper for list elements
-    const initiatorChildren = mappedChildren.filter(el => el.type === Initiator);
-    const methodChildren = mappedChildren.filter(el => el.type === Method);
-    const otherChildren = mappedChildren.filter(
-      el => !methodChildren.includes(el) && !initiatorChildren.includes(el),
-    );
-
-    return (
-      <>
-        {initiatorChildren}
-        <ul>
-          {methodChildren}
-        </ul>
-        {otherChildren}
-      </>
-    );
+  // iOS fails to render display: contents properly despite reporting so
+  if (iOS || ('CSS' in window && !CSS.supports('display: contents'))) {
+    return mappedChildren;
   }
+
+  // If display: contents is supported, we can create a proper list wrapper for list elements
+  const initiatorChildren = mappedChildren.filter(el => el.type === Initiator);
+  const methodChildren = mappedChildren.filter(el => el.type === Method);
+  const otherChildren = mappedChildren.filter(
+    el => !methodChildren.includes(el) && !initiatorChildren.includes(el),
+  );
+
+  return (
+    <>
+      {initiatorChildren}
+      <ul>
+        {methodChildren}
+      </ul>
+      {otherChildren}
+    </>
+  );
 }
+
+Subsection.propTypes = {
+  children: PropTypes.node,
+  col: PropTypes.number.isRequired,
+  colspan: PropTypes.number,
+  sectionCol: PropTypes.number,
+};

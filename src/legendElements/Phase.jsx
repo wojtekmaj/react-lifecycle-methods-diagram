@@ -6,28 +6,30 @@ import './Phase.less';
 
 import T from '../i18n';
 
-const Phase = ({
+export default function Phase({
   children, last, name, row, rowspan,
-}) => (
-  <div
-    className={mergeClassNames('Phase', last && 'Phase--last')}
-    style={{
-      gridColumn: 1,
-      gridRow: `${row * 3} / ${rowspan ? `span ${rowspan * 3}` : 'auto'}`,
-    }}
-  >
-    <h3>
-      <T name={name}>
-        {'“{name} phase”'}
-      </T>
-    </h3>
-    <p>
-      <T>
-        {children}
-      </T>
-    </p>
-  </div>
-);
+}) {
+  return (
+    <div
+      className={mergeClassNames('Phase', last && 'Phase--last')}
+      style={{
+        gridColumn: 1,
+        gridRow: `${row * 3} / ${rowspan ? `span ${rowspan * 3}` : 'auto'}`,
+      }}
+    >
+      <h3>
+        <T name={name}>
+          {'“{name} phase”'}
+        </T>
+      </h3>
+      <p>
+        <T>
+          {children}
+        </T>
+      </p>
+    </div>
+  );
+}
 
 Phase.propTypes = {
   children: PropTypes.string.isRequired,
@@ -36,5 +38,3 @@ Phase.propTypes = {
   row: PropTypes.number.isRequired,
   rowspan: PropTypes.number,
 };
-
-export default Phase;

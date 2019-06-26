@@ -1,54 +1,41 @@
-import React, { Component, createContext } from 'react';
+import React, {
+  createContext,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import PropTypes from 'prop-types';
 
-const { Provider, Consumer } = createContext();
+export const Context = createContext();
 
-export { Provider, Consumer };
+export default function LangObserver({ children }) {
+  const observer = useRef();
+  const [locale, setLocale] = useState(document.documentElement.getAttribute('lang'));
 
-export default class LangObserver extends Component {
-  static propTypes = {
-    children: PropTypes.node,
+  function onLangAttributeChange() {
+    setLocale(document.documentElement.getAttribute('lang'));
   }
 
-  state = {
-    locale: document.documentElement.getAttribute('lang'),
-  }
-
-  componentDidMount() {
-    this.observer = new MutationObserver(this.onLangAttributeChange);
-    this.observer.observe(
+  useEffect(() => {
+    observer.current = new MutationObserver(onLangAttributeChange);
+    observer.current.observe(
       document.documentElement,
       {
         attributeFilter: ['lang'],
         attributes: true,
       },
     );
-  }
 
-  componentWillUnmount() {
-    this.observer.disconnect();
-  }
+    return () => observer.current.disconnect();
+  }, []);
 
-  onLangAttributeChange = () => {
-    this.setState((prevState) => {
-      const locale = document.documentElement.getAttribute('lang');
-
-      if (locale === prevState.locale) {
-        return null;
-      }
-
-      return { locale };
-    });
-  }
-
-  render() {
-    const { children } = this.props;
-    const { locale } = this.state;
-
-    return (
-      <Provider value={locale}>
-        {children}
-      </Provider>
-    );
-  }
+  return (
+    <Context.Provider value={locale}>
+      {children}
+    </Context.Provider>
+  );
 }
+
+LangObserver.propTypes = {
+  children: PropTypes.node,
+};

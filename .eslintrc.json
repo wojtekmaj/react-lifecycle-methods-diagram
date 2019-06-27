@@ -7,8 +7,7 @@
   },
   "parser": "babel-eslint",
   "rules": {
-    "import/prefer-default-export": "off",
-    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/label-has-associated-control": ["error", { "required": { "some": ["id", "nesting"] }}],
     "jsx-a11y/label-has-for": ["error", { "required": { "some": ["id", "nesting"] }}],
     "prefer-destructuring": "warn",
     "prefer-spread": "warn",

@@ -1,4 +1,4 @@
-import '@babel/polyfill';
+import 'regenerator-runtime/runtime';
 
 import { defaultLocale, getMatchingLocale, languageFiles } from './i18n';
 

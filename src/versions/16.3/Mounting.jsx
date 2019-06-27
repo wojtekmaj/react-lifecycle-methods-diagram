@@ -11,6 +11,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     <Method
       main
       name="constructor"
+      key="constructor"
       docname="constructor"
       type="render"
       row={1}
@@ -18,6 +19,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     <Arrow />
     <Method
       name="getDerivedStateFromProps"
+      key="static-getderivedstatefromprops"
       docname="static-getderivedstatefromprops"
       type="render"
       row={2}
@@ -28,6 +30,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     <Method
       main
       name="render"
+      key="render"
       docname="render"
       type="render"
       row={4}
@@ -37,6 +40,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     <Method
       secondary
       name="React updates DOM and refs"
+      key="react-updates-dom-and-refs"
       type="pre-commit"
       row={6}
       colspan={4}
@@ -45,6 +49,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     <Method
       main
       name="componentDidMount"
+      key="componentdidmount"
       docname="componentdidmount"
       type="commit"
       row={7}
@@ -56,6 +61,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     <Method
       main
       name="constructor"
+      key="constructor"
       docname="constructor"
       type="render"
       row={1}
@@ -64,6 +70,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     <Method
       main
       name="render"
+      key="render"
       docname="render"
       type="render"
       row={2}
@@ -73,6 +80,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     <Method
       secondary
       name="React updates DOM and refs"
+      key="react-updates-dom-and-refs"
       type="pre-commit"
       row={3}
       colspan={4}
@@ -81,6 +89,7 @@ const Mounting = ({ advanced }) => (advanced ? (
     <Method
       main
       name="componentDidMount"
+      key="componentdidmount"
       docname="componentdidmount"
       type="commit"
       row={4}

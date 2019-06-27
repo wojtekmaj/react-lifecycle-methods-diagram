@@ -18,6 +18,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Arrow />
       <Method
         name="getDerivedStateFromProps"
+        key="static-getderivedstatefromprops"
         docname="static-getderivedstatefromprops"
         type="render"
         col={1}
@@ -27,6 +28,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Arrow />
       <Method
         name="shouldComponentUpdate"
+        key="shouldcomponentupdate"
         docname="shouldcomponentupdate"
         type="render"
         row={3}
@@ -36,6 +38,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="render"
+        key="render"
         docname="render"
         type="render"
         col={1}
@@ -44,6 +47,7 @@ const Updating = ({ advanced }) => (advanced ? (
       />
       <Method
         name="getSnapshotBeforeUpdate"
+        key="getsnapshotbeforeupdate"
         docname="getsnapshotbeforeupdate"
         type="pre-commit"
         row={5}
@@ -62,6 +66,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="componentDidUpdate"
+        key="componentdidupdate"
         docname="componentdidupdate"
         type="commit"
         colspan={3}
@@ -72,12 +77,14 @@ const Updating = ({ advanced }) => (advanced ? (
     <Subsection col={3}>
       <Initiator
         name="setState()"
+        key="setstate"
         docname="setstate"
         row={1}
       />
       <Arrow />
       <Method
         name="getDerivedStateFromProps"
+        key="static-getderivedstatefromprops"
         docname="static-getderivedstatefromprops"
         type="render"
         col={1}
@@ -87,6 +94,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Arrow />
       <Method
         name="shouldComponentUpdate"
+        key="shouldcomponentupdate"
         docname="shouldcomponentupdate"
         type="render"
         col={2}
@@ -96,6 +104,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="render"
+        key="render"
         docname="render"
         type="render"
         col={1}
@@ -105,6 +114,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Arrow />
       <Method
         name="getSnapshotBeforeUpdate"
+        key="getsnapshotbeforeupdate"
         docname="getsnapshotbeforeupdate"
         type="pre-commit"
         col={2}
@@ -122,6 +132,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="componentDidUpdate"
+        key="componentdidupdate"
         docname="componentdidupdate"
         type="commit"
         col={2}
@@ -133,12 +144,14 @@ const Updating = ({ advanced }) => (advanced ? (
     <Subsection col={4}>
       <Initiator
         name="forceUpdate()"
+        key="forceupdate"
         docname="forceupdate"
         row={1}
       />
       <Arrow />
       <Method
         name="getDerivedStateFromProps"
+        key="static-getderivedstatefromprops"
         docname="static-getderivedstatefromprops"
         type="render"
         col={1}
@@ -149,6 +162,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="render"
+        key="render"
         docname="render"
         type="render"
         col={1}
@@ -157,6 +171,7 @@ const Updating = ({ advanced }) => (advanced ? (
       />
       <Method
         name="getSnapshotBeforeUpdate"
+        key="getsnapshotbeforeupdate"
         docname="getsnapshotbeforeupdate"
         type="pre-commit"
         col={2}
@@ -174,6 +189,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="componentDidUpdate"
+        key="componentdidupdate"
         docname="componentdidupdate"
         type="commit"
         col={2}
@@ -194,6 +210,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="render"
+        key="render"
         docname="render"
         type="render"
         col={1}
@@ -212,6 +229,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="componentDidUpdate"
+        key="componentdidupdate"
         docname="componentdidupdate"
         type="commit"
         colspan={3}
@@ -222,6 +240,7 @@ const Updating = ({ advanced }) => (advanced ? (
     <Subsection col={3}>
       <Initiator
         name="setState()"
+        key="setstate"
         docname="setstate"
         row={1}
       />
@@ -229,6 +248,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="render"
+        key="render"
         docname="render"
         type="render"
         col={1}
@@ -247,6 +267,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="componentDidUpdate"
+        key="componentdidupdate"
         docname="componentdidupdate"
         type="commit"
         col={2}
@@ -258,6 +279,7 @@ const Updating = ({ advanced }) => (advanced ? (
     <Subsection col={4}>
       <Initiator
         name="forceUpdate()"
+        key="forceupdate"
         docname="forceupdate"
         row={1}
       />
@@ -265,6 +287,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="render"
+        key="render"
         docname="render"
         type="render"
         col={1}
@@ -282,6 +305,7 @@ const Updating = ({ advanced }) => (advanced ? (
       <Method
         main
         name="componentDidUpdate"
+        key="componentdidupdate"
         docname="componentdidupdate"
         type="commit"
         col={2}

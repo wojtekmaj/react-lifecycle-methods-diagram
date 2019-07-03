@@ -1,0 +1,18 @@
+{
+  "React lifecycle methods diagram": "React амьдарлын мөчлөгийн диаграмм",
+  "Options": "Тохиргоо",
+  "Show less common lifecycles": "Түгээмэл бус мөчлөгийн функцуудыг харуул",
+  "React version": "React хувилбар",
+  "Language": "Хэл",
+  "Mounting": "Холбогдох (Mounting)",
+  "Updating": "Шинэчлэх (Updating)",
+  "Unmounting": "Салгах (Unmounting)",
+  "“{name} phase”": "“{name} хийх үе шат”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Цэвэр бас ямар нэг side effect үгүй. React магадгүй түр зогсоосон, эсвэл бүр мөсөн зогсоосон, эсвэл дахин ачаалсан.",
+  "Can read the DOM.": "DOM -г уншиж чадна.",
+  "Can work with DOM, run side effects, schedule updates.": "DOM -той харьцах, side effects ажиллуулах, update-г төлөвлөх.",
+  "React updates DOM and refs": "React нь DOM бас refs -г update хийдэг",
+  "Read docs for {name} (opens in a new tab)": "{name} тухай илүү дэлгэрэнгүйг (шинэ таб дээр нээгдэх)",
+  "See project's page on GitHub (opens in a new tab)": "GitHub дээр project's хуудаснаас харах (шинэ таб дээр нээгдэх)",
+  "See project on": "Үндсэн төсөл харах"
+}

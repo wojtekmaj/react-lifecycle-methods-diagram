@@ -13,6 +13,7 @@ export const languageFiles = {
   'ja-JP': import('./json/ja-JP.json'),
   'ko-KR': import('./json/ko-KR.json'),
   'kz-KZ': import('./json/kz-KZ.json'),
+  'mn-MN': import('./json/mn-MN.json'),
   'pl-PL': import('./json/pl-PL.json'),
   'pt-BR': import('./json/pt-BR.json'),
   'ru-RU': import('./json/ru-RU.json'),

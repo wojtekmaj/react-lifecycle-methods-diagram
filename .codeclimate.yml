@@ -6,8 +6,6 @@ engines:
       - javascript
     exclude_paths:
     - "src/versions"
-  eslint:
-    enabled: true
   fixme:
     enabled: true
 ratings:

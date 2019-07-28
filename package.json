@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Interactive React lifecycle methods diagram.",
   "scripts": {
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url ./ --no-source-maps",
     "clean": "rimraf dist",
     "lint": "eslint src/ --ext .jsx,.js",
     "start": "parcel src/index.html",

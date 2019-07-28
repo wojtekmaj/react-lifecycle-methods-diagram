@@ -12,7 +12,7 @@ import Arrow from './Arrow';
  * @param {*} child
  * @param {*} children
  */
-export const autoFillProps = (child, children, parentProps) => {
+export function autoFillProps(child, children, parentProps) {
   if (!child) {
     return null;
   }
@@ -46,7 +46,7 @@ export const autoFillProps = (child, children, parentProps) => {
       break;
   }
   return props;
-};
+}
 
 const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 

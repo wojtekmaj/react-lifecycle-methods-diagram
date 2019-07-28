@@ -14,7 +14,7 @@ import { getMatchingLocale } from './i18n/i18n';
  * after each rerender. Seems like Chrome can't figure out proper sizes until
  * we give it width explicitly.
  */
-const fixChromeGridSizingBug = (ref) => {
+function fixChromeGridSizingBug(ref) {
   if (!ref) { return; }
   requestAnimationFrame(() => {
     /* eslint-disable no-param-reassign */
@@ -23,17 +23,21 @@ const fixChromeGridSizingBug = (ref) => {
       ref.style.width = null;
     });
   });
-};
+}
 
-const getLocalStorage = (key, defaultValue) => (
-  localStorage && localStorage[key]
-    ? localStorage[key]
-    : defaultValue
-);
+function getLocalStorage(key, defaultValue) {
+  return (
+    localStorage && localStorage[key]
+      ? localStorage[key]
+      : defaultValue
+  );
+}
 
-const getLocalStorageFlag = (key, defaultValue) => getLocalStorage(key, defaultValue) === 'true';
+function getLocalStorageFlag(key, defaultValue) {
+  return getLocalStorage(key, defaultValue) === 'true';
+}
 
-const latestReactVersion = [...supportedReactVersions].pop();
+const latestReactVersion = supportedReactVersions[supportedReactVersions.length - 1];
 
 const userLocale = getLocalStorage('locale', getMatchingLocale());
 
@@ -71,7 +75,7 @@ export default function Root() {
   }, [advanced, locale, reactVersion]);
 
   return (
-    <div ref={ref => fixChromeGridSizingBug(ref)}>
+    <div ref={fixChromeGridSizingBug}>
       <h1>
         <T>
           React lifecycle methods diagram

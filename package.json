@@ -93,8 +93,7 @@
     "merge-class-names": "^1.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "regenerator-runtime": "^0.13.2"
+    "react-dom": "^16.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",

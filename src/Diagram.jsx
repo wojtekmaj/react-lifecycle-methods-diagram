@@ -11,15 +11,11 @@ const diagramVersions = {
 export default function Diagram({ advanced, reactVersion }) {
   const [diagramElements, setDiagramElements] = useState();
 
-  async function loadDiagramElements() {
-    const nextDiagramElements = await diagramVersions[reactVersion];
-
-    setDiagramElements(nextDiagramElements);
+  function loadDiagramElements() {
+    diagramVersions[reactVersion].then(setDiagramElements);
   }
 
-  useEffect(() => {
-    loadDiagramElements();
-  }, [reactVersion]);
+  useEffect(loadDiagramElements, [reactVersion]);
 
 
   if (!diagramElements) {

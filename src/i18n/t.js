@@ -2,7 +2,7 @@ import { defaultLocale, getMatchingLocale, languageFiles } from './i18n';
 
 function getTranslatedString(string, locale) {
   if (locale === defaultLocale || !languageFiles[locale]) {
-    return string;
+    return Promise.resolve(string);
   }
 
   return languageFiles[locale]

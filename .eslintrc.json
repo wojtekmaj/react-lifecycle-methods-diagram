@@ -11,9 +11,7 @@
       "requireForBlockBody": true
     }],
     "jsx-a11y/label-has-associated-control": ["error", { "required": { "some": ["id", "nesting"] }}],
-    "prefer-destructuring": "warn",
     "prefer-object-spread": "off",
-    "prefer-spread": "warn",
     "react/jsx-props-no-spreading": "off",
     "react/require-default-props": "off",
     "sort-keys": "error"

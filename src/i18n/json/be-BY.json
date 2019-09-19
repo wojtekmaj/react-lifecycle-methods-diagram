@@ -1,0 +1,18 @@
+{
+  "React lifecycle methods diagram": "Дыяграма метадаў жыццёвага цыкла React-кампанента",
+  "Options": "Опцыі",
+  "Show less common lifecycles": "Паказаць менш папулярныя метады жыццёвага цыклу",
+  "React version": "Версія React",
+  "Language": "Мова",
+  "Mounting": "Мантаванне",
+  "Updating": "Абнаўленне",
+  "Unmounting": "Адмантаванне",
+  "“{name} phase”": "“Этап {name}”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Чысты і не мае пабочных эфектаў. Можа быць прыпынены, перапынены і адноўлены самім React.",
+  "Can read the DOM.": "Можна выканаць чытанне DOM.",
+  "Can work with DOM, run side effects, schedule updates.": "Можа працаваць з DOM, выконваць пабочныя эфекты, прызначаць абнаўленні.",
+  "React updates DOM and refs": "React абнаўляе DOM і рэфы",
+  "Read docs for {name} (opens in a new tab)": "Праглядзець дакументацыю пра {name} (адкрыецца ў новай ўкладцы)",
+  "See project's page on GitHub (opens in a new tab)": "Наведаць старонку праекту на GitHub (адкрыецца ў новай ўкладцы)",
+  "See project on": "Наведаць старонку праекту на"
+}

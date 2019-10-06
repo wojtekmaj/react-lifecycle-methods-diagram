@@ -110,7 +110,7 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "less": "^3.9.0",
-    "parcel-bundler": "1.12.2",
+    "parcel-bundler": "^1.12.4",
     "rimraf": "^2.6.2"
   }
 }

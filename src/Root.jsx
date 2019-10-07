@@ -27,26 +27,45 @@ function fixChromeGridSizingBug(ref) {
 
 function getLocalStorage(key, defaultValue) {
   return (
-    localStorage && localStorage[key]
+    key in localStorage
       ? localStorage[key]
       : defaultValue
   );
 }
 
-function getLocalStorageFlag(key, defaultValue) {
-  return getLocalStorage(key, defaultValue) === 'true';
-}
-
+const userLocale = getLocalStorage('locale', getMatchingLocale());
 const latestReactVersion = supportedReactVersions[supportedReactVersions.length - 1];
 
-const userLocale = getLocalStorage('locale', getMatchingLocale());
+function useLocalStorage(key, defaultValue) {
+  const [value, setValue] = useState(getLocalStorage(key, defaultValue));
 
-document.documentElement.setAttribute('lang', userLocale);
+  useEffect(() => {
+    try {
+      localStorage[key] = value;
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error('Failed to safe settings.');
+    }
+  }, [value]);
+
+  return [value, setValue];
+}
+
+function useLocalStorageFlag(key, defaultValue) {
+  const [value, setValue] = useLocalStorage(key, defaultValue);
+  const valueBoolean = typeof value === 'boolean' ? value : value === 'true';
+  function onChange(valueOrFunction) {
+    setValue(typeof valueOrFunction === 'function'
+      ? valueOrFunction(valueBoolean)
+      : valueOrFunction);
+  }
+  return [valueBoolean, onChange];
+}
 
 export default function Root() {
-  const [advanced, setAdvanced] = useState(getLocalStorageFlag('showAdvanced', 'false'));
-  const [locale, setLocale] = useState(userLocale);
-  const [reactVersion, setReactVersion] = useState(getLocalStorage('reactVersion', latestReactVersion));
+  const [advanced, setAdvanced] = useLocalStorageFlag('showAdvanced', false);
+  const [locale, setLocale] = useLocalStorage('locale', userLocale);
+  const [reactVersion, setReactVersion] = useLocalStorage('reactVersion', latestReactVersion);
 
   function toggleAdvanced() {
     setAdvanced(prevAdvanced => !prevAdvanced);
@@ -54,7 +73,6 @@ export default function Root() {
 
   function toggleLocale(event) {
     const { value } = event.target;
-    document.documentElement.setAttribute('lang', value);
     setLocale(value);
   }
 
@@ -64,15 +82,8 @@ export default function Root() {
   }
 
   useEffect(() => {
-    try {
-      localStorage.showAdvanced = advanced;
-      localStorage.locale = locale;
-      localStorage.reactVersion = reactVersion;
-    } catch (err) {
-      // eslint-disable-next-line no-console
-      console.error('Failed to safe settings.');
-    }
-  }, [advanced, locale, reactVersion]);
+    document.documentElement.setAttribute('lang', locale);
+  }, [locale]);
 
   return (
     <div ref={fixChromeGridSizingBug}>

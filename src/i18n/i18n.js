@@ -52,6 +52,5 @@ const getExtendedUserLocales = once(() => {
 export const getMatchingLocale = once(() => {
   const extendedUserLocales = getExtendedUserLocales();
   const matchingLocale = extendedUserLocales.find(locale => supportedLocales.includes(locale));
-  document.documentElement.setAttribute('lang', matchingLocale);
   return matchingLocale;
 });

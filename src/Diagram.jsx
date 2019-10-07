@@ -17,7 +17,6 @@ export default function Diagram({ advanced, reactVersion }) {
 
   useEffect(loadDiagramElements, [reactVersion]);
 
-
   if (!diagramElements) {
     return null;
   }

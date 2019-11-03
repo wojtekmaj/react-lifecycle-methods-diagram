@@ -26,6 +26,10 @@
       "name": "Armin Schweitzer"
     },
     {
+      "name": "Artur Basak",
+      "email": "artur.basak.devingrodno@gmail.com"
+    },
+    {
       "name": "Burak Shen",
       "email": "tobuba2@gmail.com"
     },
@@ -51,8 +55,16 @@
       "name": "Lara de Oliveira"
     },
     {
+      "name": "Majed Bojan",
+      "email": "bojanmajed@gmail.com"
+    },
+    {
       "name": "Marek Suscak",
       "email": "marek.suscak@gmail.com"
+    },
+    {
+      "name": "Mohamad Shiralizadeh",
+      "email": "mohamad.shir@gmail.com"
     },
     {
       "name": "Oerd Cukalla"
@@ -69,6 +81,10 @@
       "name": "Sung Kim"
     },
     {
+      "name": "Suraneti Rodsuwan",
+      "email": "suraneti.rod@gmail.com"
+    },
+    {
       "name": "Tony Hudson"
     },
     {
@@ -78,14 +94,6 @@
     {
       "name": "YIPG",
       "email": "around.mr.child@gmail.com"
-    },
-    {
-      "name": "Mohamad Shiralizadeh",
-      "email": "mohamad.shir@gmail.com"
-    },
-    {
-      "name": "Artur Basak",
-      "email": "artur.basak.devingrodno@gmail.com"
     }
   ],
   "license": "MIT",

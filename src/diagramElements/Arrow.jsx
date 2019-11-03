@@ -5,7 +5,12 @@ import mergeClassNames from 'merge-class-names';
 import './Arrow.less';
 
 export default function Arrow({
-  col, colspan, from, solid, to, withAlt,
+  col,
+  colspan = 1,
+  from,
+  solid,
+  to,
+  withAlt,
 }) {
   return (
     <div
@@ -27,8 +32,4 @@ Arrow.propTypes = {
   solid: PropTypes.bool,
   to: PropTypes.number,
   withAlt: PropTypes.bool,
-};
-
-Arrow.defaultProps = {
-  colspan: 1,
 };

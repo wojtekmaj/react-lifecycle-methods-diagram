@@ -16,7 +16,7 @@ export default function Section(props) {
     advanced,
     children,
     col,
-    colspan,
+    colspan = 1,
     name,
   } = props;
 
@@ -81,8 +81,4 @@ Section.propTypes = {
   col: PropTypes.number.isRequired,
   colspan: PropTypes.number,
   name: PropTypes.string.isRequired,
-};
-
-Section.defaultProps = {
-  colspan: 1,
 };

@@ -8,7 +8,7 @@ import DocLink from './DocLink';
 
 export default function Method({
   col,
-  colspan,
+  colspan = 1,
   docname,
   endsInMiddle,
   main,
@@ -47,8 +47,4 @@ Method.propTypes = {
   row: PropTypes.number.isRequired,
   secondary: PropTypes.bool,
   type: PropTypes.oneOf(['render', 'pre-commit', 'commit']),
-};
-
-Method.defaultProps = {
-  colspan: 1,
 };

@@ -12,7 +12,7 @@ function getLocaleFromDocument() {
   return document.documentElement.getAttribute('lang');
 }
 
-export default function LangObserver({ children }) {
+function useLocale() {
   const observer = useRef();
   const [locale, setLocale] = useState(getLocaleFromDocument);
 
@@ -33,6 +33,12 @@ export default function LangObserver({ children }) {
 
     return () => observer.current.disconnect();
   }, []);
+
+  return locale;
+}
+
+export default function LangObserver({ children }) {
+  const locale = useLocale();
 
   return (
     <Context.Provider value={locale}>

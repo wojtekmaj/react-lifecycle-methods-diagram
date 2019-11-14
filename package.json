@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Interactive React lifecycle methods diagram.",
   "scripts": {
-    "build": "parcel build src/index.html --public-url ./ --no-source-maps --experimental-scope-hoisting",
-    "clean": "rimraf dist",
+    "build": "parcel build src/index.html --no-source-maps",
+    "clean": "rimraf .parcel-cache; rimraf dist",
     "lint": "eslint src/ --ext .jsx,.js",
     "start": "parcel src/index.html",
     "test": "yarn lint"
@@ -118,7 +118,12 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "less": "^3.9.0",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0-alpha.3.1",
     "rimraf": "^3.0.0"
+  },
+  "targets": {
+    "browser": {
+      "publicUrl": "./"
+    }
   }
 }

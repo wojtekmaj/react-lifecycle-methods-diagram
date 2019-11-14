@@ -33,8 +33,13 @@ function getLocalStorage(key, defaultValue) {
   );
 }
 
+function setLocaleToDocument(locale) {
+  document.documentElement.setAttribute('lang', locale);
+}
+
 const userLocale = getLocalStorage('locale', getMatchingLocale());
 const latestReactVersion = supportedReactVersions[supportedReactVersions.length - 1];
+setLocaleToDocument(userLocale);
 
 function useLocalStorage(key, defaultValue) {
   const [value, setValue] = useState(getLocalStorage(key, defaultValue));
@@ -82,7 +87,7 @@ export default function Root() {
   }
 
   useEffect(() => {
-    document.documentElement.setAttribute('lang', locale);
+    setLocaleToDocument(locale);
   }, [locale]);
 
   return (

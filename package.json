@@ -123,8 +123,9 @@
     "parcel": "^2.0.0-alpha.3.1",
     "rimraf": "^3.0.0"
   },
+  "default": "dist/index.html",
   "targets": {
-    "browser": {
+    "default": {
       "publicUrl": "./"
     }
   }

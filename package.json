@@ -94,7 +94,11 @@
     {
       "name": "YIPG",
       "email": "around.mr.child@gmail.com"
-    }
+    },
+    {
+      "name": "Axel Loewe",
+      "email": "aleloe1956@gmail.com"
+    }    
   ],
   "license": "MIT",
   "dependencies": {

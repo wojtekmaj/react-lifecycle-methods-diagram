@@ -19,6 +19,7 @@ export const languageFiles = {
   'pt-BR': import('./json/pt-BR.json'),
   'ru-RU': import('./json/ru-RU.json'),
   'sq-AL': import('./json/sq-AL.json'),
+  'sv-SE': import('./json/sv-SE.json'),
   'th-TH': import('./json/th-TH.json'),
   'tr-TR': import('./json/tr-TR.json'),
   'uk-UA': import('./json/uk-UA.json'),

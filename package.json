@@ -111,7 +111,7 @@
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-export-default-from": "^7.5.5",
     "babel-eslint": "^10.0.0",
-    "eslint": "^6.1.0",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",

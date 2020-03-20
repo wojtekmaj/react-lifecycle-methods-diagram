@@ -13,6 +13,7 @@
   "Can work with DOM, run side effects, schedule updates.": "DOMに働きかけることができる。副作用があり、更新タイミングを決める",
   "React updates DOM and refs": "Reactが DOM と refs を更新する",
   "Read docs for {name} (opens in a new tab)": "ドキュメント {name} を読む（新しいタブで開きます）",
+  "https://reactjs.org/docs/react-component.html#{docname}": "https://ja.reactjs.org/docs/react-component.html#{docname}",
   "See project's page on GitHub (opens in a new tab)": "Github上のプロジェクトページを見る(新しいタブで開きます)",
   "See project on": "プロジェクトを見る@"
 }

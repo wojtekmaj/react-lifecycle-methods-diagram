@@ -13,6 +13,7 @@
   "Can work with DOM, run side effects, schedule updates.": "Có thể làm việc với đối tượng DOM, chạy các tác vụ phụ, cập nhật theo lịch",
   "React updates DOM and refs": "React cập nhật đối tượng DOM và ref",
   "Read docs for {name} (opens in a new tab)": "Đọc tài liệu cho {name} (mở trong tab mới)",
+  "https://reactjs.org/docs/react-component.html#{docname}": "https://vi.reactjs.org/docs/react-component.html#{docname}",
   "See project's page on GitHub (opens in a new tab)": "Xem dự án tại Github (mở trong tab mới)",
   "See project on": "Xem dự án tại"
 }

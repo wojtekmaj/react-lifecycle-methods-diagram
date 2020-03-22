@@ -1,0 +1,15 @@
+{
+  "React lifecycle methods diagram": "React livscykelmetoder",
+  "Options": "Alternativ",
+  "Show less common lifecycles": "Visa mindre vanliga livscykler",
+  "Mounting": "Montera",
+  "Updating": "Uppdatera",
+  "Unmounting": "Avmontera",
+  "“{name} phase”": "“{name}“",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Har inga sidoeffekter. Kan pausas, avbrytas eller startas om av React",
+  "Can read the DOM.": "Kan läsa DOM.",
+  "Can work with DOM, run side effects, schedule updates.": "Kan arbeta med DOM, köra sidoeffekter och schemauppdateringar.",
+  "React updates DOM and refs": "React uppdaterar DOM + eventuella refs",
+  "Read docs for {name} (opens in a new tab)": "Dokumentation för {name} (öppnas i ny tab)",
+  "See project's page on GitHub (opens in a new tab)": "Se projektets GitHub-sida (öppnas i ny tab)"
+}

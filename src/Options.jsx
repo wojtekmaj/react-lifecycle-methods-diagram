@@ -8,6 +8,33 @@ import T from './i18n';
 import { supportedReactVersions, isReactVersion } from './propTypes';
 import { supportedLocales } from './i18n/i18n';
 
+import languages from './i18n/languages.json';
+
+function findLanguage(locale) {
+  const [languageCode] = locale.split('-');
+
+  return (
+    languages.find(currentLanguage => currentLanguage.code === locale)
+    || languages.find(currentLanguage => currentLanguage.code === languageCode)
+  );
+}
+
+const locales = supportedLocales
+  .sort((a, b) => {
+    const languageA = findLanguage(a);
+    const languageB = findLanguage(b);
+
+    return languageA.name.localeCompare(languageB.name);
+  })
+  .map((locale) => {
+    const language = findLanguage(locale);
+
+    return {
+      label: `${countryCodeToFlagEmoji(locale)} ${language.translated_name || language.name}`,
+      value: locale,
+    };
+  });
+
 function SelectOption({
   onChange,
   options,
@@ -84,10 +111,7 @@ export default function Options({
         </label>
         <SelectOption
           id="language"
-          options={supportedLocales.map(value => ({
-            label: `${countryCodeToFlagEmoji(value)} ${value}`,
-            value,
-          }))}
+          options={locales}
           onChange={toggleLocale}
           value={locale}
         />

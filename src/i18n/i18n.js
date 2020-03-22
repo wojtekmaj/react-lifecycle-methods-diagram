@@ -22,7 +22,7 @@ export const languageFiles = {
   'th-TH': import('./json/th-TH.json'),
   'tr-TR': import('./json/tr-TR.json'),
   'uk-UA': import('./json/uk-UA.json'),
-  'vn-VN': import('./json/vn-VN.json'),
+  'vi-VN': import('./json/vi-VN.json'),
   'zh-CN': import('./json/zh-CN.json'),
   'zh-TW': import('./json/zh-TW.json'),
 };

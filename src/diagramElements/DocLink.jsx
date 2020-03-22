@@ -11,6 +11,8 @@ export default function DocLink({ docname, name }) {
 
   const children = splitUpperCase(translatedName);
 
+  const isEnglish = name === translatedName;
+
   return (
     docname
       ? (
@@ -19,12 +21,13 @@ export default function DocLink({ docname, name }) {
           target="_blank"
           rel="noopener noreferrer"
           title={translatedTitle}
+          dir={isEnglish ? 'ltr' : undefined}
         >
           {children}
         </a>
       )
       : (
-        <span>
+        <span dir={isEnglish ? 'ltr' : undefined}>
           {children}
         </span>
       )

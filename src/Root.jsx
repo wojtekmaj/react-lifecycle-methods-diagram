@@ -33,8 +33,15 @@ function getLocalStorage(key, defaultValue) {
   );
 }
 
+const rtlLanguages = [
+  'ar',
+  'fa',
+];
+
 function setLocaleToDocument(locale) {
   document.documentElement.setAttribute('lang', locale);
+  const [languageCode] = locale.split('-');
+  document.documentElement.setAttribute('dir', rtlLanguages.includes(languageCode) ? 'rtl' : 'ltr');
 }
 
 const userLocale = getLocalStorage('locale', getMatchingLocale());

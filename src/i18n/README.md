@@ -2,11 +2,22 @@
 
 ## Usage of translation module
 
-1. Define translatable string in the code:
+1. Define translatable string in the code using `<T>` tag:
     ```js
     <T>Original phrase</T>
     ```
-2. If you're the translator, add an entry in language JSON files, for example:
+    or using `useTranslation` hook if needed:
+    ```js
+    const translatedPhrase = useTranslation('Original phrase');
+    ```
+    If necessary, you may use variables like so:
+     ```js
+    <T name={name}>{'Hello, {name}'}</T>
+    ```
+    ```js
+    const translatedPhrase = useTranslation('Hello, {name}', { name });
+    ```
+2. If you're a translator, add a corresponding entry in language JSON files, for example:
     ```json
     {
       "Original phrase": "Przetłumaczona fraza"

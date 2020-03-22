@@ -1,10 +1,10 @@
-import { useContext, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-import { Context } from './LangObserver';
+import useLocale from './useLocale';
 import t from './t';
 
 export default function useTranslation(string, args = {}) {
-  const locale = useContext(Context);
+  const locale = useLocale();
   const [translatedString, setTranslatedString] = useState(null);
 
   useEffect(() => {

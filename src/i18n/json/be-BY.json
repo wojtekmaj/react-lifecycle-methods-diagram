@@ -13,6 +13,7 @@
   "Can work with DOM, run side effects, schedule updates.": "Можа працаваць з DOM, выконваць пабочныя эфекты, прызначаць абнаўленні.",
   "React updates DOM and refs": "React абнаўляе DOM і рэфы",
   "Read docs for {name} (opens in a new tab)": "Праглядзець дакументацыю пра {name} (адкрыецца ў новай ўкладцы)",
+  "https://reactjs.org/docs/react-component.html#{docname}": "https://reactjs.org/docs/react-component.html#{docname}",
   "See project's page on GitHub (opens in a new tab)": "Наведаць старонку праекту на GitHub (адкрыецца ў новай ўкладцы)",
   "See project on": "Наведаць старонку праекту на"
 }

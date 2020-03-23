@@ -14,6 +14,7 @@
   "Can work with DOM, run side effects, schedule updates.": "Mund të punojë me DOM-in, të egzekutojë efekte anësore dhe të planifikojë përditësime.",
   "React updates DOM and refs": "React përditëson DOM-in dhe Refs",
   "Read docs for {name} (opens in a new tab)": "Lexo dokumentimin e {name} (hapet në një tab të ri)",
+  "https://reactjs.org/docs/react-component.html#{docname}": "https://reactjs.org/docs/react-component.html#{docname}",
   "See project's page on GitHub (opens in a new tab)": "Shih faqen e projektit në GitHub (hapet në një tab të ri)",
   "See project on": "Shih faqen e projektit në"
 }

@@ -8,6 +8,7 @@ import { useTranslation } from '../i18n';
 export default function DocLink({ docname, name }) {
   const translatedName = useTranslation(name);
   const translatedTitle = useTranslation('Read docs for {name} (opens in a new tab)', { name });
+  const translatedHref = useTranslation('https://reactjs.org/docs/react-component.html#{docname}', { docname });
 
   const children = splitUpperCase(translatedName);
 
@@ -17,7 +18,7 @@ export default function DocLink({ docname, name }) {
     docname
       ? (
         <a
-          href={`https://reactjs.org/docs/react-component.html#${docname}`}
+          href={translatedHref}
           target="_blank"
           rel="noopener noreferrer"
           title={translatedTitle}

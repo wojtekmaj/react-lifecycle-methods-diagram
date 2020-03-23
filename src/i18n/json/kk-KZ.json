@@ -13,6 +13,7 @@
   "Can work with DOM, run side effects, schedule updates.": "Janama áserlerdі jasap, jańartýlardy taǵaıyndap, DOM-men jumys іsteýge bolady.",
   "React updates DOM and refs": "React - DOM men refterdі jańartady",
   "Read docs for {name} (opens in a new tab)": "{name} úshіn qujatty qaraý (jańa qoıyndyda ashylady)",
+  "https://reactjs.org/docs/react-component.html#{docname}": "https://reactjs.org/docs/react-component.html#{docname}",
   "See project's page on GitHub (opens in a new tab)": "GitHub jobasynyń paraqshasyna kіrіńіz (jańa qoıyndyda ashylady)",
   "See project on": "Jobany qarańyz"
 }

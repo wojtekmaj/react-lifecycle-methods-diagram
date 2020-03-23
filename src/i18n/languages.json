@@ -1,0 +1,115 @@
+[
+  {
+    "code": "en-US",
+    "name": "English (US)",
+    "translated_name": "English (US)"
+  },
+  {
+    "code": "ar",
+    "name": "Arabic",
+    "translated_name": "العربية"
+  },
+  {
+    "code": "be",
+    "name": "Belarussian",
+    "translated_name": "беларуская"
+  },
+  {
+    "code": "de",
+    "name": "German",
+    "translated_name": "Deutsch"
+  },
+  {
+    "code": "es",
+    "name": "Spanish",
+    "translated_name": "Español"
+  },
+  {
+    "code": "fa",
+    "name": "Persian",
+    "translated_name": "فارسی"
+  },
+  {
+    "code": "fr",
+    "name": "French",
+    "translated_name": "Français"
+  },
+  {
+    "code": "id",
+    "name": "Indonesian",
+    "translated_name": "Bahasa Indonesia"
+  },
+  {
+    "code": "it",
+    "name": "Italian",
+    "translated_name": "Italiano"
+  },
+  {
+    "code": "ja",
+    "name": "Japanese",
+    "translated_name": "日本語"
+  },
+  {
+    "code": "kk",
+    "name": "Kazakh",
+    "translated_name": "қазақша"
+  },
+  {
+    "code": "ko",
+    "name": "Korean",
+    "translated_name": "한국어"
+  },
+  {
+    "code": "pl",
+    "name": "Polish",
+    "translated_name": "Polski"
+  },
+  {
+    "code": "pt-BR",
+    "name": "Portuguese (Brazil)",
+    "translated_name": "Português do Brasil"
+  },
+  {
+    "code": "ru",
+    "name": "Russian",
+    "translated_name": "Русский"
+  },
+  {
+    "code": "sq",
+    "name": "Albanian",
+    "translated_name": "shqip"
+  },
+  {
+    "code": "sv",
+    "name": "Swedish",
+    "translated_name": "Svenska"
+  },
+  {
+    "code": "th",
+    "name": "Thai",
+    "translated_name": "ไทย"
+  },
+  {
+    "code": "tr",
+    "name": "Turkish",
+    "translated_name": "Türkçe"
+  },
+  {
+    "code": "uk",
+    "name": "Ukrainian",
+    "translated_name": "Українська"
+  },
+  {
+    "code": "vi",
+    "name": "Vietnamese",
+    "translated_name": "Tiếng Việt"
+  },
+  {
+    "code": "zh-CN",
+    "name": "Chinese (China)"
+  },
+  {
+    "code": "zh-TW",
+    "name": "Chinese (Taiwan)"
+  }
+]

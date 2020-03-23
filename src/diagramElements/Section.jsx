@@ -17,6 +17,7 @@ export default function Section(props) {
     children,
     col,
     colspan = 1,
+    isHooks,
     name,
   } = props;
 
@@ -43,20 +44,29 @@ export default function Section(props) {
 
   const gridColumn = `${col + 1} / span ${colspan}`;
 
+  const totalSpan = 14 + (advanced ? 1 : 0) * (isHooks ? 12 : 9);
+  const highlightPos = 8
+    + (isHooks ? -2 : 0) + (advanced ? 1 : 0) * (isHooks ? 2 : 8);
+  const highlightSpan = totalSpan - (highlightPos - 1);
+
   return (
     <>
       <section
         className={mergeClassNames('Section', advanced && 'Section--advanced')}
         style={{
           gridColumn,
-          gridRow: advanced ? '1 / span 23' : '1 / span 14',
+          gridRow: `1 / span ${totalSpan}`,
         }}
       />
       <div
-        className={mergeClassNames('Section__highlight', advanced && 'Section__highlight--advanced')}
+        className={mergeClassNames(
+          'Section__highlight',
+          advanced && 'Section__highlight--advanced',
+          isHooks && 'Section__highlight--hooks',
+        )}
         style={{
           gridColumn,
-          gridRow: advanced ? '16 / span 8' : '8 / span 7',
+          gridRow: `${highlightPos} / span ${highlightSpan}`,
         }}
       />
       <h3
@@ -80,5 +90,6 @@ Section.propTypes = {
   children: PropTypes.node,
   col: PropTypes.number.isRequired,
   colspan: PropTypes.number,
+  isHooks: PropTypes.bool,
   name: PropTypes.string.isRequired,
 };

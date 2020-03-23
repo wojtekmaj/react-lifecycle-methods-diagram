@@ -5,7 +5,7 @@ import { splitUpperCase } from '../shared/utils';
 
 import { useTranslation } from '../i18n';
 
-export default function DocLink({ docname, name }) {
+export default function DocLink({ docname, name, isHooks }) {
   const translatedName = useTranslation(name);
   const translatedTitle = useTranslation('Read docs for {name} (opens in a new tab)', { name });
 
@@ -17,7 +17,11 @@ export default function DocLink({ docname, name }) {
     docname
       ? (
         <a
-          href={`https://reactjs.org/docs/react-component.html#${docname}`}
+          href={
+            isHooks
+              ? `https://reactjs.org/docs/hooks-reference.html#${docname}`
+              : `https://reactjs.org/docs/react-component.html#${docname}`
+          }
           target="_blank"
           rel="noopener noreferrer"
           title={translatedTitle}
@@ -36,5 +40,6 @@ export default function DocLink({ docname, name }) {
 
 DocLink.propTypes = {
   docname: PropTypes.string,
+  isHooks: PropTypes.bool,
   name: PropTypes.string.isRequired,
 };

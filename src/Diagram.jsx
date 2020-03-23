@@ -6,6 +6,7 @@ import { isReactVersion } from './propTypes';
 const diagramVersions = {
   16.3: import('./versions/16.3'),
   16.4: import('./versions/16.4'),
+  hooks: import('./versions/hooks'),
 };
 
 export default function Diagram({ advanced, reactVersion }) {

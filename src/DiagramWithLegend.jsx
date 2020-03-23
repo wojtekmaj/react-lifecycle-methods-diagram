@@ -11,7 +11,7 @@ import { isReactVersion } from './propTypes';
 export default function DiagramWithLegend({ advanced, reactVersion }) {
   return (
     <main className="DiagramWithLegend">
-      <Legend advanced={advanced} />
+      <Legend advanced={advanced} reactVersion={reactVersion} />
       <Diagram
         advanced={advanced}
         reactVersion={reactVersion}

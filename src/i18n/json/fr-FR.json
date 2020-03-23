@@ -14,5 +14,12 @@
   "React updates DOM and refs": "React met à jour le DOM et les refs",
   "Read docs for {name} (opens in a new tab)": "Lire la documentation pour {name} (s'ouvre dans un nouvel onglet)",
   "See project's page on GitHub (opens in a new tab)": "Accéder à la page du projet sur GitHub (s'ouvre dans un nouvel onglet)",
-  "See project on": "Voir le projet sur"
+  "See project on": "Voir le projet sur",
+  "Pure, no side effects. (Lazy init: function passed to useState and useReducer.)": "Méthodes pures, sans effets secondaires. (Lazy init: fonction passée à useState ou useReducer)",
+  "DOM is generated, but screen not yet updated.": "Le DOM est généré, mais l'affichage n'est pas encore rafaîchi.",
+  "Handled by React.": "Géré par React.",
+  "React updates DOM, browser paints screen": "React génère le DOM, l'affichage est rafraîchi",
+  "­Browser paints screen": "L'affichage est rafraîchi",
+  "React updates DOM": "React génère le DOM",
+  "Run lazy initializers": "Exécuter les fonctions init"
 }

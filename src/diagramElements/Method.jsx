@@ -16,6 +16,7 @@ export default function Method({
   row,
   secondary,
   type,
+  isHooks,
 }) {
   return (
     <li
@@ -32,7 +33,7 @@ export default function Method({
         gridRow: `${row * 3} / span 2`,
       }}
     >
-      <DocLink docname={docname} name={name} />
+      <DocLink docname={docname} name={name} isHooks={isHooks} />
     </li>
   );
 }
@@ -42,9 +43,10 @@ Method.propTypes = {
   colspan: PropTypes.number,
   docname: PropTypes.string,
   endsInMiddle: PropTypes.bool,
+  isHooks: PropTypes.bool,
   main: PropTypes.bool,
   name: PropTypes.string.isRequired,
   row: PropTypes.number.isRequired,
   secondary: PropTypes.bool,
-  type: PropTypes.oneOf(['render', 'pre-commit', 'commit']),
+  type: PropTypes.oneOf(['render', 'pre-commit', 'commit', 'layout']),
 };

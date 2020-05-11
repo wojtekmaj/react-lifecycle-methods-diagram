@@ -120,7 +120,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "less": "^3.9.0",
     "parcel-bundler": "^1.12.4",
     "rimraf": "^3.0.0"

@@ -42,7 +42,12 @@ function SelectOption({
   ...otherProps
 }) {
   return (
-    <select id="language" onChange={onChange} value={value} {...otherProps}>
+    <select
+      id="language"
+      onChange={onChange}
+      value={value}
+      {...otherProps}
+    >
       {options.map(option => (
         <option key={option.value || option} value={option.value || option}>
           {option.label || option}
@@ -72,6 +77,9 @@ export default function Options({
   toggleLocale,
   toggleReactVersion,
 }) {
+  const reactVersionWithDefault = supportedReactVersions.includes(reactVersion) ? reactVersion : '16.4';
+  const localeWithDefault = supportedLocales.includes(locale) ? locale : 'en-US';
+
   return (
     <fieldset className="Options">
       <legend>
@@ -100,7 +108,7 @@ export default function Options({
             value,
           }))}
           onChange={toggleReactVersion}
-          value={reactVersion}
+          value={reactVersionWithDefault}
         />
       </div>
       <div>
@@ -113,7 +121,7 @@ export default function Options({
           id="language"
           options={locales}
           onChange={toggleLocale}
-          value={locale}
+          value={localeWithDefault}
         />
       </div>
     </fieldset>

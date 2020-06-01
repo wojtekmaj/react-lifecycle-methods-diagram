@@ -7,7 +7,7 @@ import DiagramWithLegend from './DiagramWithLegend';
 import Footer from './Footer';
 
 import { supportedReactVersions } from './propTypes';
-import { getMatchingLocale } from './i18n/i18n';
+import { getMatchingLocale, supportedLocales } from './i18n/i18n';
 
 /**
  * Workaround for Google Chrome bug that causes grid to jump when hovered
@@ -39,8 +39,9 @@ const rtlLanguages = [
 ];
 
 function setLocaleToDocument(locale) {
-  document.documentElement.setAttribute('lang', locale);
-  const [languageCode] = locale.split('-');
+  const localeWithDefault = supportedLocales.includes(locale) ? locale : 'en-US';
+  document.documentElement.setAttribute('lang', localeWithDefault);
+  const [languageCode] = localeWithDefault.split('-');
   document.documentElement.setAttribute('dir', rtlLanguages.includes(languageCode) ? 'rtl' : 'ltr');
 }
 

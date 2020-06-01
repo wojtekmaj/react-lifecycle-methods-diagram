@@ -24,8 +24,7 @@ export const languageFiles = {
   'tr-TR': import('./json/tr-TR.json'),
   'uk-UA': import('./json/uk-UA.json'),
   'vi-VN': import('./json/vi-VN.json'),
-  'zh-CN': import('./json/zh-CN.json'),
-  'zh-TW': import('./json/zh-TW.json'),
+  'zh-Hans': import('./json/zh-Hans.json'),
 };
 
 export const supportedLocales = [defaultLocale].concat(Object.keys(languageFiles));

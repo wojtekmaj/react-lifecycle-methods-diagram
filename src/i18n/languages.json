@@ -105,11 +105,7 @@
     "translated_name": "Tiếng Việt"
   },
   {
-    "code": "zh-CN",
-    "name": "Chinese (China)"
-  },
-  {
-    "code": "zh-TW",
-    "name": "Chinese (Taiwan)"
+    "code": "zh-Hans",
+    "name": "Simplified Chinese"
   }
 ]

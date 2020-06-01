@@ -30,7 +30,7 @@ const locales = supportedLocales
     const language = findLanguage(locale);
 
     return {
-      label: `${countryCodeToFlagEmoji(locale)} ${language.translated_name || language.name}`,
+      label: `${locale.startsWith('zh-') ? '🌏' : countryCodeToFlagEmoji(locale)} ${language.translated_name || language.name}`,
       value: locale,
     };
   });

@@ -15,5 +15,13 @@
     "react/jsx-props-no-spreading": "off",
     "react/require-default-props": "off",
     "sort-keys": "error"
-  }
+  },
+  "overrides": [
+    {
+      "files": "webpack.config.js",
+      "rules": {
+        "sort-keys": "off"
+      }
+    }
+  ]
 }

@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Interactive React lifecycle methods diagram.",
   "scripts": {
-    "build": "parcel build src/index.html --public-url ./ --no-source-maps --experimental-scope-hoisting",
+    "build": "NODE_ENV=production webpack",
     "clean": "rimraf dist",
     "lint": "eslint src/ --ext .jsx,.js",
-    "start": "parcel src/index.html",
+    "start": "NODE_ENV=development webpack-dev-server",
     "test": "yarn lint"
   },
   "author": {
@@ -114,15 +114,27 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-export-default-from": "^7.8.0",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
     "babel-eslint": "^10.0.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.0",
+    "css-loader": "^3.5.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "html-webpack-plugin": "^4.3.0",
     "less": "^3.9.0",
-    "parcel-bundler": "^1.12.4",
-    "rimraf": "^3.0.0"
+    "less-loader": "^6.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "react-hot-loader": "^4.12.21",
+    "rimraf": "^3.0.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^5.0.0-beta.18",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.10.3"
   }
 }

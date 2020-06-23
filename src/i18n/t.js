@@ -5,7 +5,7 @@ function getTranslatedString(string, locale) {
     return Promise.resolve(string);
   }
 
-  return languageFiles[locale]
+  return languageFiles[locale]()
     .then((languageFile) => {
       if (typeof languageFile[string] === 'string') {
         return languageFile[string];

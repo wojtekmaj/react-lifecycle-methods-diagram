@@ -4,6 +4,7 @@ import { getUserLocales } from 'get-user-locale';
 export const defaultLocale = 'en-US';
 
 export const languageFiles = {
+  'am-AM': () => import(/* webpackChunkName: "am-AM" */ './json/am-AM.json'),
   'ar-YE': () => import(/* webpackChunkName: "ar-YE" */ './json/ar-YE.json'),
   'be-BY': () => import(/* webpackChunkName: "be-BY" */ './json/be-BY.json'),
   'de-DE': () => import(/* webpackChunkName: "de-DE" */ './json/de-DE.json'),

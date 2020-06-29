@@ -4,13 +4,13 @@ import { getUserLocales } from 'get-user-locale';
 export const defaultLocale = 'en-US';
 
 export const languageFiles = {
-  'am-AM': () => import(/* webpackChunkName: "am-AM" */ './json/am-AM.json'),
   'ar-YE': () => import(/* webpackChunkName: "ar-YE" */ './json/ar-YE.json'),
   'be-BY': () => import(/* webpackChunkName: "be-BY" */ './json/be-BY.json'),
   'de-DE': () => import(/* webpackChunkName: "de-DE" */ './json/de-DE.json'),
   'es-ES': () => import(/* webpackChunkName: "es-ES" */ './json/es-ES.json'),
   'fa-IR': () => import(/* webpackChunkName: "fa-IR" */ './json/fa-IR.json'),
   'fr-FR': () => import(/* webpackChunkName: "fr-FR" */ './json/fr-FR.json'),
+  'hy-AM': () => import(/* webpackChunkName: "am-AM" */ './json/hy-AM.json'),
   'id-ID': () => import(/* webpackChunkName: "id-ID" */ './json/id-ID.json'),
   'it-IT': () => import(/* webpackChunkName: "it-IT" */ './json/it-IT.json'),
   'ja-JP': () => import(/* webpackChunkName: "ja-JP" */ './json/ja-JP.json'),

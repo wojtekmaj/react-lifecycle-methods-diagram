@@ -1,0 +1,19 @@
+{
+  "React lifecycle methods diagram": "React-ի կյանքի ցիկլերի դիագրամ",
+  "Options": "Տարբերակներ",
+  "Show less common lifecycles": "Ցուցադրել կյանքի ցիկլի քիչ հայտնի մեթոդները",
+  "React version": "React-ի վերսիան",
+  "Language": "Լեզու",
+  "Mounting": "Մոնտաժում",
+  "Updating": "Թարմացում",
+  "Unmounting": "Ապամոնտաժում",
+  "“{name} phase”": "“Փուլ {name}”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Մաքուր է և չունի կողմնակի ազդեցություններ: Կարող է կանգնեցվել, վիժեցվել կամ վերագործարկվել React-ի կողմից:",
+  "Can read the DOM.": "Կարող է կարդալ DOM-ը:",
+  "Can work with DOM, run side effects, schedule updates.": "Կարող է աշխատել DOM-ի հետ, կատարել կողմնակի էֆեկտները, պլանավորել թարմացումներ:",
+  "React updates DOM and refs": "React-ը թարմացնում է DOM-ը և ref-երը",
+  "Read docs for {name} (opens in a new tab)": "Կարդալ փաստաթղթերը {name} (բացվում է նոր թաբում)",
+  "https://reactjs.org/docs/react-component.html#{docname}": "https://hy.reactjs.org/docs/react-component.html#{docname}",
+  "See project's page on GitHub (opens in a new tab)": "Տեսնել պրոյեկտի էջը GitHub-ում (բացվում է նոր թաբում)",
+  "See project on": "Տեսնել պրոյեկտը`"
+}

@@ -5,11 +5,6 @@
     "translated_name": "English (US)"
   },
   {
-    "code": "hy",
-    "name": "Armenian",
-    "translated_name": "Հայերեն"
-  },
-  {
     "code": "ar",
     "name": "Arabic",
     "translated_name": "العربية"
@@ -38,6 +33,11 @@
     "code": "fr",
     "name": "French",
     "translated_name": "Français"
+  },
+  {
+    "code": "hy",
+    "name": "Armenian",
+    "translated_name": "Հայերեն"
   },
   {
     "code": "id",

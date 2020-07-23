@@ -1,6 +1,6 @@
 # React Lifecycle Methods diagram
 
-An interactive version of [React Lifecycle Methods diagram tweeted by Dan Abramov](https://twitter.com/dan_abramov/status/981712092611989509). Built in React, obviously.
+An interactive version of [React Lifecycle Methods diagram tweeted by Dan Abramov](https://twitter.com/dan_abramov/status/981712092611989509). Built with React, obviously.
 
 I did my best to make the diagram fully accessible, both for keyboard navigation and screen readers for visually impaired people.
 

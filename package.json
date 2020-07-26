@@ -136,5 +136,10 @@
     "webpack": "^5.0.0-beta.18",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.10.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wojtekmaj/react-lifecycle-methods-diagram.git"
+  },
+  "funding": "https://github.com/wojtekmaj/react-lifecycle-methods-diagram?sponsor=1"
 }

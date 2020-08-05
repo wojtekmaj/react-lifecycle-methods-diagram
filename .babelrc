@@ -5,8 +5,5 @@
       "loose": true
     }],
     "@babel/preset-react"
-  ],
-  "plugins": [
-    "@babel/proposal-export-default-from"
   ]
 }

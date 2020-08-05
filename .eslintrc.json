@@ -1,11 +1,13 @@
 {
-  "extends": "airbnb",
   "env": {
     "browser": true,
     "es6": true,
-    "jest": true
+    "node": true
   },
-  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "extends": "airbnb",
   "rules": {
     "arrow-parens": ["error", "as-needed", {
       "requireForBlockBody": true

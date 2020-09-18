@@ -26,6 +26,7 @@ export const languageFiles = {
   'uk-UA': () => import(/* webpackChunkName: "uk-UA" */ './json/uk-UA.json'),
   'vi-VN': () => import(/* webpackChunkName: "vi-VN" */ './json/vi-VN.json'),
   'zh-Hans': () => import(/* webpackChunkName: "zh-Hans" */ './json/zh-Hans.json'),
+  'zh-Hant': () => import(/* webpackChunkName: "zh-Hant" */ './json/zh-Hant.json'),
 };
 
 export const supportedLocales = [defaultLocale].concat(Object.keys(languageFiles));

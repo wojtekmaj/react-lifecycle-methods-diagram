@@ -1594,6 +1594,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wojtekmaj/react-t@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@wojtekmaj/react-t@npm:0.1.1"
+  dependencies:
+    get-user-locale: ^1.4.0
+    lodash.once: ^4.0.0
+    prop-types: ^15.6.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-0
+    react-dom: ^16.8.0 || ^17.0.0-0
+  checksum: 90e14fe032b099ec6a4864aff3afb822a38287f140a1ec607666ce773addf18425d2c89ffd20f54d748be57144622951e9f899e6e8713d650b9ec7f0993ee503
+  languageName: node
+  linkType: hard
+
 "@xtuc/ieee754@npm:^1.2.0":
   version: 1.2.0
   resolution: "@xtuc/ieee754@npm:1.2.0"
@@ -4026,12 +4040,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"get-user-locale@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "get-user-locale@npm:1.3.0"
+"get-user-locale@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "get-user-locale@npm:1.4.0"
   dependencies:
     lodash.once: ^4.1.1
-  checksum: 9e98cd2d5d2e1453176a3112f0ec3d048592ea79f3e377c9fe11f44ca3f230fcf9a171a34ad2e7d6f17189acb8b30dea70e9e726fd8a422d7f3ae2b0ae076218
+  checksum: 3fee33d74173732c1a3895a584b271f993171b2ecc60b0a1b985d8c4f7625432d9152ce817f2759d7d075dbf6b16f219001c32b924ffb4b918c946be82b864fb
   languageName: node
   linkType: hard
 
@@ -5355,7 +5369,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"lodash.once@npm:^4.1.1":
+"lodash.once@npm:^4.0.0, lodash.once@npm:^4.1.1":
   version: 4.1.1
   resolution: "lodash.once@npm:4.1.1"
   checksum: 236e00ca5f20304fab5b38aa3aedb034959153dae6edf33d7f9b00406ced8f24ed232a74f1200505d9049165ceea2ce1256199e1683b0a25e9de89091d4b13c2
@@ -6655,7 +6669,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -6809,6 +6823,7 @@ fsevents@^1.2.7:
     "@babel/preset-env": ^7.10.2
     "@babel/preset-react": ^7.10.1
     "@pmmmwh/react-refresh-webpack-plugin": ^0.4.1
+    "@wojtekmaj/react-t": ^0.1.1
     babel-loader: ^8.1.0
     copy-webpack-plugin: ^6.0.0
     core-js: 3
@@ -6820,11 +6835,9 @@ fsevents@^1.2.7:
     eslint-plugin-jsx-a11y: ^6.3.0
     eslint-plugin-react: ^7.20.0
     eslint-plugin-react-hooks: ^4.0.0
-    get-user-locale: ^1.3.0
     html-webpack-plugin: ^4.3.0
     less: ^3.9.0
     less-loader: ^6.1.0
-    lodash.once: ^4.1.1
     merge-class-names: ^1.3.0
     mini-css-extract-plugin: ^0.9.0
     prop-types: ^15.6.2

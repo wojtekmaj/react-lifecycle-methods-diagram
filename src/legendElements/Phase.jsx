@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import mergeClassNames from 'merge-class-names';
+import T from '@wojtekmaj/react-t';
 
 import './Phase.less';
-
-import T from '../i18n';
 
 export default function Phase({
   children, last, name, row, rowspan,

@@ -8,6 +8,7 @@ import Footer from './Footer';
 
 import { supportedReactVersions } from './propTypes';
 import { getMatchingLocale, supportedLocales } from './i18n/i18n';
+import DarkTheme from 'react-dark-theme'
 
 /**
  * Workaround for Google Chrome bug that causes grid to jump when hovered
@@ -75,6 +76,16 @@ function useLocalStorageFlag(key, defaultValue) {
   return [valueBoolean, onChange];
 }
 
+const lightTheme = {
+  background: 'white',
+  text: 'black',
+}
+
+const darkTheme = {
+  background: '#24292E',
+  text: 'white',
+}
+
 export default function Root() {
   const [advanced, setAdvanced] = useLocalStorageFlag('showAdvanced', false);
   const [locale, setLocale] = useLocalStorage('locale', userLocale);
@@ -100,6 +111,7 @@ export default function Root() {
 
   return (
     <div ref={fixChromeGridSizingBug}>
+      <DarkTheme light={lightTheme} dark={darkTheme} />
       <h1>
         <T>
           React lifecycle methods diagram

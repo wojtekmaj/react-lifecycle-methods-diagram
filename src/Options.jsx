@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import T from '@wojtekmaj/react-t';
 import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
 
 import './Options.less';
 
-import T from './i18n';
 import { supportedReactVersions, isReactVersion } from './propTypes';
 import { supportedLocales } from './i18n/i18n';
 

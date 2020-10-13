@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from '@wojtekmaj/react-t';
 
 import { splitUpperCase } from '../shared/utils';
-
-import { useTranslation } from '../i18n';
 
 export default function DocLink({ docname, name }) {
   const translatedName = useTranslation(name);

@@ -1,6 +1,3 @@
-import once from 'lodash.once';
-import { getUserLocales } from 'get-user-locale';
-
 export const defaultLocale = 'en-US';
 
 export const languageFiles = {
@@ -30,31 +27,3 @@ export const languageFiles = {
 };
 
 export const supportedLocales = [defaultLocale].concat(Object.keys(languageFiles));
-
-/**
- * Extends language codes if necessary. For example, given:
- *   ['en-US', 'pl']
- * will return:
- *   ['en-US', 'pl-PL']
- *
- * @param {String[]} arr
- */
-function extendLanguageCodes(arr) {
-  return arr.map(el => (
-    el.includes('-') ? el : `${el}-${el.toUpperCase()}`
-  ));
-}
-
-const getExtendedUserLocales = once(() => {
-  const userLocales = getUserLocales();
-  return extendLanguageCodes(userLocales);
-});
-
-/**
- * Finds a locale which both we support and user prefers.
- */
-export const getMatchingLocale = once(() => {
-  const extendedUserLocales = getExtendedUserLocales();
-  const matchingLocale = extendedUserLocales.find(locale => supportedLocales.includes(locale));
-  return matchingLocale;
-});

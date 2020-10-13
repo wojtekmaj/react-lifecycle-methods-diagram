@@ -22,21 +22,18 @@
   }
 
   &.render {
-    --background-color: rgb(217, 232, 253);
     --border-color: rgb(109, 138, 196);
-    --background-color: var(--background);
+    --background-color: var(--render);
   }
 
   &.pre-commit {
-    --background-color: rgb(255, 242, 205);
     --border-color: rgb(206, 174, 91);
-    --background-color: var(--background);
+    --background-color: var(--preCommit);
   }
 
   &.commit {
-    --background-color: rgb(214, 231, 213);
     --border-color: rgb(146, 185, 124);
-    --background-color: var(--background);
+    --background-color: var(--commit);
   }
 
   a, span {
@@ -58,7 +55,8 @@
     position: relative;
 
     &:hover, &:focus {
-      background-color: var(--background-color);
+      background-color: rgb(255, 255, 255);;
+      color: black;
       z-index: 1;
 
       @supports (-moz-outline-radius: 5px) {

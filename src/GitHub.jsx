@@ -18,6 +18,7 @@ export default function GitHub() {
       >
         GitHub
         <svg
+          className="Link"
           viewBox="0 0 100 100"
           width="15"
           height="15"

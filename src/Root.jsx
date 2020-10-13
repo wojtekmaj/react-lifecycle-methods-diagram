@@ -76,14 +76,23 @@ function useLocalStorageFlag(key, defaultValue) {
   return [valueBoolean, onChange];
 }
 
+/**
+ * light and dark theme variable
+ */
 const lightTheme = {
   background: 'white',
   text: 'black',
+  render: 'rgb(217, 232, 253)',
+  preCommit: 'rgb(255, 242, 205)',
+  commit: 'rgb(214, 231, 213)'
 }
 
 const darkTheme = {
   background: '#24292E',
   text: 'white',
+  render: '#24292E',
+  preCommit: '#24292E',
+  commit: '#24292E'
 }
 
 export default function Root() {

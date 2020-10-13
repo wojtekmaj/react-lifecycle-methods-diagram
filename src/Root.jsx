@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
-
-import T from './i18n';
+import T from '@wojtekmaj/react-t';
+import { getMatchingLocale } from '@wojtekmaj/react-t/src/utils';
 
 import Options from './Options';
 import DiagramWithLegend from './DiagramWithLegend';
 import Footer from './Footer';
 
 import { supportedReactVersions } from './propTypes';
-import { getMatchingLocale, supportedLocales } from './i18n/i18n';
+
+import { supportedLocales } from './i18n/i18n';
 
 /**
  * Workaround for Google Chrome bug that causes grid to jump when hovered
@@ -45,7 +46,7 @@ function setLocaleToDocument(locale) {
   document.documentElement.setAttribute('dir', rtlLanguages.includes(languageCode) ? 'rtl' : 'ltr');
 }
 
-const userLocale = getLocalStorage('locale', getMatchingLocale());
+const userLocale = getLocalStorage('locale', getMatchingLocale(supportedLocales));
 const latestReactVersion = supportedReactVersions[supportedReactVersions.length - 1];
 setLocaleToDocument(userLocale);
 

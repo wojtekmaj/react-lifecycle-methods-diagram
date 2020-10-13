@@ -1,6 +1,5 @@
 import React from 'react';
-
-import T, { useTranslation } from './i18n';
+import T, { useTranslation } from '@wojtekmaj/react-t';
 
 export default function GitHub() {
   const title = useTranslation('See project\'s page on GitHub (opens in a new tab)');

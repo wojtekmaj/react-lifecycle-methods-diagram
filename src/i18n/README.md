@@ -2,28 +2,7 @@
 
 ## Usage of the translation module
 
-1. Define translatable string in the code using `<T>` tag:
-    ```js
-    <T>Original phrase</T>
-    ```
-    or using `useTranslation` hook if needed:
-    ```js
-    const translatedPhrase = useTranslation('Original phrase');
-    ```
-    If necessary, you may use variables like so:
-     ```js
-    <T name={name}>{'Hello, {name}'}</T>
-    ```
-    ```js
-    const translatedPhrase = useTranslation('Hello, {name}', { name });
-    ```
-2. If you're a translator, add a corresponding entry in language JSON files, for example:
-    ```json
-    {
-      "Original phrase": "Przetłumaczona fraza"
-    }
-    ```
-    You don't need to add anything for a new en-US string.
+See [React-T](https://github.com/wojtekmaj/react-t) for documentation.
 
 ## How to add new language
 

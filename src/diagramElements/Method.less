@@ -13,10 +13,6 @@
 
   @media (prefers-color-scheme: dark) {
     background-color: rgb(30, 30, 30);
-
-    &:hover, :focus-within {
-      background-color: rgb(130, 130, 130);
-    }
   }
 
   &--main {
@@ -69,7 +65,12 @@
       z-index: 1;
 
       @media (prefers-color-scheme: dark) {
-        background-color: rgba(var(--base-color-rgb), .2);
+        background-color: rgb(120, 120, 120);
+        background-image: linear-gradient(
+          to right,
+          rgba(var(--base-color-rgb), .2),
+          rgba(var(--base-color-rgb), .2)
+        );
       }
 
       @supports (-moz-outline-radius: 5px) {

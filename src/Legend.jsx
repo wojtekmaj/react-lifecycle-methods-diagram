@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import T from './i18n';
+import T from '@wojtekmaj/react-t';
 
 import Phase from './legendElements/Phase';
 

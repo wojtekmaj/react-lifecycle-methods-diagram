@@ -2378,6 +2378,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"classnames@npm:^2.2.5":
+  version: 2.2.6
+  resolution: "classnames@npm:2.2.6"
+  checksum: 490eaeca5931846737ffd33e472a701d268d5b8bc5717dd4cf108a127b06e86e05350e06799abbbe763a0e4c945b4217f6700b7ae00ddc703505682c370e5cf2
+  languageName: node
+  linkType: hard
+
 "clean-css@npm:^4.2.3":
   version: 4.2.3
   resolution: "clean-css@npm:4.2.3"
@@ -6794,6 +6801,30 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-css-vars@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "react-css-vars@npm:1.2.1"
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0
+    react-dom: ^15.0.0 || ^16.0.0
+  checksum: 76b2089bc2576efe1290254ffe83e0e974f6cacc255c6ee9258626436b2b501ec15023a79b6ee9c6665f0765d3c17e499bcc1d24dc6f05332082f514e960576a
+  languageName: node
+  linkType: hard
+
+"react-dark-theme@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "react-dark-theme@npm:1.1.1"
+  dependencies:
+    prop-types: ^15.7.2
+    react-css-vars: ^1.2.1
+    react-toggle: ^4.0.2
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0
+    react-dom: ^15.0.0 || ^16.0.0
+  checksum: 81817a66c7c7229ad7a6623a9008858c97ea8c03d170d1cbc0ff2ff2be59e719cd7c3f9ba11e7de38d6c6fe14454df50da50bc1a84071825fdd0605b64732f95
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:^16.8.0":
   version: 16.13.1
   resolution: "react-dom@npm:16.13.1"
@@ -6842,6 +6873,7 @@ fsevents@^1.2.7:
     mini-css-extract-plugin: ^0.9.0
     prop-types: ^15.6.2
     react: ^16.8.0
+    react-dark-theme: ^1.1.1
     react-dom: ^16.8.0
     react-refresh: ^0.8.3
     rimraf: ^3.0.0
@@ -6856,6 +6888,19 @@ fsevents@^1.2.7:
   version: 0.8.3
   resolution: "react-refresh@npm:0.8.3"
   checksum: 38f06df8e0a20701b96e5d680838a3528d66cfb53db79843d30cb9517df3262ec596607147439975267bf0634bee77101db37298ea79b5742cc28664632f3c76
+  languageName: node
+  linkType: hard
+
+"react-toggle@npm:^4.0.2":
+  version: 4.1.1
+  resolution: "react-toggle@npm:4.1.1"
+  dependencies:
+    classnames: ^2.2.5
+  peerDependencies:
+    prop-types: ^15.3.0 || ^16.0.0
+    react: ^15.3.0 || ^16.0.0
+    react-dom: ^15.3.0 || ^16.0.0
+  checksum: 311291a755f0a9dfca24b96711e3cb8d1996b200b3ea5f96a1f96248a52620f820842406574282db7555ea7f2573accbfbadcbaf969314ba2744474322e81cc9
   languageName: node
   linkType: hard
 

@@ -4,10 +4,22 @@ body {
   font-weight: 300;
   margin: 20px;
   padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+
+  --background-color: rgb(255, 255, 255);
+  --text-color: rgb(40 ,44, 52);
+  --link-color: rgb(0, 0, 255);
+
+  @media (prefers-color-scheme: dark) {
+    --background-color: hsl(222 14% 10%);
+    --text-color: rgb(255, 255, 255);
+    --link-color: rgb(97, 218, 251);
+  }
 }
 
 .hidden {
@@ -22,6 +34,10 @@ p {
   margin: 0;
 }
 
+a {
+  color: var(--link-color);
+}
+
 h1, h2, h3, h4 {
   margin: 0;
   font-weight: 300;
@@ -29,4 +45,9 @@ h1, h2, h3, h4 {
 
 h1 {
   .hidden;
+}
+
+select {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }

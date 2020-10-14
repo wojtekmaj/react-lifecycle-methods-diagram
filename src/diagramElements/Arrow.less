@@ -1,7 +1,7 @@
 .Arrow {
   position: relative;
   width: 0px;
-  border-left: 1px dashed black;
+  border-left: 1px dashed var(--text-color);
   margin: -19px auto calc(-19px + 5px) 50%;
 
   &--solid {
@@ -38,7 +38,7 @@
     @supports (clip-path: polygon(0% 0%, 100% 0%, 50% 100%)) {
       width: 7px;
       height: 10px;
-      background: black;
+      background: var(--text-color);
       clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
     }
 
@@ -47,7 +47,7 @@
       height: 0;
       border: 10px solid transparent;
       border-width: 10px 3.5px 0 3.5px;
-      border-top-color: black;
+      border-top-color: var(--text-color);
     }
   }
 }

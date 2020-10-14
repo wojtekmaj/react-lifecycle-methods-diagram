@@ -1,7 +1,11 @@
 .Section {
   border: 1px solid rgb(106, 106, 106);
   border-radius: 3px;
-  background-color: rgb(245, 245, 245);
+  background-color: rgba(0, 0, 0, .03);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: rgba(255, 255, 255, .03);
+  }
 
   &__title {
     margin: 15px 20px 10px;
@@ -13,11 +17,16 @@
 
   &__highlight {
     grid-row: 2;
-    background-color: white;
+    background-color: var(--background-color);
     border: 1px solid rgb(106, 106, 106);
     border-top-color: darkgray;
+    border-top-color: rgba(0, 0, 0, .3);
     border-radius: 0 0 3px 3px;
     margin-top: -1px;
+
+    @media (prefers-color-scheme: dark) {
+      border-top-color: rgba(255, 255, 255, .3);
+    }
 
     &--advanced {
       margin-top: -10px;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import T from '@wojtekmaj/react-t';
 import { getMatchingLocale } from '@wojtekmaj/react-t/src/utils';
 

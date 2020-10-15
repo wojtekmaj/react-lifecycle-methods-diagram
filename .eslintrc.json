@@ -15,6 +15,7 @@
     "jsx-a11y/label-has-associated-control": ["error", { "required": { "some": ["id", "nesting"] }}],
     "prefer-object-spread": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
     "sort-keys": "error"
   },

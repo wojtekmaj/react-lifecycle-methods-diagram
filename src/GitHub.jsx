@@ -1,4 +1,3 @@
-import React from 'react';
 import T, { useTranslation } from '@wojtekmaj/react-t';
 
 export default function GitHub() {

@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import mergeClassNames from 'merge-class-names';
 import T from '@wojtekmaj/react-t';

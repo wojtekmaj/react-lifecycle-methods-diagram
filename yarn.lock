@@ -3382,9 +3382,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-wojtekmaj@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "eslint-config-wojtekmaj@npm:0.4.0"
+"eslint-config-wojtekmaj@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "eslint-config-wojtekmaj@npm:0.5.0"
   dependencies:
     eslint-config-airbnb: ^18.2.0
     eslint-config-airbnb-base: ^14.2.0
@@ -3394,7 +3394,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.2.0
   peerDependencies:
     eslint: ^7.0.0
-  checksum: 99f2312c2a57cc74e1be83cd72f3cda6bf4dc2e22fb59cd14f6f2e0cb7ff3409927e4ed96632b00b48a73ec5f42391c9826ccc73d2d020ac8461b25294f06f08
+  checksum: b35e6b39af191843b25f8146e7bccff20646d8898688b5ba5ebec73680b1d980d34c33b7dcee19fa8c436d0edf9caf7b5008e66e21f7c2f2299e52e68f345af0
   languageName: node
   linkType: hard
 
@@ -6791,7 +6791,7 @@ fsevents@^1.2.7:
     country-code-to-flag-emoji: ^1.1.0
     css-loader: ^5.0.0
     eslint: ^7.12.0
-    eslint-config-wojtekmaj: ^0.4.0
+    eslint-config-wojtekmaj: ^0.5.0
     html-webpack-plugin: ^4.5.0
     less: ^3.12.0
     less-loader: ^7.0.0

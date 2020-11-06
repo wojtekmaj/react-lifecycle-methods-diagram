@@ -1,19 +1,9 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true,
-    "node": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 2020
-  },
-  "extends": "airbnb",
+  "extends": "wojtekmaj/react",
   "rules": {
-    "jsx-a11y/label-has-associated-control": ["error", { "required": { "some": ["id", "nesting"] }}],
     "prefer-object-spread": "off",
-    "react/jsx-props-no-spreading": "off",
+    "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "react/require-default-props": "off",
     "sort-keys": "error"
   },
   "overrides": [

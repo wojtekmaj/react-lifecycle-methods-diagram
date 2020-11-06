@@ -60,7 +60,7 @@ function useLocalStorage(key, defaultValue) {
       // eslint-disable-next-line no-console
       console.error('Failed to safe settings.');
     }
-  }, [value]);
+  }, [key, value]);
 
   return [value, setValue];
 }

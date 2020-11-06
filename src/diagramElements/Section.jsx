@@ -21,10 +21,10 @@ export default function Section(props) {
 
   function renderChildren() {
     // If we're creating a section containing subsections, we don't need to create one.
-    if (!children.find(el => el.type === Method || el.type === Initiator)) {
+    if (!children.find((el) => el.type === Method || el.type === Initiator)) {
       return React.Children.map(
         children,
-        child => React.cloneElement(
+        (child) => React.cloneElement(
           child,
           Object.assign(
             { sectionCol: col },

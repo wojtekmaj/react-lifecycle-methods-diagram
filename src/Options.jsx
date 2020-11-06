@@ -13,8 +13,8 @@ function findLanguage(locale) {
   const [languageCode] = locale.split('-');
 
   return (
-    languages.find(currentLanguage => currentLanguage.code === locale)
-    || languages.find(currentLanguage => currentLanguage.code === languageCode)
+    languages.find((currentLanguage) => currentLanguage.code === locale)
+    || languages.find((currentLanguage) => currentLanguage.code === languageCode)
   );
 }
 
@@ -47,7 +47,7 @@ function SelectOption({
       value={value}
       {...otherProps}
     >
-      {options.map(option => (
+      {options.map((option) => (
         <option key={option.value || option} value={option.value || option}>
           {option.label || option}
         </option>
@@ -102,7 +102,7 @@ export default function Options({
         </label>
         <SelectOption
           id="reactVersion"
-          options={supportedReactVersions.map(value => ({
+          options={supportedReactVersions.map((value) => ({
             label: value === '16.4' ? '^16.4' : value,
             value,
           }))}

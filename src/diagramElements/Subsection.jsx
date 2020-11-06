@@ -55,7 +55,7 @@ export default function Subsection({
 }) {
   const mappedChildren = React.Children.map(
     children,
-    child => React.cloneElement(
+    (child) => React.cloneElement(
       child,
       Object.assign(
         { col },
@@ -71,10 +71,10 @@ export default function Subsection({
   }
 
   // If display: contents is supported, we can create a proper list wrapper for list elements
-  const initiatorChildren = mappedChildren.filter(el => el.type === Initiator);
-  const methodChildren = mappedChildren.filter(el => el.type === Method);
+  const initiatorChildren = mappedChildren.filter((el) => el.type === Initiator);
+  const methodChildren = mappedChildren.filter((el) => el.type === Method);
   const otherChildren = mappedChildren.filter(
-    el => !methodChildren.includes(el) && !initiatorChildren.includes(el),
+    (el) => !methodChildren.includes(el) && !initiatorChildren.includes(el),
   );
 
   return (

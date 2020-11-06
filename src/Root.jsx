@@ -82,7 +82,7 @@ export default function Root() {
   const [reactVersion, setReactVersion] = useLocalStorage('reactVersion', latestReactVersion);
 
   function toggleAdvanced() {
-    setAdvanced(prevAdvanced => !prevAdvanced);
+    setAdvanced((prevAdvanced) => !prevAdvanced);
   }
 
   function toggleLocale(event) {

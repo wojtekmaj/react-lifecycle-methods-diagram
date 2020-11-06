@@ -1,3 +1,5 @@
+[![CI](https://github.com/wojtekmaj/react-lifecycle-methods-diagram/workflows/CI/badge.svg)](https://github.com/wojtekmaj/react-lifecycle-methods-diagram/actions)
+
 # React Lifecycle Methods diagram
 
 An interactive version of [React Lifecycle Methods diagram tweeted by Dan Abramov](https://twitter.com/dan_abramov/status/981712092611989509). Built with React, obviously.

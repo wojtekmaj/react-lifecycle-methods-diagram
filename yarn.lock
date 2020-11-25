@@ -1664,9 +1664,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wojtekmaj/react-t@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@wojtekmaj/react-t@npm:0.2.0"
+"@wojtekmaj/react-t@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@wojtekmaj/react-t@npm:0.3.0"
   dependencies:
     "@wojtekmaj/react-hooks": ^1.7.0
     get-user-locale: ^1.4.0
@@ -1675,7 +1675,7 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0-0
     react-dom: ^16.8.0 || ^17.0.0-0
-  checksum: 458a539fb21cf4a87590a0dd2221561f44188894eeddac2cf4c97a3646469fadb1f27235e204207d6e2977ff1b0713e65b9d7e9b36f6770856e0b3b2c407689d
+  checksum: 772a5ba35ea98800df170ba6bfc75c83b2ac311c2236e01db4bc68c518805b0afeb56158a3092eda1295308cddacc3dbc192435235495553cf8e3c95b166d620
   languageName: node
   linkType: hard
 
@@ -6784,7 +6784,7 @@ fsevents@^1.2.7:
     "@babel/preset-env": ^7.10.2
     "@babel/preset-react": ^7.10.1
     "@pmmmwh/react-refresh-webpack-plugin": ^0.4.1
-    "@wojtekmaj/react-t": ^0.2.0
+    "@wojtekmaj/react-t": ^0.3.0
     babel-loader: ^8.1.0
     copy-webpack-plugin: ^6.0.0
     core-js: 3

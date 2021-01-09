@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 function isUppercase(letter) {
   return /[A-Z]/.test(letter);
 }

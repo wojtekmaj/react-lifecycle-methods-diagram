@@ -78,6 +78,12 @@ module.exports = {
   ].filter(Boolean),
   optimization: {
     moduleIds: 'named',
+    splitChunks: {
+      chunks: 'all',
+      maxInitialRequests: 30,
+      maxAsyncRequests: 30,
+      maxSize: 100000,
+    },
   },
   stats: {
     assetsSort: '!size',

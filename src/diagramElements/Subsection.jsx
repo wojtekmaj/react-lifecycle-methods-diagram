@@ -48,8 +48,6 @@ export function autoFillProps(child, children, parentProps) {
   return props;
 }
 
-const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-
 export default function Subsection({
   children, col, colspan, sectionCol,
 }) {
@@ -66,7 +64,7 @@ export default function Subsection({
   );
 
   // iOS fails to render display: contents properly despite reporting so
-  if (iOS || ('CSS' in window && !CSS.supports('display: contents'))) {
+  if ('CSS' in window && !CSS.supports('display: contents')) {
     return mappedChildren;
   }
 

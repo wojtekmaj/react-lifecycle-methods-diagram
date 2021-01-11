@@ -19,7 +19,7 @@ export default function Updating({ advanced }) {
         <Arrow />
         <Method
           name="getDerivedStateFromProps"
-          key="static-getderivedstatefromprops"
+          key="getderivedstatefromprops"
           type="render"
           static
           col={1}
@@ -56,7 +56,7 @@ export default function Updating({ advanced }) {
           secondary
           name="React updates DOM and refs"
           key="react-updates-dom-and-refs"
-        doc={false}
+          doc={false}
           type="pre-commit"
           col={1}
           row={6}
@@ -110,7 +110,7 @@ export default function Updating({ advanced }) {
           secondary
           name="React updates DOM and refs"
           key="react-updates-dom-and-refs"
-        doc={false}
+          doc={false}
           type="pre-commit"
           col={1}
           row={6}
@@ -155,7 +155,7 @@ export default function Updating({ advanced }) {
           secondary
           name="React updates DOM and refs"
           key="react-updates-dom-and-refs"
-        doc={false}
+          doc={false}
           type="pre-commit"
           col={1}
           row={6}
@@ -195,7 +195,7 @@ export default function Updating({ advanced }) {
           secondary
           name="React updates DOM and refs"
           key="react-updates-dom-and-refs"
-        doc={false}
+          doc={false}
           type="pre-commit"
           col={1}
           row={3}
@@ -233,7 +233,7 @@ export default function Updating({ advanced }) {
           secondary
           name="React updates DOM and refs"
           key="react-updates-dom-and-refs"
-        doc={false}
+          doc={false}
           type="pre-commit"
           col={1}
           row={3}
@@ -270,7 +270,7 @@ export default function Updating({ advanced }) {
           secondary
           name="React updates DOM and refs"
           key="react-updates-dom-and-refs"
-        doc={false}
+          doc={false}
           type="pre-commit"
           col={1}
           row={3}

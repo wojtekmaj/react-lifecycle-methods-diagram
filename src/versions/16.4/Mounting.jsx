@@ -18,7 +18,7 @@ export default function Mounting({ advanced }) {
       <Arrow />
       <Method
         name="getDerivedStateFromProps"
-        key="static-getderivedstatefromprops"
+        key="getderivedstatefromprops"
         type="render"
         static
         row={2}

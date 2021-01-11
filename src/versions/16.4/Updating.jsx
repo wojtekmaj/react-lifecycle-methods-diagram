@@ -19,7 +19,7 @@ export default function Updating({ advanced }) {
         <Arrow />
         <Method
           name="getDerivedStateFromProps"
-          key="static-getderivedstatefromprops"
+          key="getderivedstatefromprops"
           type="render"
           static
           col={1}
@@ -82,7 +82,7 @@ export default function Updating({ advanced }) {
         <Arrow />
         <Method
           name="getDerivedStateFromProps"
-          key="static-getderivedstatefromprops"
+          key="getderivedstatefromprops"
           type="render"
           static
           col={1}
@@ -146,7 +146,7 @@ export default function Updating({ advanced }) {
         <Arrow />
         <Method
           name="getDerivedStateFromProps"
-          key="static-getderivedstatefromprops"
+          key="getderivedstatefromprops"
           type="render"
           static
           col={1}

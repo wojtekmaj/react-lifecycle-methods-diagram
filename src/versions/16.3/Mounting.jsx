@@ -12,7 +12,6 @@ export default function Mounting({ advanced }) {
         main
         name="constructor"
         key="constructor"
-        docname="constructor"
         type="render"
         row={1}
       />
@@ -20,8 +19,8 @@ export default function Mounting({ advanced }) {
       <Method
         name="getDerivedStateFromProps"
         key="static-getderivedstatefromprops"
-        docname="static-getderivedstatefromprops"
         type="render"
+        static
         row={2}
         colspan={2}
         endsInMiddle
@@ -31,7 +30,6 @@ export default function Mounting({ advanced }) {
         main
         name="render"
         key="render"
-        docname="render"
         type="render"
         row={4}
         colspan={4}
@@ -41,6 +39,7 @@ export default function Mounting({ advanced }) {
         secondary
         name="React updates DOM and refs"
         key="react-updates-dom-and-refs"
+        doc={false}
         type="pre-commit"
         row={6}
         colspan={4}
@@ -50,7 +49,6 @@ export default function Mounting({ advanced }) {
         main
         name="componentDidMount"
         key="componentdidmount"
-        docname="componentdidmount"
         type="commit"
         row={7}
       />
@@ -62,7 +60,6 @@ export default function Mounting({ advanced }) {
         main
         name="constructor"
         key="constructor"
-        docname="constructor"
         type="render"
         row={1}
       />
@@ -71,7 +68,6 @@ export default function Mounting({ advanced }) {
         main
         name="render"
         key="render"
-        docname="render"
         type="render"
         row={2}
         colspan={4}
@@ -81,6 +77,7 @@ export default function Mounting({ advanced }) {
         secondary
         name="React updates DOM and refs"
         key="react-updates-dom-and-refs"
+        doc={false}
         type="pre-commit"
         row={3}
         colspan={4}
@@ -90,7 +87,6 @@ export default function Mounting({ advanced }) {
         main
         name="componentDidMount"
         key="componentdidmount"
-        docname="componentdidmount"
         type="commit"
         row={4}
       />

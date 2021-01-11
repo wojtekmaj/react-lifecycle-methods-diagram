@@ -12,6 +12,7 @@ export default function Updating({ advanced }) {
       <Subsection col={2}>
         <Initiator
           secondary
+          doc={false}
           name="New props"
           row={1}
         />
@@ -19,8 +20,8 @@ export default function Updating({ advanced }) {
         <Method
           name="getDerivedStateFromProps"
           key="static-getderivedstatefromprops"
-          docname="static-getderivedstatefromprops"
           type="render"
+          static
           col={1}
           row={2}
           colspan={2}
@@ -29,7 +30,6 @@ export default function Updating({ advanced }) {
         <Method
           name="shouldComponentUpdate"
           key="shouldcomponentupdate"
-          docname="shouldcomponentupdate"
           type="render"
           row={3}
           colspan={2}
@@ -39,7 +39,6 @@ export default function Updating({ advanced }) {
           main
           name="render"
           key="render"
-          docname="render"
           type="render"
           col={1}
           row={4}
@@ -48,7 +47,6 @@ export default function Updating({ advanced }) {
         <Method
           name="getSnapshotBeforeUpdate"
           key="getsnapshotbeforeupdate"
-          docname="getsnapshotbeforeupdate"
           type="pre-commit"
           row={5}
           colspan={3}
@@ -57,6 +55,8 @@ export default function Updating({ advanced }) {
         <Method
           secondary
           name="React updates DOM and refs"
+          key="react-updates-dom-and-refs"
+        doc={false}
           type="pre-commit"
           col={1}
           row={6}
@@ -67,7 +67,6 @@ export default function Updating({ advanced }) {
           main
           name="componentDidUpdate"
           key="componentdidupdate"
-          docname="componentdidupdate"
           type="commit"
           colspan={3}
           row={7}
@@ -78,14 +77,12 @@ export default function Updating({ advanced }) {
         <Initiator
           name="setState()"
           key="setstate"
-          docname="setstate"
           row={1}
         />
         <Arrow />
         <Method
           name="shouldComponentUpdate"
           key="shouldcomponentupdate"
-          docname="shouldcomponentupdate"
           type="render"
           col={2}
           row={3}
@@ -95,7 +92,6 @@ export default function Updating({ advanced }) {
           main
           name="render"
           key="render"
-          docname="render"
           type="render"
           col={1}
           row={4}
@@ -105,7 +101,6 @@ export default function Updating({ advanced }) {
         <Method
           name="getSnapshotBeforeUpdate"
           key="getsnapshotbeforeupdate"
-          docname="getsnapshotbeforeupdate"
           type="pre-commit"
           col={2}
           row={5}
@@ -114,6 +109,8 @@ export default function Updating({ advanced }) {
         <Method
           secondary
           name="React updates DOM and refs"
+          key="react-updates-dom-and-refs"
+        doc={false}
           type="pre-commit"
           col={1}
           row={6}
@@ -123,7 +120,6 @@ export default function Updating({ advanced }) {
           main
           name="componentDidUpdate"
           key="componentdidupdate"
-          docname="componentdidupdate"
           type="commit"
           col={2}
           colspan={3}
@@ -135,7 +131,6 @@ export default function Updating({ advanced }) {
         <Initiator
           name="forceUpdate()"
           key="forceupdate"
-          docname="forceupdate"
           row={1}
         />
         <Arrow />
@@ -143,7 +138,6 @@ export default function Updating({ advanced }) {
           main
           name="render"
           key="render"
-          docname="render"
           type="render"
           col={1}
           row={4}
@@ -152,7 +146,6 @@ export default function Updating({ advanced }) {
         <Method
           name="getSnapshotBeforeUpdate"
           key="getsnapshotbeforeupdate"
-          docname="getsnapshotbeforeupdate"
           type="pre-commit"
           col={2}
           row={5}
@@ -161,6 +154,8 @@ export default function Updating({ advanced }) {
         <Method
           secondary
           name="React updates DOM and refs"
+          key="react-updates-dom-and-refs"
+        doc={false}
           type="pre-commit"
           col={1}
           row={6}
@@ -170,7 +165,6 @@ export default function Updating({ advanced }) {
           main
           name="componentDidUpdate"
           key="componentdidupdate"
-          docname="componentdidupdate"
           type="commit"
           col={2}
           colspan={3}
@@ -183,6 +177,7 @@ export default function Updating({ advanced }) {
       <Subsection col={2}>
         <Initiator
           secondary
+          doc={false}
           name="New props"
           row={1}
         />
@@ -191,7 +186,6 @@ export default function Updating({ advanced }) {
           main
           name="render"
           key="render"
-          docname="render"
           type="render"
           col={1}
           row={2}
@@ -200,6 +194,8 @@ export default function Updating({ advanced }) {
         <Method
           secondary
           name="React updates DOM and refs"
+          key="react-updates-dom-and-refs"
+        doc={false}
           type="pre-commit"
           col={1}
           row={3}
@@ -210,7 +206,6 @@ export default function Updating({ advanced }) {
           main
           name="componentDidUpdate"
           key="componentdidupdate"
-          docname="componentdidupdate"
           type="commit"
           colspan={3}
           row={4}
@@ -221,7 +216,6 @@ export default function Updating({ advanced }) {
         <Initiator
           name="setState()"
           key="setstate"
-          docname="setstate"
           row={1}
         />
         <Arrow />
@@ -229,7 +223,6 @@ export default function Updating({ advanced }) {
           main
           name="render"
           key="render"
-          docname="render"
           type="render"
           col={1}
           row={2}
@@ -239,6 +232,8 @@ export default function Updating({ advanced }) {
         <Method
           secondary
           name="React updates DOM and refs"
+          key="react-updates-dom-and-refs"
+        doc={false}
           type="pre-commit"
           col={1}
           row={3}
@@ -248,7 +243,6 @@ export default function Updating({ advanced }) {
           main
           name="componentDidUpdate"
           key="componentdidupdate"
-          docname="componentdidupdate"
           type="commit"
           col={2}
           colspan={3}
@@ -260,7 +254,6 @@ export default function Updating({ advanced }) {
         <Initiator
           name="forceUpdate()"
           key="forceupdate"
-          docname="forceupdate"
           row={1}
         />
         <Arrow />
@@ -268,7 +261,6 @@ export default function Updating({ advanced }) {
           main
           name="render"
           key="render"
-          docname="render"
           type="render"
           col={1}
           row={2}
@@ -277,6 +269,8 @@ export default function Updating({ advanced }) {
         <Method
           secondary
           name="React updates DOM and refs"
+          key="react-updates-dom-and-refs"
+        doc={false}
           type="pre-commit"
           col={1}
           row={3}
@@ -286,7 +280,6 @@ export default function Updating({ advanced }) {
           main
           name="componentDidUpdate"
           key="componentdidupdate"
-          docname="componentdidupdate"
           type="commit"
           col={2}
           colspan={3}

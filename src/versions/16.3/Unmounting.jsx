@@ -16,7 +16,6 @@ export default function Unmounting({ advanced }) {
         main
         name="componentWillUnmount"
         key="componentwillunmount"
-        docname="componentwillunmount"
         type="commit"
         row={advanced ? 7 : 4}
       />

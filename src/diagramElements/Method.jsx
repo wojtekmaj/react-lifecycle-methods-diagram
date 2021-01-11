@@ -8,19 +8,22 @@ import DocLink from './DocLink';
 export default function Method({
   col,
   colspan = 1,
-  docname,
+  doc = true,
   endsInMiddle,
   main,
   name,
   row,
   secondary,
+  static: staticProp,
   type,
 }) {
+  const docname = doc ? `${staticProp ? 'static-' : ''}${name.toLowerCase().replace(/[()]/g, '')}` : undefined;
+
   return (
     <li
       className={mergeClassNames(
         'Method',
-        docname && 'Method--hasLink',
+        doc && 'Method--hasLink',
         endsInMiddle && 'Method--endsInMiddle',
         main && 'Method--main',
         secondary && 'Method--secondary',
@@ -39,11 +42,12 @@ export default function Method({
 Method.propTypes = {
   col: PropTypes.number,
   colspan: PropTypes.number,
-  docname: PropTypes.string,
+  doc: PropTypes.bool,
   endsInMiddle: PropTypes.bool,
   main: PropTypes.bool,
   name: PropTypes.string.isRequired,
   row: PropTypes.number.isRequired,
   secondary: PropTypes.bool,
+  static: PropTypes.bool,
   type: PropTypes.oneOf(['render', 'pre-commit', 'commit']),
 };

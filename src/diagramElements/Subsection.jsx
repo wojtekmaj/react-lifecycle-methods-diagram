@@ -78,7 +78,7 @@ export default function Subsection({
   return (
     <>
       {initiatorChildren}
-      <ul>
+      <ul className="Methods">
         {methodChildren}
       </ul>
       {otherChildren}

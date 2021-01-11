@@ -13,7 +13,7 @@
   "Can work with DOM, run side effects, schedule updates.": "Peuvent opérer sur le DOM, engendrer des effets secondaires, programmer des mise à jour.",
   "React updates DOM and refs": "React met à jour le DOM et les refs",
   "Read docs for {name} (opens in a new tab)": "Lire la documentation pour {name} (s'ouvre dans un nouvel onglet)",
-  "https://reactjs.org/docs/react-component.html#{docname}": "https://fr.reactjs.org/docs/react-component.html#{docname}",
+  "//reactjs.org/docs/react-component.html#{docname}": "//fr.reactjs.org/docs/react-component.html#{docname}",
   "See project's page on GitHub (opens in a new tab)": "Accéder à la page du projet sur GitHub (s'ouvre dans un nouvel onglet)",
   "See project on": "Voir le projet sur"
 }

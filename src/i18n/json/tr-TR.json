@@ -13,7 +13,7 @@
     "Can work with DOM, run side effects, schedule updates.": "DOM ile çalışabilir, yan etkileri çalıştırabilir, güncellemeleri planlayabilir.",
     "React updates DOM and refs": "React DOM ve ref güncellemeleri",
     "Read docs for {name} (opens in a new tab)": "{Name} için dokümanları oku (yeni bir sekmede açılır)",
-    "https://reactjs.org/docs/react-component.html#{docname}": "https://tr.reactjs.org/docs/react-component.html#{docname}",
+    "//reactjs.org/docs/react-component.html#{docname}": "//tr.reactjs.org/docs/react-component.html#{docname}",
     "See project's page on GitHub (opens in a new tab)": "GitHub'daki projenin sayfasına bakın (yeni bir sekmede açılır)",
     "See project on": "Projeye göz atın"
 }

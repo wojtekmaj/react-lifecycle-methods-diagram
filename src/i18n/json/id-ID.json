@@ -13,7 +13,7 @@
   "Can work with DOM, run side effects, schedule updates.": "Dapat bekerja dengan DOM, menjalankan efek samping, merencanakan pembaruan",
   "React updates DOM and refs": "React memperbarui DOM dan refs",
   "Read docs for {name} (opens in a new tab)": "Baca dokumentasi untuk {name} (buka halaman baru)",
-  "https://reactjs.org/docs/react-component.html#{docname}": "https://id.reactjs.org/docs/react-component.html#{docname}",
+  "//reactjs.org/docs/react-component.html#{docname}": "//id.reactjs.org/docs/react-component.html#{docname}",
   "See project's page on GitHub (opens in a new tab)": "Lihat proyek ini di Github (buka halaman baru)",
   "See project on": "Lihat proyek ini di"
 }

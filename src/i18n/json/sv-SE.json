@@ -11,6 +11,6 @@
   "Can work with DOM, run side effects, schedule updates.": "Kan arbeta med DOM, köra sidoeffekter och schemauppdateringar.",
   "React updates DOM and refs": "React uppdaterar DOM + eventuella refs",
   "Read docs for {name} (opens in a new tab)": "Dokumentation för {name} (öppnas i ny tab)",
-  "https://reactjs.org/docs/react-component.html#{docname}": "https://sv.reactjs.org/docs/react-component.html#{docname}",
+  "//reactjs.org/docs/react-component.html#{docname}": "//sv.reactjs.org/docs/react-component.html#{docname}",
   "See project's page on GitHub (opens in a new tab)": "Se projektets GitHub-sida (öppnas i ny tab)"
 }

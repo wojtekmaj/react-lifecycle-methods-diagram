@@ -9,7 +9,7 @@ export default function GitHub() {
       &nbsp;
       <a
         className="GitHub"
-        href="https://github.com/wojtekmaj/react-lifecycle-methods-diagram"
+        href="//github.com/wojtekmaj/react-lifecycle-methods-diagram"
         target="_blank"
         rel="noopener noreferrer"
         title={title}

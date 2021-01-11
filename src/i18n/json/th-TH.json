@@ -13,8 +13,7 @@
     "Can work with DOM, run side effects, schedule updates.": "สามารถทำงานร่วมกับ DOM หรือ ทำงานแบบ side effects และ กำหนดการอัพเดทได้",
     "React updates DOM and refs": "React ทำการอัพเดท DOM และ refs",
     "Read docs for {name} (opens in a new tab)": "อ่านเอกสารสำหรับ {name} (เปิดแท็บใหม่)",
-    "https://reactjs.org/docs/react-component.html#{docname}": "https://th.reactjs.org/docs/react-component.html#{docname}",
+    "//reactjs.org/docs/react-component.html#{docname}": "//th.reactjs.org/docs/react-component.html#{docname}",
     "See project's page on GitHub (opens in a new tab)": "ดูรายละเอียดโปรเจคบน GitHub (เปิดแท็บใหม่)",
     "See project on": "ดูโปรเจคได้ที่"
   }
-  

@@ -11,6 +11,6 @@
     "Can work with DOM, run side effects, schedule updates.": "可以使用 DOM，運行副作用，安排更新。",
     "React updates DOM and refs": "React 更新 DOM 和 refs",
     "Read docs for {name} (opens in a new tab)": "查看 {name} 的文件（在新頁籤中開啟）",
-    "https://reactjs.org/docs/react-component.html#{docname}": "https://zh-hant.reactjs.org/docs/react-component.html#{docname}",
+    "//reactjs.org/docs/react-component.html#{docname}": "//zh-hant.reactjs.org/docs/react-component.html#{docname}",
     "See project's page on GitHub (opens in a new tab)": "查看 GitHub 上的專案頁面（在新頁籤中開啟）"
 }

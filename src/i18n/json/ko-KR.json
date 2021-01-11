@@ -13,7 +13,7 @@
   "Can work with DOM, run side effects, schedule updates.": "DOM을 사용하여 부작용을 실행하고 업데이트를 예약 할 수 있습니다.",
   "React updates DOM and refs": "React DOM 및 refs 업데이트",
   "Read docs for {name} (opens in a new tab)": "{name}에 대한 설명서를 읽습니다 (새 탭에서 열림).",
-  "https://reactjs.org/docs/react-component.html#{docname}": "https://ko.reactjs.org/docs/react-component.html#{docname}",
+  "//reactjs.org/docs/react-component.html#{docname}": "//ko.reactjs.org/docs/react-component.html#{docname}",
   "See project's page on GitHub (opens in a new tab)": "GitHub에서 프로젝트 페이지를 봅니다 (새 탭에서 열림).",
   "See project on": "프로젝트 페이지 열기"
 }

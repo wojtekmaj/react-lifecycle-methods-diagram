@@ -13,7 +13,7 @@
   "Can work with DOM, run side effects, schedule updates.": "يمكن أن تعمل مع DOM ، تشغيل الآثار الجانبية وجدولة التحديثات.",
   "React updates DOM and refs": "تتفاعل تحديثات DOM و refs",
   "Read docs for {name} (opens in a new tab)": "قراءة مستندات {name} (يتم فتحها في علامة تبويب جديدة)",
-  "https://reactjs.org/docs/react-component.html#{docname}": "https://ar.reactjs.org/docs/react-component.html#{docname}",
+  "//reactjs.org/docs/react-component.html#{docname}": "//ar.reactjs.org/docs/react-component.html#{docname}",
   "See project's page on GitHub (opens in a new tab)": "انظر صفحة المشروع على جيثب (يفتح في علامة تبويب جديدة)",
   "See project on": "انظر المشروع على"
 }

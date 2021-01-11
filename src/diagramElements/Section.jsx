@@ -7,9 +7,6 @@ import './Section.less';
 
 import Subsection from './Subsection';
 
-import Method from './Method';
-import Initiator from './Initiator';
-
 export default function Section(props) {
   const {
     advanced,
@@ -21,7 +18,7 @@ export default function Section(props) {
 
   function renderChildren() {
     // If we're creating a section containing subsections, we don't need to create one.
-    if (!children.find((el) => el.type === Method || el.type === Initiator)) {
+    if (children.find((el) => el.type === Subsection)) {
       return React.Children.map(
         children,
         (child) => React.cloneElement(

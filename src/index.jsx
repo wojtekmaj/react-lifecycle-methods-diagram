@@ -10,5 +10,5 @@ render(
   <TProvider defaultLocale={defaultLocale} languageFiles={languageFiles}>
     <Root />
   </TProvider>,
-  document.getElementById('react-container'),
+  document.getElementById('react-root'),
 );

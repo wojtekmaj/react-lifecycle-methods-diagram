@@ -2,7 +2,8 @@
   "presets": [
     ["@babel/preset-env", {
       "modules": false,
-      "loose": true
+      "loose": true,
+      "bugfixes": true
     }],
     ["@babel/preset-react", {
       "runtime": "automatic"

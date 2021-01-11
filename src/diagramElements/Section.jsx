@@ -41,6 +41,10 @@ export default function Section(props) {
   }
 
   const gridColumn = `${col + 1} / span ${colspan}`;
+  const totalRows = advanced ? 7 : 4;
+
+  const endRow = (totalRows * 3) + 2;
+  const highlight = advanced ? 8 : 7;
 
   return (
     <>
@@ -48,14 +52,14 @@ export default function Section(props) {
         className={mergeClassNames('Section', advanced && 'Section--advanced')}
         style={{
           gridColumn,
-          gridRow: advanced ? '1 / span 23' : '1 / span 14',
+          gridRow: `1 / span ${endRow}`,
         }}
       />
       <div
         className={mergeClassNames('Section__highlight', advanced && 'Section__highlight--advanced')}
         style={{
           gridColumn,
-          gridRow: advanced ? '16 / span 8' : '8 / span 7',
+          gridRow: `${endRow - highlight + 1} / span ${highlight}`,
         }}
       />
       <h3

@@ -85,10 +85,11 @@ module.exports = {
   },
   devServer: {
     compress: true,
-    contentBase: path.join(__dirname, 'dist'),
-    historyApiFallback: true, // respond to 404s with index.html
-    host: 'localhost',
-    hot: true, // enable HMR on the server
+    historyApiFallback: true,
+    host: '0.0.0.0',
     port: 3000,
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
   },
 };

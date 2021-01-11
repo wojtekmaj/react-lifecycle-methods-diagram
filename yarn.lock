@@ -2027,6 +2027,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-transform-react-remove-prop-types@npm:^0.4.24":
+  version: 0.4.24
+  resolution: "babel-plugin-transform-react-remove-prop-types@npm:0.4.24"
+  checksum: 4004ce6c87bd49223f996a4d0b98312083e7bd40d7cfb04711936001b31fd01502b7eea0b94c9116fb384668cdbe114e1866d79c25b72ad0d6cd2f32819c1094
+  languageName: node
+  linkType: hard
+
 "balanced-match@npm:^1.0.0":
   version: 1.0.0
   resolution: "balanced-match@npm:1.0.0"
@@ -6027,6 +6034,7 @@ fsevents@~2.3.1:
     "@pmmmwh/react-refresh-webpack-plugin": ^0.4.1
     "@wojtekmaj/react-t": ^0.3.0
     babel-loader: ^8.1.0
+    babel-plugin-transform-react-remove-prop-types: ^0.4.24
     copy-webpack-plugin: ^7.0.0
     core-js: 3
     country-code-to-flag-emoji: ^1.1.0

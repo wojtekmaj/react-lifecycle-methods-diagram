@@ -15,6 +15,7 @@ export const languageFiles = {
   'ko-KR': () => import(/* webpackChunkName: "ko-KR" */ './json/ko-KR.json'),
   'pl-PL': () => import(/* webpackChunkName: "pl-PL" */ './json/pl-PL.json'),
   'pt-BR': () => import(/* webpackChunkName: "pt-BR" */ './json/pt-BR.json'),
+  'ro-RO': () => import(/* webpackChunkName: "ro-RO" */ './json/ro-RO.json'),
   'ru-RU': () => import(/* webpackChunkName: "ru-RU" */ './json/ru-RU.json'),
   'sq-AL': () => import(/* webpackChunkName: "sq-AL" */ './json/sq-AL.json'),
   'sv-SE': () => import(/* webpackChunkName: "sv-SE" */ './json/sv-SE.json'),

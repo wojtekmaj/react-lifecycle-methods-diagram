@@ -103,7 +103,7 @@ export default function Options({
         <SelectOption
           id="reactVersion"
           options={supportedReactVersions.map((value) => ({
-            label: value === '16.4' ? '^16.4' : value,
+            label: value === '16.4' ? '≥16.4' : value,
             value,
           }))}
           onChange={toggleReactVersion}

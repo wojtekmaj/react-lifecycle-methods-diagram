@@ -136,6 +136,10 @@
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^4.0.0-0"
   },
+  "resolutions": {
+    "rimraf@2.6.3": "^2.6.3",
+    "semver@7.0.0": "^7.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wojtekmaj/react-lifecycle-methods-diagram.git"

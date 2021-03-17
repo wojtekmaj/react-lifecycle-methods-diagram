@@ -4632,17 +4632,15 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"less-loader@npm:^7.0.0":
-  version: 7.0.2
-  resolution: "less-loader@npm:7.0.2"
+"less-loader@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "less-loader@npm:8.0.0"
   dependencies:
     klona: ^2.0.4
-    loader-utils: ^2.0.0
-    schema-utils: ^3.0.0
   peerDependencies:
-    less: ^3.5.0
-    webpack: ^4.0.0 || ^5.0.0
-  checksum: e9e294a02ed7c317349a4c10db45b63550ce15a844b690206c1002caf93c735f3719e00588340be6e2689941f895077ecf5d8609196d6d4110490200976358c0
+    less: ^3.5.0 || ^4.0.0
+    webpack: ^5.0.0
+  checksum: 3f1bdb06cbbfc2bb41a00758e3a73e882a851bbc672fb5fc5ca1cb4099233c6ebd82a366da351dac126f1e27e7109179b250d133441167668df1e4e5e3ac9ca8
   languageName: node
   linkType: hard
 
@@ -5983,7 +5981,7 @@ fsevents@~2.3.1:
     eslint-config-wojtekmaj: ^0.5.0
     html-webpack-plugin: ^5.1.0
     less: ^4.0.0
-    less-loader: ^7.0.0
+    less-loader: ^8.0.0
     merge-class-names: ^1.3.0
     mini-css-extract-plugin: ^1.0.0
     prop-types: ^15.6.2

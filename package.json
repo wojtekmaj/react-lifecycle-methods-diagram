@@ -121,7 +121,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "copy-webpack-plugin": "^7.0.0",
+    "copy-webpack-plugin": "^8.0.0",
     "css-loader": "^5.0.0",
     "eslint": "^7.12.0",
     "eslint-config-wojtekmaj": "^0.5.0",

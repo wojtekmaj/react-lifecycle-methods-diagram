@@ -75,6 +75,11 @@
     "translated_name": "Português do Brasil"
   },
   {
+    "code": "pt-PT",
+    "name": "Portuguese (Portugal)",
+    "translated_name": "Português de Portugal"
+  },
+  {
     "code": "ro",
     "name": "Romanian",
     "translated_name": "Română"

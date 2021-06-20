@@ -106,6 +106,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@wojtekmaj/react-hooks": "^1.11.1",
     "@wojtekmaj/react-t": "^0.3.0",
     "core-js": "3",
     "country-code-to-flag-emoji": "^1.1.0",

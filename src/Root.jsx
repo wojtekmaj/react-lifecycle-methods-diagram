@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import T from '@wojtekmaj/react-t';
 import { getMatchingLocale } from '@wojtekmaj/react-t/src/utils';
+import { useLocalStorage } from '@wojtekmaj/react-hooks';
 
 import Options from './Options';
 import DiagramWithLegend from './DiagramWithLegend';
@@ -50,34 +51,8 @@ const userLocale = getLocalStorage('locale', getMatchingLocale(supportedLocales)
 const latestReactVersion = supportedReactVersions[supportedReactVersions.length - 1];
 setLocaleToDocument(userLocale);
 
-function useLocalStorage(key, defaultValue) {
-  const [value, setValue] = useState(getLocalStorage(key, defaultValue));
-
-  useEffect(() => {
-    try {
-      localStorage[key] = value;
-    } catch (err) {
-      // eslint-disable-next-line no-console
-      console.error('Failed to safe settings.');
-    }
-  }, [key, value]);
-
-  return [value, setValue];
-}
-
-function useLocalStorageFlag(key, defaultValue) {
-  const [value, setValue] = useLocalStorage(key, defaultValue);
-  const valueBoolean = typeof value === 'boolean' ? value : value === 'true';
-  function onChange(valueOrFunction) {
-    setValue(typeof valueOrFunction === 'function'
-      ? valueOrFunction(valueBoolean)
-      : valueOrFunction);
-  }
-  return [valueBoolean, onChange];
-}
-
 export default function Root() {
-  const [advanced, setAdvanced] = useLocalStorageFlag('showAdvanced', false);
+  const [advanced, setAdvanced] = useLocalStorage('showAdvanced', false);
   const [locale, setLocale] = useLocalStorage('locale', userLocale);
   const [reactVersion, setReactVersion] = useLocalStorage('reactVersion', latestReactVersion);
 

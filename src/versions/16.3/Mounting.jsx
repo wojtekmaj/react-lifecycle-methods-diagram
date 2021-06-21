@@ -17,10 +17,9 @@ export default function Mounting({ advanced }) {
       />
       <Arrow />
       <Method
-        name="getDerivedStateFromProps"
+        name="static getDerivedStateFromProps"
         key="getderivedstatefromprops"
         type="render"
-        static
         row={2}
         colspan={2}
         endsInMiddle

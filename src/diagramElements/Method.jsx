@@ -14,10 +14,11 @@ export default function Method({
   name,
   row,
   secondary,
-  static: staticProp,
   type,
 }) {
-  const docname = doc ? `${staticProp ? 'static-' : ''}${name.toLowerCase().replace(/[()]/g, '')}` : undefined;
+  const docname = doc ? `${name.toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[()]/g, '')}` : undefined;
 
   return (
     <li
@@ -48,6 +49,5 @@ Method.propTypes = {
   name: PropTypes.string.isRequired,
   row: PropTypes.number.isRequired,
   secondary: PropTypes.bool,
-  static: PropTypes.bool,
   type: PropTypes.oneOf(['render', 'pre-commit', 'commit']),
 };

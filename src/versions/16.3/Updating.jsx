@@ -18,10 +18,9 @@ export default function Updating({ advanced }) {
         />
         <Arrow />
         <Method
-          name="getDerivedStateFromProps"
+          name="static getDerivedStateFromProps"
           key="getderivedstatefromprops"
           type="render"
-          static
           col={1}
           row={2}
           colspan={2}

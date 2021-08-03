@@ -90,7 +90,6 @@ module.exports = {
     entrypoints: false,
   },
   devServer: {
-    compress: true,
     historyApiFallback: true,
     port: 3000,
     static: {

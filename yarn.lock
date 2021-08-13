@@ -2397,20 +2397,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"copy-webpack-plugin@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "copy-webpack-plugin@npm:8.0.0"
+"copy-webpack-plugin@npm:^9.0.0":
+  version: 9.0.1
+  resolution: "copy-webpack-plugin@npm:9.0.1"
   dependencies:
     fast-glob: ^3.2.5
-    glob-parent: ^5.1.1
-    globby: ^11.0.2
+    glob-parent: ^6.0.0
+    globby: ^11.0.3
     normalize-path: ^3.0.0
     p-limit: ^3.1.0
     schema-utils: ^3.0.0
-    serialize-javascript: ^5.0.1
+    serialize-javascript: ^6.0.0
   peerDependencies:
     webpack: ^5.1.0
-  checksum: 88fc2e10aee9d3237ec6bdf05cfae9b20d9ee7ff92ed71b2505a877281c95619be4b4de952c516dc811d3fed05338ff55e676bfa27fcaae409b4d075903d8e38
+  checksum: f3e69883e173f9a298b63dcf35ba5aafc02e252c67c236029424af19fb2e36fc93de94054bd7a9ada8b4cbcc4e96e9a3a269f972e4a45f4fd1b32a3d199d2cae
   languageName: node
   linkType: hard
 
@@ -3693,12 +3693,21 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"glob-parent@npm:^5.0.0, glob-parent@npm:^5.1.0, glob-parent@npm:^5.1.1, glob-parent@npm:~5.1.2":
+"glob-parent@npm:^5.0.0, glob-parent@npm:^5.1.0, glob-parent@npm:~5.1.2":
   version: 5.1.2
   resolution: "glob-parent@npm:5.1.2"
   dependencies:
     is-glob: ^4.0.1
   checksum: f4f2bfe2425296e8a47e36864e4f42be38a996db40420fe434565e4480e3322f18eb37589617a98640c5dc8fdec1a387007ee18dbb1f3f5553409c34d17f425e
+  languageName: node
+  linkType: hard
+
+"glob-parent@npm:^6.0.0":
+  version: 6.0.1
+  resolution: "glob-parent@npm:6.0.1"
+  dependencies:
+    is-glob: ^4.0.1
+  checksum: 0468cf300b8c7a483dbd8c031704fa1003331cbc65ded095f768328ed35eec78dd199c224c7436db997569863c0cbc0b7fd7c3cb45508e6134c502be9e691dc5
   languageName: node
   linkType: hard
 
@@ -3739,9 +3748,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"globby@npm:^11.0.1, globby@npm:^11.0.2":
-  version: 11.0.2
-  resolution: "globby@npm:11.0.2"
+"globby@npm:^11.0.1, globby@npm:^11.0.3":
+  version: 11.0.4
+  resolution: "globby@npm:11.0.4"
   dependencies:
     array-union: ^2.1.0
     dir-glob: ^3.0.1
@@ -3749,7 +3758,7 @@ fsevents@~2.3.2:
     ignore: ^5.1.4
     merge2: ^1.3.0
     slash: ^3.0.0
-  checksum: a20885f3e16ad4a989b84bc0f4bf3c40e03c5707a0087bcdc4b28b22088954443667d35325ce7bbe6ac59e8eee9f370864f70869a70f900e7d619901938fc240
+  checksum: d3e02d5e459e02ffa578b45f040381c33e3c0538ed99b958f0809230c423337999867d7b0dbf752ce93c46157d3bbf154d3fff988a93ccaeb627df8e1841775b
   languageName: node
   linkType: hard
 
@@ -4557,15 +4566,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"less-loader@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "less-loader@npm:8.0.0"
+"less-loader@npm:^10.0.0":
+  version: 10.0.1
+  resolution: "less-loader@npm:10.0.1"
   dependencies:
     klona: ^2.0.4
   peerDependencies:
     less: ^3.5.0 || ^4.0.0
     webpack: ^5.0.0
-  checksum: 886214ee51e1224f6bae51b078e0727179b051206659cca83e9a3cdd619ffd57f4e4ba6f9e68be68bc3aa6195a58bd99cd9260ec6c02075f1219b51d522f237a
+  checksum: 3063e477987205669946fd49c091c8ec5d390d10ce56ae5975b9b3580f68ed12e9925edda42faa2cb40cf310aa4053668699af86c50e6e0510c5de19dd124a06
   languageName: node
   linkType: hard
 
@@ -5878,7 +5887,7 @@ fsevents@~2.3.2:
     "@wojtekmaj/react-t": ^0.3.0
     babel-loader: ^8.1.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
-    copy-webpack-plugin: ^8.0.0
+    copy-webpack-plugin: ^9.0.0
     core-js: 3
     country-code-to-flag-emoji: ^1.1.0
     css-loader: ^5.0.0
@@ -5886,7 +5895,7 @@ fsevents@~2.3.2:
     eslint-config-wojtekmaj: ^0.5.0
     html-webpack-plugin: ^5.1.0
     less: ^4.0.0
-    less-loader: ^8.0.0
+    less-loader: ^10.0.0
     merge-class-names: ^1.3.0
     mini-css-extract-plugin: ^1.0.0
     prop-types: ^15.6.2
@@ -6343,6 +6352,15 @@ fsevents@~2.3.2:
   dependencies:
     randombytes: ^2.1.0
   checksum: bb45a427690c3d2711e28499de0fbf25036af1e23c63c6a9237ed0aa572fd0941fcdefe50a2dccf26d9df8c8b86ae38659e19d8ba7afd3fbc1f1c7539a2a48d2
+  languageName: node
+  linkType: hard
+
+"serialize-javascript@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "serialize-javascript@npm:6.0.0"
+  dependencies:
+    randombytes: ^2.1.0
+  checksum: 56f90b562a1bdc92e55afb3e657c6397c01a902c588c0fe3d4c490efdcc97dcd2a3074ba12df9e94630f33a5ce5b76a74784a7041294628a6f4306e0ec84bf93
   languageName: node
   linkType: hard
 

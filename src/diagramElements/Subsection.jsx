@@ -12,7 +12,7 @@ import Arrow from './Arrow';
  * @param {*} child
  * @param {*} children
  */
-export const autoFillProps = (child, children, parentProps) => {
+export function autoFillProps(child, children, parentProps) {
   if (!child) {
     return null;
   }
@@ -46,16 +46,14 @@ export const autoFillProps = (child, children, parentProps) => {
       break;
   }
   return props;
-};
-
-const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+}
 
 export default function Subsection({
   children, col, colspan, sectionCol,
 }) {
   const mappedChildren = React.Children.map(
     children,
-    child => React.cloneElement(
+    (child) => React.cloneElement(
       child,
       Object.assign(
         { col },
@@ -66,21 +64,21 @@ export default function Subsection({
   );
 
   // iOS fails to render display: contents properly despite reporting so
-  if (iOS || ('CSS' in window && !CSS.supports('display: contents'))) {
+  if ('CSS' in window && !CSS.supports('display: contents')) {
     return mappedChildren;
   }
 
   // If display: contents is supported, we can create a proper list wrapper for list elements
-  const initiatorChildren = mappedChildren.filter(el => el.type === Initiator);
-  const methodChildren = mappedChildren.filter(el => el.type === Method);
+  const initiatorChildren = mappedChildren.filter((el) => el.type === Initiator);
+  const methodChildren = mappedChildren.filter((el) => el.type === Method);
   const otherChildren = mappedChildren.filter(
-    el => !methodChildren.includes(el) && !initiatorChildren.includes(el),
+    (el) => !methodChildren.includes(el) && !initiatorChildren.includes(el),
   );
 
   return (
     <>
       {initiatorChildren}
-      <ul>
+      <ul className="Methods">
         {methodChildren}
       </ul>
       {otherChildren}

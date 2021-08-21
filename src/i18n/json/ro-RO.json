@@ -1,0 +1,19 @@
+{
+  "React lifecycle methods diagram": "Diagrama metodelor ciclului de viață React",
+  "Options": "Opțiuni",
+  "Show less common lifecycles": "Arată cicluri de viață ocazionale",
+  "React version": "Versiunea React",
+  "Language": "Limbă",
+  "Mounting": "Montare",
+  "Updating": "Actualizare",
+  "Unmounting": "Demontare",
+  "“{name} phase”": "“Faza de {name}”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Fază pura, fără efecte secundare. Poate fi întreruptă, abandonată sau repornită de React.",
+  "Can read the DOM.": "Poate să citească DOM-ul.",
+  "Can work with DOM, run side effects, schedule updates.": "Poate să modifice DOM-ul, rulează efectele secundare, planifică actualizările.",
+  "React updates DOM and refs": "React actualizează DOM-ul si referințele",
+  "Read docs for {name} (opens in a new tab)": "Citește documentația pentru {name} (se deschide în filă nouă)",
+  "//reactjs.org/docs/react-component.html#{docname}": "//ro.reactjs.org/docs/react-component.html#{docname}",
+  "See project's page on GitHub (opens in a new tab)": "Vezi pagina de Github a proiectului (se deschide în filă nouă)",
+  "See project on": "Vezi proiectul pe"
+}

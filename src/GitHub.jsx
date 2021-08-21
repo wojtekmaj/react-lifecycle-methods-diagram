@@ -1,6 +1,4 @@
-import React from 'react';
-
-import T, { useTranslation } from './i18n';
+import T, { useTranslation } from '@wojtekmaj/react-t';
 
 export default function GitHub() {
   const title = useTranslation('See project\'s page on GitHub (opens in a new tab)');
@@ -11,7 +9,7 @@ export default function GitHub() {
       &nbsp;
       <a
         className="GitHub"
-        href="https://github.com/wojtekmaj/react-lifecycle-methods-diagram"
+        href="//github.com/wojtekmaj/react-lifecycle-methods-diagram"
         target="_blank"
         rel="noopener noreferrer"
         title={title}
@@ -25,6 +23,7 @@ export default function GitHub() {
             marginLeft: '3px',
             verticalAlign: '-2px',
           }}
+          fill="var(--text-color)"
         >
           <path d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
               0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"

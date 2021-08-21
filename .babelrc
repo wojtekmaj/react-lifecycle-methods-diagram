@@ -2,11 +2,18 @@
   "presets": [
     ["@babel/preset-env", {
       "modules": false,
-      "useBuiltIns": "usage",
-      "corejs": 3
+      "loose": true,
+      "bugfixes": true
+    }],
+    ["@babel/preset-react", {
+      "runtime": "automatic"
     }]
   ],
-  "plugins": [
-    "@babel/proposal-export-default-from"
-  ]
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-react-remove-prop-types"
+      ]
+    }
+  }
 }

@@ -1,6 +1,8 @@
+[![CI](https://github.com/wojtekmaj/react-lifecycle-methods-diagram/workflows/CI/badge.svg)](https://github.com/wojtekmaj/react-lifecycle-methods-diagram/actions)
+
 # React Lifecycle Methods diagram
 
-An interactive version of [React Lifecycle Methods diagram tweeted by Dan Abramov](https://twitter.com/dan_abramov/status/981712092611989509). Built in React, obviously.
+An interactive version of [React Lifecycle Methods diagram tweeted by Dan Abramov](https://twitter.com/dan_abramov/status/981712092611989509). Built with React, obviously.
 
 I did my best to make the diagram fully accessible, both for keyboard navigation and screen readers for visually impaired people.
 
@@ -51,7 +53,7 @@ The MIT License.
     <td>
       Wojciech Maj<br />
       <a href="mailto:kontakt@wojtekmaj.pl">kontakt@wojtekmaj.pl</a><br />
-      <a href="http://wojtekmaj.pl">http://wojtekmaj.pl</a>
+      <a href="https://wojtekmaj.pl">https://wojtekmaj.pl</a>
     </td>
   </tr>
 </table>

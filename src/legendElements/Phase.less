@@ -5,8 +5,8 @@
   justify-content: center;
   text-align: center;
 
-  &:not(&--last) {
-    border-bottom: 2px dotted black;
+  &:not(:last-child) {
+    border-bottom: 2px dotted var(--text-color);
   }
 
   h3 {

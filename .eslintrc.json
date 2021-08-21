@@ -1,17 +1,17 @@
 {
-  "extends": "airbnb",
-  "env": {
-    "browser": true,
-    "es6": true,
-    "jest": true
-  },
-  "parser": "babel-eslint",
+  "extends": "wojtekmaj/react",
   "rules": {
-    "jsx-a11y/label-has-associated-control": ["error", { "required": { "some": ["id", "nesting"] }}],
-    "jsx-a11y/label-has-for": ["error", { "required": { "some": ["id", "nesting"] }}],
-    "prefer-destructuring": "warn",
-    "prefer-spread": "warn",
-    "react/require-default-props": "off",
+    "prefer-object-spread": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "sort-keys": "error"
-  }
+  },
+  "overrides": [
+    {
+      "files": "webpack.config.js",
+      "rules": {
+        "sort-keys": "off"
+      }
+    }
+  ]
 }

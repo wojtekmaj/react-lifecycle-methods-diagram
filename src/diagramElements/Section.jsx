@@ -1,31 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import mergeClassNames from 'merge-class-names';
+import T from '@wojtekmaj/react-t';
 
 import './Section.less';
 
-import T from '../i18n';
-
 import Subsection from './Subsection';
-
-import Method from './Method';
-import Initiator from './Initiator';
 
 export default function Section(props) {
   const {
     advanced,
     children,
     col,
-    colspan,
+    colspan = 1,
     name,
   } = props;
 
   function renderChildren() {
     // If we're creating a section containing subsections, we don't need to create one.
-    if (!children.find(el => el.type === Method || el.type === Initiator)) {
+    if (children.find((el) => el.type === Subsection)) {
       return React.Children.map(
         children,
-        child => React.cloneElement(
+        (child) => React.cloneElement(
           child,
           Object.assign(
             { sectionCol: col },
@@ -42,6 +38,10 @@ export default function Section(props) {
   }
 
   const gridColumn = `${col + 1} / span ${colspan}`;
+  const totalRows = advanced ? 7 : 4;
+
+  const endRow = (totalRows * 3) + 2;
+  const highlight = advanced ? 8 : 7;
 
   return (
     <>
@@ -49,14 +49,14 @@ export default function Section(props) {
         className={mergeClassNames('Section', advanced && 'Section--advanced')}
         style={{
           gridColumn,
-          gridRow: advanced ? '1 / span 23' : '1 / span 14',
+          gridRow: `1 / span ${endRow}`,
         }}
       />
       <div
         className={mergeClassNames('Section__highlight', advanced && 'Section__highlight--advanced')}
         style={{
           gridColumn,
-          gridRow: advanced ? '16 / span 8' : '8 / span 7',
+          gridRow: `${endRow - highlight + 1} / span ${highlight}`,
         }}
       />
       <h3
@@ -81,8 +81,4 @@ Section.propTypes = {
   col: PropTypes.number.isRequired,
   colspan: PropTypes.number,
   name: PropTypes.string.isRequired,
-};
-
-Section.defaultProps = {
-  colspan: 1,
 };

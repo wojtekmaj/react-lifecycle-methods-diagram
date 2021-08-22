@@ -128,5 +128,10 @@
     "code": "zh-Hant",
     "name": "Traditional Chinese",
     "translated_name": "繁體中文"
+  },
+  {
+    "code": "mn-MN",
+    "name": "Mongolian",
+    "translated_name": "Монгол"
   }
 ]

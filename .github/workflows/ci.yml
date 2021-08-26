@@ -10,8 +10,8 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
-    name: Test
+  lint:
+    name: Static code analysis
     runs-on: ubuntu-latest
 
     steps:
@@ -27,4 +27,4 @@ jobs:
         run: yarn --immutable
 
       - name: Run tests
-        run: yarn test
+        run: yarn lint

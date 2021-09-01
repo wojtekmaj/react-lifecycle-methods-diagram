@@ -1,0 +1,19 @@
+{
+  "React lifecycle methods diagram": "الرسم البياني لدورات الحياة في React",
+  "Options": "الخيارات",
+  "Show less common lifecycles": "عرض دورات الحياة الأقل شيوعاً",
+  "React version": "إصدار React",
+  "Language": "اللغة",
+  "Mounting": "التركيب",
+  "Updating": "التـحديـث",
+  "Unmounting": "عدم التركيب",
+  "“{name} phase”": "“مرحلة {name}”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "نقية وليس لها أثار جانبية. قد يتم إيقافها مؤقتاً أو إجهاضها أو إعادة تشغيلها بواسطة React",
+  "Can read the DOM.": "يمكنها قراءة DOM.",
+  "Can work with DOM, run side effects, schedule updates.": "يمكنها أن تعمل مع DOM ،و يمكنها تشغيل الأثار الجانبية وجدولة التحديثات.",
+  "React updates DOM and refs": "تتفاعل مع تحديثات DOM و refs",
+  "Read docs for {name} (opens in a new tab)": "قراءة مستندات {name} (سَيتم فتحها في علامة تبويب جديدة)",
+  "//reactjs.org/docs/react-component.html#{docname}": "//ar.reactjs.org/docs/react-component.html#{docname}",
+  "See project's page on GitHub (opens in a new tab)": "تصفح صفحة المشروع على غيتهب (سَيتم فتحها في علامة تبويب جديدة)",
+  "See project on": "تصفح المشروع على"
+}

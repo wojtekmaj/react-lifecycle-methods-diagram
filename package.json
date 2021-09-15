@@ -5,8 +5,8 @@
   "scripts": {
     "build": "NODE_ENV=production webpack",
     "clean": "rimraf dist",
+    "dev": "NODE_ENV=development webpack serve",
     "lint": "eslint src/ --ext .jsx,.js",
-    "start": "NODE_ENV=development webpack serve",
     "test": "yarn lint"
   },
   "author": {

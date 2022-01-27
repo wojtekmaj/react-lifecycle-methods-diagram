@@ -1,7 +1,6 @@
 .DS_Store
 .cache
 .idea
-.vscode
 .yarn/*
 !.yarn/releases
 !.yarn/plugins

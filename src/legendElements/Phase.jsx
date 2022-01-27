@@ -3,9 +3,7 @@ import T from '@wojtekmaj/react-t';
 
 import './Phase.less';
 
-export default function Phase({
-  children, name, row, rowspan,
-}) {
+export default function Phase({ children, name, row, rowspan }) {
   return (
     <div
       className="Phase"
@@ -15,14 +13,10 @@ export default function Phase({
       }}
     >
       <h3>
-        <T name={name}>
-          {'“{name} phase”'}
-        </T>
+        <T name={name}>{'“{name} phase”'}</T>
       </h3>
       <p>
-        <T>
-          {children}
-        </T>
+        <T>{children}</T>
       </p>
     </div>
   );

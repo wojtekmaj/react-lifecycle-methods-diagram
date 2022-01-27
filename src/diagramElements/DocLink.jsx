@@ -6,30 +6,26 @@ import { splitUpperCase } from '../shared/utils';
 export default function DocLink({ docname, name }) {
   const translatedName = useTranslation(name);
   const translatedTitle = useTranslation('Read docs for {name} (opens in a new tab)', { name });
-  const translatedHref = useTranslation('//reactjs.org/docs/react-component.html#{docname}', { docname });
+  const translatedHref = useTranslation('//reactjs.org/docs/react-component.html#{docname}', {
+    docname,
+  });
 
   const children = splitUpperCase(translatedName);
 
   const isEnglish = name === translatedName;
 
-  return (
-    docname
-      ? (
-        <a
-          href={translatedHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          title={translatedTitle}
-          dir={isEnglish ? 'ltr' : undefined}
-        >
-          {children}
-        </a>
-      )
-      : (
-        <span dir={isEnglish ? 'ltr' : undefined}>
-          {children}
-        </span>
-      )
+  return docname ? (
+    <a
+      href={translatedHref}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={translatedTitle}
+      dir={isEnglish ? 'ltr' : undefined}
+    >
+      {children}
+    </a>
+  ) : (
+    <span dir={isEnglish ? 'ltr' : undefined}>{children}</span>
   );
 }
 

@@ -1,19 +1,23 @@
 {
   "presets": [
-    ["@babel/preset-env", {
-      "modules": false,
-      "loose": true,
-      "bugfixes": true
-    }],
-    ["@babel/preset-react", {
-      "runtime": "automatic"
-    }]
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "loose": true,
+        "bugfixes": true
+      }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
   ],
   "env": {
     "production": {
-      "plugins": [
-        "transform-react-remove-prop-types"
-      ]
+      "plugins": ["transform-react-remove-prop-types"]
     }
   }
 }

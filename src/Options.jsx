@@ -13,8 +13,8 @@ function findLanguage(locale) {
   const [languageCode] = locale.split('-');
 
   return (
-    languages.find((currentLanguage) => currentLanguage.code === locale)
-    || languages.find((currentLanguage) => currentLanguage.code === languageCode)
+    languages.find((currentLanguage) => currentLanguage.code === locale) ||
+    languages.find((currentLanguage) => currentLanguage.code === languageCode)
   );
 }
 
@@ -29,24 +29,16 @@ const locales = supportedLocales
     const language = findLanguage(locale);
 
     return {
-      label: `${locale.startsWith('zh-') ? '🌏' : countryCodeToFlagEmoji(locale)} ${language.translated_name || language.name}`,
+      label: `${locale.startsWith('zh-') ? '🌏' : countryCodeToFlagEmoji(locale)} ${
+        language.translated_name || language.name
+      }`,
       value: locale,
     };
   });
 
-function SelectOption({
-  onChange,
-  options,
-  value,
-  ...otherProps
-}) {
+function SelectOption({ onChange, options, value, ...otherProps }) {
   return (
-    <select
-      id="language"
-      onChange={onChange}
-      value={value}
-      {...otherProps}
-    >
+    <select id="language" onChange={onChange} value={value} {...otherProps}>
       {options.map((option) => (
         <option key={option.value || option} value={option.value || option}>
           {option.label || option}
@@ -58,13 +50,15 @@ function SelectOption({
 
 SelectOption.propTypes = {
   onChange: PropTypes.func,
-  options: PropTypes.arrayOf(PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.shape({
-      label: PropTypes.string,
-      value: PropTypes.string,
-    }),
-  ])).isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.shape({
+        label: PropTypes.string,
+        value: PropTypes.string,
+      }),
+    ]),
+  ).isRequired,
   value: PropTypes.string,
 };
 
@@ -76,29 +70,25 @@ export default function Options({
   toggleLocale,
   toggleReactVersion,
 }) {
-  const reactVersionWithDefault = supportedReactVersions.includes(reactVersion) ? reactVersion : '16.4';
+  const reactVersionWithDefault = supportedReactVersions.includes(reactVersion)
+    ? reactVersion
+    : '16.4';
   const localeWithDefault = supportedLocales.includes(locale) ? locale : 'en-US';
 
   return (
     <fieldset className="Options">
       <legend>
-        <T>
-          Options
-        </T>
+        <T>Options</T>
       </legend>
       <div>
         <input type="checkbox" id="showAdvanced" checked={advanced} onChange={toggleAdvanced} />
         <label htmlFor="showAdvanced">
-          <T>
-            Show less common lifecycles
-          </T>
+          <T>Show less common lifecycles</T>
         </label>
       </div>
       <div>
         <label htmlFor="reactVersion">
-          <T>
-            React version
-          </T>
+          <T>React version</T>
         </label>
         <SelectOption
           id="reactVersion"
@@ -112,9 +102,7 @@ export default function Options({
       </div>
       <div>
         <label htmlFor="language">
-          <T>
-            Language
-          </T>
+          <T>Language</T>
         </label>
         <SelectOption
           id="language"

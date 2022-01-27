@@ -16,9 +16,9 @@ export default function Method({
   secondary,
   type,
 }) {
-  const docname = doc ? `${name.toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[()]/g, '')}` : undefined;
+  const docname = doc
+    ? `${name.toLowerCase().replace(/\s+/g, '-').replace(/[()]/g, '')}`
+    : undefined;
 
   return (
     <li

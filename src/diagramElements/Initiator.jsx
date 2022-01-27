@@ -5,13 +5,7 @@ import './Initiator.less';
 
 import DocLink from './DocLink';
 
-export default function Initiator({
-  col,
-  doc = true,
-  name,
-  row,
-  secondary,
-}) {
+export default function Initiator({ col, doc = true, name, row, secondary }) {
   const docname = doc ? name.toLowerCase().replace(/[()]/g, '') : undefined;
 
   return (

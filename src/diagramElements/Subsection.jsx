@@ -35,8 +35,8 @@ export function autoFillProps(child, children, parentProps) {
     case Method: {
       // Helps with grid alignment
       if (
-        (props.col || child.props.col || parentProps.col) + (props.colspan || child.props.colspan)
-        < (parentProps.sectionCol + parentProps.colspan)
+        (props.col || child.props.col || parentProps.col) + (props.colspan || child.props.colspan) <
+        parentProps.sectionCol + parentProps.colspan
       ) {
         props.endsInMiddle = true;
       }
@@ -48,12 +48,9 @@ export function autoFillProps(child, children, parentProps) {
   return props;
 }
 
-export default function Subsection({
-  children, col, colspan, sectionCol,
-}) {
-  const mappedChildren = React.Children.map(
-    children,
-    (child) => React.cloneElement(
+export default function Subsection({ children, col, colspan, sectionCol }) {
+  const mappedChildren = React.Children.map(children, (child) =>
+    React.cloneElement(
       child,
       Object.assign(
         { col },
@@ -78,9 +75,7 @@ export default function Subsection({
   return (
     <>
       {initiatorChildren}
-      <ul className="Methods">
-        {methodChildren}
-      </ul>
+      <ul className="Methods">{methodChildren}</ul>
       {otherChildren}
     </>
   );

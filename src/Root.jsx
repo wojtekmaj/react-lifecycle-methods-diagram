@@ -17,7 +17,9 @@ import { supportedLocales } from './i18n/i18n';
  * we give it width explicitly.
  */
 function fixChromeGridSizingBug(ref) {
-  if (!ref) { return; }
+  if (!ref) {
+    return;
+  }
   requestAnimationFrame(() => {
     /* eslint-disable no-param-reassign */
     ref.style.width = `${ref.clientWidth}px`;
@@ -28,17 +30,10 @@ function fixChromeGridSizingBug(ref) {
 }
 
 function getLocalStorage(key, defaultValue) {
-  return (
-    key in localStorage
-      ? localStorage[key]
-      : defaultValue
-  );
+  return key in localStorage ? localStorage[key] : defaultValue;
 }
 
-const rtlLanguages = [
-  'ar',
-  'fa',
-];
+const rtlLanguages = ['ar', 'fa'];
 
 function setLocaleToDocument(locale) {
   const localeWithDefault = supportedLocales.includes(locale) ? locale : 'en-US';
@@ -87,9 +82,7 @@ export default function Root() {
   return (
     <div ref={fixChromeGridSizingBug}>
       <h1>
-        <T>
-          React lifecycle methods diagram
-        </T>
+        <T>React lifecycle methods diagram</T>
       </h1>
       <Options
         advanced={advanced}

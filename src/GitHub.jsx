@@ -1,7 +1,7 @@
 import T, { useTranslation } from '@wojtekmaj/react-t';
 
 export default function GitHub() {
-  const title = useTranslation('See project\'s page on GitHub (opens in a new tab)');
+  const title = useTranslation("See project's page on GitHub (opens in a new tab)");
 
   return (
     <>
@@ -25,10 +25,12 @@ export default function GitHub() {
           }}
           fill="var(--text-color)"
         >
-          <path d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+          <path
+            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
               0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
           />
-          <polygon points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+          <polygon
+            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
               14.9 62.8,22.9 71.5,22.9"
           />
         </svg>

@@ -10,9 +10,9 @@ I did my best to make the diagram fully accessible, both for keyboard navigation
 
 ## How to use the diagram
 
-* Click any method name to read its official documentation (opens in a new tab).
-* Methods in **bold** are the most common ones.
-* Actions that are not methods, but otherwise help reading the diagram, are in *italics*.
+- Click any method name to read its official documentation (opens in a new tab).
+- Methods in **bold** are the most common ones.
+- Actions that are not methods, but otherwise help reading the diagram, are in _italics_.
 
 ## Collaboration
 
@@ -26,18 +26,18 @@ You can also add a new version of the diagram in case React lifecycle methods ar
 
 To contribute, you need to have the following prerequisites installed:
 
-* Node.js
-* Yarn
-* IDE of your choice
+- Node.js
+- Yarn
+- IDE of your choice
 
 ### Starting the project
 
-* `yarn install` (first time only)
-* `yarn start`
+- `yarn install` (first time only)
+- `yarn start`
 
 ### Building the project
 
-* `yarn build`
+- `yarn build`
 
 ## License
 
@@ -77,4 +77,3 @@ Thank you to all our backers! [Become a backer](https://opencollective.com/react
 Thank you to all our contributors that helped on this project!
 
 ![Top Contributors](https://opencollective.com/react-lifecycle-methods-diagram/contributors.svg?width=890&button=false)
-

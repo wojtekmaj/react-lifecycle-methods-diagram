@@ -39,18 +39,19 @@
     --base-color-rgb: 12, 120, 0;
   }
 
-  a, span {
+  a,
+  span {
     display: block;
     width: 100%;
     height: 100%;
-    margin: -(@vertical-padding + 1px) -(@horizontal-padding + 1px);
+    margin: (-@vertical-padding - 1px) (-@horizontal-padding - 1px);
     padding: @vertical-padding @horizontal-padding;
-    background-color: rgba(var(--base-color-rgb), .2);
-    border: 1px solid rgba(var(--base-color-rgb), .64);
+    background-color: rgba(var(--base-color-rgb), 0.2);
+    border: 1px solid rgba(var(--base-color-rgb), 0.64);
     border-radius: 5px;
 
     @media (prefers-color-scheme: dark) {
-      background-color: rgba(var(--base-color-rgb), .1);
+      background-color: rgba(var(--base-color-rgb), 0.1);
     }
   }
 
@@ -59,7 +60,8 @@
     color: inherit;
     text-decoration: none;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: rgb(255, 255, 255);
       position: relative;
       z-index: 1;
@@ -68,8 +70,8 @@
         background-color: rgb(120, 120, 120);
         background-image: linear-gradient(
           to right,
-          rgba(var(--base-color-rgb), .2),
-          rgba(var(--base-color-rgb), .2)
+          rgba(var(--base-color-rgb), 0.2),
+          rgba(var(--base-color-rgb), 0.2)
         );
       }
 
@@ -80,7 +82,7 @@
       }
 
       @supports (not (-moz-outline-radius: 5px)) {
-        margin: -(@vertical-padding + 2px) -(@horizontal-padding + 2px);
+        margin: (-@vertical-padding - 2px) (-@horizontal-padding - 2px);
         border-width: 2px;
       }
     }

@@ -6,11 +6,7 @@ import Arrow from '../../diagramElements/Arrow';
 
 export default function Unmounting({ advanced }) {
   return (
-    <Section
-      advanced={advanced}
-      name="Unmounting"
-      col={5}
-    >
+    <Section advanced={advanced} name="Unmounting" col={5}>
       <Arrow />
       <Method
         main

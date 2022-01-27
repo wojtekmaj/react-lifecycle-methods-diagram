@@ -5,16 +5,10 @@ import Method from '../../diagramElements/Method';
 import Arrow from '../../diagramElements/Arrow';
 
 export default function Mounting({ advanced }) {
-  return (advanced ? (
+  return advanced ? (
     <Section advanced name="Mounting" col={1}>
       <Arrow />
-      <Method
-        main
-        name="constructor"
-        key="constructor"
-        type="render"
-        row={1}
-      />
+      <Method main name="constructor" key="constructor" type="render" row={1} />
       <Arrow />
       <Method
         name="static getDerivedStateFromProps"
@@ -24,14 +18,7 @@ export default function Mounting({ advanced }) {
         colspan={4}
       />
       <Arrow />
-      <Method
-        main
-        name="render"
-        key="render"
-        type="render"
-        row={4}
-        colspan={4}
-      />
+      <Method main name="render" key="render" type="render" row={4} colspan={4} />
       <Arrow />
       <Method
         secondary
@@ -43,33 +30,14 @@ export default function Mounting({ advanced }) {
         colspan={4}
       />
       <Arrow solid />
-      <Method
-        main
-        name="componentDidMount"
-        key="componentdidmount"
-        type="commit"
-        row={7}
-      />
+      <Method main name="componentDidMount" key="componentdidmount" type="commit" row={7} />
     </Section>
   ) : (
     <Section name="Mounting" col={1}>
       <Arrow />
-      <Method
-        main
-        name="constructor"
-        key="constructor"
-        type="render"
-        row={1}
-      />
+      <Method main name="constructor" key="constructor" type="render" row={1} />
       <Arrow />
-      <Method
-        main
-        name="render"
-        key="render"
-        type="render"
-        row={2}
-        colspan={4}
-      />
+      <Method main name="render" key="render" type="render" row={2} colspan={4} />
       <Arrow />
       <Method
         secondary
@@ -81,15 +49,9 @@ export default function Mounting({ advanced }) {
         colspan={4}
       />
       <Arrow solid />
-      <Method
-        main
-        name="componentDidMount"
-        key="componentdidmount"
-        type="commit"
-        row={4}
-      />
+      <Method main name="componentDidMount" key="componentdidmount" type="commit" row={4} />
     </Section>
-  ));
+  );
 }
 
 Mounting.propTypes = {

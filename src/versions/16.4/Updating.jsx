@@ -7,15 +7,10 @@ import Method from '../../diagramElements/Method';
 import Arrow from '../../diagramElements/Arrow';
 
 export default function Updating({ advanced }) {
-  return (advanced ? (
+  return advanced ? (
     <Section advanced name="Updating" col={2} colspan={3}>
       <Subsection col={2}>
-        <Initiator
-          secondary
-          doc={false}
-          name="New props"
-          row={1}
-        />
+        <Initiator secondary doc={false} name="New props" row={1} />
         <Arrow />
         <Method
           name="static getDerivedStateFromProps"
@@ -34,15 +29,7 @@ export default function Updating({ advanced }) {
           colspan={2}
         />
         <Arrow withAlt colspan={2} />
-        <Method
-          main
-          name="render"
-          key="render"
-          type="render"
-          col={1}
-          row={4}
-          colspan={4}
-        />
+        <Method main name="render" key="render" type="render" col={1} row={4} colspan={4} />
         <Method
           name="getSnapshotBeforeUpdate"
           key="getsnapshotbeforeupdate"
@@ -73,11 +60,7 @@ export default function Updating({ advanced }) {
       </Subsection>
 
       <Subsection col={3}>
-        <Initiator
-          name="setState()"
-          key="setstate"
-          row={1}
-        />
+        <Initiator name="setState()" key="setstate" row={1} />
         <Arrow />
         <Method
           name="static getDerivedStateFromProps"
@@ -96,15 +79,7 @@ export default function Updating({ advanced }) {
           row={3}
           colspan={2}
         />
-        <Method
-          main
-          name="render"
-          key="render"
-          type="render"
-          col={1}
-          row={4}
-          colspan={4}
-        />
+        <Method main name="render" key="render" type="render" col={1} row={4} colspan={4} />
         <Arrow />
         <Method
           name="getSnapshotBeforeUpdate"
@@ -136,11 +111,7 @@ export default function Updating({ advanced }) {
       </Subsection>
 
       <Subsection col={4}>
-        <Initiator
-          name="forceUpdate()"
-          key="forceupdate"
-          row={1}
-        />
+        <Initiator name="forceUpdate()" key="forceupdate" row={1} />
         <Arrow />
         <Method
           name="static getDerivedStateFromProps"
@@ -151,15 +122,7 @@ export default function Updating({ advanced }) {
           colspan={4}
         />
         <Arrow />
-        <Method
-          main
-          name="render"
-          key="render"
-          type="render"
-          col={1}
-          row={4}
-          colspan={4}
-        />
+        <Method main name="render" key="render" type="render" col={1} row={4} colspan={4} />
         <Method
           name="getSnapshotBeforeUpdate"
           key="getsnapshotbeforeupdate"
@@ -192,22 +155,9 @@ export default function Updating({ advanced }) {
   ) : (
     <Section name="Updating" col={2} colspan={3}>
       <Subsection col={2}>
-        <Initiator
-          secondary
-          doc={false}
-          name="New props"
-          row={1}
-        />
+        <Initiator secondary doc={false} name="New props" row={1} />
         <Arrow />
-        <Method
-          main
-          name="render"
-          key="render"
-          type="render"
-          col={1}
-          row={2}
-          colspan={4}
-        />
+        <Method main name="render" key="render" type="render" col={1} row={2} colspan={4} />
         <Method
           secondary
           name="React updates DOM and refs"
@@ -230,21 +180,9 @@ export default function Updating({ advanced }) {
       </Subsection>
 
       <Subsection col={3}>
-        <Initiator
-          name="setState()"
-          key="setstate"
-          row={1}
-        />
+        <Initiator name="setState()" key="setstate" row={1} />
         <Arrow />
-        <Method
-          main
-          name="render"
-          key="render"
-          type="render"
-          col={1}
-          row={2}
-          colspan={4}
-        />
+        <Method main name="render" key="render" type="render" col={1} row={2} colspan={4} />
         <Arrow />
         <Method
           secondary
@@ -268,21 +206,9 @@ export default function Updating({ advanced }) {
       </Subsection>
 
       <Subsection col={4}>
-        <Initiator
-          name="forceUpdate()"
-          key="forceupdate"
-          row={1}
-        />
+        <Initiator name="forceUpdate()" key="forceupdate" row={1} />
         <Arrow />
-        <Method
-          main
-          name="render"
-          key="render"
-          type="render"
-          col={1}
-          row={2}
-          colspan={4}
-        />
+        <Method main name="render" key="render" type="render" col={1} row={2} colspan={4} />
         <Method
           secondary
           name="React updates DOM and refs"
@@ -304,7 +230,7 @@ export default function Updating({ advanced }) {
         />
       </Subsection>
     </Section>
-  ));
+  );
 }
 
 Updating.propTypes = {

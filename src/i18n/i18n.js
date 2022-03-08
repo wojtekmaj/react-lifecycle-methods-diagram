@@ -7,6 +7,7 @@ export const languageFiles = {
   'es-ES': () => import(/* webpackChunkName: "es-ES" */ './json/es-ES.json'),
   'fa-IR': () => import(/* webpackChunkName: "fa-IR" */ './json/fa-IR.json'),
   'fr-FR': () => import(/* webpackChunkName: "fr-FR" */ './json/fr-FR.json'),
+  'hu-HU': () => import(/* webpackChunkName: "hu-HU" */ './json/hu-HU.json'),
   'hy-AM': () => import(/* webpackChunkName: "am-AM" */ './json/hy-AM.json'),
   'id-ID': () => import(/* webpackChunkName: "id-ID" */ './json/id-ID.json'),
   'it-IT': () => import(/* webpackChunkName: "it-IT" */ './json/it-IT.json'),

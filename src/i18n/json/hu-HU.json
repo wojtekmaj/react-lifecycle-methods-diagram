@@ -1,0 +1,20 @@
+{
+  "React lifecycle methods diagram": "Ábra az életciklus metódusokról",
+  "Options": "Opciók",
+  "Show less common lifecycles": "Mutassa a ritkábban használt életciklusokat",
+  "Mounting": "Előkészítés",
+  "Updating": "Frissítés",
+  "Unmounting": "Leválasztás",
+  "“{name} phase”": "“{name} fázis”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Tiszta és nincsen mellékhatása. React által szüneteltethető, megszakítható vagy újraindítható",
+  "Can read the DOM.": "Olvasni tudja a DOM-ot",
+  "Can work with DOM, run side effects, schedule updates.": "Dolgozhat a DOM-mal, futtathat mellékhatásokat, ütemezheti a frissítéseket.",
+  "React updates DOM and refs": "A React frissíti a DOM-ot és a referenciákat",
+  "Read docs for {name} (opens in a new tab)": "Olvasd el a(z) {name} dokumentációját (új ablakban nyílik)",
+  "//reactjs.org/docs/react-component.html#{docname}": "//hu.reactjs.org/docs/react-component.html#{docname}",
+  "See project's page on GitHub (opens in a new tab)": "A projekt Githubon is megtekinthető (új ablakban nyílik)",
+  "See project on": "Forráskód:",
+  "React version": "React verzió,",
+  "Language": "Nyelv",
+  "New props": "Új “prop“-ok"
+}

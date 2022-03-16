@@ -3590,6 +3590,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"preact@npm:^10.19.0":
+  version: 10.19.2
+  resolution: "preact@npm:10.19.2"
+  checksum: 10c0/1a37e967d8947d1c82ad86cd90968536612c1463effdc5b0230a4517dc928cae8c9052513f0d5ac7bb09480b9431d129197d6c9b6924d32e32245e5ecd27cc8a
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -3693,6 +3700,7 @@ __metadata:
     get-user-locale: "npm:^2.3.0"
     husky: "npm:^9.0.0"
     lint-staged: "npm:^15.0.0"
+    preact: "npm:^10.19.0"
     prettier: "npm:^3.0.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"

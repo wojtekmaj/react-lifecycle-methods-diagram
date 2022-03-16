@@ -10,4 +10,16 @@ export default defineConfig({
       minify: true,
     }),
   ],
+  resolve: {
+    alias: [
+      {
+        find: 'react',
+        replacement: 'preact/compat',
+      },
+      {
+        find: 'react-dom',
+        replacement: 'preact/compat',
+      },
+    ],
+  },
 });

@@ -7,6 +7,7 @@ export const languageFiles = {
   'es-ES': async () => (await import('./json/es-ES.json')).default,
   'fa-IR': async () => (await import('./json/fa-IR.json')).default,
   'fr-FR': async () => (await import('./json/fr-FR.json')).default,
+  'hi-IN': async () => (await import('./json/hi-IN.json')).default,
   'hu-HU': async () => (await import('./json/hu-HU.json')).default,
   'hy-AM': async () => (await import('./json/hy-AM.json')).default,
   'id-ID': async () => (await import('./json/id-ID.json')).default,

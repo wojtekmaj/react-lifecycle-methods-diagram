@@ -1892,18 +1892,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wojtekmaj/react-hooks@npm:^1.11.1, @wojtekmaj/react-hooks@npm:^1.7.0":
-  version: 1.12.0
-  resolution: "@wojtekmaj/react-hooks@npm:1.12.0"
+"@wojtekmaj/react-hooks@npm:^1.13.0, @wojtekmaj/react-hooks@npm:^1.7.0":
+  version: 1.13.0
+  resolution: "@wojtekmaj/react-hooks@npm:1.13.0"
   peerDependencies:
-    react: ^16.8.0 || ^17.0.0-0
-  checksum: 3713ed75bc1d0dc2ff307ea5deae59600b7cf75786d611870aa14483c9abf4f717b5913ee96786c5f656aa2a53ad7a9ba5b0923916db43e5b5bd29ba3f3aa6d1
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 8a2368cb77b1d9dae7e2cf2ac85013b387ca7a6842f5d7b6d9c2bf26545e65d39f698931dcfab28e5092a62d692c1d5d62981ff59aa915518ef3100ff0cb6cd7
   languageName: node
   linkType: hard
 
-"@wojtekmaj/react-t@npm:^0.3.0":
-  version: 0.3.1
-  resolution: "@wojtekmaj/react-t@npm:0.3.1"
+"@wojtekmaj/react-t@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "@wojtekmaj/react-t@npm:0.6.0"
   dependencies:
     "@wojtekmaj/react-hooks": ^1.7.0
     get-user-locale: ^1.4.0
@@ -1911,8 +1911,7 @@ __metadata:
     prop-types: ^15.6.0
   peerDependencies:
     react: ^16.8.0 || ^17.0.0-0
-    react-dom: ^16.8.0 || ^17.0.0-0
-  checksum: 76234f143c8d887a206f3bbc0f7cd0f756a5a7140090842fd518b07fd2a89e19325560348d4ab73f11f7df36c97e2b0c4a65ca49d510f4d78d69e5a078815e4d
+  checksum: 48dddfe8aef4cd1b7292f4a651fc9299b0bcdec495e1205c9cc1d680dbab8854a1ba0e849ae8dcebda3aca7c6f6e1117fffe6d25bdd1593934d095e4f3e46259
   languageName: node
   linkType: hard
 
@@ -6086,8 +6085,8 @@ __metadata:
     "@babel/preset-env": ^7.15.0
     "@babel/preset-react": ^7.14.0
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.0
-    "@wojtekmaj/react-hooks": ^1.11.1
-    "@wojtekmaj/react-t": ^0.3.0
+    "@wojtekmaj/react-hooks": ^1.13.0
+    "@wojtekmaj/react-t": ^0.6.0
     babel-loader: ^8.2.4
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     copy-webpack-plugin: ^9.0.0

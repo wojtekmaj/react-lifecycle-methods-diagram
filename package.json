@@ -8,7 +8,7 @@
     "dev": "NODE_ENV=development webpack serve",
     "lint": "eslint src/ --ext .jsx,.js",
     "postinstall": "husky install",
-    "prettier": "prettier --check .",
+    "prettier": "prettier --check . --cache",
     "test": "yarn lint && yarn prettier"
   },
   "author": {
@@ -133,7 +133,7 @@
     "less": "^4.0.0",
     "less-loader": "^10.0.0",
     "mini-css-extract-plugin": "^1.0.0",
-    "prettier": "^2.5.0",
+    "prettier": "^2.7.0",
     "pretty-quick": "^3.1.0",
     "react-refresh": "^0.10.0",
     "rimraf": "^3.0.0",

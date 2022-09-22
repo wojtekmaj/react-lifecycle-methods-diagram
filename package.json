@@ -8,7 +8,8 @@
     "dev": "NODE_ENV=development webpack serve",
     "lint": "eslint src/ --ext .jsx,.js",
     "postinstall": "husky install",
-    "test": "yarn lint"
+    "prettier": "prettier --check .",
+    "test": "yarn lint && yarn prettier"
   },
   "author": {
     "name": "Wojciech Maj",

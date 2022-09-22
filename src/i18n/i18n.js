@@ -1,7 +1,7 @@
 export const defaultLocale = 'en-US';
 
 export const languageFiles = {
-  ar: () => import(/* webpackChunkName: "ar" */ './json/ar.json'),
+  'ar': () => import(/* webpackChunkName: "ar" */ './json/ar.json'),
   'be-BY': () => import(/* webpackChunkName: "be-BY" */ './json/be-BY.json'),
   'de-DE': () => import(/* webpackChunkName: "de-DE" */ './json/de-DE.json'),
   'es-ES': () => import(/* webpackChunkName: "es-ES" */ './json/es-ES.json'),

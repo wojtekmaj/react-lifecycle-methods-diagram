@@ -6,7 +6,7 @@
     "build": "NODE_ENV=production webpack",
     "clean": "rimraf dist",
     "dev": "NODE_ENV=development webpack serve",
-    "lint": "eslint src/ --ext .jsx,.js",
+    "lint": "eslint src --ext .jsx,.js",
     "postinstall": "husky install",
     "prettier": "prettier --check . --cache",
     "test": "yarn lint && yarn prettier"

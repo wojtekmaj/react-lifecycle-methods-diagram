@@ -127,7 +127,7 @@
     "copy-webpack-plugin": "^9.0.0",
     "css-loader": "^5.0.0",
     "eslint": "^8.5.0",
-    "eslint-config-wojtekmaj": "^0.6.4",
+    "eslint-config-wojtekmaj": "^0.7.1",
     "html-webpack-plugin": "^5.1.0",
     "husky": "^8.0.0",
     "less": "^4.0.0",

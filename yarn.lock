@@ -3314,9 +3314,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-wojtekmaj@npm:^0.6.4":
-  version: 0.6.5
-  resolution: "eslint-config-wojtekmaj@npm:0.6.5"
+"eslint-config-wojtekmaj@npm:^0.7.1":
+  version: 0.7.1
+  resolution: "eslint-config-wojtekmaj@npm:0.7.1"
   dependencies:
     eslint-plugin-import: ^2.25.0
     eslint-plugin-jsx-a11y: ^6.5.0
@@ -3324,7 +3324,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.3.0
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0
-  checksum: c856213f1cad2020b715df081cba255ea4e9ebed18f3a4c12b39bb87ae20fe8545518172c62a01cd5e2c7f8793265cf87f2535e57326b8b21cc2fc4717274c94
+  checksum: 1c6ffe1eae4299a3ff2c64902e0cbcf51686bc14f931281807eec2c8703af46c77c19cce2fb472d4002228b2d3c3abbc049210744175f98e49e7cc42753bbd44
   languageName: node
   linkType: hard
 
@@ -6094,7 +6094,7 @@ __metadata:
     country-code-to-flag-emoji: ^1.1.0
     css-loader: ^5.0.0
     eslint: ^8.5.0
-    eslint-config-wojtekmaj: ^0.6.4
+    eslint-config-wojtekmaj: ^0.7.1
     html-webpack-plugin: ^5.1.0
     husky: ^8.0.0
     less: ^4.0.0

@@ -44,7 +44,7 @@
     "mini-css-extract-plugin": "^2.0.0",
     "prettier": "^2.7.0",
     "pretty-quick": "^3.1.0",
-    "react-refresh": "^0.10.0",
+    "react-refresh": "^0.14.0",
     "rimraf": "^3.0.0",
     "style-loader": "^3.0.0",
     "webpack": "^5.20.0",

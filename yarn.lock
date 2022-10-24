@@ -6063,7 +6063,7 @@ __metadata:
     prop-types: ^15.6.2
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-refresh: ^0.10.0
+    react-refresh: ^0.14.0
     rimraf: ^3.0.0
     style-loader: ^3.0.0
     webpack: ^5.20.0
@@ -6072,10 +6072,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-refresh@npm:^0.10.0":
-  version: 0.10.0
-  resolution: "react-refresh@npm:0.10.0"
-  checksum: 089b8ea9ad8038046c0467a2476595eedab9e30620f50daa50e844c81d626de43a44a6a628256ae58e68885d5fe1d7e05074ddfd99ece3808b013d043f0c6030
+"react-refresh@npm:^0.14.0":
+  version: 0.14.0
+  resolution: "react-refresh@npm:0.14.0"
+  checksum: dc69fa8c993df512f42dd0f1b604978ae89bd747c0ed5ec595c0cc50d535fb2696619ccd98ae28775cc01d0a7c146a532f0f7fb81dc22e1977c242a4912312f4
   languageName: node
   linkType: hard
 

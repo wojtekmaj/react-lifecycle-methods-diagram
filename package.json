@@ -33,7 +33,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0",
     "babel-loader": "^8.2.4",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "copy-webpack-plugin": "^9.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.0.0",
     "eslint": "^8.26.0",
     "eslint-config-wojtekmaj": "^0.7.1",

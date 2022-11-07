@@ -27,7 +27,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0",

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import mergeClassNames from 'merge-class-names';
+import clsx from 'clsx';
 
 import './Initiator.less';
 
@@ -10,7 +10,7 @@ export default function Initiator({ col, doc = true, name, row, secondary }) {
 
   return (
     <div
-      className={mergeClassNames(
+      className={clsx(
         'Initiator',
         doc && 'Initiator--hasLink',
         secondary && 'Initiator--secondary',

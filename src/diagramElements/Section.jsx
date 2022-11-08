@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import mergeClassNames from 'merge-class-names';
+import clsx from 'clsx';
 import T from '@wojtekmaj/react-t';
 
 import './Section.less';
@@ -30,17 +30,14 @@ export default function Section(props) {
   return (
     <>
       <section
-        className={mergeClassNames('Section', advanced && 'Section--advanced')}
+        className={clsx('Section', advanced && 'Section--advanced')}
         style={{
           gridColumn,
           gridRow: `1 / span ${endRow}`,
         }}
       />
       <div
-        className={mergeClassNames(
-          'Section__highlight',
-          advanced && 'Section__highlight--advanced',
-        )}
+        className={clsx('Section__highlight', advanced && 'Section__highlight--advanced')}
         style={{
           gridColumn,
           gridRow: `${endRow - highlight + 1} / span ${highlight}`,

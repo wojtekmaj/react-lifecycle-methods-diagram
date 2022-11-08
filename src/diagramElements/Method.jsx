@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import mergeClassNames from 'merge-class-names';
+import clsx from 'clsx';
 
 import './Method.less';
 
@@ -22,7 +22,7 @@ export default function Method({
 
   return (
     <li
-      className={mergeClassNames(
+      className={clsx(
         'Method',
         doc && 'Method--hasLink',
         endsInMiddle && 'Method--endsInMiddle',

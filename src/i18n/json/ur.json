@@ -1,0 +1,19 @@
+{
+  "React lifecycle methods diagram": "لائف سائیکل طریقوں کا خاکہ React",
+  "Options": "اختیارات",
+  "Show less common lifecycles": "کم لائف سائیکل دکھائیں۔",
+  "React version": "ورژن React",
+  "Language": "زبان",
+  "Mounting": "ماؤنٹنگ",
+  "Updating": "اپ ڈیٹ کر رہا ہے۔ DOM",
+  "Unmounting": "اَن ماؤنٹنگ",
+  "“{name} phase”": "{name} کا مرحلہ",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": " رد عمل کے ذریعے روکا، ساقط یا دوبارہ شروع کیا جا سکتا ہے۔     خالص اور کوئی سائیڈ ایفیکٹ نہیں ہے",
+  "Can read the DOM.": "پڑھ سکتے ہیں۔ DOM.",
+  "Can work with DOM, run side effects, schedule updates.": " کے ساتھ کام کر سکتے ہیں، سائیڈ ایفیکٹس، شیڈول اپ ڈیٹس چلا سکتے ہیں۔  DOM",
+  "React updates DOM and refs": "کو اپ ڈیٹ کرتا ہے۔refs اور DOM React",
+  "Read docs for {name} (opens in a new tab)": "کے لیے دستاویزات پڑھیں (ایک نئے ٹیب میں کھلتا ہے) {name}",
+  "//reactjs.org/docs/react-component.html#{docname}": "//ur.reactjs.org/docs/react-component.html#{docname}",
+  "See project's page on GitHub (opens in a new tab)": "پر پروجیکٹ کا صفحہ دیکھیں (ایک نئے ٹیب میں کھلتا ہے) Github",
+  "See project on": "پراجیکٹ دیکھیں"
+}

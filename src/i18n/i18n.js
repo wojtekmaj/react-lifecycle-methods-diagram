@@ -23,6 +23,7 @@ export const languageFiles = {
   'th-TH': () => import(/* webpackChunkName: "th-TH" */ './json/th-TH.json'),
   'tr-TR': () => import(/* webpackChunkName: "tr-TR" */ './json/tr-TR.json'),
   'uk-UA': () => import(/* webpackChunkName: "uk-UA" */ './json/uk-UA.json'),
+  'ur': () => import(/* webpackChunkName: "ur" */ './json/ur.json'),
   'vi-VN': () => import(/* webpackChunkName: "vi-VN" */ './json/vi-VN.json'),
   'zh-Hans': () => import(/* webpackChunkName: "zh-Hans" */ './json/zh-Hans.json'),
   'zh-Hant': () => import(/* webpackChunkName: "zh-Hant" */ './json/zh-Hant.json'),

@@ -38,7 +38,7 @@
     "eslint": "^8.26.0",
     "eslint-config-wojtekmaj": "^0.7.1",
     "html-webpack-plugin": "^5.1.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.2",
     "less": "^4.0.0",
     "less-loader": "^11.0.0",
     "mini-css-extract-plugin": "^2.0.0",

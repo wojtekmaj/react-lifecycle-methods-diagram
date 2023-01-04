@@ -1943,21 +1943,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wojtekmaj/react-hooks@npm:^1.14.1":
+"@wojtekmaj/react-hooks@npm:^1.14.1, @wojtekmaj/react-hooks@npm:^1.7.0":
   version: 1.14.1
   resolution: "@wojtekmaj/react-hooks@npm:1.14.1"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 9838a47401a7391838b1f6f16794c112ce75e5ba7f46e107629131fe9166d391c08e5e10a5f41f5eb1903925299f403ae0609448940eb857e31e7fc6116627bf
-  languageName: node
-  linkType: hard
-
-"@wojtekmaj/react-hooks@npm:^1.7.0":
-  version: 1.13.0
-  resolution: "@wojtekmaj/react-hooks@npm:1.13.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 8a2368cb77b1d9dae7e2cf2ac85013b387ca7a6842f5d7b6d9c2bf26545e65d39f698931dcfab28e5092a62d692c1d5d62981ff59aa915518ef3100ff0cb6cd7
   languageName: node
   linkType: hard
 

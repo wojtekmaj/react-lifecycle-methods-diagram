@@ -1943,7 +1943,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wojtekmaj/react-hooks@npm:^1.13.0, @wojtekmaj/react-hooks@npm:^1.7.0":
+"@wojtekmaj/react-hooks@npm:^1.14.1":
+  version: 1.14.1
+  resolution: "@wojtekmaj/react-hooks@npm:1.14.1"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 9838a47401a7391838b1f6f16794c112ce75e5ba7f46e107629131fe9166d391c08e5e10a5f41f5eb1903925299f403ae0609448940eb857e31e7fc6116627bf
+  languageName: node
+  linkType: hard
+
+"@wojtekmaj/react-hooks@npm:^1.7.0":
   version: 1.13.0
   resolution: "@wojtekmaj/react-hooks@npm:1.13.0"
   peerDependencies:
@@ -6040,7 +6049,7 @@ __metadata:
     "@babel/preset-env": ^7.20.2
     "@babel/preset-react": ^7.14.0
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.0
-    "@wojtekmaj/react-hooks": ^1.13.0
+    "@wojtekmaj/react-hooks": ^1.14.1
     "@wojtekmaj/react-t": ^0.7.0
     babel-loader: ^9.1.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24

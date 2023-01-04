@@ -1,0 +1,20 @@
+.wrapper {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper:not(:last-child) {
+  border-bottom: 2px dotted var(--text-color);
+}
+
+.wrapper h3 {
+  font-weight: 400;
+}
+
+.wrapper p {
+  max-width: 10em;
+  margin: 5px auto 10px auto;
+}

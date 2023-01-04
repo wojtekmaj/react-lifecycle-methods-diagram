@@ -1,0 +1,55 @@
+.wrapper {
+  position: relative;
+  width: 0px;
+  border-left: 1px dashed var(--text-color);
+  margin: -19px auto calc(-19px + 5px) 50%;
+}
+
+.solid {
+  border-left-style: solid;
+}
+
+.withAlt .wrapper {
+  height: 20px;
+  position: absolute;
+  margin-top: 0;
+  top: 0;
+  transform: rotate(-30deg);
+  transform-origin: top left;
+}
+
+.withAlt .wrapper:before {
+  content: '❌';
+  display: block;
+  position: absolute;
+  bottom: -18px;
+  right: -21px;
+  transform: rotate(30deg);
+}
+
+.wrapper:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: -4px;
+}
+
+@supports (clip-path: polygon(0% 0%, 100% 0%, 50% 100%)) {
+  .wrapper:after {
+    width: 7px;
+    height: 10px;
+    background: var(--text-color);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  }
+}
+
+@supports (not (clip-path: polygon(0% 0%, 100% 0%, 50% 100%))) {
+  .wrapper:after {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-width: 10px 3.5px 0 3.5px;
+    border-top-color: var(--text-color);
+  }
+}

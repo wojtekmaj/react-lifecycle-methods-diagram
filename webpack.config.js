@@ -41,14 +41,15 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [isProduction ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
-      },
-      {
-        test: /\.less$/,
         use: [
           isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
-          'css-loader',
-          'less-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: true,
+            },
+          },
         ],
       },
     ].filter(Boolean),

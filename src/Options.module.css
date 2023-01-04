@@ -1,0 +1,38 @@
+.wrapper {
+  margin: 30px auto 30px;
+  border: 0;
+  padding: 0 0 0 calc(90px + 5vw);
+  text-align: center;
+}
+
+.wrapper > div {
+  display: inline-block;
+}
+
+.wrapper > div:first-of-type {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+
+.wrapper > div:not(:last-child) {
+  margin-right: 1em;
+}
+
+.wrapper label {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.wrapper input,
+.wrapper select {
+  margin: 0 4px;
+  font: inherit;
+}
+
+@media print {
+  .wrapper {
+    display: none;
+  }
+}

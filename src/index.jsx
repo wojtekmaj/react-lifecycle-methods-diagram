@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { TProvider } from '@wojtekmaj/react-t';
 import { defaultLocale, languageFiles } from './i18n/i18n';
 
-import './index.less';
+import './global.css';
 
 import Root from './Root';
 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import T from '@wojtekmaj/react-t';
 import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
 
-import styles from './Options.module.css';
+import { wrapper } from './Options.module.css';
 
 import { supportedReactVersions, isReactVersion } from './propTypes';
 import { supportedLocales } from './i18n/i18n';
@@ -76,7 +76,7 @@ export default function Options({
   const localeWithDefault = supportedLocales.includes(locale) ? locale : 'en-US';
 
   return (
-    <fieldset className={styles.wrapper}>
+    <fieldset className={wrapper}>
       <legend className="hidden">
         <T>Options</T>
       </legend>

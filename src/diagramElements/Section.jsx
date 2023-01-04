@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import T from '@wojtekmaj/react-t';
 
-import styles from './Section.module.css';
+import {
+  wrapper,
+  highlight as highlightClassName,
+  advanced as advancedClassName,
+  title,
+} from './Section.module.css';
 
 import Subsection from './Subsection';
 
@@ -30,21 +35,21 @@ export default function Section(props) {
   return (
     <>
       <section
-        className={styles.wrapper}
+        className={wrapper}
         style={{
           gridColumn,
           gridRow: `1 / span ${endRow}`,
         }}
       />
       <div
-        className={clsx(styles.highlight, advanced && styles.advanced)}
+        className={clsx(highlightClassName, advanced && advancedClassName)}
         style={{
           gridColumn,
           gridRow: `${endRow - highlight + 1} / span ${highlight}`,
         }}
       />
       <h3
-        className={styles.title}
+        className={title}
         style={{
           gridColumn,
           gridRow: 1,

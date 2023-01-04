@@ -1,7 +1,15 @@
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
-import styles from './Method.module.css';
+import {
+  wrapper,
+  endsInMiddle as endsInMiddleClassName,
+  main as mainClassName,
+  secondary as secondaryClassName,
+  render,
+  preCommit,
+  commit,
+} from './Method.module.css';
 
 import DocLink from './DocLink';
 
@@ -23,12 +31,12 @@ export default function Method({
   return (
     <li
       className={clsx(
-        styles.wrapper,
-        endsInMiddle && styles.endsInMiddle,
-        main && styles.main,
-        secondary && styles.secondary,
+        wrapper,
+        endsInMiddle && endsInMiddleClassName,
+        main && mainClassName,
+        secondary && secondaryClassName,
         // eslint-disable-next-line sort-keys
-        type && styles[{ 'render': 'render', 'pre-commit': 'preCommit', 'commit': 'commit' }[type]],
+        type && { 'render': render, 'pre-commit': preCommit, 'commit': commit }[type],
       )}
       style={{
         gridColumn: `${col + 1} / span ${colspan}`,

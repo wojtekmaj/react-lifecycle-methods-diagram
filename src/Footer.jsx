@@ -1,10 +1,10 @@
-import styles from './Footer.module.css';
+import { wrapper } from './Footer.module.css';
 
 import GitHub from './GitHub';
 
 export default function Footer() {
   return (
-    <footer className={styles.wrapper}>
+    <footer className={wrapper}>
       <GitHub />
     </footer>
   );

@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import T from '@wojtekmaj/react-t';
 
-import styles from './Phase.module.css';
+import { wrapper } from './Phase.module.css';
 
 export default function Phase({ children, name, row, rowspan }) {
   return (
     <div
-      className={styles.wrapper}
+      className={wrapper}
       style={{
         gridColumn: 1,
         gridRow: `${row * 3} / ${rowspan ? `span ${rowspan * 3}` : 'auto'}`,

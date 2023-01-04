@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
-import styles from './Arrow.module.css';
+import { wrapper, solid as solidClassName, withAlt as withAltClassName } from './Arrow.module.css';
 
 export default function Arrow({ col, colspan = 1, from, solid, to, withAlt }) {
   return (
     <div
-      className={clsx(styles.wrapper, solid && styles.solid, withAlt && styles.withAlt)}
+      className={clsx(wrapper, solid && solidClassName, withAlt && withAltClassName)}
       style={{
         gridColumn: `${col + 1} / span ${colspan}`,
         gridRow: `${from * 3 + 2} / ${to * 3}`,

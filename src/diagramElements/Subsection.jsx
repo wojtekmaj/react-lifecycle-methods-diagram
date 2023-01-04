@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Section.module.css';
+import { methods } from './Section.module.css';
 
 import Initiator from './Initiator';
 import Method from './Method';
@@ -77,7 +77,7 @@ export default function Subsection({ children, col, colspan, sectionCol }) {
   return (
     <>
       {initiatorChildren}
-      <ul className={styles.methods}>{methodChildren}</ul>
+      <ul className={methods}>{methodChildren}</ul>
       {otherChildren}
     </>
   );

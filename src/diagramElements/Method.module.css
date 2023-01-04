@@ -1,0 +1,100 @@
+.wrapper {
+  --vertical-padding: 8px;
+  --horizontal-padding: 10px;
+
+  margin: -1px 19px;
+  padding: calc(var(--vertical-padding) + 1px) calc(var(--horizontal-padding) + 1px);
+  background-color: white;
+  border-radius: 5px;
+
+  font-size: 16px;
+  text-align: center;
+  list-style: none;
+}
+
+.main {
+  font-weight: 600;
+}
+
+.secondary {
+  font-style: italic;
+}
+
+.endsInMiddle {
+  margin-right: 0;
+}
+
+.render {
+  --base-color-rgb: 0, 106, 255;
+}
+
+.preCommit {
+  --base-color-rgb: 245, 179, 0;
+}
+
+.commit {
+  --base-color-rgb: 12, 120, 0;
+}
+
+.wrapper a,
+.wrapper span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: calc((-1 * var(--vertical-padding)) - 1px) calc((-1 * var(--horizontal-padding)) - 1px);
+  padding: var(--vertical-padding) var(--horizontal-padding);
+  background-color: rgba(var(--base-color-rgb), 0.2);
+  border: 1px solid rgba(var(--base-color-rgb), 0.64);
+  border-radius: 5px;
+}
+
+.wrapper a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper a:hover,
+.wrapper a:focus {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+}
+
+@supports (-moz-outline-radius: 5px) {
+  .wrapper a:hover,
+  .wrapper a:focus {
+    outline: 2px solid var(--border-color);
+    outline-offset: -1px;
+    -moz-outline-radius: 5px;
+  }
+}
+
+@supports (not (-moz-outline-radius: 5px)) {
+  .wrapper a:hover,
+  .wrapper a:focus {
+    margin: calc((-1 * var(--vertical-padding)) - 2px) calc((-1 * var(--horizontal-padding)) - 2px);
+    border-width: 2px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .wrapper {
+    background-color: rgb(30, 30, 30);
+  }
+
+  .wrapper a,
+  .wrapper span {
+    background-color: rgba(var(--base-color-rgb), 0.1);
+  }
+
+  .wrapper a:hover,
+  .wrapper a:focus {
+    background-color: rgb(120, 120, 120);
+    background-image: linear-gradient(
+      to right,
+      rgba(var(--base-color-rgb), 0.2),
+      rgba(var(--base-color-rgb), 0.2)
+    );
+  }
+}

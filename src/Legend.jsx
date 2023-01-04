@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import T from '@wojtekmaj/react-t';
 
-import './Legend.less';
+import styles from './Legend.module.css';
 
 import Phase from './legendElements/Phase';
 
@@ -11,7 +11,7 @@ export default function Legend({ advanced }) {
       <h2 className="hidden">
         <T>Phases</T>
       </h2>
-      <div className="Phases">
+      <div className={styles.wrapper}>
         <Phase key="render" name="Render" row={1} rowspan={advanced ? 4 : 2}>
           Pure and has no side effects. May be paused, aborted or restarted by React.
         </Phase>

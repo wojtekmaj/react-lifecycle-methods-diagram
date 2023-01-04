@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
-import './Initiator.less';
+import styles from './Initiator.module.css';
 
 import DocLink from './DocLink';
 
@@ -10,11 +10,7 @@ export default function Initiator({ col, doc = true, name, row, secondary }) {
 
   return (
     <div
-      className={clsx(
-        'Initiator',
-        doc && 'Initiator--hasLink',
-        secondary && 'Initiator--secondary',
-      )}
+      className={clsx(styles.wrapper, secondary && styles.secondary)}
       data-column={col + 1}
       style={{
         gridColumn: col + 1,

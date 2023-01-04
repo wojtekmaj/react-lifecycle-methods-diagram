@@ -81,7 +81,7 @@ export default function Root() {
 
   return (
     <div ref={fixChromeGridSizingBug}>
-      <h1>
+      <h1 className="hidden">
         <T>React lifecycle methods diagram</T>
       </h1>
       <Options

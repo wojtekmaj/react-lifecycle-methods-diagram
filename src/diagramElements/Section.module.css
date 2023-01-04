@@ -1,0 +1,41 @@
+.wrapper {
+  border: 1px solid rgb(106, 106, 106);
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.title {
+  margin: 15px 20px 10px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  align-self: center;
+}
+
+.highlight {
+  grid-row: 2;
+  background-color: var(--background-color);
+  border: 1px solid rgb(106, 106, 106);
+  border-top-color: darkgray;
+  border-top-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 3px 3px;
+  margin-top: -1px;
+}
+
+.advanced {
+  margin-top: -10px;
+}
+
+.methods {
+  display: contents;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wrapper {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+
+  .highlight {
+    border-top-color: rgba(255, 255, 255, 0.3);
+  }
+}

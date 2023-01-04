@@ -15,15 +15,17 @@ body {
   --background-color: rgb(255, 255, 255);
   --text-color: rgb(40, 44, 52);
   --link-color: rgb(0, 0, 255);
+}
 
-  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
+  body {
     --background-color: hsl(222 14% 10%);
     --text-color: rgb(255, 255, 255);
     --link-color: rgb(97, 218, 251);
   }
 }
 
-.hidden {
+:global(.hidden) {
   width: 0;
   height: 0;
   position: absolute;
@@ -45,10 +47,6 @@ h3,
 h4 {
   margin: 0;
   font-weight: 300;
-}
-
-h1 {
-  .hidden;
 }
 
 select {

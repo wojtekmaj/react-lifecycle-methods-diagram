@@ -1,7 +1,7 @@
 Chrome >=72
 ChromeAndroid >=73
-Edge >= 17
-Firefox >=66
+Edge >= 79
+Firefox >=69
 iOS >=11
 Safari >=12.1
 Samsung >=9.2

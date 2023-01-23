@@ -672,7 +672,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wojtekmaj/react-hooks@npm:^1.15.1":
+"@wojtekmaj/react-hooks@npm:^1.15.1, @wojtekmaj/react-hooks@npm:^1.7.0":
   version: 1.15.1
   resolution: "@wojtekmaj/react-hooks@npm:1.15.1"
   dependencies:
@@ -680,15 +680,6 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: a460a5d318d1410e004ff6fbe2ab6de0ddd9dfc4fade45a9687418045bedb3aeed1de33a51ea34a86de298468f01f52fbbba85a7ee4fd95b42409cea35385c16
-  languageName: node
-  linkType: hard
-
-"@wojtekmaj/react-hooks@npm:^1.7.0":
-  version: 1.14.1
-  resolution: "@wojtekmaj/react-hooks@npm:1.14.1"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 9838a47401a7391838b1f6f16794c112ce75e5ba7f46e107629131fe9166d391c08e5e10a5f41f5eb1903925299f403ae0609448940eb857e31e7fc6116627bf
   languageName: node
   linkType: hard
 

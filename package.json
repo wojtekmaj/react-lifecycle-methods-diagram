@@ -7,7 +7,7 @@
     "build": "vite build",
     "clean": "rimraf dist",
     "dev": "vite serve",
-    "lint": "eslint src --ext .jsx,.js",
+    "lint": "eslint src --ext .js,.jsx",
     "postinstall": "husky install",
     "prettier": "prettier --check . --cache",
     "preview": "vite preview",

@@ -13,8 +13,6 @@ export default defineConfig({
           },
         },
       },
-      // Use React plugin in all *.jsx and *.tsx files
-      include: '**/*.{jsx,tsx}',
     }),
     createHtmlPlugin({
       minify: true,

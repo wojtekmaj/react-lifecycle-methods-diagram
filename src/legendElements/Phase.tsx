@@ -3,7 +3,14 @@ import T from '@wojtekmaj/react-t';
 
 import { wrapper } from './Phase.module.css';
 
-export default function Phase({ children, name, row, rowspan }) {
+type PhaseProps = {
+  children: string;
+  name: string;
+  row: number;
+  rowspan?: number;
+};
+
+export default function Phase({ children, name, row, rowspan }: PhaseProps) {
   return (
     <div
       className={wrapper}

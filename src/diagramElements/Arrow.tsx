@@ -3,7 +3,20 @@ import clsx from 'clsx';
 
 import { wrapper, solid as solidClassName, withAlt as withAltClassName } from './Arrow.module.css';
 
-export default function Arrow({ col, colspan = 1, from, solid, to, withAlt }) {
+type ArrowProps = {
+  col?: number;
+  colspan?: number;
+  from?: number;
+  solid?: boolean;
+  to?: number;
+  withAlt?: boolean;
+};
+
+export default function Arrow({ col, colspan = 1, from, solid, to, withAlt }: ArrowProps) {
+  if (typeof col === 'undefined' || typeof from === 'undefined' || typeof to === 'undefined') {
+    return null;
+  }
+
   return (
     <div
       className={clsx(wrapper, solid && solidClassName, withAlt && withAltClassName)}

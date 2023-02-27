@@ -7,11 +7,12 @@
     "build": "vite build",
     "clean": "rimraf dist",
     "dev": "vite serve",
-    "lint": "eslint . --ext .js,.jsx",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "postinstall": "husky install",
     "prettier": "prettier --check . --cache",
     "preview": "vite preview",
-    "test": "yarn lint && yarn prettier"
+    "test": "yarn lint && yarn tsc && yarn prettier",
+    "tsc": "tsc --noEmit"
   },
   "author": {
     "name": "Wojciech Maj",
@@ -28,6 +29,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/babel__core": "*",
+    "@types/ejs": "*",
+    "@types/html-minifier-terser": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
     "@vitejs/plugin-react": "^3.0.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "eslint": "^8.26.0",
@@ -36,6 +43,8 @@
     "prettier": "^2.7.0",
     "pretty-quick": "^3.1.0",
     "rimraf": "^3.0.0",
+    "typescript": "^5.0.3",
+    "typescript-plugin-css-modules": "^5.0.0",
     "vite": "^4.0.0",
     "vite-plugin-html": "^3.2.0"
   },

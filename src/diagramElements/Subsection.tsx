@@ -14,12 +14,20 @@ import Arrow from './Arrow';
  * @param {*} child
  * @param {*} children
  */
-export function autoFillProps(child, children, parentProps) {
+export function autoFillProps(
+  child: React.ReactElement,
+  children: React.ReactElement[],
+  parentProps: {
+    col: number;
+    colspan?: number;
+    sectionCol?: number;
+  },
+) {
   if (!child) {
     return null;
   }
 
-  const props = {};
+  const props: Record<string, unknown> = {};
   const index = children.indexOf(child);
 
   switch (child.type) {
@@ -38,7 +46,7 @@ export function autoFillProps(child, children, parentProps) {
       // Helps with grid alignment
       if (
         (props.col || child.props.col || parentProps.col) + (props.colspan || child.props.colspan) <
-        parentProps.sectionCol + parentProps.colspan
+        (parentProps.sectionCol || 0) + (parentProps.colspan || 0)
       ) {
         props.endsInMiddle = true;
       }
@@ -50,7 +58,14 @@ export function autoFillProps(child, children, parentProps) {
   return props;
 }
 
-export default function Subsection({ children, col, colspan, sectionCol }) {
+type SubsectionProps = {
+  children: React.ReactElement[];
+  col: number;
+  colspan?: number;
+  sectionCol?: number;
+};
+
+export default function Subsection({ children, col, colspan, sectionCol }: SubsectionProps) {
   const mappedChildren = React.Children.map(children, (child) =>
     React.cloneElement(
       child,
@@ -64,7 +79,7 @@ export default function Subsection({ children, col, colspan, sectionCol }) {
 
   // iOS fails to render display: contents properly despite reporting so
   if ('CSS' in window && !CSS.supports('display: contents')) {
-    return mappedChildren;
+    return <>{mappedChildren}</>;
   }
 
   // If display: contents is supported, we can create a proper list wrapper for list elements

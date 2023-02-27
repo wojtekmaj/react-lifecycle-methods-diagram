@@ -1,9 +1,9 @@
-function isUppercase(letter) {
+function isUppercase(letter: string): boolean {
   return /[A-Z]/.test(letter);
 }
 
 // Splits camelCase with ZWJ characters to help with line breaking
-export function splitUpperCase(str) {
+export function splitUpperCase(str: string): string {
   if (!str) {
     return str;
   }

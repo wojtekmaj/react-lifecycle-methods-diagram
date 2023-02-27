@@ -6,7 +6,11 @@ import Initiator from '../../diagramElements/Initiator';
 import Method from '../../diagramElements/Method';
 import Arrow from '../../diagramElements/Arrow';
 
-export default function Updating({ advanced }) {
+type UpdatingProps = {
+  advanced: boolean;
+};
+
+export default function Updating({ advanced }: UpdatingProps) {
   return advanced ? (
     <Section advanced name="Updating" col={2} colspan={3}>
       <Subsection col={2}>

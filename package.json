@@ -19,7 +19,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@wojtekmaj/react-hooks": "^1.13.0",
+    "@wojtekmaj/react-hooks": "^1.16.2",
     "@wojtekmaj/react-t": "^0.7.0",
     "clsx": "^1.2.1",
     "country-code-to-flag-emoji": "^1.1.0",

@@ -20,11 +20,12 @@ function fixChromeGridSizingBug(ref) {
   if (!ref) {
     return;
   }
+
   requestAnimationFrame(() => {
     /* eslint-disable no-param-reassign */
     ref.style.width = `${ref.clientWidth}px`;
     requestAnimationFrame(() => {
-      ref.style.width = null;
+      ref.style.width = '';
     });
   });
 }

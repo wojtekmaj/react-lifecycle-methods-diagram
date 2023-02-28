@@ -1218,10 +1218,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"country-code-to-flag-emoji@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "country-code-to-flag-emoji@npm:1.1.0"
-  checksum: 88a2e0c259beef73868c1ddf234546771ec3848bfb95e4ba3da71210eb02f99dec26e90564349d6ed8dc57e6158660946393ae03aadf61f661ab6b0a210563cb
+"country-code-to-flag-emoji@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "country-code-to-flag-emoji@npm:1.2.1"
+  checksum: b584c56d619230b362caf33ce528bd83fb570846361860bda43b5ba92f3f019db01cc300caffafe13e0aaa1e19f40cb0ac0f16317da48fe6c47e1e948dbda543
   languageName: node
   linkType: hard
 
@@ -3519,7 +3519,7 @@ __metadata:
     "@wojtekmaj/react-t": ^0.7.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     clsx: ^1.2.1
-    country-code-to-flag-emoji: ^1.1.0
+    country-code-to-flag-emoji: ^1.2.1
     eslint: ^8.26.0
     eslint-config-wojtekmaj: ^0.7.1
     husky: ^8.0.0

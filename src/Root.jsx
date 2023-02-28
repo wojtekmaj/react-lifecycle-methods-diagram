@@ -28,16 +28,6 @@ const userLocale = getLocalStorage('locale', getMatchingLocale(supportedLocales)
 const latestReactVersion = supportedReactVersions[supportedReactVersions.length - 1];
 setLocaleToDocument(userLocale);
 
-// Migrate legacy localStorage data
-function migrateLocalStorage(key) {
-  const value = getLocalStorage(key);
-  if (value && !value.startsWith('"')) {
-    localStorage.setItem(key, JSON.stringify(value));
-  }
-}
-migrateLocalStorage('locale');
-migrateLocalStorage('reactVersion');
-
 export default function Root() {
   const [advanced, setAdvanced] = useLocalStorage('showAdvanced', false);
   const [locale, setLocale] = useLocalStorage('locale', userLocale);

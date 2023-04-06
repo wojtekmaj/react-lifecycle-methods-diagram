@@ -12,7 +12,7 @@ export default function Arrow({ col, colspan = 1, from, solid, to, withAlt }) {
         gridRow: `${from * 3 + 2} / ${to * 3}`,
       }}
     >
-      {withAlt && <Arrow col={col} from={from} to={to} />}
+      {withAlt ? <Arrow col={col} from={from} to={to} /> : null}
     </div>
   );
 }

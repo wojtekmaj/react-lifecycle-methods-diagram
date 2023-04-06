@@ -12,7 +12,15 @@ import {
 
 import Subsection from './Subsection';
 
-export default function Section(props) {
+type SectionProps = {
+  advanced?: boolean;
+  children: React.ReactElement[];
+  col: number;
+  colspan?: number;
+  name: string;
+};
+
+export default function Section(props: SectionProps) {
   const { advanced, children, col, colspan = 1, name } = props;
 
   function renderChildren() {

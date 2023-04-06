@@ -4,7 +4,11 @@ import Section from '../../diagramElements/Section';
 import Method from '../../diagramElements/Method';
 import Arrow from '../../diagramElements/Arrow';
 
-export default function Unmounting({ advanced }) {
+type UnmountingProps = {
+  advanced: boolean;
+};
+
+export default function Unmounting({ advanced }: UnmountingProps) {
   return (
     <Section advanced={advanced} name="Unmounting" col={5}>
       <Arrow />

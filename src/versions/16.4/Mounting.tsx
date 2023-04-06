@@ -4,7 +4,11 @@ import Section from '../../diagramElements/Section';
 import Method from '../../diagramElements/Method';
 import Arrow from '../../diagramElements/Arrow';
 
-export default function Mounting({ advanced }) {
+type MountingProps = {
+  advanced: boolean;
+};
+
+export default function Mounting({ advanced }: MountingProps) {
   return advanced ? (
     <Section advanced name="Mounting" col={1}>
       <Arrow />

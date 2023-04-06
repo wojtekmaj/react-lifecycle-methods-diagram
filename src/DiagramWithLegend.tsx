@@ -7,7 +7,14 @@ import Diagram from './Diagram';
 
 import { isReactVersion } from './propTypes';
 
-export default function DiagramWithLegend({ advanced, reactVersion }) {
+import type { ReactVersion } from './types';
+
+type DiagramWithLegendProps = {
+  advanced: boolean;
+  reactVersion: ReactVersion;
+};
+
+export default function DiagramWithLegend({ advanced, reactVersion }: DiagramWithLegendProps) {
   return (
     <main className={wrapper}>
       <Legend advanced={advanced} />

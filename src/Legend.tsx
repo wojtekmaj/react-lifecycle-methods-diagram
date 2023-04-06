@@ -5,7 +5,11 @@ import { wrapper } from './Legend.module.css';
 
 import Phase from './legendElements/Phase';
 
-export default function Legend({ advanced }) {
+type LegendProps = {
+  advanced: boolean;
+};
+
+export default function Legend({ advanced }: LegendProps) {
   return (
     <>
       <h2 className="hidden">

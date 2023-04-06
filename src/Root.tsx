@@ -11,16 +11,18 @@ import { supportedReactVersions } from './propTypes';
 
 import { supportedLocales } from './i18n/i18n';
 
-function getLocalStorage(key, defaultValue) {
+import type { ReactVersion } from './types';
+
+function getLocalStorage(key: string, defaultValue?: string): string {
   return key in localStorage ? localStorage[key] : defaultValue;
 }
 
 const rtlLanguages = ['ar', 'fa'];
 
-function setLocaleToDocument(locale) {
+function setLocaleToDocument(locale: string) {
   const localeWithDefault = supportedLocales.includes(locale) ? locale : 'en-US';
   document.documentElement.setAttribute('lang', localeWithDefault);
-  const [languageCode] = localeWithDefault.split('-');
+  const [languageCode = ''] = localeWithDefault.split('-');
   document.documentElement.setAttribute('dir', rtlLanguages.includes(languageCode) ? 'rtl' : 'ltr');
 }
 
@@ -37,14 +39,16 @@ export default function Root() {
     setAdvanced((prevAdvanced) => !prevAdvanced);
   }
 
-  function toggleLocale(event) {
+  function toggleLocale(event: React.ChangeEvent<HTMLSelectElement>) {
     const { value } = event.target;
+
     setLocale(value);
   }
 
-  function toggleReactVersion(event) {
+  function toggleReactVersion(event: React.ChangeEvent<HTMLSelectElement>) {
     const { value } = event.target;
-    setReactVersion(value);
+
+    setReactVersion(value as ReactVersion);
   }
 
   useEffect(() => {

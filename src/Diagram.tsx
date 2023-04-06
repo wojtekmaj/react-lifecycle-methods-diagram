@@ -3,16 +3,26 @@ import PropTypes from 'prop-types';
 
 import { isReactVersion } from './propTypes';
 
+import type { ReactVersion } from './types';
+
 const diagramVersions = {
   16.3: () => import('./versions/16.3'),
   16.4: () => import('./versions/16.4'),
 };
 
-export default function Diagram({ advanced, reactVersion }) {
-  const [diagramElements, setDiagramElements] = useState();
+type ImportedValue = Awaited<ReturnType<(typeof diagramVersions)[ReactVersion]>>;
+
+type DiagramProps = {
+  advanced: boolean;
+  reactVersion: ReactVersion;
+};
+
+export default function Diagram({ advanced, reactVersion }: DiagramProps) {
+  const [diagramElements, setDiagramElements] = useState<ImportedValue>();
 
   function loadDiagramElements() {
-    diagramVersions[reactVersion]().then(setDiagramElements);
+    const promiseGetter = diagramVersions[reactVersion];
+    promiseGetter().then(setDiagramElements);
   }
 
   useEffect(loadDiagramElements, [reactVersion]);

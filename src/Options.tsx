@@ -9,7 +9,9 @@ import { supportedLocales } from './i18n/i18n';
 
 import languages from './i18n/languages.json';
 
-function findLanguage(locale) {
+import type { ReactVersion } from './types';
+
+function findLanguage(locale: string) {
   const [languageCode] = locale.split('-');
 
   return (
@@ -23,10 +25,18 @@ const locales = supportedLocales
     const languageA = findLanguage(a);
     const languageB = findLanguage(b);
 
+    if (!languageA || !languageB) {
+      throw new Error('Language not found');
+    }
+
     return languageA.name.localeCompare(languageB.name);
   })
   .map((locale) => {
     const language = findLanguage(locale);
+
+    if (!language) {
+      throw new Error('Language not found');
+    }
 
     return {
       label: `${locale.startsWith('zh-') ? '🌏' : countryCodeToFlagEmoji(locale)} ${
@@ -36,12 +46,19 @@ const locales = supportedLocales
     };
   });
 
-function SelectOption({ onChange, options, value, ...otherProps }) {
+type SelectOptionProps = {
+  options: Array<string | { label: string; value: string }>;
+} & React.SelectHTMLAttributes<HTMLSelectElement>;
+
+function SelectOption({ onChange, options, value, ...otherProps }: SelectOptionProps) {
   return (
-    <select id="language" onChange={onChange} value={value} {...otherProps}>
+    <select onChange={onChange} value={value} {...otherProps}>
       {options.map((option) => (
-        <option key={option.value || option} value={option.value || option}>
-          {option.label || option}
+        <option
+          key={typeof option === 'object' ? option.value : option}
+          value={typeof option === 'object' ? option.value : option}
+        >
+          {typeof option === 'object' ? option.label : option}
         </option>
       ))}
     </select>
@@ -62,6 +79,15 @@ SelectOption.propTypes = {
   value: PropTypes.string,
 };
 
+type OptionsProps = {
+  advanced: boolean;
+  locale: string;
+  reactVersion: ReactVersion;
+  toggleAdvanced: () => void;
+  toggleLocale: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  toggleReactVersion: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+};
+
 export default function Options({
   advanced,
   locale,
@@ -69,7 +95,7 @@ export default function Options({
   toggleAdvanced,
   toggleLocale,
   toggleReactVersion,
-}) {
+}: OptionsProps) {
   const reactVersionWithDefault = supportedReactVersions.includes(reactVersion)
     ? reactVersion
     : '16.4';

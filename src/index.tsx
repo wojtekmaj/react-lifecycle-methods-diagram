@@ -7,7 +7,7 @@ import './global.css';
 
 import Root from './Root';
 
-createRoot(document.getElementById('react-root')).render(
+createRoot(document.getElementById('react-root') as HTMLDivElement).render(
   <StrictMode>
     <TProvider defaultLocale={defaultLocale} languageFiles={languageFiles}>
       <Root />

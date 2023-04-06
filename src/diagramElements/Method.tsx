@@ -13,8 +13,20 @@ import {
 
 import DocLink from './DocLink';
 
+type MethodProps = {
+  col?: number;
+  colspan?: number;
+  doc?: boolean;
+  endsInMiddle?: boolean;
+  main?: boolean;
+  name: string;
+  row: number;
+  secondary?: boolean;
+  type?: 'render' | 'pre-commit' | 'commit';
+};
+
 export default function Method({
-  col,
+  col = 1,
   colspan = 1,
   doc = true,
   endsInMiddle,
@@ -23,7 +35,7 @@ export default function Method({
   row,
   secondary,
   type,
-}) {
+}: MethodProps) {
   const docname = doc
     ? `${name.toLowerCase().replace(/\s+/g, '-').replace(/[()]/g, '')}`
     : undefined;

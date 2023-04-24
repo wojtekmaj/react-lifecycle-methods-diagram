@@ -955,6 +955,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wojtekmaj/react-hooks@npm:^1.17.2":
+  version: 1.17.2
+  resolution: "@wojtekmaj/react-hooks@npm:1.17.2"
+  dependencies:
+    "@types/react": "*"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 07b191b4ffc86e1be45f88849c0314db2521bbc7d9c7e0d981b8be902be8baf124f1db8436675e23da18952f88863c87a3929f78c72e7accc539f57fbbc7c543
+  languageName: node
+  linkType: hard
+
 "@wojtekmaj/react-t@npm:^0.8.0":
   version: 0.8.0
   resolution: "@wojtekmaj/react-t@npm:0.8.0"
@@ -4285,7 +4296,7 @@ __metadata:
     "@types/react": "*"
     "@types/react-dom": "*"
     "@vitejs/plugin-react": ^3.0.0
-    "@wojtekmaj/react-hooks": ^1.16.2
+    "@wojtekmaj/react-hooks": ^1.17.2
     "@wojtekmaj/react-t": ^0.8.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     clsx: ^1.2.1

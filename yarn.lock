@@ -3676,7 +3676,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.4":
+"nanoid@npm:^3.3.4, nanoid@npm:^3.3.6":
   version: 3.3.6
   resolution: "nanoid@npm:3.3.6"
   bin:
@@ -4162,6 +4162,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss@npm:^8.4.23":
+  version: 8.4.23
+  resolution: "postcss@npm:8.4.23"
+  dependencies:
+    nanoid: ^3.3.6
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: 8bb9d1b2ea6e694f8987d4f18c94617971b2b8d141602725fedcc2222fdc413b776a6e1b969a25d627d7b2681ca5aabb56f59e727ef94072e1b6ac8412105a2f
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -4300,7 +4311,7 @@ __metadata:
     react-dom: ^18.2.0
     typescript: ^5.0.0
     typescript-plugin-css-modules: ^5.0.0
-    vite: ^4.0.0
+    vite: ^4.3.3
     vite-plugin-html: ^3.2.0
   languageName: unknown
   linkType: soft
@@ -4457,9 +4468,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^3.18.0":
-  version: 3.20.2
-  resolution: "rollup@npm:3.20.2"
+"rollup@npm:^3.21.0":
+  version: 3.21.2
+  resolution: "rollup@npm:3.21.2"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -4467,7 +4478,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 34b0932839b7c2a5d1742fb21ce95a47e0b49a0849f4abee2dccf25833187aa7babb898ca90d4fc761cffa4102b9ed0ac6ad7f6f6b96c8b8e2d67305abc5da65
+  checksum: 1a0261b551ea7846f4ef7514930263c28c67e356ab1cbbe9e69e923a081b571fb483576ea53b69e851df9e58be36ab135057d21635d8bbdb5e63c3ccc34a0419
   languageName: node
   linkType: hard
 
@@ -5095,15 +5106,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.0.0":
-  version: 4.2.1
-  resolution: "vite@npm:4.2.1"
+"vite@npm:^4.3.3":
+  version: 4.3.3
+  resolution: "vite@npm:4.3.3"
   dependencies:
     esbuild: ^0.17.5
     fsevents: ~2.3.2
-    postcss: ^8.4.21
-    resolve: ^1.22.1
-    rollup: ^3.18.0
+    postcss: ^8.4.23
+    rollup: ^3.21.0
   peerDependencies:
     "@types/node": ">= 14"
     less: "*"
@@ -5129,7 +5139,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 70eb162ffc299017a3c310e3adc95e9661def6b17aafd1f8e5e02e516766060435590dbe3df1e4e95acc3583c728a76e91f07c546221d1e701f1b2b021293f45
+  checksum: 99970cb1fed3330458e60f8341ec73c4260c82d815e51c95295321ab496e4c8cb447bc942daf4d94f78bbc8b2bed36cbc237f43fdc1cede19250fac737e5a0fc
   languageName: node
   linkType: hard
 

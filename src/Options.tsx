@@ -47,7 +47,7 @@ const locales = supportedLocales
   });
 
 type SelectOptionProps = {
-  options: Array<string | { label: string; value: string }>;
+  options: (string | { label: string; value: string })[];
 } & React.SelectHTMLAttributes<HTMLSelectElement>;
 
 function SelectOption({ onChange, options, value, ...otherProps }: SelectOptionProps) {

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { useTranslation } from '@wojtekmaj/react-t';
 
 import { splitUpperCase } from '../shared/utils';
@@ -54,8 +53,3 @@ type DocLinkProps = {
 export default function DocLink({ docname, name }: DocLinkProps) {
   return docname ? <DocLinkLink docname={docname} name={name} /> : <DocLinkSpan name={name} />;
 }
-
-DocLink.propTypes = {
-  docname: PropTypes.string,
-  name: PropTypes.string.isRequired,
-};

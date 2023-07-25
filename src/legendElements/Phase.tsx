@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import T from '@wojtekmaj/react-t';
 
 import { wrapper } from './Phase.module.css';
@@ -28,10 +27,3 @@ export default function Phase({ children, name, row, rowspan }: PhaseProps) {
     </div>
   );
 }
-
-Phase.propTypes = {
-  children: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  row: PropTypes.number.isRequired,
-  rowspan: PropTypes.number,
-};

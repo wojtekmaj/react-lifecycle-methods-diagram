@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import Section from '../../diagramElements/Section';
 import Subsection from '../../diagramElements/Subsection';
 import Initiator from '../../diagramElements/Initiator';
@@ -236,7 +234,3 @@ export default function Updating({ advanced }: UpdatingProps) {
     </Section>
   );
 }
-
-Updating.propTypes = {
-  advanced: PropTypes.bool,
-};

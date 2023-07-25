@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import Section from '../../diagramElements/Section';
 import Method from '../../diagramElements/Method';
 import Arrow from '../../diagramElements/Arrow';
@@ -22,7 +20,3 @@ export default function Unmounting({ advanced }: UnmountingProps) {
     </Section>
   );
 }
-
-Unmounting.propTypes = {
-  advanced: PropTypes.bool,
-};

@@ -1,11 +1,7 @@
-import PropTypes from 'prop-types';
-
 import { wrapper } from './DiagramWithLegend.module.css';
 
 import Legend from './Legend';
 import Diagram from './Diagram';
-
-import { isReactVersion } from './propTypes';
 
 import type { ReactVersion } from './types';
 
@@ -22,8 +18,3 @@ export default function DiagramWithLegend({ advanced, reactVersion }: DiagramWit
     </main>
   );
 }
-
-DiagramWithLegend.propTypes = {
-  advanced: PropTypes.bool.isRequired,
-  reactVersion: isReactVersion.isRequired,
-};

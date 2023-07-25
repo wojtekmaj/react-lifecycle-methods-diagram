@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
 import { wrapper, secondary as secondaryClassName } from './Initiator.module.css';
@@ -31,11 +30,3 @@ export default function Initiator({ col = 1, doc = true, name, row, secondary }:
     </div>
   );
 }
-
-Initiator.propTypes = {
-  col: PropTypes.number,
-  doc: PropTypes.bool,
-  name: PropTypes.string.isRequired,
-  row: PropTypes.number.isRequired,
-  secondary: PropTypes.bool,
-};

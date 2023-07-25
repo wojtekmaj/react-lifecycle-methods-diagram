@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
 import {
@@ -59,15 +58,3 @@ export default function Method({
     </li>
   );
 }
-
-Method.propTypes = {
-  col: PropTypes.number,
-  colspan: PropTypes.number,
-  doc: PropTypes.bool,
-  endsInMiddle: PropTypes.bool,
-  main: PropTypes.bool,
-  name: PropTypes.string.isRequired,
-  row: PropTypes.number.isRequired,
-  secondary: PropTypes.bool,
-  type: PropTypes.oneOf(['render', 'pre-commit', 'commit']),
-};

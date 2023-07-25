@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import Section from '../../diagramElements/Section';
 import Method from '../../diagramElements/Method';
 import Arrow from '../../diagramElements/Arrow';
@@ -58,7 +56,3 @@ export default function Mounting({ advanced }: MountingProps) {
     </Section>
   );
 }
-
-Mounting.propTypes = {
-  advanced: PropTypes.bool,
-};

@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types';
 import T from '@wojtekmaj/react-t';
 import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
 
 import { wrapper } from './Options.module.css';
 
-import { supportedReactVersions, isReactVersion } from './propTypes';
+import { supportedReactVersions } from './reactVersions';
 import { supportedLocales } from './i18n/i18n';
 
 import languages from './i18n/languages.json';
@@ -64,20 +63,6 @@ function SelectOption({ onChange, options, value, ...otherProps }: SelectOptionP
     </select>
   );
 }
-
-SelectOption.propTypes = {
-  onChange: PropTypes.func,
-  options: PropTypes.arrayOf(
-    PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.shape({
-        label: PropTypes.string,
-        value: PropTypes.string,
-      }),
-    ]),
-  ).isRequired,
-  value: PropTypes.string,
-};
 
 type OptionsProps = {
   advanced: boolean;
@@ -140,12 +125,3 @@ export default function Options({
     </fieldset>
   );
 }
-
-Options.propTypes = {
-  advanced: PropTypes.bool,
-  locale: PropTypes.string,
-  reactVersion: isReactVersion.isRequired,
-  toggleAdvanced: PropTypes.func.isRequired,
-  toggleLocale: PropTypes.func.isRequired,
-  toggleReactVersion: PropTypes.func.isRequired,
-};

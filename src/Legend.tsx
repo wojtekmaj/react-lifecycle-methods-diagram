@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import T from '@wojtekmaj/react-t';
 
 import { wrapper } from './Legend.module.css';
@@ -31,7 +30,3 @@ export default function Legend({ advanced }: LegendProps) {
     </>
   );
 }
-
-Legend.propTypes = {
-  advanced: PropTypes.bool,
-};

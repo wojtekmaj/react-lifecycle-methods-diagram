@@ -7,7 +7,7 @@ import Options from './Options';
 import DiagramWithLegend from './DiagramWithLegend';
 import Footer from './Footer';
 
-import { supportedReactVersions } from './propTypes';
+import { supportedReactVersions } from './reactVersions';
 
 import { supportedLocales } from './i18n/i18n';
 

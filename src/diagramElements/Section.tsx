@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import T from '@wojtekmaj/react-t';
 
@@ -69,11 +68,3 @@ export default function Section(props: SectionProps) {
     </>
   );
 }
-
-Section.propTypes = {
-  advanced: PropTypes.bool,
-  children: PropTypes.node,
-  col: PropTypes.number.isRequired,
-  colspan: PropTypes.number,
-  name: PropTypes.string.isRequired,
-};

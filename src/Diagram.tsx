@@ -1,7 +1,4 @@
 import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-
-import { isReactVersion } from './propTypes';
 
 import type { ReactVersion } from './types';
 
@@ -42,8 +39,3 @@ export default function Diagram({ advanced, reactVersion }: DiagramProps) {
     </>
   );
 }
-
-Diagram.propTypes = {
-  advanced: PropTypes.bool,
-  reactVersion: isReactVersion.isRequired,
-};

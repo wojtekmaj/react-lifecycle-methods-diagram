@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { methods } from './Section.module.css';
 
@@ -97,10 +96,3 @@ export default function Subsection({ children, col, colspan, sectionCol }: Subse
     </>
   );
 }
-
-Subsection.propTypes = {
-  children: PropTypes.node,
-  col: PropTypes.number.isRequired,
-  colspan: PropTypes.number,
-  sectionCol: PropTypes.number,
-};

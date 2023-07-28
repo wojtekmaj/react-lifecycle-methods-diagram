@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import T from '@wojtekmaj/react-t';
-import { getMatchingLocale } from '@wojtekmaj/react-t/src/utils';
+import { getUserLocales } from 'get-user-locale';
+import { getMatchingLocale } from '@wojtekmaj/react-t/dist/esm/utils/locale';
 import { useLocalStorage } from '@wojtekmaj/react-hooks';
 
 import Options from './Options';
@@ -26,7 +27,11 @@ function setLocaleToDocument(locale: string) {
   document.documentElement.setAttribute('dir', rtlLanguages.includes(languageCode) ? 'rtl' : 'ltr');
 }
 
-const userLocale = getLocalStorage('locale', getMatchingLocale(supportedLocales));
+const locales = getUserLocales();
+const userLocale = getLocalStorage(
+  'locale',
+  getMatchingLocale(locales, supportedLocales) || undefined,
+);
 const latestReactVersion = supportedReactVersions[supportedReactVersions.length - 1];
 setLocaleToDocument(userLocale);
 

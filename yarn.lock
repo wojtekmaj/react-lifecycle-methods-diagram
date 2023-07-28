@@ -740,15 +740,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.once@npm:^4.1.7":
-  version: 4.1.7
-  resolution: "@types/lodash.once@npm:4.1.7"
-  dependencies:
-    "@types/lodash": "*"
-  checksum: ecca82deda7b34012882542d4a95b896263faff14e90ba4651555193e504e8df8b0b2b2af5150e9048bbb3a968ca7ab02f3cee58118fedbd6460d16d97a5c00f
-  languageName: node
-  linkType: hard
-
 "@types/lodash@npm:*":
   version: 4.14.192
   resolution: "@types/lodash@npm:4.14.192"
@@ -969,30 +960,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wojtekmaj/react-hooks@npm:^1.16.2":
-  version: 1.16.2
-  resolution: "@wojtekmaj/react-hooks@npm:1.16.2"
-  dependencies:
-    "@types/react": "*"
+"@wojtekmaj/react-hooks@npm:^1.16.2, @wojtekmaj/react-hooks@npm:^1.18.0":
+  version: 1.18.0
+  resolution: "@wojtekmaj/react-hooks@npm:1.18.0"
   peerDependencies:
+    "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 1bba0de69e012c2c9ce5c56f01cc994a69b440e14646e93751b713c8fe2c237a627355b71dd3f8de4a745eef4c1dfcd47f89901485aa7f46856e0097941c0fb1
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 968a776fff04334153feea85b9ca498f791b15a356bae65da01d3bb1541720d8c8b4252daab01536d638c43bf32d0aa7a14cc3713ceadf582c2937e2bf8670f6
   languageName: node
   linkType: hard
 
-"@wojtekmaj/react-t@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "@wojtekmaj/react-t@npm:0.8.0"
+"@wojtekmaj/react-t@npm:^0.10.1":
+  version: 0.10.1
+  resolution: "@wojtekmaj/react-t@npm:0.10.1"
   dependencies:
-    "@types/lodash.once": ^4.1.7
     "@wojtekmaj/react-hooks": ^1.16.2
-    get-user-locale: ^2.0.0
-    lodash.once: ^4.0.0
+    get-user-locale: ^2.2.1
     prop-types: ^15.6.0
     tiny-invariant: ^1.0.0
   peerDependencies:
+    "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: a39ccc2c2a8682e7a3145bcf4894c122a00cad5c0a4f8e1339a5da0e8dafe4cc2c11e32c9bdc8433e6b6e13c834902b6380ade5dfecf07a0baadd9419c3ffc92
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 7bd6d51ae13f5cd0b11969d13f1cc7268d5b68adbab9b98f9420d07c95e7813f761f6d1feff63aa85dde1d7dc1dc5a33f1dcaa934205e75da567a29247156f5f
   languageName: node
   linkType: hard
 
@@ -1597,10 +1592,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"country-code-to-flag-emoji@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "country-code-to-flag-emoji@npm:1.2.1"
-  checksum: b584c56d619230b362caf33ce528bd83fb570846361860bda43b5ba92f3f019db01cc300caffafe13e0aaa1e19f40cb0ac0f16317da48fe6c47e1e948dbda543
+"country-code-to-flag-emoji@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "country-code-to-flag-emoji@npm:1.3.1"
+  checksum: 91e6669ced10739c6e08b0f8143caa4f43d92c7f216e5d7714e2c1d9af83ed6216d4e2a5ad6a16f91d814ff64c3def27aff9cb4835429b9542a7d581d8687656
   languageName: node
   linkType: hard
 
@@ -2719,13 +2714,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-user-locale@npm:^2.0.0":
-  version: 2.2.1
-  resolution: "get-user-locale@npm:2.2.1"
+"get-user-locale@npm:^2.2.1, get-user-locale@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "get-user-locale@npm:2.3.0"
   dependencies:
     "@types/lodash.memoize": ^4.1.7
     lodash.memoize: ^4.1.1
-  checksum: 929e368d120795295a9fb98724b1f236ea42fe570fa710a8c6d5ecf03f32d11a57966ab7cef38f416523fdf57178d888e835919bc52321696236d74092d06dbc
+  checksum: 8a815e7528d1a75d85b25573ecd66890b126cdc6759f06354dd0b59371d88618aad5a4955ccab5c1267a9ca6a6e46b9362e9bad2639ad5949d3e90542a480791
   languageName: node
   linkType: hard
 
@@ -3631,13 +3626,6 @@ __metadata:
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
   checksum: ad580b4bdbb7ca1f7abf7e1bce63a9a0b98e370cf40194b03380a46b4ed799c9573029599caebc1b14e3f24b111aef72b96674a56cfa105e0f5ac70546cdc005
-  languageName: node
-  linkType: hard
-
-"lodash.once@npm:^4.0.0":
-  version: 4.1.1
-  resolution: "lodash.once@npm:4.1.1"
-  checksum: d768fa9f9b4e1dc6453be99b753906f58990e0c45e7b2ca5a3b40a33111e5d17f6edf2f768786e2716af90a8e78f8f91431ab8435f761fef00f9b0c256f6d245
   languageName: node
   linkType: hard
 
@@ -4567,13 +4555,14 @@ __metadata:
     "@types/react": "*"
     "@types/react-dom": "*"
     "@vitejs/plugin-react": ^3.0.0
-    "@wojtekmaj/react-hooks": ^1.16.2
-    "@wojtekmaj/react-t": ^0.8.0
+    "@wojtekmaj/react-hooks": ^1.18.0
+    "@wojtekmaj/react-t": ^0.10.1
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     clsx: ^2.0.0
-    country-code-to-flag-emoji: ^1.2.1
+    country-code-to-flag-emoji: ^1.3.1
     eslint: ^8.26.0
     eslint-config-wojtekmaj: ^0.9.0
+    get-user-locale: ^2.3.0
     husky: ^8.0.0
     prettier: ^2.7.0
     pretty-quick: ^3.1.0

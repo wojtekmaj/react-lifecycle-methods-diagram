@@ -3,12 +3,12 @@ import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
 
 import { wrapper } from './Options.module.css';
 
-import { supportedReactVersions } from './reactVersions';
-import { supportedLocales } from './i18n/i18n';
+import { supportedReactVersions } from './reactVersions.js';
+import { supportedLocales } from './i18n/i18n.js';
 
 import languages from './i18n/languages.json';
 
-import type { ReactVersion } from './types';
+import type { ReactVersion } from './types.js';
 
 function findLanguage(locale: string) {
   const [languageCode] = locale.split('-');

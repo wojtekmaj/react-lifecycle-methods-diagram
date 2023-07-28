@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import { wrapper, secondary as secondaryClassName } from './Initiator.module.css';
 
-import DocLink from './DocLink';
+import DocLink from './DocLink.js';
 
 type InitiatorProps = {
   col?: number;

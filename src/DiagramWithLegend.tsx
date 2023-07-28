@@ -1,9 +1,9 @@
 import { wrapper } from './DiagramWithLegend.module.css';
 
-import Legend from './Legend';
-import Diagram from './Diagram';
+import Legend from './Legend.js';
+import Diagram from './Diagram.js';
 
-import type { ReactVersion } from './types';
+import type { ReactVersion } from './types.js';
 
 type DiagramWithLegendProps = {
   advanced: boolean;

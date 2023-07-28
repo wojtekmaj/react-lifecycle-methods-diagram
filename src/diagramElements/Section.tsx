@@ -9,7 +9,7 @@ import {
   title,
 } from './Section.module.css';
 
-import Subsection from './Subsection';
+import Subsection from './Subsection.js';
 
 type SectionProps = {
   advanced?: boolean;

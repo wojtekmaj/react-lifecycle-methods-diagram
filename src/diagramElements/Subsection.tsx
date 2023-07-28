@@ -2,9 +2,9 @@ import React from 'react';
 
 import { methods } from './Section.module.css';
 
-import Initiator from './Initiator';
-import Method from './Method';
-import Arrow from './Arrow';
+import Initiator from './Initiator.js';
+import Method from './Method.js';
+import Arrow from './Arrow.js';
 
 /**
  * Fills props automatically for certain children types. For example, if <Arrow />

@@ -2,7 +2,7 @@ import T from '@wojtekmaj/react-t';
 
 import { wrapper } from './Legend.module.css';
 
-import Phase from './legendElements/Phase';
+import Phase from './legendElements/Phase.js';
 
 type LegendProps = {
   advanced: boolean;

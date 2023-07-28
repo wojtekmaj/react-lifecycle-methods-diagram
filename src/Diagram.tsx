@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
-import type { ReactVersion } from './types';
+import type { ReactVersion } from './types.js';
 
 const diagramVersions = {
-  16.3: () => import('./versions/16.3'),
-  16.4: () => import('./versions/16.4'),
+  16.3: () => import('./versions/16.3/index.js'),
+  16.4: () => import('./versions/16.4/index.js'),
 };
 
 type ImportedValue = Awaited<ReturnType<(typeof diagramVersions)[ReactVersion]>>;

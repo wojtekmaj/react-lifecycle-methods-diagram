@@ -1,18 +1,18 @@
 import { useEffect } from 'react';
 import T from '@wojtekmaj/react-t';
 import { getUserLocales } from 'get-user-locale';
-import { getMatchingLocale } from '@wojtekmaj/react-t/dist/esm/utils/locale';
+import { getMatchingLocale } from '@wojtekmaj/react-t/dist/esm/utils/locale.js';
 import { useLocalStorage } from '@wojtekmaj/react-hooks';
 
-import Options from './Options';
-import DiagramWithLegend from './DiagramWithLegend';
-import Footer from './Footer';
+import Options from './Options.js';
+import DiagramWithLegend from './DiagramWithLegend.js';
+import Footer from './Footer.js';
 
-import { supportedReactVersions } from './reactVersions';
+import { supportedReactVersions } from './reactVersions.js';
 
-import { supportedLocales } from './i18n/i18n';
+import { supportedLocales } from './i18n/i18n.js';
 
-import type { ReactVersion } from './types';
+import type { ReactVersion } from './types.js';
 
 function getLocalStorage(key: string, defaultValue?: string): string {
   return key in localStorage ? localStorage[key] : defaultValue;

@@ -1,5 +1,5 @@
-import Mounting from './Mounting';
-import Updating from './Updating';
-import Unmounting from './Unmounting';
+import Mounting from './Mounting.js';
+import Updating from './Updating.js';
+import Unmounting from './Unmounting.js';
 
 export { Mounting, Updating, Unmounting };

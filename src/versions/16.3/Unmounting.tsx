@@ -1,6 +1,6 @@
-import Section from '../../diagramElements/Section';
-import Method from '../../diagramElements/Method';
-import Arrow from '../../diagramElements/Arrow';
+import Section from '../../diagramElements/Section.js';
+import Method from '../../diagramElements/Method.js';
+import Arrow from '../../diagramElements/Arrow.js';
 
 type UnmountingProps = {
   advanced: boolean;

@@ -10,7 +10,7 @@ import {
   commit,
 } from './Method.module.css';
 
-import DocLink from './DocLink';
+import DocLink from './DocLink.js';
 
 type MethodProps = {
   col?: number;

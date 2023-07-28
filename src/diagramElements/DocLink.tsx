@@ -1,6 +1,6 @@
 import { useTranslation } from '@wojtekmaj/react-t';
 
-import { splitUpperCase } from '../shared/utils';
+import { splitUpperCase } from '../shared/utils.js';
 
 type DocLinkLinkProps = {
   docname: string;

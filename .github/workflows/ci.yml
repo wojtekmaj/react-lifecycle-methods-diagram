@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [main]
 
+env:
+  HUSKY: 0
+
 jobs:
   lint:
     name: Static code analysis
@@ -38,8 +41,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn --immutable
-        env:
-          HUSKY: 0
 
       - name: Run tests
         run: yarn lint
@@ -72,8 +73,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn --immutable
-        env:
-          HUSKY: 0
 
       - name: Run type checking
         run: yarn tsc
@@ -106,8 +105,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn --immutable
-        env:
-          HUSKY: 0
 
       - name: Prettier
         run: yarn prettier

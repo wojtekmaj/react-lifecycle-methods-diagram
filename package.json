@@ -28,13 +28,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/babel__core": "*",
     "@types/ejs": "*",
     "@types/html-minifier-terser": "*",
     "@types/node": "*",
     "@types/react": "*",
     "@types/react-dom": "*",
-    "@vitejs/plugin-react": "^3.0.0",
+    "@vitejs/plugin-react": "^4.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "eslint": "^8.26.0",
     "eslint-config-wojtekmaj": "^0.9.0",

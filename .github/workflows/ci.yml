@@ -34,7 +34,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20'
 
       - name: Enable Corepack
         run: corepack enable
@@ -98,7 +98,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20'
 
       - name: Enable Corepack
         run: corepack enable

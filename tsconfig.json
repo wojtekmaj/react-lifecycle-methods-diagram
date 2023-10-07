@@ -11,7 +11,8 @@
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "resolveJsonModule": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "verbatimModuleSyntax": true
   },
   "include": [".", "global.d.ts"]
 }

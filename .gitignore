@@ -1,19 +1,35 @@
-# Cache and IDE-related files
+# OS
+.DS_Store
+
+# Cache
 .cache
-.idea
+.playwright
+.tmp
+*.tsbuildinfo
+.eslintcache
 
-# Yarn-related files
-.yarn/*
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-yarn-error.log
+# Yarn
+.pnp.*
+**/.yarn/*
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
 
-# Project-generated directories
+# Project-generated directories and files
 coverage
 dist
 node_modules
+playwright-report
+test-results
+package.tgz
 
-# Other
-**/.DS_Store
+# Logs
+npm-debug.log
+yarn-error.log
+
+# .env files
 **/.env
+**/.env.*
+!**/.env.example

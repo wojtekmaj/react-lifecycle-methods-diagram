@@ -32,7 +32,7 @@ jobs:
             ${{ runner.os }}-${{ env.cache-name }}
 
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
@@ -64,7 +64,7 @@ jobs:
             ${{ runner.os }}-${{ env.cache-name }}
 
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
@@ -96,7 +96,7 @@ jobs:
             ${{ runner.os }}-${{ env.cache-name }}
 
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 

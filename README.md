@@ -1,4 +1,4 @@
-[![CI](https://github.com/wojtekmaj/react-lifecycle-methods-diagram/workflows/CI/badge.svg)](https://github.com/wojtekmaj/react-lifecycle-methods-diagram/actions)
+[![CI](https://github.com/wojtekmaj/react-lifecycle-methods-diagram/actions/workflows/ci.yml/badge.svg)](https://github.com/wojtekmaj/react-lifecycle-methods-diagram/actions)
 
 # React Lifecycle Methods diagram
 

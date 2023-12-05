@@ -11,7 +11,7 @@
     "prettier": "prettier --check . --cache",
     "preview": "vite preview",
     "test": "yarn lint && yarn tsc && yarn prettier",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc"
   },
   "author": {
     "name": "Wojciech Maj",

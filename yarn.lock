@@ -1271,13 +1271,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-transform-react-remove-prop-types@npm:^0.4.24":
-  version: 0.4.24
-  resolution: "babel-plugin-transform-react-remove-prop-types@npm:0.4.24"
-  checksum: 713441fd9fb663cc95709cb52d9c2c6228ea6d5406092a8a50094c810bcb13c3c347f8fca703d45b20cc401782743a91d7272025950147f9247d53360267f107
-  languageName: node
-  linkType: hard
-
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
@@ -3887,7 +3880,6 @@ __metadata:
     "@vitejs/plugin-react": "npm:^4.2.0"
     "@wojtekmaj/react-hooks": "npm:^1.18.0"
     "@wojtekmaj/react-t": "npm:^0.10.1"
-    babel-plugin-transform-react-remove-prop-types: "npm:^0.4.24"
     clsx: "npm:^2.0.0"
     country-code-to-flag-emoji: "npm:^1.3.1"
     eslint: "npm:^8.26.0"

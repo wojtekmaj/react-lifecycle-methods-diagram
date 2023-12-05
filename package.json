@@ -34,7 +34,6 @@
     "@types/react": "*",
     "@types/react-dom": "*",
     "@vitejs/plugin-react": "^4.2.0",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "eslint": "^8.26.0",
     "eslint-config-wojtekmaj": "^0.9.0",
     "husky": "^8.0.0",

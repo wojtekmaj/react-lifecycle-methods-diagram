@@ -5,15 +5,7 @@ import simpleHtmlPlugin from 'vite-plugin-simple-html';
 export default defineConfig({
   base: './',
   plugins: [
-    react({
-      babel: {
-        env: {
-          production: {
-            plugins: ['transform-react-remove-prop-types'],
-          },
-        },
-      },
-    }),
+    react(),
     simpleHtmlPlugin({
       minify: true,
     }),

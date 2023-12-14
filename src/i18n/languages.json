@@ -35,6 +35,11 @@
     "translated_name": "Français"
   },
   {
+    "code": "hi-IN",
+    "name": "Hindi (India)",
+    "translated_name": "हिंदी (भारत)"
+  },
+  {
     "code": "hu",
     "name": "Hungarian",
     "translated_name": "magyar"

@@ -1,0 +1,19 @@
+{
+  "React lifecycle methods diagram": "रिएक्ट लाइफ साइकल मेथड डायग्राम",
+  "Options": "विकल्प",
+  "Show less common lifecycles": "कम सामान्य लाइफ साइकल दिखाएं",
+  "React version": "रिएक्ट आवृत्ति",
+  "Language": "भाषा",
+  "Mounting": "तैयार करना",
+  "Updating": "बदल करना",
+  "Unmounting": "नष्ट करना",
+  "“{name} phase”": "“{name} अवस्था”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "प्युअर मेथड हैं और इसके साइड इफेक्ट्स भी नहीं है. इसे रिएक्ट से रोका जा सकता है, बीच में बंद और पुनर्प्रारंभ किया जा सकता है.",
+  "Can read the DOM.": "डोम को पढ़ सकते हैं.",
+  "Can work with DOM, run side effects, schedule updates.": "डोम के साथ काम कर सकते हैं, साइड इफेक्ट्स को रन कर सकते हैं, अपडेट शेड्यूल कर सकते हैं.",
+  "React updates DOM and refs": "React updates DOM and refs",
+  "Read docs for {name} (opens in a new tab)": "{name} के लिए दस्तावेज़ पढ़ें (एक नए टैब में खुलता है)",
+  "//reactjs.org/docs/react-component.html#{docname}": "//hi.reactjs.org/docs/react-component.html#{docname}",
+  "See project's page on GitHub (opens in a new tab)": "GitHub पर प्रोजेक्ट का पेज देखें (एक नए टैब में खुलता है)",
+  "See project on": "प्रोजेक्ट देखें"
+}

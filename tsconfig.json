@@ -8,7 +8,14 @@
     "moduleResolution": "node",
     "noEmit": true,
     "noUncheckedIndexedAccess": true,
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "noUncheckedIndexedAccess": true
+        }
+      }
+    ],
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,

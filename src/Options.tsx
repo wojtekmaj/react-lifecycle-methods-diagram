@@ -94,7 +94,7 @@ export default function Options({
       <div>
         <input type="checkbox" id="showAdvanced" checked={advanced} onChange={toggleAdvanced} />
         <label htmlFor="showAdvanced">
-          <T>Show less common lifecycles</T>
+          <T>Show less-common lifecycles</T>
         </label>
       </div>
       <div>

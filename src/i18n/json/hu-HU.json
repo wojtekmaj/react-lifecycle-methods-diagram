@@ -1,7 +1,7 @@
 {
   "React lifecycle methods diagram": "Ábra az életciklus metódusokról",
   "Options": "Opciók",
-  "Show less common lifecycles": "Mutassa a ritkábban használt életciklusokat",
+  "Show less-common lifecycles": "Mutassa a ritkábban használt életciklusokat",
   "Mounting": "Előkészítés",
   "Updating": "Frissítés",
   "Unmounting": "Leválasztás",

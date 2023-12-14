@@ -1,7 +1,7 @@
 {
   "React lifecycle methods diagram": "React 生命周期方法图解",
   "Options": "选项",
-  "Show less common lifecycles": "展示不常用的生命周期",
+  "Show less-common lifecycles": "展示不常用的生命周期",
   "Mounting": "挂载时",
   "Updating": "更新时",
   "Unmounting": "卸载时",

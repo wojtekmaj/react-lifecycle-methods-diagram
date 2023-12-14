@@ -1,7 +1,7 @@
 {
   "React lifecycle methods diagram": "แผนภาพแสดง lifecycle methods ของ React",
   "Options": "ตัวเลือก",
-  "Show less common lifecycles": "แสดง lifecycles แบบธรรมดาน้อยลง",
+  "Show less-common lifecycles": "แสดง lifecycles แบบธรรมดาน้อยลง",
   "React version": "React เวอร์ชั่น",
   "Language": "ภาษา",
   "Mounting": "เมื่อทำการติดตั้ง",

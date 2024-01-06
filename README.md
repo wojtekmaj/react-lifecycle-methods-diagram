@@ -33,7 +33,7 @@ To contribute, you need to have the following prerequisites installed:
 ### Starting the project
 
 - `yarn install` (first time only)
-- `yarn start`
+- `yarn dev`
 
 ### Building the project
 

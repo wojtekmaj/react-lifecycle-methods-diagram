@@ -1,19 +1,14 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "lib": ["esnext", "dom"],
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "nodenext",
     "noEmit": true,
     "noUncheckedIndexedAccess": true,
     "plugins": [
       {
-        "name": "typescript-plugin-css-modules",
-        "options": {
-          "noUncheckedIndexedAccess": true
-        }
+        "name": "typescript-plugin-css-modules"
       }
     ],
     "resolveJsonModule": true,
@@ -22,5 +17,6 @@
     "target": "esnext",
     "verbatimModuleSyntax": true
   },
-  "include": [".", "global.d.ts"]
+  "include": ["."],
+  "exclude": ["node_modules"]
 }

@@ -6,7 +6,7 @@
   "Language": "اللغة",
   "Mounting": "التركيب",
   "Updating": "التـحديـث",
-  "Unmounting": "عدم التركيب",
+  "Unmounting": "إزالة التركيب",
   "“{name} phase”": "“مرحلة {name}”",
   "Pure and has no side effects. May be paused, aborted or restarted by React.": "نقية وليس لها أثار جانبية. قد يتم إيقافها مؤقتاً أو إجهاضها أو إعادة تشغيلها بواسطة React",
   "Can read the DOM.": "يمكنها قراءة DOM.",

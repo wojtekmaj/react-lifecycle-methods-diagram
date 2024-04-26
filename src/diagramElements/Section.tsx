@@ -26,7 +26,7 @@ export default function Section(props: SectionProps) {
     // If we're creating a section containing subsections, we don't need to create one.
     if (children.find((el) => el.type === Subsection)) {
       return Children.map(children, (child) =>
-        cloneElement(child, Object.assign({ sectionCol: col }, props, child.props)),
+        cloneElement(child, { sectionCol: col, ...props, ...child.props }),
       );
     }
 

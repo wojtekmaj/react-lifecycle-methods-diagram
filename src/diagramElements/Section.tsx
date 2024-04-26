@@ -1,4 +1,4 @@
-import React from 'react';
+import { Children, cloneElement } from 'react';
 import clsx from 'clsx';
 import T from '@wojtekmaj/react-t';
 
@@ -25,8 +25,8 @@ export default function Section(props: SectionProps) {
   function renderChildren() {
     // If we're creating a section containing subsections, we don't need to create one.
     if (children.find((el) => el.type === Subsection)) {
-      return React.Children.map(children, (child) =>
-        React.cloneElement(child, Object.assign({ sectionCol: col }, props, child.props)),
+      return Children.map(children, (child) =>
+        cloneElement(child, Object.assign({ sectionCol: col }, props, child.props)),
       );
     }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Children, cloneElement } from 'react';
 
 import { methods } from './Section.module.css';
 
@@ -65,8 +65,8 @@ type SubsectionProps = {
 };
 
 export default function Subsection({ children, col, colspan, sectionCol }: SubsectionProps) {
-  const mappedChildren = React.Children.map(children, (child) =>
-    React.cloneElement(
+  const mappedChildren = Children.map(children, (child) =>
+    cloneElement(
       child,
       Object.assign(
         { col },

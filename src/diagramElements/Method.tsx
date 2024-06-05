@@ -46,8 +46,7 @@ export default function Method({
         endsInMiddle && endsInMiddleClassName,
         main && mainClassName,
         secondary && secondaryClassName,
-        // eslint-disable-next-line sort-keys
-        type && { 'render': render, 'pre-commit': preCommit, 'commit': commit }[type],
+        type && { render: render, 'pre-commit': preCommit, commit: commit }[type],
       )}
       style={{
         gridColumn: `${col + 1} / span ${colspan}`,

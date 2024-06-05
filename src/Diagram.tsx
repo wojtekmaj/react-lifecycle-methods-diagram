@@ -17,12 +17,10 @@ type DiagramProps = {
 export default function Diagram({ advanced, reactVersion }: DiagramProps) {
   const [diagramElements, setDiagramElements] = useState<ImportedValue>();
 
-  function loadDiagramElements() {
+  useEffect(() => {
     const promiseGetter = diagramVersions[reactVersion];
     promiseGetter().then(setDiagramElements);
-  }
-
-  useEffect(loadDiagramElements, [reactVersion]);
+  }, [reactVersion]);
 
   if (!diagramElements) {
     return null;

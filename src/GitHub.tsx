@@ -15,6 +15,7 @@ export default function GitHub() {
         title={title}
       >
         GitHub
+        {/* biome-ignore lint/a11y/noSvgWithoutTitle: Purely decorative icon */}
         <svg
           viewBox="0 0 100 100"
           width="15"

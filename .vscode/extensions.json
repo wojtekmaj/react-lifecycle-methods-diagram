@@ -1,4 +1,4 @@
 {
-  "recommendations": ["biomejs.biome", "eamodio.gitlens", "esbenp.prettier-vscode"],
+  "recommendations": ["biomejs.biome", "eamodio.gitlens"],
   "unwantedRecommendations": ["dbaeumer.jshint"]
 }

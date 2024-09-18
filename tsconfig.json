@@ -4,6 +4,7 @@
     "jsx": "react-jsx",
     "lib": ["esnext", "dom"],
     "module": "nodenext",
+    "moduleDetection": "force",
     "noEmit": true,
     "noUncheckedIndexedAccess": true,
     "plugins": [

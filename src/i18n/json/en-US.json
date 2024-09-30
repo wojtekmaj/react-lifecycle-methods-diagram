@@ -1,0 +1,20 @@
+{
+  "React lifecycle methods diagram": "React lifecycle methods diagram",
+  "Options": "Options",
+  "Show less-common lifecycles": "Show less-common lifecycles",
+  "React version": "React version",
+  "Language": "Language",
+  "Mounting": "Mounting",
+  "Updating": "Updating",
+  "Unmounting": "Unmounting",
+  "Phases": "Phases",
+  "“{name} phase”": "“Phase {name}”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Pure and has no side effects. May be paused, aborted or restarted by React.",
+  "Can read the DOM.": "Can read the DOM.",
+  "Can work with DOM, run side effects, schedule updates.": "Can work with DOM, run side effects, schedule updates.",
+  "React updates DOM and refs": "React updates DOM and refs",
+  "Read docs for {name} (opens in a new tab)": "Read docs for {name} (opens in a new tab)",
+  "//reactjs.org/docs/react-component.html#{docname}": "//pl.reactjs.org/docs/react-component.html#{docname}",
+  "See project's page on GitHub (opens in a new tab)": "See project's page on GitHub (opens in a new tab)",
+  "See project on": "See project on"
+}

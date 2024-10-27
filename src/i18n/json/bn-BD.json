@@ -1,0 +1,19 @@
+{
+  "React lifecycle methods diagram": "রিয়্যাক্ট লাইফসাইকেল মেথড ডায়াগ্রাম",
+  "Options": "বিকল্প",
+  "Show less-common lifecycles": "কম সাধারণ লাইফসাইকেল দেখান",
+  "React version": "রিয়্যাক্ট ভার্সন",
+  "Language": "ভাষা",
+  "Mounting": "সংযোজন",
+  "Updating": "আপডেট করা",
+  "Unmounting": "অপসারণ",
+  "“{name} phase”": "“{name} ধাপ”",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "পিওর এবং এর কোন সাইড ইফেক্ট নেই। রিয়্যাক্ট দ্বারা থামানো, বাতিল বা পুনরায় চালু করা যেতে পারে।",
+  "Can read the DOM.": "DOM পড়তে পারে।",
+  "Can work with DOM, run side effects, schedule updates.": "DOM এর সাথে কাজ করতে পারে, সাইড ইফেক্ট চালাতে পারে, আপডেট শিডিউল করতে পারে।",
+  "React updates DOM and refs": "রিয়্যাক্ট DOM এবং refs আপডেট করে",
+  "Read docs for {name} (opens in a new tab)": "{name} এর জন্য ডকুমেন্টেশন পড়ুন (একটি নতুন ট্যাব খুলবে)",
+  "//reactjs.org/docs/react-component.html#{docname}": "//de.reactjs.org/docs/react-component.html#{docname}",
+  "See project's page on GitHub (opens in a new tab)": "গিটহাব-এ প্রজেক্টের পেজ দেখুন (একটি নতুন ট্যাবে খুলবে)",
+  "See project on": "প্রজেক্ট দেখুন"
+}

@@ -1,0 +1,71 @@
+name: Deploy
+
+concurrency:
+  group: production
+  cancel-in-progress: true
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Install dependencies
+        run: yarn --immutable
+
+      - name: Build
+        run: yarn build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: package
+          path: dist
+          include-hidden-files: true
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://projects.wojtekmaj.pl
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: package
+          path: dist
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::692859910433:role/GitHubActionsProjects
+          aws-region: eu-central-1
+
+      - name: Deploy
+        run: |
+          aws s3 cp --recursive --cache-control 'public, max-age=31557600' ./dist s3://$S3_BUCKET/react-lifecycle-methods-diagram
+          aws s3 cp --metadata-directive REPLACE --cache-control 'public, max-age=180' --content-type 'text/html' s3://$S3_BUCKET/react-lifecycle-methods-diagram/index.html s3://$S3_BUCKET/react-lifecycle-methods-diagram/index.html
+        env:
+          S3_BUCKET: wojtekmaj-projects

@@ -15,8 +15,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext",
-    "verbatimModuleSyntax": true
+    "target": "esnext"
   },
   "include": ["."],
   "exclude": ["node_modules"]

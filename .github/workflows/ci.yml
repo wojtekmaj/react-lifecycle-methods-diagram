@@ -15,7 +15,7 @@ env:
 jobs:
   lint:
     name: Static code analysis
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
 
     steps:
       - name: Checkout
@@ -29,7 +29,7 @@ jobs:
 
   typescript:
     name: Type checking
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
 
     steps:
       - name: Checkout
@@ -61,7 +61,7 @@ jobs:
 
   format:
     name: Formatting
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
 
     steps:
       - name: Checkout

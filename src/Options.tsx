@@ -1,3 +1,4 @@
+import { useId } from 'react';
 import T from '@wojtekmaj/react-t';
 import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
 
@@ -81,6 +82,10 @@ export default function Options({
   toggleLocale,
   toggleReactVersion,
 }: OptionsProps) {
+  const showAdvancedId = useId();
+  const reactVersionId = useId();
+  const languageId = useId();
+
   const reactVersionWithDefault = supportedReactVersions.includes(reactVersion)
     ? reactVersion
     : '16.4';
@@ -92,17 +97,17 @@ export default function Options({
         <T>Options</T>
       </legend>
       <div>
-        <input type="checkbox" id="showAdvanced" checked={advanced} onChange={toggleAdvanced} />
-        <label htmlFor="showAdvanced">
+        <input type="checkbox" id={showAdvancedId} checked={advanced} onChange={toggleAdvanced} />
+        <label htmlFor={showAdvancedId}>
           <T>Show less-common lifecycles</T>
         </label>
       </div>
       <div>
-        <label htmlFor="reactVersion">
+        <label htmlFor={reactVersionId}>
           <T>React version</T>
         </label>
         <SelectOption
-          id="reactVersion"
+          id={reactVersionId}
           options={supportedReactVersions.map((value) => ({
             label: value === '16.4' ? '≥16.4' : value,
             value,
@@ -112,11 +117,11 @@ export default function Options({
         />
       </div>
       <div>
-        <label htmlFor="language">
+        <label htmlFor={languageId}>
           <T>Language</T>
         </label>
         <SelectOption
-          id="language"
+          id={languageId}
           options={locales}
           onChange={toggleLocale}
           value={localeWithDefault}

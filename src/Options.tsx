@@ -7,7 +7,7 @@ import { wrapper } from './Options.module.css';
 import { supportedReactVersions } from './reactVersions.js';
 import { supportedLocales } from './i18n/i18n.js';
 
-import languages from './i18n/languages.json';
+import languages from './i18n/languages.json' with { type: 'json' };
 
 import type { ReactVersion } from './types.js';
 

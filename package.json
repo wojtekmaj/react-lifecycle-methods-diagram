@@ -34,7 +34,7 @@
     "@types/node": "*",
     "@types/react": "*",
     "@types/react-dom": "*",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^4.6.0",
     "husky": "^9.0.0",
     "typescript": "^5.5.2",
     "typescript-plugin-css-modules": "^5.0.0",

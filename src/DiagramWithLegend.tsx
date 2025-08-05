@@ -1,7 +1,7 @@
 import { wrapper } from './DiagramWithLegend.module.css';
 
-import Legend from './Legend.js';
 import Diagram from './Diagram.js';
+import Legend from './Legend.js';
 
 import type { ReactVersion } from './types.js';
 

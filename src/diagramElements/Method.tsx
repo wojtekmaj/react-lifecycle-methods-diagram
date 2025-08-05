@@ -1,13 +1,13 @@
 import clsx from 'clsx';
 
 import {
-  wrapper,
+  commit,
   endsInMiddle as endsInMiddleClassName,
   main as mainClassName,
-  secondary as secondaryClassName,
-  render,
   preCommit,
-  commit,
+  render,
+  secondary as secondaryClassName,
+  wrapper,
 } from './Method.module.css';
 
 import DocLink from './DocLink.js';

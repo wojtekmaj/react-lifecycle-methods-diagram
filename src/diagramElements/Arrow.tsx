@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import { wrapper, solid as solidClassName, withAlt as withAltClassName } from './Arrow.module.css';
+import { solid as solidClassName, withAlt as withAltClassName, wrapper } from './Arrow.module.css';
 
 type ArrowProps = {
   col?: number;

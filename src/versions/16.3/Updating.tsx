@@ -1,8 +1,8 @@
-import Section from '../../diagramElements/Section.js';
-import Subsection from '../../diagramElements/Subsection.js';
+import Arrow from '../../diagramElements/Arrow.js';
 import Initiator from '../../diagramElements/Initiator.js';
 import Method from '../../diagramElements/Method.js';
-import Arrow from '../../diagramElements/Arrow.js';
+import Section from '../../diagramElements/Section.js';
+import Subsection from '../../diagramElements/Subsection.js';
 
 type UpdatingProps = {
   advanced: boolean;

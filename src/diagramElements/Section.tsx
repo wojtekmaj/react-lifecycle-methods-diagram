@@ -1,12 +1,12 @@
 import { Children, cloneElement } from 'react';
-import clsx from 'clsx';
 import T from '@wojtekmaj/react-t';
+import clsx from 'clsx';
 
 import {
-  wrapper,
-  highlight as highlightClassName,
   advanced as advancedClassName,
+  highlight as highlightClassName,
   title,
+  wrapper,
 } from './Section.module.css';
 
 import Subsection from './Subsection.js';

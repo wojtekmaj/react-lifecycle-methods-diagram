@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import { wrapper, secondary as secondaryClassName } from './Initiator.module.css';
+import { secondary as secondaryClassName, wrapper } from './Initiator.module.css';
 
 import DocLink from './DocLink.js';
 

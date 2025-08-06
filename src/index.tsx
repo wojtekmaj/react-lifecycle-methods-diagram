@@ -1,4 +1,4 @@
-import { StrictMode } from 'react';
+import { StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { TProvider } from '@wojtekmaj/react-t';
 
@@ -16,8 +16,10 @@ if (!root) {
 
 createRoot(root).render(
   <StrictMode>
-    <TProvider defaultLocale={defaultLocale} languageFiles={languageFiles}>
-      <Root />
+    <TProvider defaultLocale={defaultLocale} languageFiles={languageFiles} suspend>
+      <Suspense fallback={null}>
+        <Root />
+      </Suspense>
     </TProvider>
   </StrictMode>,
 );

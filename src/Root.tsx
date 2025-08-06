@@ -6,13 +6,13 @@ import { getUserLocales } from 'get-user-locale';
 
 import DiagramWithLegend from './DiagramWithLegend.js';
 import Footer from './Footer.js';
-import { supportedLocales } from './i18n/i18n.js';
+import { defaultLocale, supportedLocales } from './i18n/i18n.js';
 import Options from './Options.js';
 import { supportedReactVersions } from './reactVersions.js';
 
 import type { ReactVersion } from './types.js';
 
-function getLocalStorage(key: string, defaultValue?: string): string {
+function getLocalStorage(key: string, defaultValue: string): string {
   return key in localStorage ? localStorage[key] : defaultValue;
 }
 
@@ -28,7 +28,7 @@ function setLocaleToDocument(locale: string) {
 const locales = getUserLocales();
 const userLocale = getLocalStorage(
   'locale',
-  getMatchingLocale(locales, supportedLocales) || undefined,
+  getMatchingLocale(locales, supportedLocales) || defaultLocale,
 );
 const latestReactVersion = supportedReactVersions[supportedReactVersions.length - 1];
 setLocaleToDocument(userLocale);

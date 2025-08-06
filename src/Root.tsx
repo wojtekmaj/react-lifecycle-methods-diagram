@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocalStorage } from '@wojtekmaj/react-hooks';
 import T from '@wojtekmaj/react-t';
-import { getMatchingLocale } from '@wojtekmaj/react-t/dist/esm/utils/locale.js';
+import { getMatchingLocale } from '@wojtekmaj/react-t/dist/utils/locale.js';
 import { getUserLocales } from 'get-user-locale';
 
 import DiagramWithLegend from './DiagramWithLegend.js';

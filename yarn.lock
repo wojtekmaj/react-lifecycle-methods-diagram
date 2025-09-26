@@ -2366,7 +2366,7 @@ __metadata:
     typescript: "npm:^5.9.2"
     typescript-plugin-css-modules: "npm:^5.0.0"
     vite: "npm:^7.1.5"
-    vite-plugin-simple-html: "npm:^0.2.0"
+    vite-plugin-simple-html: "npm:^1.0.1"
   languageName: unknown
   linkType: soft
 
@@ -2850,14 +2850,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-simple-html@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "vite-plugin-simple-html@npm:0.2.0"
+"vite-plugin-simple-html@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "vite-plugin-simple-html@npm:1.0.1"
   dependencies:
     "@swc/html": "npm:^1.10.1"
   peerDependencies:
-    vite: ^2.3.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
-  checksum: 10c0/fc174222e520d4f4f0c08ccc2762cec70c68a50fd85530f7432380724c060cf3594e499392a315007391153b4f68537fdc3537d7732b4fc14cf67767de225f9e
+    vite: ">=2.3.0 <8.0.0"
+  checksum: 10c0/687603afee4340d18d93c8016acfc0b772bb8e427c55b49af6821281bf0addef97ff9a5185136bf7412843324abd55ab97f77967f670cf23bfcc45f2a6e953c8
   languageName: node
   linkType: hard
 

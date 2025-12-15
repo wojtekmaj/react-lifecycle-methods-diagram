@@ -26,6 +26,7 @@ export const languageFiles = {
   'tr-TR': async () => (await import('./json/tr-TR.json')).default,
   'uk-UA': async () => (await import('./json/uk-UA.json')).default,
   ur: async () => (await import('./json/ur.json')).default,
+  uz: async () => (await import('./json/uz.json')).default,
   'vi-VN': async () => (await import('./json/vi-VN.json')).default,
   'zh-Hans': async () => (await import('./json/zh-Hans.json')).default,
   'zh-Hant': async () => (await import('./json/zh-Hant.json')).default,

@@ -11,6 +11,8 @@ import {
 
 import Subsection from './Subsection.js';
 
+import { isSubsection } from '../shared/utils.js';
+
 type SectionProps = {
   advanced?: boolean;
   children: React.ReactElement[];
@@ -25,9 +27,10 @@ export default function Section(props: SectionProps) {
   function renderChildren() {
     // If we're creating a section containing subsections, we don't need to create one.
     if (children.find((el) => el.type === Subsection)) {
-      return Children.map(children, (child) =>
-        cloneElement(child, { sectionCol: col, ...props, ...child.props }),
-      );
+      return Children.map(children, (child) => {
+        const childProps = isSubsection(child) ? child.props : {};
+        return cloneElement(child, { sectionCol: col, ...props, ...childProps });
+      });
     }
 
     return <Subsection {...props} />;

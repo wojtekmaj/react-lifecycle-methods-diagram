@@ -839,24 +839,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ejs@npm:*":
-  version: 3.1.2
-  resolution: "@types/ejs@npm:3.1.2"
-  checksum: 10c0/8e55275011009e7a44043d97348a4a1b5a7583e1f048b6ad8998f1b30667995314f15bc9cc9ed3e0e79722cce9a06845d06d5d023bca179bb00d52016b41ad7d
-  languageName: node
-  linkType: hard
-
 "@types/estree@npm:1.0.8":
   version: 1.0.8
   resolution: "@types/estree@npm:1.0.8"
   checksum: 10c0/39d34d1afaa338ab9763f37ad6066e3f349444f9052b9676a7cc0252ef9485a41c6d81c9c4e0d26e9077993354edf25efc853f3224dd4b447175ef62bdcc86a5
-  languageName: node
-  linkType: hard
-
-"@types/html-minifier-terser@npm:*":
-  version: 7.0.0
-  resolution: "@types/html-minifier-terser@npm:7.0.0"
-  checksum: 10c0/415cfb905752c2a4e7115a7354da0b5fa839a0108fe12a3320f243178e46b5d4114659b55194399ccf5bdffd437100a47bed7ce596ff6a0fbfb32a6efa3b419c
   languageName: node
   linkType: hard
 
@@ -1797,8 +1783,6 @@ __metadata:
   resolution: "react-lifecycle-methods-diagram@workspace:."
   dependencies:
     "@biomejs/biome": "npm:2.0.0"
-    "@types/ejs": "npm:*"
-    "@types/html-minifier-terser": "npm:*"
     "@types/node": "npm:*"
     "@types/react": "npm:^19.2.0"
     "@types/react-dom": "npm:^19.2.0"

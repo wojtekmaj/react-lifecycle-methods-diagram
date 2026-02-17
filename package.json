@@ -29,8 +29,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.0.0",
-    "@types/ejs": "*",
-    "@types/html-minifier-terser": "*",
     "@types/node": "*",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",

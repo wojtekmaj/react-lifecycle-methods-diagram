@@ -14,8 +14,8 @@
     ],
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "types": ["vite/client"]
   },
   "include": ["."],
   "exclude": ["node_modules"]

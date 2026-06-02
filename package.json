@@ -32,7 +32,7 @@
     "@types/node": "*",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "@vitejs/plugin-react": "^6.0.1",
+    "@vitejs/plugin-react": "^6.0.2",
     "husky": "^9.0.0",
     "typescript": "^6.0.2",
     "typescript-plugin-css-modules": "^5.0.0",

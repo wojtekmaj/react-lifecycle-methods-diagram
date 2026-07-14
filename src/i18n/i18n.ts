@@ -6,6 +6,7 @@ export const languageFiles = {
   'bn-BD': async () => (await import('./json/bn-BD.json')).default,
   'de-DE': async () => (await import('./json/de-DE.json')).default,
   'es-ES': async () => (await import('./json/es-ES.json')).default,
+  'en-US': async () => (await import('./json/en-US.json')).default,
   'fa-IR': async () => (await import('./json/fa-IR.json')).default,
   'fr-FR': async () => (await import('./json/fr-FR.json')).default,
   'hi-IN': async () => (await import('./json/hi-IN.json')).default,
@@ -32,4 +33,4 @@ export const languageFiles = {
   'zh-Hant': async () => (await import('./json/zh-Hant.json')).default,
 };
 
-export const supportedLocales = [defaultLocale].concat(Object.keys(languageFiles));
+export const supportedLocales = Object.keys(languageFiles);

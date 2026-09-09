@@ -2,6 +2,7 @@ export const defaultLocale = 'en-US';
 
 export const languageFiles = {
   'ar-AE': async () => (await import('./json/ar-AE.json')).default,
+  'az-AZ': async () => (await import('./json/az-AZ.json')).default,
   'be-BY': async () => (await import('./json/be-BY.json')).default,
   'bn-BD': async () => (await import('./json/bn-BD.json')).default,
   'de-DE': async () => (await import('./json/de-DE.json')).default,

@@ -1,0 +1,19 @@
+{
+  "React lifecycle methods diagram": "React həyat dövrü metodlarının diaqramı",
+  "Options": "Parametrlər",
+  "Show less-common lifecycles": "Daha az istifadə olunan həyat dövrü metodlarını göstər",
+  "React version": "React versiyası",
+  "Language": "Dil",
+  "Mounting": "Qoşulma",
+  "Updating": "Yenilənmə",
+  "Unmounting": "Ayrılma",
+  "“{name} phase”": "“{name}” mərhələsi",
+  "Pure and has no side effects. May be paused, aborted or restarted by React.": "Əməliyyatlar saf olur və yan təsir yaratmır. React onları müvəqqəti dayandıra, ləğv edə və ya yenidən başlada bilər.",
+  "Can read the DOM.": "DOM-u oxuya bilər.",
+  "Can work with DOM, run side effects, schedule updates.": "DOM ilə işləyə, yan təsirləri icra edə və yenilənmələri planlaşdıra bilər.",
+  "React updates DOM and refs": "React DOM-u və ref-ləri yeniləyir",
+  "Read docs for {name} (opens in a new tab)": "{name} üçün sənədləri oxu (yeni vərəqdə açılır)",
+  "//reactjs.org/docs/react-component.html#{docname}": "//reactjs.org/docs/react-component.html#{docname}",
+  "See project's page on GitHub (opens in a new tab)": "Layihənin GitHub səhifəsinə bax (yeni vərəqdə açılır)",
+  "See project on": "Layihəyə burada bax"
+}

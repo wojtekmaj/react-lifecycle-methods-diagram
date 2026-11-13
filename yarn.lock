@@ -1501,7 +1501,7 @@ __metadata:
     react-dom: "npm:^19.2.4"
     typescript: "npm:^7.0.2"
     typescript-plugin-css-modules: "npm:^5.0.0"
-    vite: "npm:^8.3.7"
+    vite: "npm:8.3.7"
     vite-plugin-simple-html: "npm:^1.1.0"
   languageName: unknown
   linkType: soft
@@ -1913,9 +1913,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^8.3.7":
-  version: 8.3.8
-  resolution: "vite@npm:8.3.8"
+"vite@npm:8.3.7":
+  version: 8.3.7
+  resolution: "vite@npm:8.3.7"
   dependencies:
     fsevents: "npm:~2.3.3"
     lightningcss: "npm:^1.33.0"
@@ -1966,7 +1966,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10c0/21bf5b04159214fbc9f42e297afd26398a3630704959f85290e8b8eb9cac49be20a6a37a5765bfdb997b606c21ccba99f991671f81c5da5a590ae5cedad3e127
+  checksum: 10c0/5433e9c0120edd79479e02d943bcde19ecd74be4c6e8e220bdb120693229425858620d07665baa4adafbcc3d1096a70c86ef179653fa310d777aaed8f6fe74cf
   languageName: node
   linkType: hard
 
